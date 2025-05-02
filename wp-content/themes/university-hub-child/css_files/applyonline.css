@@ -1,6 +1,9 @@
 /* =============================================
-   APPLY ONLINE — SAME STYLE AS ABOUT COLLEGE
-   Page ID 903
+   APPLY ONLINE — PAGE ID 903
+   Brand colors handled by global classes:
+   .primary-page-color / .primary-page-color-b
+   .secondary-page-color / .secondary-page-color-b
+   .third-priority-page-color / .third-priority-page-color-b
    ============================================= */
 
 .page-id-903 .entry-content,
@@ -9,6 +12,7 @@
   padding: 0;
 }
 
+/* ── Hero Wrap ── */
 .page-id-903 .pmt-apply-wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,7 +33,6 @@
 }
 
 .page-id-903 .pmt-apply-tag {
-  color: #FF6000;
   font-weight: 700;
   letter-spacing: 3px;
   font-size: 12px;
@@ -48,14 +51,13 @@
   display: block;
   width: 42px;
   height: 1px;
-  background: #FF6000;
+  background: currentColor;
   opacity: 0.9;
 }
 
 .page-id-903 .pmt-apply-hero h1 {
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 800;
-  color: #253b80;
   line-height: 1.15;
   margin: 0 0 16px;
   font-family: inherit;
@@ -69,6 +71,7 @@
   font-family: inherit;
 }
 
+/* ── Columns (Image + Form) ── */
 .page-id-903 .wp-block-columns.pmt-apply-columns {
   max-width: 1200px;
   width: 100%;
@@ -98,22 +101,33 @@
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  box-shadow: 0 8px 30px rgba(37,59,128,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .page-id-903 .pmt-apply-columns .wp-block-image img:hover {
   transform: scale(1.02);
-  box-shadow: 0 14px 34px rgba(37,59,128,0.22);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.15);
 }
 
+.page-id-903 .pmt-apply-columns .wp-block-column:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-903 .pmt-apply-columns .wp-block-column:first-child figure.wp-block-image {
+  flex: 1;
+  height: 100%;
+}
+
+/* ── WPForms Container ── */
 .page-id-903 .pmt-apply-columns .wpforms-container {
   padding: 24px;
   margin: 0;
   background: #ffffff;
-  border: 1px solid rgba(37,59,128,0.08);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(37,59,128,0.06);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-form .wpforms-field {
@@ -121,7 +135,6 @@
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-form label {
-  color: #253b80;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px !important;
@@ -135,20 +148,19 @@
 .page-id-903 .pmt-apply-columns .wpforms-form textarea {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid rgba(37,59,128,0.14);
+  border: 1px solid rgba(0,0,0,0.12);
   border-radius: 8px;
   padding: 12px 14px;
   font-size: 14px;
   color: #4b5563;
-  background: #fff;
+  background: #ffffff;
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-form input:focus,
 .page-id-903 .pmt-apply-columns .wpforms-form select:focus,
 .page-id-903 .pmt-apply-columns .wpforms-form textarea:focus {
   outline: none;
-  border-color: #FF6000;
-  box-shadow: 0 0 0 3px rgba(255,96,0,0.12);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-submit-container {
@@ -156,7 +168,6 @@
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-submit {
-  background: #253b80 !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 8px !important;
@@ -164,23 +175,109 @@
   font-size: 14px !important;
   font-weight: 700 !important;
   letter-spacing: 0.4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
 .page-id-903 .pmt-apply-columns .wpforms-submit:hover {
-  background: #FF6000 !important;
+  opacity: 0.88;
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(37,59,128,0.16);
-}
-.page-id-903 .pmt-apply-columns .wp-block-column:first-child {
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.14);
 }
 
-.page-id-903 .pmt-apply-columns .wp-block-column:first-child figure.wp-block-image {
-  flex: 1;
-  height: 100%;
+/* ── Download Section ── */
+.page-id-903 .pmt-download-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+  box-sizing: border-box;
 }
+
+.page-id-903 .pmt-download-card {
+  border: 1.5px solid rgba(0,0,0,0.10);
+  border-radius: 12px;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #f8faff;
+  box-sizing: border-box;
+}
+
+.page-id-903 .pmt-download-steps {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-id-903 .pmt-download-steps h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.page-id-903 .pmt-download-steps ol {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: decimal;
+}
+
+.page-id-903 .pmt-download-steps ol li {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.page-id-903 .pmt-download-steps ol li strong {
+  font-weight: 600;
+}
+
+/* ── Download Button ── */
+.page-id-903 .pmt-download-btn-wrap {
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-id-903 .pmt-download-btn {
+  display: inline-block;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-id-903 .pmt-download-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.14);
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.page-id-903 .pmt-download-note {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ── Responsive ── */
 @media (max-width: 900px) {
   .page-id-903 .wp-block-columns.pmt-apply-columns {
     gap: 30px;
@@ -217,6 +314,27 @@
   .page-id-903 .pmt-apply-tag::after {
     width: 24px;
   }
+
+  .page-id-903 .pmt-download-section {
+    padding: 0 16px 36px;
+  }
+
+  .page-id-903 .pmt-download-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .page-id-903 .pmt-download-btn-wrap {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .page-id-903 .pmt-download-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -230,5 +348,13 @@
 
   .page-id-903 .pmt-apply-columns .wpforms-container {
     padding: 18px;
+  }
+
+  .page-id-903 .pmt-download-steps h3 {
+    font-size: 16px;
+  }
+
+  .page-id-903 .pmt-download-section {
+    padding: 0 16px 28px;
   }
 }
