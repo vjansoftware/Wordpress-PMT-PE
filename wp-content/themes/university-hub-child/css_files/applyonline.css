@@ -185,96 +185,99 @@
   box-shadow: 0 10px 22px rgba(0,0,0,0.14);
 }
 
-/* ── Download Section ── */
-.page-id-903 .pmt-download-section {
+/* ══════════════════════════════════════════
+   DOWNLOAD GROUP BLOCK
+   Targets: .wp-block-group with inner columns
+   ══════════════════════════════════════════ */
+
+.page-id-903 .wp-block-group.has-background {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px 48px;
+  margin: 0 auto 48px !important;
+  padding: 32px 36px !important;
+  border-radius: 12px !important;
   box-sizing: border-box;
 }
 
-.page-id-903 .pmt-download-card {
-  border: 1.5px solid rgba(0,0,0,0.10);
-  border-radius: 12px;
-  padding: 32px 36px;
-  display: flex;
-  flex-direction: row;
+/* Inner columns — steps left, file right */
+.page-id-903 .wp-block-group.has-background > .wp-block-columns {
+  gap: 40px;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  background: #f8faff;
-  box-sizing: border-box;
+  flex-wrap: nowrap;
 }
 
-.page-id-903 .pmt-download-steps {
-  flex: 1;
+.page-id-903 .wp-block-group.has-background > .wp-block-columns > .wp-block-column:first-child {
+  flex: 1 1 60%;
   min-width: 0;
 }
 
-.page-id-903 .pmt-download-steps h3 {
+.page-id-903 .wp-block-group.has-background > .wp-block-columns > .wp-block-column:last-child {
+  flex: 0 0 auto;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading inside group */
+.page-id-903 .wp-block-group.has-background h4.wp-block-heading {
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   line-height: 1.3;
 }
 
-.page-id-903 .pmt-download-steps ol {
+/* List inside group */
+.page-id-903 .wp-block-group.has-background .wp-block-list {
   margin: 0;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  list-style: decimal;
 }
 
-.page-id-903 .pmt-download-steps ol li {
+.page-id-903 .wp-block-group.has-background .wp-block-list li {
   font-size: 14px;
   color: #4b5563;
   line-height: 1.7;
 }
 
-.page-id-903 .pmt-download-steps ol li strong {
-  font-weight: 600;
-}
-
-/* ── Download Button ── */
-.page-id-903 .pmt-download-btn-wrap {
-  flex-shrink: 0;
-  text-align: center;
+/* ── File Block (Download Button) ── */
+.page-id-903 .wp-block-group.has-background .wp-block-file {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  text-align: center;
 }
 
-.page-id-903 .pmt-download-btn {
-  display: inline-block;
+/* Hide the filename link — show only button */
+.page-id-903 .wp-block-group.has-background .wp-block-file > a:not(.wp-block-file__button) {
+  display: none;
+}
+
+/* Style the download button */
+.page-id-903 .wp-block-group.has-background .wp-block-file__button {
+  display: inline-block !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  border-radius: 10px;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: 700;
+  border-radius: 10px !important;
+  padding: 14px 28px !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
   letter-spacing: 0.3px;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #253b80 !important;
 }
 
-.page-id-903 .pmt-download-btn:hover {
-  opacity: 0.88;
+.page-id-903 .wp-block-group.has-background .wp-block-file__button:hover {
+  opacity: 0.88 !important;
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.14);
   color: #ffffff !important;
-  text-decoration: none !important;
-}
-
-.page-id-903 .pmt-download-note {
-  margin: 0;
-  font-size: 12px;
-  color: #6b7280;
-  text-align: center;
 }
 
 /* ── Responsive ── */
@@ -282,6 +285,10 @@
   .page-id-903 .wp-block-columns.pmt-apply-columns {
     gap: 30px;
     padding: 24px 20px 32px;
+  }
+
+  .page-id-903 .wp-block-group.has-background {
+    padding: 28px 24px !important;
   }
 }
 
@@ -315,25 +322,27 @@
     width: 24px;
   }
 
-  .page-id-903 .pmt-download-section {
-    padding: 0 16px 36px;
+  /* Download group stacks on mobile */
+  .page-id-903 .wp-block-group.has-background {
+    margin: 0 16px 36px !important;
+    padding: 24px 20px !important;
   }
 
-  .page-id-903 .pmt-download-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px 20px;
+  .page-id-903 .wp-block-group.has-background > .wp-block-columns {
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
     gap: 24px;
   }
 
-  .page-id-903 .pmt-download-btn-wrap {
+  .page-id-903 .wp-block-group.has-background > .wp-block-columns > .wp-block-column:last-child {
+    min-width: 100%;
     width: 100%;
-    align-items: stretch;
   }
 
-  .page-id-903 .pmt-download-btn {
-    width: 100%;
-    text-align: center;
+  .page-id-903 .wp-block-group.has-background .wp-block-file__button {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
   }
 }
 
@@ -350,11 +359,12 @@
     padding: 18px;
   }
 
-  .page-id-903 .pmt-download-steps h3 {
+  .page-id-903 .wp-block-group.has-background h4.wp-block-heading {
     font-size: 16px;
   }
 
-  .page-id-903 .pmt-download-section {
-    padding: 0 16px 28px;
+  .page-id-903 .wp-block-group.has-background {
+    margin: 0 0 28px !important;
+    padding: 20px 16px !important;
   }
 }
