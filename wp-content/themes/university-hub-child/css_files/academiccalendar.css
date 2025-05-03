@@ -1,132 +1,226 @@
-.pmt-cal-wrap{
-  width:100%;
-  max-width:1200px;
-  margin:0 auto;
-  padding:10px 5px;
-  box-sizing:border-box;
-  font-family:Segoe UI, Tahoma, sans-serif;
-  color:#253b80;
+/* =============================================
+   ACADEMIC CALENDAR PAGE
+   Brand colors handled by global classes:
+   .primary-page-color / .primary-page-color-b
+   .secondary-page-color / .secondary-page-color-b
+   .third-priority-page-color / .third-priority-page-color-b
+   ============================================= */
+
+.pmt-cal-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: Segoe UI, Tahoma, sans-serif;
 }
 
-.pmt-cal-hero{
-  text-align:center;
-  margin-bottom:40px;
+/* ── Hero ── */
+.pmt-cal-hero {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.pmt-cal-tag{
-  color:#FF6000;
-  font-size:12px;
-  letter-spacing:3px;
-  font-weight:700;
-  text-transform:uppercase;
-  margin-bottom:10px;
+.pmt-cal-tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.pmt-cal-title{
-  color:#253b80;
-  font-size:2rem;
-  font-weight:700;
-  margin:0 0 10px;
+.pmt-cal-tag::before,
+.pmt-cal-tag::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.8;
 }
 
-.pmt-cal-sub{
-  color:#4b5563;
-  max-width:600px;
-  margin:0 auto;
-  line-height:1.7;
-  font-size:15px;
+.pmt-cal-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  margin: 0 0 10px;
+  line-height: 1.2;
 }
 
-.wp-block-columns{
-  display:flex;
-  gap:25px;
-  max-width:1200px;
-  margin:0 auto 25px;
-  flex-wrap:wrap;
+.pmt-cal-sub {
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
-.wp-block-columns > .wp-block-column{
-  flex:1;
-  min-width:0;
-  background:#fff;
-  padding:20px;
-  border-radius:10px;
-  border:1px solid rgba(37,59,128,0.12);
-  box-shadow:0 8px 24px rgba(37,59,128,0.08);
+/* ── Columns (Cards) ── */
+.pmt-cal-wrap .wp-block-columns {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.wp-block-column h4,
-.wp-block-heading.is-level-4{
-  color:#253b80;
-  font-size:15px;
-  font-weight:700;
-  margin:0 0 12px;
+.pmt-cal-wrap .wp-block-columns > .wp-block-column {
+  flex: 1;
+  min-width: 260px;
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid currentColor;
 }
 
-.wp-block-column ul,
-.wp-block-list{
-  margin:0;
-  padding-left:18px;
+.pmt-cal-wrap .wp-block-columns > .wp-block-column:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.11);
 }
 
-.wp-block-column li,
-.wp-block-list li{
-  margin-bottom:8px;
-  color:#253b80;
-  line-height:1.6;
+/* ── Card Headings ── */
+.pmt-cal-wrap .wp-block-column h4,
+.pmt-cal-wrap .wp-block-column h5,
+.pmt-cal-wrap .wp-block-column h6,
+.pmt-cal-wrap .wp-block-column .wp-block-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.3;
 }
 
-.wp-block-columns > .wp-block-column li::marker{
-  color:#FF6000;
+.pmt-cal-wrap .wp-block-column h6.wp-block-heading {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0 0 18px;
 }
 
-.pmt-cal-note-title{
-  max-width:1200px;
-  margin:30px auto 12px;
-  color:#253b80;
-  font-size:1.2rem;
-  font-weight:700;
+/* ── File Block inside card ── */
+.pmt-cal-wrap .wp-block-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
 }
 
-.pmt-cal-note-title + .wp-block-list{
-  max-width:1200px;
-  margin:0 auto;
-  padding:20px 24px;
-  background:#253b80;
-  color:#fff;
-  border-radius:10px;
-  border-left:6px solid #FF6000;
+/* Hide filename link — show only button */
+.pmt-cal-wrap .wp-block-file > a:not(.wp-block-file__button) {
+  font-size: 12px;
+  color: #6b7280;
+  text-decoration: none;
+  background: rgba(0,0,0,0.04);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.pmt-cal-note-title + .wp-block-list li{
-  color:#fff;
-  margin-bottom:8px;
+.pmt-cal-wrap .wp-block-file > a:not(.wp-block-file__button)::before {
+  content: "📄";
+  font-size: 13px;
 }
 
-@media (max-width:991px){
-  .wp-block-columns{
-    gap:20px;
+/* Download button — matches Annual Report style */
+.pmt-cal-wrap .wp-block-file__button {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  padding: 12px 20px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pmt-cal-wrap .wp-block-file__button:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.14);
+  color: #ffffff !important;
+}
+
+/* ── Notes section ── */
+.pmt-cal-note-title {
+  max-width: 1200px;
+  margin: 30px auto 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pmt-cal-note-title + .wp-block-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  color: #fff;
+  border-radius: 10px;
+  border-left: 6px solid currentColor;
+}
+
+.pmt-cal-note-title + .wp-block-list li {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .pmt-cal-wrap .wp-block-columns {
+    gap: 20px;
   }
 }
 
-@media (max-width:768px){
-  .pmt-cal-wrap{
-    padding:10px 12px;
+@media (max-width: 768px) {
+  .pmt-cal-wrap {
+    padding: 10px 16px;
   }
 
-  .pmt-cal-title{
-    font-size:1.4rem;
+  .pmt-cal-wrap .wp-block-columns {
+    flex-direction: column;
+    gap: 16px;
   }
 
-  .wp-block-columns{
-    flex-direction:column;
+  .pmt-cal-wrap .wp-block-columns > .wp-block-column {
+    width: 100%;
+    min-width: 100%;
   }
 
-  .wp-block-columns > .wp-block-column{
-    width:100%;
+  .pmt-cal-tag {
+    gap: 8px;
+    letter-spacing: 2px;
   }
 
-  .pmt-cal-note-title{
-    font-size:24px;
+  .pmt-cal-tag::before,
+  .pmt-cal-tag::after {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pmt-cal-wrap .wp-block-column h4,
+  .pmt-cal-wrap .wp-block-column h5 {
+    font-size: 15px;
+  }
+
+  .pmt-cal-note-title {
+    font-size: 1rem;
   }
 }
