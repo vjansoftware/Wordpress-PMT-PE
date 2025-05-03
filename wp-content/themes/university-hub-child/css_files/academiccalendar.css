@@ -4,11 +4,18 @@
    No brand colors — handled by global classes
    ============================================= */
 
+/* Remove theme default top spacing */
+.page .entry-content > .pmt-cal-wrap,
+.entry-content > .wp-block-group:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 .pmt-cal-wrap {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px 10px;
+  padding: 20px 20px 10px;
   box-sizing: border-box;
   font-family: Segoe UI, Tahoma, sans-serif;
 }
