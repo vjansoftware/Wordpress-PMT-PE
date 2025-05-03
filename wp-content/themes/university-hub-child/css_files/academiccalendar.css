@@ -1,16 +1,14 @@
 /* =============================================
    ACADEMIC CALENDAR PAGE
-   Brand colors handled by global classes:
-   .primary-page-color / .primary-page-color-b
-   .secondary-page-color / .secondary-page-color-b
-   .third-priority-page-color / .third-priority-page-color-b
+   Matches Annual Report card design
+   No brand colors — handled by global classes
    ============================================= */
 
 .pmt-cal-wrap {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 20px 40px;
   box-sizing: border-box;
   font-family: Segoe UI, Tahoma, sans-serif;
 }
@@ -58,23 +56,28 @@
   font-size: 15px;
 }
 
-/* ── Columns (Cards) ── */
-.pmt-cal-wrap .wp-block-columns {
+/* ── Columns wrapper ── */
+.pmt-cal-wrap + .wp-block-columns,
+.wp-block-columns:has(> .wp-block-column.primary-page-color) {
   display: flex;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto 24px;
   flex-wrap: wrap;
   align-items: stretch;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.pmt-cal-wrap .wp-block-columns > .wp-block-column {
+/* ── Card — Annual Report style ── */
+.wp-block-column.primary-page-color {
   flex: 1;
   min-width: 260px;
   background: #fff;
-  padding: 28px 24px;
-  border-radius: 12px;
-  border: 1.5px solid rgba(0,0,0,0.08);
+  padding: 32px 28px 28px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(0,0,0,0.10);
+  border-top: 4px solid;
   box-shadow: 0 8px 24px rgba(0,0,0,0.07);
   box-sizing: border-box;
   display: flex;
@@ -82,34 +85,48 @@
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 4px solid currentColor;
 }
 
-.pmt-cal-wrap .wp-block-columns > .wp-block-column:hover {
+.wp-block-column.primary-page-color:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(0,0,0,0.11);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.11);
 }
 
-/* ── Card Headings ── */
-.pmt-cal-wrap .wp-block-column h4,
-.pmt-cal-wrap .wp-block-column h5,
-.pmt-cal-wrap .wp-block-column h6,
-.pmt-cal-wrap .wp-block-column .wp-block-heading {
-  font-size: 16px;
+/* ── Card title — with orange underline like Annual Report ── */
+.wp-block-column.primary-page-color h4.wp-block-heading,
+.wp-block-column.primary-page-color h5.wp-block-heading {
+  font-size: 17px;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   line-height: 1.3;
+  position: relative;
+  padding-bottom: 14px;
+  width: 100%;
 }
 
-.pmt-cal-wrap .wp-block-column h6.wp-block-heading {
+.wp-block-column.primary-page-color h4.wp-block-heading::after,
+.wp-block-column.primary-page-color h5.wp-block-heading::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #FF6000;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* ── Subtitle ── */
+.wp-block-column.primary-page-color h6.wp-block-heading {
   font-size: 13px;
   font-weight: 400;
   color: #6b7280;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
+  font-style: normal;
+  width: 100%;
 }
 
-/* ── File Block inside card ── */
-.pmt-cal-wrap .wp-block-file {
+/* ── File block ── */
+.wp-block-column.primary-page-color .wp-block-file {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,89 +135,71 @@
   margin-top: auto;
 }
 
-/* Hide filename link — show only button */
-.pmt-cal-wrap .wp-block-file > a:not(.wp-block-file__button) {
+/* Filename link */
+.wp-block-column.primary-page-color .wp-block-file > a:not(.wp-block-file__button) {
   font-size: 12px;
   color: #6b7280;
   text-decoration: none;
   background: rgba(0,0,0,0.04);
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
 
-.pmt-cal-wrap .wp-block-file > a:not(.wp-block-file__button)::before {
+.wp-block-column.primary-page-color .wp-block-file > a:not(.wp-block-file__button)::before {
   content: "📄";
   font-size: 13px;
 }
 
-/* Download button — matches Annual Report style */
-.pmt-cal-wrap .wp-block-file__button {
+/* ── Download button — full width like Annual Report ── */
+.wp-block-column.primary-page-color .wp-block-file__button.wp-element-button {
   display: block !important;
   width: 100% !important;
   text-align: center !important;
   color: #ffffff !important;
   text-decoration: none !important;
   border-radius: 8px !important;
-  padding: 12px 20px !important;
+  padding: 14px 20px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
   letter-spacing: 0.3px;
   cursor: pointer;
+  border: none !important;
+  background-color: #253b80 !important;
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 4px;
 }
 
-.pmt-cal-wrap .wp-block-file__button:hover {
-  opacity: 0.88;
+.wp-block-column.primary-page-color .wp-block-file__button.wp-element-button:hover {
+  opacity: 0.88 !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.14);
   color: #ffffff !important;
 }
 
-/* ── Notes section ── */
-.pmt-cal-note-title {
-  max-width: 1200px;
-  margin: 30px auto 12px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.pmt-cal-note-title + .wp-block-list {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 24px;
-  color: #fff;
-  border-radius: 10px;
-  border-left: 6px solid currentColor;
-}
-
-.pmt-cal-note-title + .wp-block-list li {
-  color: #fff;
-  margin-bottom: 8px;
-}
-
 /* ── Responsive ── */
-@media (max-width: 991px) {
-  .pmt-cal-wrap .wp-block-columns {
+@media (max-width: 900px) {
+  .wp-block-columns:has(> .wp-block-column.primary-page-color) {
     gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .pmt-cal-wrap {
-    padding: 10px 16px;
+    padding: 10px 16px 32px;
   }
 
-  .pmt-cal-wrap .wp-block-columns {
+  .wp-block-columns:has(> .wp-block-column.primary-page-color) {
     flex-direction: column;
     gap: 16px;
+    padding: 0 16px;
   }
 
-  .pmt-cal-wrap .wp-block-columns > .wp-block-column {
-    width: 100%;
-    min-width: 100%;
+  .wp-block-column.primary-page-color {
+    width: 100% !important;
+    min-width: 100% !important;
   }
 
   .pmt-cal-tag {
@@ -215,12 +214,8 @@
 }
 
 @media (max-width: 480px) {
-  .pmt-cal-wrap .wp-block-column h4,
-  .pmt-cal-wrap .wp-block-column h5 {
+  .wp-block-column.primary-page-color h4.wp-block-heading,
+  .wp-block-column.primary-page-color h5.wp-block-heading {
     font-size: 15px;
-  }
-
-  .pmt-cal-note-title {
-    font-size: 1rem;
   }
 }
