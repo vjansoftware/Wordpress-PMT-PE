@@ -1,0 +1,137 @@
+
+/* YOGA HALL --- FACILITIES */
+/* WRAP */
+.pmt-yoga-wrap {
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2px 20px;
+}
+
+/* HEADER */
+.pmt-yoga-header {
+  margin-bottom: 28px;
+  animation: fadeDown 1s ease;
+}
+
+.pmt-yoga-tag {
+  color: #f5a623;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.pmt-yoga-title {
+  font-size: 30px;
+	font-weight:bold;
+  color: #253b80;
+  margin: 12px 0;
+}
+
+.pmt-yoga-sub {
+  color: #666;
+  max-width: 600px;
+}
+
+/* HERO */
+.pmt-yoga-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.pmt-yoga-img img {
+  width: 100%;
+  border-radius: 12px;
+  animation: fadeLeft 1s ease;
+}
+
+.pmt-yoga-content {
+  flex: 1;
+  animation: fadeRight 1s ease;
+}
+
+.pmt-yoga-content h2 {
+  color: #253b80;
+  margin-bottom: 10px;
+}
+
+.pmt-yoga-content p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.pmt-yoga-content ul {
+  padding-left: 15px;
+  color: #444;
+}
+
+/* GRID */
+.pmt-yoga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.pmt-yoga-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border-top: 4px solid #FF6000;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.pmt-yoga-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pmt-yoga-card h3 {
+  color: #253b80;
+  margin-bottom: 10px;
+}
+
+/* COLLAB */
+.pmt-yoga-collab {
+  background: #253b80;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  animation: fadeUp 1s ease;
+}
+
+.pmt-yoga-collab h2 {
+  margin-bottom: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {opacity:0; transform:translateY(-20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeLeft {
+  from {opacity:0; transform:translateX(-30px);}
+  to {opacity:1; transform:translateX(0);}
+}
+
+@keyframes fadeRight {
+  from {opacity:0; transform:translateX(30px);}
+  to {opacity:1; transform:translateX(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .pmt-yoga-grid {
+    grid-template-columns: 1fr;
+  }
+}
