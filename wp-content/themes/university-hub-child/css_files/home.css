@@ -6,8 +6,8 @@
 .pmt-main-homepage img { max-width: 100%; display: block; }
 /* ── ANIMATIONS ── */
 .pmt-main-homepage .pmt-anim {
-  opacity: 1 !important;
-  transform: none !important;
+  opacity: 0;
+  transform: translateY(30px);
 }
 .pmt-main-homepage .pmt-anim.pmt-visible { opacity: 1; transform: translateY(0); }
 .pmt-main-homepage .pmt-anim:nth-child(2) { transition-delay: 0.1s; }
