@@ -6,6 +6,48 @@ Version: 1.0
 
 /* ── Header & Logo ── */
 @import "css_files/yogahall.css";
+@import "css_files/homepage.css";
+@import "css_files/ourcollege.css";
+@import "css_files/visionmission.css";
+@import "css_files/principalsmessage.css";
+@import "css_files/placements.css";
+@import "css_files/affiliationapproval.css";
+@import "css_files/courses.css";
+@import "css_files/syllabus.css";
+@import "css_files/academiccalendar.css";
+@import "css_files/admissionprocess.css";
+@import "css_files/eligibilitycriteria.css";
+@import "css_files/applyonline.css";
+@import "css_files/feestructure.css";
+@import "css_files/scholarship.css";  
+@import "css_files/examcell.css";
+@import "css_files/outdoorsports.css";
+@import "css_files/indoorsports.css";
+@import "css_files/professionaltechnicalclubs.css";
+@import "css_files/serviceenvironmentclubs.css";
+@import "css_files/traditionalculturalclubs.css";
+@import "css_files/adventurewellnessclubs.css";
+@import "css_files/personalitymediaclubs.css";
+@import "css_files/coachingprograms.css";
+@import "css_files/achievements.css";
+@import "css_files/playground.css";
+@import "css_files/hostel.css";
+@import "css_files/multigym.css";
+@import "css_files/indoorstadium.css";
+@import "css_files/library.css";
+@import "css_files/laboratory.css";
+@import "css_files/medicalfacility.css";
+@import "css_files/studentgrievance.css";
+@import "css_files/antiragging.css";
+@import "css_files/womenhelpdesk.css";
+@import "css_files/studenthelpdesk.css";
+@import "css_files/teachingstaff.css";
+@import "css_files/nonteachingstaff.css";
+@import "css_files/photos.css";
+@import "css_files/videos.css";
+@import "css_files/careers.css";
+@import "css_files/contactus.css";
+
 
 #quick-contact li::before {
         font-size: 20px;
