@@ -5,20 +5,12 @@ Version: 1.0
 */
 
 /* ── Header & Logo ── */
-@import "css_files/home.css";
+
 @import "css_files/ourcollege.css";
 @import "css_files/visionmission.css";
 @import "css_files/principalsmessage.css";
 @import "css_files/placements.css";
-@import "css_files/affiliationapproval.css";
-@import "css_files/courses.css";
-@import "css_files/syllabus.css";
-@import "css_files/academiccalendar.css";
-@import "css_files/admissionprocess.css";
-@import "css_files/eligibilitycriteria.css";
-@import "css_files/applyonline.css";
-@import "css_files/feestructure.css";
-@import "css_files/scholarship.css";  
+@import "css_files/affiliationapproval.css"; 
 @import "css_files/outdoorsports.css";
 @import "css_files/indoorsports.css";
 @import "css_files/professionaltechnicalclubs.css";
@@ -43,8 +35,6 @@ Version: 1.0
 @import "css_files/nonteachingstaff.css";
 @import "css_files/photos.css";
 @import "css_files/videos.css";
-@import "css_files/careers.css";
-@import "css_files/contactus.css";
 
 
 #quick-contact li::before {
