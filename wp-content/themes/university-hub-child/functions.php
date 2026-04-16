@@ -19,7 +19,7 @@ function pmt_theme_styles() {
     // =========================
     // HOME PAGE (ID: 1693)
     // =========================
-    if (is_front_page()) {
+    if (is_front_page() || is_page(1693)) {
     wp_enqueue_style(
         'home',
         get_stylesheet_directory_uri() . '/css_files/home.css',
