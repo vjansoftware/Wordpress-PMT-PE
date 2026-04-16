@@ -1,0 +1,75 @@
+/* FULL WIDTH FIX */
+.pmt-cal-wrap {
+  width: 100%;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+/* HERO */
+.pmt-cal-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pmt-cal-tag {
+  color: #ff6000;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.pmt-cal-hero h1 {
+  color: #0a1f5c;
+}
+
+.pmt-cal-sub {
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* GRID (MAIN FIX 🔥) */
+.pmt-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD */
+.pmt-cal-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.pmt-cal-card h3 {
+  color: #0a1f5c;
+  margin-bottom: 10px;
+}
+
+.pmt-cal-card ul {
+  padding-left: 18px;
+}
+
+/* HIGHLIGHT */
+.pmt-cal-highlight {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  background: #253B80;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.pmt-cal-highlight h2 {
+  color: #e8b84b;
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+  .pmt-cal-grid {
+    grid-template-columns: 1fr;
+  }
+}

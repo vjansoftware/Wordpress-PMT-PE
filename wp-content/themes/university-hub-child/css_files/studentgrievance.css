@@ -1,0 +1,163 @@
+.grievance-page {
+  background: #f4f6fb;
+  padding: 30px 50px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.grievance-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grievance-header h1 {
+  color: #253B80;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.grievance-header p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* INFO CARDS */
+.info-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 5px solid #253B80;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+  margin-bottom: 5px;
+  color: #253B80;
+}
+
+/* SPLIT */
+.grievance-split {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+/* LEFT CONTENT */
+.grievance-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.grievance-content h2 {
+  color: #253B80;
+  margin-bottom: 10px;
+}
+
+.grievance-content p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.grievance-content ul {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+
+.grievance-content li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* HIGHLIGHT BOX */
+.highlight-box {
+  background: #253B80;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.highlight-box p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* FORM */
+.grievance-form-card {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.grievance-form-card h2 {
+  color: #253B80;
+  margin-bottom: 10px;
+}
+
+/* FORM INPUTS */
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  background: #253B80;
+  color: #fff;
+  padding: 11px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4a148c;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grievance-split {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .grievance-header h1 {
+    font-size: 22px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

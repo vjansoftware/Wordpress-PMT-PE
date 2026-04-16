@@ -1,0 +1,195 @@
+/* ═══════════════════════════════════════
+   PMT COURSE PAGE — FONT & COLOR FIX
+   Matches site style — CSS override only
+═══════════════════════════════════════ */
+
+/* — Section wrap — */
+.course-page-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 0 0 !important;
+}
+.course-page-container {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  box-sizing: border-box !important;
+}
+
+/* — Tag label — */
+.course-page-tag {
+  color: #FF6000 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-bottom: 10px !important;
+}
+.course-page-tag::before,
+.course-page-tag::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+}
+
+/* — Title — */
+.course-page-title {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 14px !important;
+}
+
+/* — Subtitle — */
+.course-page-subtitle {
+  font-size: 15px !important;
+  color: #6b7280 !important;
+  line-height: 1.75 !important;
+  margin-bottom: 32px !important;
+}
+
+/* — Grid — */
+.course-page-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2,1fr) !important;
+  gap: 22px !important;
+  text-align: left !important;
+}
+
+/* — Card — */
+.course-page-card {
+  background: #fff !important;
+  padding: 28px 24px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(37,59,128,0.08) !important;
+  box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
+  border-top: 3px solid #FF6000 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.course-page-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 28px rgba(37,59,128,0.13) !important;
+}
+
+/* — Card icon — */
+.course-page-icon {
+  font-size: 2rem !important;
+  display: block !important;
+  margin-bottom: 12px !important;
+}
+
+/* — Card heading — */
+.course-page-card h3 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 10px !important;
+}
+
+/* — Card text — */
+.course-page-card p {
+  font-size: 14px !important;
+  color: #6b7280 !important;
+  line-height: 1.7 !important;
+}
+
+/* — Duration tag — */
+.course-page-duration {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+/* — Highlight box — */
+.course-page-highlight-box {
+  background: #253b80 !important;
+  padding: 40px !important;
+  border-radius: 10px !important;
+}
+.course-page-highlight-box h2 {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin-bottom: 20px !important;
+}
+.course-page-highlight-box li {
+  font-size: 14px !important;
+  color: rgba(255,255,255,0.8) !important;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  list-style: none !important;
+}
+.course-page-highlight-box li::before {
+  content: '✓' !important;
+  color: #FF6000 !important;
+  font-weight: 700 !important;
+  flex-shrink: 0 !important;
+}
+
+/* ═══════════════════════════════════════
+   PMT COURSE PAGE — SCROLL ANIMATIONS
+═══════════════════════════════════════ */
+
+/* — Card base transition — */
+.course-page-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+              opacity 0.6s ease !important;
+}
+
+/* — Hidden state — */
+.course-page-card.pmt-animate {
+  opacity: 0 !important;
+  transform: translateY(30px) !important;
+}
+/* — Visible state — */
+.course-page-card.pmt-animate.pmt-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* — Stagger delays — */
+.course-page-card:nth-child(2) { transition-delay: 0.1s; }
+.course-page-card:nth-child(3) { transition-delay: 0.2s; }
+.course-page-card:nth-child(4) { transition-delay: 0.3s; }
+
+/* — Highlight animation — */
+.course-page-highlight-box {
+  transition: opacity 0.6s ease, transform 0.6s ease !important;
+}
+.course-page-highlight-box.pmt-animate {
+  opacity: 0 !important;
+  transform: translateY(30px) !important;
+}
+.course-page-highlight-box.pmt-animate.pmt-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ═══════════════════════════════════════
+   PMT COURSE PAGE — MOBILE RESPONSIVE
+   Breakpoint: 768px and below
+═══════════════════════════════════════ */
+@media(max-width:768px){
+  .course-page-container { padding: 24px 16px 0 !important; }
+  .course-page-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .course-page-title { font-size: 1.6rem !important; }
+  .course-page-highlight-box { padding: 28px 20px !important; }
+}
+
+/* ═══════════════════════════════════════
+   PMT COURSE PAGE — MOBILE RESPONSIVE
+   Breakpoint: 480px and below
+═══════════════════════════════════════ */
+@media(max-width:480px){
+  .course-page-title { font-size: 1.3rem !important; }
+}

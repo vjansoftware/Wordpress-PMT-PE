@@ -1,0 +1,44 @@
+.pmt-syllabus-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+
+.pmt-syllabus-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pmt-syllabus-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a1f5c;
+  border-bottom: 2px solid #e8b84b;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.pmt-syllabus-title span {
+  background: #0a1f5c;
+  color: #e8b84b;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.pmt-syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.pmt-syllabus-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.pmt-syllabus-card ul {
+  padding-left: 18px;
+}

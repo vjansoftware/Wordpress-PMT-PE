@@ -1,0 +1,117 @@
+.pmt-apply-wrap {
+  width: 100%;
+  padding: 2px 20px;
+}
+
+/* HERO */
+.pmt-apply-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.pmt-apply-tag {
+  color: #ff6000 !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pmt-apply-hero h1 {
+  color: #253B80;
+  margin: 10px 0;
+}
+
+.pmt-apply-hero p {
+  color: #555;
+}
+
+/* INTRO */
+.pmt-apply-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pmt-apply-box {
+  background: #253B80;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.pmt-apply-box h3 {
+  color: #f5a623;
+}
+
+/* STEPS */
+.pmt-apply-steps {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.pmt-apply-steps h2 {
+  color: #0a1f5c;
+  margin-bottom: 20px;
+}
+
+.pmt-apply-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.pmt-apply-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.pmt-apply-card span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6000;
+}
+
+.pmt-apply-card h3 {
+  color: #253B80;
+  margin: 10px 0;
+}
+
+/* CTA */
+.pmt-apply-cta {
+  text-align: center;
+  background: #253B80;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.pmt-apply-cta h2 {
+  color: #f5a623;
+}
+
+.pmt-apply-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff6000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .pmt-apply-intro,
+  .pmt-apply-grid {
+    grid-template-columns: 1fr;
+  }
+}
