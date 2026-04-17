@@ -1,17 +1,12 @@
 /* ═══════════════════════════════════════════════════════
    PMT COLLEGE — VISION & MISSION PAGE STYLES
-   File: vision-mission.css
-   Add to: GitHub CSS repo → enqueue via functions.php
-   or paste into WordPress > Appearance > Customize > CSS
-   Colors: Navy #253b80 | Orange #FF6000 | Light BG #f4f6fb
 ═══════════════════════════════════════════════════════ */
 
 /* ── Shared Utilities ─────────────────────────────── */
 .pmt-vm-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 24px 24px 64px;
   box-sizing: border-box;
 }
 
