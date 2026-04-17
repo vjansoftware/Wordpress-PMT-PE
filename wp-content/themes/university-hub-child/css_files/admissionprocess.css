@@ -1,188 +1,150 @@
-.admission-page-section {
-  padding: 4px 20px;
-  display: flex;
-  justify-content: center;
+.pmt-adm-wrap{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:10px 5px;
+  box-sizing:border-box;
+  font-family:Segoe UI, Tahoma, sans-serif;
+  color:#253B80;
 }
 
-.admission-page-container {
-  max-width: 1100px;
-  width: 100%;
-  text-align: center;
+.pmt-adm-hero{
+  text-align:center;
+  margin-bottom:40px;
 }
 
-/* TAG */
-.admission-page-tag {
-  color: #ff6000;
-  font-size: 14px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.pmt-adm-tag{
+  color:#ff6000;
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+  font-weight:700;
+  text-transform:uppercase;
 }
 
-/* TITLE */
-.admission-page-title {
-  font-size: 36px;
-  color: #253B80;
-  margin-bottom: 10px;
-  font-weight: 700;
+.pmt-adm-title{
+  font-size:36px;
+  color:#253B80;
+  margin-bottom:10px;
+  font-weight:700;
 }
 
-.admission-page-subtitle {
-  color: #555;
-  margin-bottom: 50px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.pmt-adm-sub{
+  color:#555;
+  margin-bottom:10px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.7;
 }
 
-/* STEPS */
-.admission-page-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+.pmt-adm-row{
+  display:flex;
+  gap:25px;
+  margin:0 auto 25px;
 }
 
-.admission-page-step {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #eee;
-  text-align: left;
-  transition: 0.3s;
+.pmt-adm-row > .wp-block-column{
+  flex:1;
 }
 
-.admission-page-step:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+.pmt-adm-card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid rgba(37,59,128,0.10);
+  text-align:left;
+  transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  box-shadow:0 6px 18px rgba(37,59,128,0.05);
+  height:100%;
 }
 
-/* STEP NUMBER */
-.step-number {
-  width: 40px;
-  height: 40px;
-  background: #253B80;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  font-weight: bold;
+.pmt-adm-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 28px rgba(37,59,128,0.12);
+  border-color:rgba(255,96,0,0.35);
 }
 
-.admission-page-step h3 {
-  color: #0b1f3a;
-  margin-bottom: 10px;
+.pmt-adm-card-title{
+  color:#253B80;
+  margin-bottom:12px;
+  font-size:22px;
+  font-weight:700;
 }
 
-.admission-page-step p {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
+.pmt-adm-card p{
+  color:#555;
+  font-size:15px;
+  line-height:1.7;
+  margin:0;
 }
 
-/* HIGHLIGHT */
-.admission-page-highlight {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
+.pmt-adm-list{
+  margin:0;
+  padding-left:20px;
 }
 
-.admission-page-highlight-box {
-  background: #0b1f3a;
-  color: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 700px;
-  width: 100%;
-  text-align: left;
+.pmt-adm-list li{
+  color:#555;
+  line-height:1.8;
+  margin-bottom:6px;
 }
 
-.admission-page-highlight-box h2 {
-  margin-bottom: 20px;
-  color: #f5a623;
+.pmt-adm-list li::marker{
+  color:#ff6000;
 }
 
-.admission-page-highlight-box ul {
-  list-style: none;
-  padding: 0;
+.pmt-adm-note{
+  margin-top:35px;
+  background:#253B80;
+  color:#fff;
+  padding:35px;
+  border-radius:12px;
+  border-left:5px solid #ff6000;
 }
 
-.admission-page-highlight-box li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+.pmt-adm-note-title{
+  margin:0 0 12px;
+  color:#ff6000;
+  font-size:28px;
+  font-weight:700;
 }
 
-/* CTA */
-.admission-page-cta {
-  margin-top: 60px;
-  text-align: center;
+.pmt-adm-note p{
+  margin:0;
+  color:#fff;
+  line-height:1.8;
 }
 
-.admission-page-cta h2 {
-  color: #0b1f3a;
-  margin-bottom: 10px;
+@media (max-width:991px){
+  .pmt-adm-row{
+    gap:20px;
+  }
+
+  .pmt-adm-card{
+    padding:20px;
+  }
 }
 
-.admission-page-cta p {
-  color: #555;
-  margin-bottom: 20px;
-}
+@media (max-width:768px){
+  .pmt-adm-wrap{
+    padding:10px 12px;
+  }
 
-.admission-page-btn {
-  background: #ff6000;
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
+  .pmt-adm-title{
+    font-size:30px;
+  }
 
-.admission-page-btn:hover {
-  background: #d9941c;
-}
-/* Activities */
-.pmt-facilities .fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-.pmt-facilities .fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .pmt-adm-row{
+    flex-direction:column;
+    gap:18px;
+  }
 
-.pmt-facilities .card-hover {
-  transition: all 0.3s ease;
-}
-.pmt-facilities .card-hover:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
+  .pmt-adm-note{
+    padding:24px 20px;
+  }
 
-.pmt-facilities .img-hover {
-  overflow: hidden;
-  border-radius: 10px;
-}
-.pmt-facilities .img-hover img {
-  width: 100%;
-  transition: transform 0.5s ease;
-}
-.pmt-facilities .img-hover:hover img {
-  transform: scale(1.1);
-}
-
-.pmt-facilities h2 { color:#0b2c5f; }
-.pmt-facilities h5 { color:#e8b84b; }
-
-.pmt-section { margin-bottom:60px; }
-/* SYLLABUS */
-/* REMOVE TOP GAP FROM WORDPRESS */
-.entry-content > *:first-child {
-  margin-top: 0 !important;
-}
-
-.wp-block-group {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  .pmt-adm-note-title{
+    font-size:24px;
+  }
 }
