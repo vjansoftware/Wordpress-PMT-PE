@@ -1,30 +1,14 @@
-/* =============================================
-   applyonline.css
-   Apply Online Page — Page ID 903
-   Max Width: 1200px
-   ============================================= */
-
-
-/* ============================================
-   RESET GUTENBERG DEFAULTS
-   ============================================ */
-
-.entry-content,
-.wp-block-group__inner-container {
-  max-width: 100%;
-  padding: 0;
-}
-
-
-/* ============================================
-   HERO SECTION
-   ============================================ */
-
 .pmt-apply-wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 70px 24px 10px;
   box-sizing: border-box;
+}
+
+.entry-content,
+.wp-block-group__inner-container {
+  max-width: 100%;
+  padding: 0;
 }
 
 .pmt-apply-hero {
@@ -57,11 +41,6 @@
   margin: 0;
 }
 
-
-/* ============================================
-   TWO-COLUMN LAYOUT
-   ============================================ */
-
 .wp-block-columns.pmt-apply-columns {
   max-width: 1200px;
   width: 100%;
@@ -80,11 +59,6 @@
   box-sizing: border-box;
 }
 
-
-/* ============================================
-   IMAGE COLUMN
-   ============================================ */
-
 .pmt-apply-columns .wp-block-image {
   margin: 0;
 }
@@ -101,11 +75,6 @@
   border-radius: 14px;
   display: block;
 }
-
-
-/* ============================================
-   FORM COLUMN (WPForms)
-   ============================================ */
 
 .pmt-apply-columns .wpforms-container {
   padding: 0;
@@ -131,22 +100,12 @@
   margin-top: 8px;
 }
 
-
-/* ============================================
-   RESPONSIVE — TABLET (max 900px)
-   ============================================ */
-
 @media (max-width: 900px) {
   .wp-block-columns.pmt-apply-columns {
     gap: 36px;
     padding: 36px 20px 52px;
   }
 }
-
-
-/* ============================================
-   RESPONSIVE — STACKED (max 768px)
-   ============================================ */
 
 @media (max-width: 768px) {
   .wp-block-columns.pmt-apply-columns {
@@ -169,11 +128,6 @@
     max-height: 340px;
   }
 }
-
-
-/* ============================================
-   RESPONSIVE — MOBILE (max 480px)
-   ============================================ */
 
 @media (max-width: 480px) {
   .pmt-apply-hero h1 {
