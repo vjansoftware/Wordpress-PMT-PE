@@ -47,6 +47,11 @@
 .pmt-apply-box h3 {
   color: #f5a623;
 }
+.admission-apply-link {
+  font-weight: bold;
+  color: #eee;
+  background-color: #253B80;
+}
 
 /* STEPS */
 .pmt-apply-steps {
