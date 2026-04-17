@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════
    PMT ELIGIBILITY — UPDATED STYLES
-   Matching About College typography
 ═══════════════════════════════════════ */
 
 .pmtelig-wrap {
@@ -29,14 +28,20 @@
 
 /* Label — small orange uppercase tag (like "About Our College") */
 .pmtelig-tag,
-.pmtadm-label {
+.pmtadm-label,
+p.pmtadm-label,
+.pmtelig-hero p.pmtadm-label,
+.wp-block-group p.pmtadm-label,
+.entry-content p.pmtadm-label {
   color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
   margin-bottom: 8px !important;
+  margin-top: 0 !important;
   display: block !important;
+  opacity: 1 !important;
 }
 
 /* Page main title — H1 (like "Shaping Champions") */
