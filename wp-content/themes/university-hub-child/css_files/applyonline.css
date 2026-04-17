@@ -1,122 +1,189 @@
-.pmt-apply-wrap {
-  width: 100%;
-  padding: 2px 20px;
+/* =============================================
+   applyonline.css
+   Page ID 903 — Apply Online Page
+   Max Width: 1200px
+   ============================================= */
+
+
+/* ---- RESET GUTENBERG DEFAULTS ---- */
+.page-id-903 .entry-content,
+.page-id-903 .wp-block-group__inner-container {
+  max-width: 100%;
+  padding: 0;
 }
 
-/* HERO */
-.pmt-apply-hero {
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.page-id-903 .pmt-apply-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 24px 10px;
+  box-sizing: border-box;
+}
+
+.page-id-903 .pmt-apply-hero {
   text-align: center;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 50px;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-.pmt-apply-tag {
-  color: #ff6000 !important;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 3px;
+.page-id-903 .pmt-apply-tag {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: #999999;
+  margin: 0 0 14px;
 }
 
-.pmt-apply-hero h1 {
-  color: #253B80;
-  margin: 10px 0;
+.page-id-903 .pmt-apply-hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 18px;
 }
 
-.pmt-apply-hero p {
-  color: #555;
+.page-id-903 .pmt-apply-hero p:not(.pmt-apply-tag) {
+  font-size: 17px;
+  color: #666666;
+  line-height: 1.65;
+  margin: 0;
 }
 
-/* INTRO */
-.pmt-apply-intro {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
+
+/* ============================================
+   TWO-COLUMN LAYOUT
+   ============================================ */
+
+.page-id-903 .wp-block-columns.pmt-apply-columns {
   max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+  align-items: flex-start;
 }
 
-.pmt-apply-box {
-  background: #253B80;
-  color: #fff;
-  padding: 25px;
-  border-radius: 10px;
+.page-id-903 .wp-block-columns.pmt-apply-columns .wp-block-column {
+  flex: 1 1 calc(50% - 26px);
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
-.pmt-apply-box h3 {
-  color: #f5a623;
-}
-a.admission-apply-link {
-  font-weight: bold;
-  color: #eee !important;
-  background-color: #253B80;
+
+/* ============================================
+   IMAGE COLUMN
+   ============================================ */
+
+.page-id-903 .pmt-apply-columns .wp-block-image {
+  margin: 0;
 }
 
-/* STEPS */
-.pmt-apply-steps {
-  max-width: 1200px;
-  margin: 60px auto;
+.page-id-903 .pmt-apply-columns .wp-block-image figure {
+  margin: 0;
 }
 
-.pmt-apply-steps h2 {
-  color: #0a1f5c;
-  margin-bottom: 20px;
+.page-id-903 .pmt-apply-columns .wp-block-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
 }
 
-.pmt-apply-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 25px;
+
+/* ============================================
+   FORM COLUMN (WPForms)
+   ============================================ */
+
+.page-id-903 .pmt-apply-columns .wpforms-container {
+  padding: 0;
+  margin: 0;
 }
 
-.pmt-apply-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  border: 1px solid #eee;
+.page-id-903 .pmt-apply-columns .wpforms-form .wpforms-field {
+  margin-bottom: 18px;
 }
 
-.pmt-apply-card span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ff6000;
+.page-id-903 .pmt-apply-columns .wpforms-form input[type="text"],
+.page-id-903 .pmt-apply-columns .wpforms-form input[type="email"],
+.page-id-903 .pmt-apply-columns .wpforms-form input[type="tel"],
+.page-id-903 .pmt-apply-columns .wpforms-form input[type="number"],
+.page-id-903 .pmt-apply-columns .wpforms-form select,
+.page-id-903 .pmt-apply-columns .wpforms-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-.pmt-apply-card h3 {
-  color: #253B80;
-  margin: 10px 0;
+.page-id-903 .pmt-apply-columns .wpforms-submit-container {
+  margin-top: 8px;
 }
 
-/* CTA */
-.pmt-apply-cta {
-  text-align: center;
-  background: #253B80;
-  color: #fff;
-  padding: 50px 20px;
-  border-radius: 10px;
-  max-width: 1000px;
-  margin: auto;
+
+/* ============================================
+   RESPONSIVE — TABLET (max 900px)
+   ============================================ */
+
+@media (max-width: 900px) {
+  .page-id-903 .wp-block-columns.pmt-apply-columns {
+    gap: 36px;
+    padding: 36px 20px 52px;
+  }
 }
 
-.pmt-apply-cta h2 {
-  color: #f5a623;
+
+/* ============================================
+   RESPONSIVE — STACKED (max 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  .page-id-903 .wp-block-columns.pmt-apply-columns {
+    flex-direction: column;
+    gap: 32px;
+    padding: 28px 20px 48px;
+  }
+
+  .page-id-903 .wp-block-columns.pmt-apply-columns .wp-block-column {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .page-id-903 .pmt-apply-wrap {
+    padding-top: 44px;
+    padding-bottom: 4px;
+  }
+
+  .page-id-903 .pmt-apply-columns .wp-block-image img {
+    max-height: 340px;
+  }
 }
 
-.pmt-apply-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: #ff6000;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 
-/* MOBILE */
-@media(max-width:768px){
-  .pmt-apply-intro,
-  .pmt-apply-grid {
-    grid-template-columns: 1fr;
+/* ============================================
+   RESPONSIVE — MOBILE (max 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .page-id-903 .pmt-apply-hero h1 {
+    font-size: 26px;
+  }
+
+  .page-id-903 .pmt-apply-hero p:not(.pmt-apply-tag) {
+    font-size: 15px;
+  }
+
+  .page-id-903 .pmt-apply-wrap,
+  .page-id-903 .wp-block-columns.pmt-apply-columns {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
