@@ -3557,7 +3557,199 @@ article.hentry,
     padding: 16px !important;
   }
 }
+/* ══════════════════════════════════════
+   PMT CONTACT PAGE — ENHANCED ANIMATIONS
+══════════════════════════════════════ */
 
+/* ── CONTACT DETAIL ROW — slide right on hover ── */
+.pmt-contact-detail {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pmt-contact-detail:hover {
+  transform: translateX(8px);
+}
+
+/* ── CONTACT ICON — bounce + glow ring on hover ── */
+.pmt-contact-icon {
+  transition: background 0.3s,
+              transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s;
+  position: relative;
+}
+.pmt-contact-detail:hover .pmt-contact-icon {
+  background: rgba(255, 96, 0, 0.38) !important;
+  transform: scale(1.22) rotate(-8deg);
+  box-shadow: 0 0 0 6px rgba(255, 96, 0, 0.14),
+              0 0 0 12px rgba(255, 96, 0, 0.05);
+}
+
+/* Pulse ring on address icon specifically */
+.pmt-contact-detail:first-of-type .pmt-contact-icon::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 96, 0, 0.35);
+  animation: pmtIconRing 2.4s ease-out infinite;
+}
+@keyframes pmtIconRing {
+  0%   { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* ── MAP EMBED — lift, glow border, subtle zoom ── */
+.pmt-map-embed {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.45s,
+              border-color 0.4s;
+  position: relative;
+}
+.pmt-map-embed:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 12px 40px rgba(37, 59, 128, 0.22),
+              0 0 0 4px rgba(23, 155, 215, 0.2);
+  border-color: #179bd7 !important;
+}
+
+/* Overlay shimmer sweep on map hover */
+.pmt-map-embed::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.14) 50%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  transition: transform 0s;
+  border-radius: 8px;
+  z-index: 1;
+  pointer-events: none;
+}
+.pmt-map-embed:hover::before {
+  transform: translateX(120%);
+  transition: transform 0.65s ease;
+}
+
+/* ── INFO CARDS — spring lift + shadow burst ── */
+.pmt-info-card {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.45s !important;
+  position: relative;
+}
+.pmt-info-card:hover {
+  transform: translateY(-10px) scale(1.02) !important;
+  box-shadow: 0 24px 56px rgba(37, 59, 128, 0.22) !important;
+}
+
+/* Card header — ripple burst on hover ── */
+.pmt-info-card-header {
+  position: relative;
+  overflow: hidden;
+}
+.pmt-info-card-header::after {
+  content: '';
+  position: absolute;
+  right: -28px;
+  top: -20px;
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 96, 0, 0.14);
+  border-radius: 50%;
+  transition: transform 0.55s ease, opacity 0.55s ease;
+}
+.pmt-info-card:hover .pmt-info-card-header::after {
+  transform: scale(3);
+  opacity: 0;
+}
+
+/* Bottom accent line slide-in ── */
+.pmt-info-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #179bd7, #FF6000);
+  border-radius: 0 0 12px 12px;
+  transform: translateX(-50%);
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.pmt-info-card:hover::after {
+  width: 80%;
+}
+
+/* ── CARD ROW — indent + icon bounce ── */
+.pmt-info-card-row {
+  transition: background 0.22s,
+              padding-left 0.25s,
+              color 0.22s !important;
+}
+.pmt-info-card-row:hover {
+  padding-left: 10px !important;
+  background: #e8f0ff !important;
+  color: #253b80 !important;
+}
+.pmt-info-card-row .material-icons {
+  transition: color 0.25s, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pmt-info-card-row:hover .material-icons {
+  color: #FF6000 !important;
+  transform: scale(1.25) rotate(-5deg);
+}
+
+/* ── CONTACT BAND — entry animation ── */
+.pmt-contact-band {
+  animation: pmtBandIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.2s !important;
+}
+@keyframes pmtBandIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── INFO CARDS — staggered entry ── */
+.pmt-info-cards .pmt-info-card:nth-child(1) {
+  animation: pmtCardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.45s !important;
+  opacity: 0;
+}
+.pmt-info-cards .pmt-info-card:nth-child(2) {
+  animation: pmtCardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.6s !important;
+  opacity: 0;
+}
+@keyframes pmtCardIn {
+  from { opacity: 0; transform: translateY(28px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── MAP PANEL — floating label pulse ── */
+.pmt-map-label {
+  animation: pmtLabelPulse 3s ease-in-out infinite;
+}
+@keyframes pmtLabelPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.55; }
+}
+
+/* ── CONTACT BAND INFO SIDE — border glow on hover ── */
+.pmt-contact-info {
+  transition: box-shadow 0.4s;
+}
+.pmt-contact-band:hover .pmt-contact-info {
+  box-shadow: inset -3px 0 0 rgba(255, 96, 0, 0.3);
+}
+
+/* ── MOBILE: disable heavy transforms ── */
+@media (max-width: 768px) {
+  .pmt-info-card:hover {
+    transform: translateY(-5px) !important;
+  }
+  .pmt-map-embed:hover {
+    transform: scale(1.01) translateY(-2px);
+  }
+}
 /* LABORATORY */
 .pmt-lab-wrap {
   font-family: "Poppins", "Roboto", sans-serif;
