@@ -1,398 +1,392 @@
-.pmtelig-wrap{
-  width:100%;
-  padding:2px 20px;
-  box-sizing:border-box;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  color:#333;
-  max-width:1300px;
-  margin:0 auto;
+/* ═══════════════════════════════════════
+   PMT ELIGIBILITY — UPDATED STYLES
+   Matching About College typography
+═══════════════════════════════════════ */
+
+.pmtelig-wrap {
+  width: 100%;
+  padding: 2px 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .pmtelig-wrap *,
 .pmtelig-wrap *::before,
-.pmtelig-wrap *::after{
-  box-sizing:border-box;
+.pmtelig-wrap *::after {
+  box-sizing: border-box;
 }
 
-.pmtelig-hero{
-  text-align:center;
-  max-width:800px;
-  margin:auto;
-  margin-bottom:50px;
+/* ── Hero Section ── */
+.pmtelig-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
-.pmtelig-tag{
-  color:#ff6000 !important;
-  font-size:11px;
-  font-weight:600;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  margin-bottom:10px;
+/* Label — small orange uppercase tag (like "About Our College") */
+.pmtelig-tag,
+.pmtadm-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  display: block !important;
 }
 
-.pmtelig-title{
-  color:#ff6000;
-  margin:10px 0;
+/* Page main title — H1 (like "Shaping Champions") */
+.pmtelig-wrap h1,
+.pmtadm-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 14px !important;
+  line-height: 1.3 !important;
 }
 
+/* Hero subtitle paragraph */
 .pmtelig-hero p,
-.pmtelig-sub{
-  color:#555;
-  line-height:1.8;
+.pmtelig-sub,
+.pmtadm-subtitle {
+  color: #555 !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
 }
 
-.pmtelig-story{
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:40px;
-  max-width:1200px;
-  margin:auto;
-  margin-bottom:50px;
+/* ── Section Headings — H2 (like "A Legacy Built on Sport") ── */
+.pmtelig-wrap h2,
+.pmtadm-section-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 18px !important;
+  line-height: 1.3 !important;
 }
 
-.pmtelig-story > .wp-block-column{
-  min-width:0;
+/* ── Card / Box Headings — H3 ── */
+.pmtelig-wrap h3,
+.pmtadm-card-title {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 12px !important;
 }
 
-.pmtelig-story > .wp-block-column:first-child h2{
-  font-size:28px;
-  font-weight:700;
-  color:#ff6000;
-  margin-bottom:14px;
+/* ── Body Text ── */
+.pmtelig-wrap p,
+.pmtadm-text {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
-.pmtelig-story > .wp-block-column:first-child p{
-  font-size:15px;
-  line-height:1.9;
-  color:#555;
+/* ── Story Grid ── */
+.pmtelig-story {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
-.pmtelig-highlight{
-  background:#253B80;
-  color:#fff;
-  padding:25px;
-  border-radius:10px;
+.pmtelig-story > .wp-block-column {
+  min-width: 0;
 }
 
-.pmtelig-highlight h3{
-  color:#ff6000;
-  margin-top:0;
+/* ── Highlight Box (dark blue sidebar) ── */
+.pmtelig-highlight {
+  background: #253b80;
+  color: #fff;
+  padding: 28px;
+  border-radius: 10px;
 }
 
-.pmtelig-highlight ul{
-  margin:0;
-  padding-left:18px;
+.pmtelig-highlight h3,
+.pmtelig-highlight .pmtadm-card-title {
+  color: #FF6000 !important;
+  font-size: 1.1rem !important;
+  margin-top: 0 !important;
 }
 
-.pmtelig-section{
-  max-width:1200px;
-  margin:auto;
+.pmtelig-highlight ul {
+  margin: 0;
+  padding-left: 18px;
 }
 
-.pmtelig-section h2{
-  margin-bottom:25px;
-  color:#ff6000;
+.pmtelig-highlight ul li {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 6px;
 }
 
-.pmtelig-card{
-  background:#ffffff;
-  padding:25px;
-  border-radius:12px;
-  max-width:500px;
-  margin:30px auto;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-  border-left:5px solid #ff6000;
-  transition:all 0.4s ease;
-  position:relative;
-  overflow:hidden;
+/* ── Section Wrapper ── */
+.pmtelig-section {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.pmtelig-card:hover{
-  transform:translateY(-8px) scale(1.02);
-  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+/* ── Eligibility Box ── */
+.pmtelig-box {
+  background: #fff;
+  border: 1px solid #e7ebf3;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(37, 59, 128, 0.06);
+  padding: 28px;
+  margin-bottom: 30px;
 }
 
-.pmtelig-card::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  height:4px;
-  width:100%;
-  background:linear-gradient(90deg, #ff6000, #ff6000);
-  transform:scaleX(0);
-  transform-origin:left;
-  transition:transform 0.4s ease;
+/* ── Eligibility Grid Items ── */
+.pmtelig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
-.pmtelig-card:hover::before{
-  transform:scaleX(1);
+.pmtelig-item {
+  background: #fff;
+  border: 1px solid #e7ebf3;
+  border-radius: 14px;
+  padding: 18px 20px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  box-shadow: 0 6px 16px rgba(37, 59, 128, 0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-.pmtelig-card h3{
-  margin-bottom:10px;
-  color:#ff6000;
-  font-size:22px;
-  font-weight:700;
+.pmtelig-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(37, 59, 128, 0.10);
+  border-color: #FF6000;
 }
 
-.pmtelig-card p{
-  color:#555;
-  margin-bottom:15px;
-  line-height:1.6;
+/* Option labels (Option A, Option B…) */
+.pmtelig-item strong,
+.pmtelig-item p strong:first-child {
+  display: block;
+  color: #253b80 !important;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
 }
 
-.pmtelig-card ul{
-  padding-left:20px;
+/* ── Important Notes Box ── */
+.pmtelig-notes {
+  background: #fff;
+  border: 1px solid #e7ebf3;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(37, 59, 128, 0.06);
+  padding: 28px;
+  margin-bottom: 40px;
 }
 
-.pmtelig-card ul li{
-  margin-bottom:8px;
-  position:relative;
-  padding-left:20px;
+.pmtelig-notes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
 }
 
-.pmtelig-card ul li::before{
-  content:"✔";
-  position:absolute;
-  left:0;
-  color:#ff6000;
-  font-size:14px;
+.pmtelig-notes li {
+  position: relative;
+  padding: 12px 14px 12px 38px;
+  background: #f9fbff;
+  border: 1px solid #eef2f8;
+  border-radius: 12px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pmtelig-box{
-  background:#fff;
-  border:1px solid #e7ebf3;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(37,59,128,.06);
-  padding:28px;
-  margin-bottom:30px;
+.pmtelig-notes li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(37, 59, 128, 0.08);
 }
 
-.pmtelig-box h3{
-  margin:0 0 8px;
-  font-size:24px;
-  color:#ff6000;
-  font-weight:800;
+.pmtelig-notes li::before {
+  content: "!";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #253b80;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
 }
 
-.pmtelig-box p{
-  margin:0 0 20px;
-  color:#667085;
-  font-size:14px;
-  line-height:1.7;
+/* ── Process / Documents Section ── */
+.pmtelig-process {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  background: #f4f6fb;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(37, 59, 128, 0.06);
 }
 
-.pmtelig-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px;
+.pmtelig-process > .wp-block-column {
+  flex: 1;
 }
 
-.pmtelig-item{
-  background:#fff;
-  border:1px solid #e7ebf3;
-  border-radius:14px;
-  padding:18px 20px;
-  color:#333;
-  font-size:14px;
-  line-height:1.7;
-  box-shadow:0 6px 16px rgba(37,59,128,.04);
-  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;
+.pmtelig-process p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.9;
 }
 
-.pmtelig-item:hover{
-  transform:translateY(-5px);
-  box-shadow:0 14px 30px rgba(37,59,128,.10);
-  border-color:#FF6000;
+.pmtelig-process ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
 }
 
-.pmtelig-item strong{
-  display:block;
-  color:#ff6000;
-  font-size:12px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:.7px;
-  margin-bottom:8px;
+.pmtelig-process ul li {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e7ebf3;
 }
 
-.pmtelig-notes{
-  background:#fff;
-  border:1px solid #e7ebf3;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(37,59,128,.06);
-  padding:28px;
-  margin-bottom:40px;
+.pmtelig-process ul li:last-child {
+  border-bottom: none;
 }
 
-.pmtelig-notes h3{
-  margin:0 0 16px;
-  font-size:20px;
-  color:#ff6000;
-  font-weight:800;
+.pmtelig-process ul li::before {
+  content: "📄";
+  font-size: 14px;
 }
 
-.pmtelig-notes ul{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px 18px;
+/* ── Card (if used) ── */
+.pmtelig-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #253b80;
+  transition: all 0.4s ease;
 }
 
-.pmtelig-notes li{
-  position:relative;
-  padding:12px 14px 12px 38px;
-  background:#f9fbff;
-  border:1px solid #eef2f8;
-  border-radius:12px;
-  color:#333;
-  font-size:14px;
-  line-height:1.6;
-  transition:transform .3s ease,box-shadow .3s ease;
+.pmtelig-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.pmtelig-notes li:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 22px rgba(37,59,128,.08);
+.pmtelig-card h3 {
+  color: #253b80 !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
 }
 
-.pmtelig-notes li::before{
-  content:"!";
-  position:absolute;
-  left:12px;
-  top:12px;
-  width:18px;
-  height:18px;
-  border-radius:50%;
-  background:#FF6000;
-  color:#fff;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-size:12px;
-  font-weight:800;
+.pmtelig-card ul li::before {
+  color: #253b80;
 }
 
-.pmtelig-process{
-  display:flex;
-  gap:30px;
-  align-items:stretch;
-  background:#f9faff;
-  border-radius:18px;
-  padding:35px;
-  box-shadow:0 10px 30px rgba(37,59,128,.06);
+/* ── WordPress Theme Overrides ── */
+.entry-content .pmtelig-wrap h1,
+.entry-content .pmtelig-wrap h2,
+.entry-content .pmtelig-wrap h3 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-.pmtelig-process > .wp-block-column{
-  flex:1;
+.entry-content .pmtelig-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.pmtelig-process h2{
-  font-size:22px;
-  font-weight:700;
-  color:#ff6000;
-  margin-bottom:14px;
-  padding-bottom:8px;
-  border-bottom:2px solid #ff6000;
-}
-
-.pmtelig-process p{
-  font-size:14px;
-  color:#555;
-  line-height:1.9;
-}
-
-.pmtelig-process ul{
-  list-style:none;
-  padding:0;
-  margin-top:10px;
-}
-
-.pmtelig-process ul li{
-  padding:10px 0;
-  font-size:14px;
-  color:#444;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.pmtelig-process ul li::before{
-  content:"📄";
-  font-size:14px;
-}
-
-@media (max-width:991px){
+/* ── Responsive ── */
+@media (max-width: 991px) {
   .pmtelig-story,
-  .pmtelig-process{
-    grid-template-columns:1fr;
-    display:grid;
+  .pmtelig-process {
+    grid-template-columns: 1fr;
+    display: grid;
   }
 
   .pmtelig-grid,
-  .pmtelig-notes ul{
-    grid-template-columns:1fr;
+  .pmtelig-notes ul {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width:768px){
-  .pmtelig-wrap{
-    padding:20px 15px 40px;
+@media (max-width: 768px) {
+  .pmtelig-wrap {
+    padding: 20px 15px 40px;
   }
 
-  .pmtelig-hero{
-    padding:10px 0 20px;
-    margin-bottom:28px;
+  .pmtelig-hero {
+    padding: 10px 0 20px;
+    margin-bottom: 28px;
   }
 
-  .pmtelig-title{
-    font-size:30px;
+  .pmtelig-wrap h1,
+  .pmtadm-title {
+    font-size: 1.6rem !important;
+  }
+
+  .pmtelig-wrap h2,
+  .pmtadm-section-title {
+    font-size: 1.4rem !important;
   }
 
   .pmtelig-card,
   .pmtelig-box,
   .pmtelig-notes,
-  .pmtelig-process{
-    padding:22px;
+  .pmtelig-process {
+    padding: 22px;
   }
 
-  .pmtelig-story > .wp-block-column:first-child h2,
-  .pmtelig-section h2,
-  .pmtelig-box h3,
-  .pmtelig-card h3,
-  .pmtelig-process h2{
-    font-size:22px;
+  .pmtelig-story {
+    gap: 24px;
   }
 
-  .pmtelig-story{
-    gap:24px;
-  }
-
-  .pmtelig-process{
-    gap:20px;
+  .pmtelig-process {
+    gap: 20px;
   }
 }
 
-@media (max-width:480px){
-  .pmtelig-tag{
-    font-size:11px;
-    letter-spacing:2px;
+@media (max-width: 480px) {
+  .pmtelig-tag,
+  .pmtadm-label {
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
   }
 
-  .pmtelig-title{
-    font-size:26px;
+  .pmtelig-wrap h1 {
+    font-size: 1.4rem !important;
   }
 
-  .pmtelig-hero p,
-  .pmtelig-story > .wp-block-column:first-child p,
-  .pmtelig-card p,
+  .pmtelig-wrap p,
   .pmtelig-item,
   .pmtelig-notes li,
   .pmtelig-process p,
-  .pmtelig-process ul li{
-    font-size:13.5px;
+  .pmtelig-process ul li {
+    font-size: 13.5px;
   }
 }
