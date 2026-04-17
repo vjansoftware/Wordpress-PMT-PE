@@ -47,9 +47,9 @@
 .pmt-apply-box h3 {
   color: #f5a623;
 }
-.admission-apply-link {
+a.admission-apply-link {
   font-weight: bold;
-  color: #eee;
+  color: #eee !important;
   background-color: #253B80;
 }
 
