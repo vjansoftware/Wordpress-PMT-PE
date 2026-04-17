@@ -1,79 +1,117 @@
+/* ═══════════════════════════════════════
+   PMT PLACEMENT — STYLES
+═══════════════════════════════════════ */
+
+/* ── Wrapper ── */
 .pmt-placement-wrap {
   max-width: 1100px;
   margin: 0 auto;
   padding: 5px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #333;
+  box-sizing: border-box;
 }
 
-/* ── SECTION COMMON ── */
+.pmt-placement-wrap *,
+.pmt-placement-wrap *::before,
+.pmt-placement-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* ── Section spacing ── */
 .pmt-placement-section {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
-/* ── HERO ── */
+/* ── WordPress theme overrides ── */
+.entry-content .pmt-placement-wrap h1,
+.entry-content .pmt-placement-wrap h2,
+.entry-content .pmt-placement-wrap h3,
+.entry-content .pmt-placement-wrap h4 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .pmt-placement-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+
 .pmt-placement-hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  align-items: center;
+  align-items: center !important;
+  gap: 50px !important;
 }
 
-.pmt-placement-hero img {
+.pmt-placement-img img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
 }
 
-/* ── HERO LABEL ── */
-.pmt-placement-text h5 {
-  color: #FF6000;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Hero label — matches "About Our College" orange tag */
+p.pmt-placement-label,
+.pmt-placement-text p.pmt-placement-label,
+.entry-content p.pmt-placement-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
 }
-.pmt-placement-text h5::before {
+
+p.pmt-placement-label::before {
   content: '';
   display: inline-block;
   width: 20px;
   height: 2px;
   background: #FF6000;
+  flex-shrink: 0;
 }
 
-/* ── HERO TITLE ── */
-.pmt-placement-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #253b80;
-  line-height: 1.2;
-  margin-bottom: 20px;
+/* Hero H2 — matches "Shaping Champions" style */
+.pmt-placement-wrap .pmt-placement-title,
+.entry-content .pmt-placement-wrap h2.pmt-placement-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  line-height: 1.3 !important;
+  margin: 0 0 18px !important;
 }
 
-/* ── HERO BODY ── */
-.pmt-placement-text p {
-  font-size: 15px;
-  color: #4b5563;
-  line-height: 1.85;
-  margin-bottom: 14px;
+/* Hero body text */
+.pmt-placement-wrap .pmt-placement-body {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.85 !important;
+  margin-bottom: 14px !important;
 }
 
-/* ── GRID ── */
+/* ════════════════════════════════
+   SERVICE CARDS
+════════════════════════════════ */
+
 .pmt-placement-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 20px !important;
 }
 
-/* ── CARD ── */
 .pmt-placement-card {
-  padding: 20px;
-  border: 1px solid rgba(37, 59, 128, 0.08);
-  border-left: 3px solid #FF6000;
-  border-radius: 8px;
-  background: #f4f6fb;
+  padding: 20px !important;
+  border: 1px solid rgba(37, 59, 128, 0.08) !important;
+  border-left: 3px solid #FF6000 !important;
+  border-radius: 8px !important;
+  background: #f4f6fb !important;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -82,120 +120,137 @@
   box-shadow: 0 6px 20px rgba(37, 59, 128, 0.1);
 }
 
-.pmt-placement-card h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #253b80;
-  margin-bottom: 10px;
+.pmt-placement-wrap .pmt-placement-card-title,
+.entry-content .pmt-placement-wrap h4.pmt-placement-card-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 10px !important;
+  margin-top: 0 !important;
 }
 
-.pmt-placement-card p {
-  font-size: 14px;
-  color: #4b5563;
-  line-height: 1.6;
-  margin: 0;
+.pmt-placement-wrap .pmt-placement-card-text {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
 }
 
-/* ── STATS ── */
+/* ════════════════════════════════
+   STATS
+════════════════════════════════ */
+
 .pmt-placement-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 20px !important;
   text-align: center;
 }
 
 .pmt-stat {
-  background: #253b80;
-  color: #fff;
-  padding: 32px 24px;
-  border-radius: 8px;
+  background: #253b80 !important;
+  color: #fff !important;
+  padding: 32px 24px !important;
+  border-radius: 8px !important;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .pmt-stat:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(23, 155, 215, 0.3);
+  box-shadow: 0 12px 30px rgba(37, 59, 128, 0.3);
 }
 
-.pmt-stat h3 {
-  margin: 0;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #FF6000;
-  line-height: 1;
+.pmt-placement-wrap .pmt-stat-number,
+.entry-content .pmt-placement-wrap h3.pmt-stat-number {
+  font-size: 2.4rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
 }
 
-.pmt-stat p {
-  margin: 8px 0 0;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
+.pmt-stat .pmt-stat-label {
+  margin: 8px 0 0 !important;
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
-/* ── RECRUITERS SECTION LABEL ── */
-.pmt-recruiters-label {
-  color: #FF6000;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 12px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
+/* ════════════════════════════════
+   RECRUITERS
+════════════════════════════════ */
+
+/* Recruiters label — orange tag matching About College */
+p.pmt-recruiters-label,
+.entry-content p.pmt-recruiters-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-bottom: 10px !important;
+  opacity: 1 !important;
 }
-.pmt-recruiters-label::before,
-.pmt-recruiters-label::after {
+
+p.pmt-recruiters-label::before,
+p.pmt-recruiters-label::after {
   content: '';
   display: inline-block;
   width: 20px;
   height: 2px;
   background: #FF6000;
+  flex-shrink: 0;
 }
 
-/* ── RECRUITERS TITLE ── */
-.pmt-recruiters-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #253b80;
-  text-align: center;
-  margin-bottom: 24px;
-  line-height: 1.2;
+/* Recruiters H2 — matches section titles */
+.pmt-placement-wrap .pmt-recruiters-title,
+.entry-content .pmt-placement-wrap h2.pmt-recruiters-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 24px !important;
+  margin-top: 0 !important;
+  line-height: 1.3 !important;
 }
 
-/* ── RECRUITERS GRID ── */
+/* Recruiter items */
 .pmt-recruiters {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 15px !important;
 }
 
-.pmt-recruiters div {
-  background: #f4f6fb;
-  padding: 18px 15px;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #374151;
-  border-left: 3px solid #179bd7;
+.pmt-recruiter-item {
+  background: #f4f6fb !important;
+  border-radius: 8px !important;
+  border-left: 3px solid #253b80 !important;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
-.pmt-recruiters div:hover {
+.pmt-recruiter-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(37, 59, 128, 0.1);
 }
 
-/* ── CTA ── */
+.pmt-recruiter-item p {
+  padding: 18px 15px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #374151 !important;
+  margin: 0 !important;
+}
+
+/* ════════════════════════════════
+   CTA
+════════════════════════════════ */
+
 .pmt-placement-cta {
   text-align: center;
-  background: #253b80;
+  background: #253b80 !important;
   color: #fff;
-  padding: 48px 40px;
-  border-radius: 10px;
+  padding: 48px 40px !important;
+  border-radius: 10px !important;
   position: relative;
   overflow: hidden;
 }
@@ -210,75 +265,90 @@
   background: linear-gradient(90deg, transparent, #FF6000, transparent);
 }
 
-.pmt-placement-cta h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #FF6000;
-  margin-bottom: 12px;
-  line-height: 1.2;
+.pmt-placement-wrap .pmt-placement-cta-title,
+.entry-content .pmt-placement-wrap h2.pmt-placement-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  line-height: 1.3 !important;
 }
 
-.pmt-placement-cta p {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 24px;
-  line-height: 1.7;
+.pmt-placement-cta .pmt-placement-cta-text {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 24px !important;
+  line-height: 1.7 !important;
 }
 
-.pmt-placement-cta button {
-  background: #FF6000;
-  border: none;
-  padding: 12px 28px;
-  color: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+/* CTA Button */
+.pmt-placement-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  border: none !important;
+  padding: 12px 28px !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.5px !important;
   transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+  text-decoration: none !important;
 }
 
-.pmt-placement-cta button:hover {
-  background: #e65500;
+.pmt-placement-cta-btn .wp-block-button__link:hover {
+  background: #e65500 !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(255, 96, 0, 0.35);
 }
 
-/* ── MOBILE (max 768px) ── */
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
 @media (max-width: 768px) {
   .pmt-placement-hero {
-    flex-direction: column;
-    gap: 24px;
+    flex-direction: column !important;
+    gap: 24px !important;
   }
-  .pmt-placement-text h2 {
-    font-size: 1.4rem;
+
+  .pmt-placement-wrap .pmt-placement-title {
+    font-size: 1.4rem !important;
   }
-  .pmt-placement-grid {
-    grid-template-columns: 1fr;
+
+  .pmt-placement-wrap .pmt-placement-cta-title {
+    font-size: 1.4rem !important;
   }
-  .pmt-placement-stats {
-    grid-template-columns: 1fr 1fr;
-  }
-  .pmt-recruiters {
-    grid-template-columns: 1fr 1fr;
-  }
+
   .pmt-placement-cta {
-    padding: 32px 20px;
+    padding: 32px 20px !important;
   }
-  .pmt-placement-cta h2 {
-    font-size: 1.4rem;
+
+  .pmt-placement-stats {
+    flex-wrap: wrap !important;
+  }
+
+  .pmt-placement-stats .wp-block-column {
+    flex-basis: calc(50% - 10px) !important;
+    min-width: calc(50% - 10px) !important;
+  }
+
+  .pmt-recruiters .wp-block-column {
+    flex-basis: calc(50% - 8px) !important;
+    min-width: calc(50% - 8px) !important;
+  }
+
+  .pmt-placement-grid .wp-block-column {
+    flex-basis: 100% !important;
   }
 }
 
-/* ── SMALL MOBILE (max 480px) ── */
 @media (max-width: 480px) {
-  .pmt-placement-text h2 {
-    font-size: 1.2rem;
+  .pmt-placement-wrap .pmt-placement-title {
+    font-size: 1.2rem !important;
   }
-  .pmt-recruiters {
-    grid-template-columns: 1fr;
-  }
-  .pmt-placement-stats {
-    grid-template-columns: 1fr 1fr;
+
+  .pmt-recruiters .wp-block-column {
+    flex-basis: 100% !important;
   }
 }
