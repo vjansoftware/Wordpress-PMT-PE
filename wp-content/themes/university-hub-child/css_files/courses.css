@@ -101,7 +101,7 @@
 }
 
 .bped-highlight-box h2 {
-  color: #f5a623;
+  color: #FF6000;
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 16px;
@@ -151,7 +151,7 @@
 
 .bped-points li::before {
   content: "✓";
-  color: #f5a623;
+  color: #FF6000;
   font-weight: 700;
   position: absolute;
   left: 0;
