@@ -1,0 +1,101 @@
+
+/* ===== MAIN WRAP ===== */
+.fee-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ===== CARDS ===== */
+.fee-cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.fee-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(37,59,128,0.08);
+  box-shadow: 0 2px 12px rgba(37,59,128,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.fee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(37,59,128,0.13);
+}
+
+.fee-card-header {
+  background: #253b80;
+  color: #FF6000;
+  padding: 18px 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.fee-card-body {
+  padding: 24px 22px;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+.fee-wrap h2 {
+  font-family: inherit !important; /* uses your theme font */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #253b80;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+}
+.fee-row span {
+  font-weight: 700;
+  color: #253b80;
+}
+
+.fee-card-total {
+  border-top: 2px solid #FF6000;
+  margin-top: 14px;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 700;
+  color: #253b80;
+}
+
+/* ===== NOTE ===== */
+.fee-note {
+  background: #253b80;
+  border-radius: 10px;
+  padding: 32px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:768px){
+  .fee-wrap { padding: 0 16px; }
+  .fee-cards { grid-template-columns: 1fr 1fr !important; gap: 16px; }
+  .fee-card-body { padding: 16px; }
+  .fee-row { font-size: 13px; }
+  .fee-card-total { font-size: 14px; }
+  .fee-note { flex-direction: column !important; padding: 20px !important; }
+  h1 { font-size: 1.6rem !important; }
+}
+
+@media(max-width:480px){
+  .fee-cards { grid-template-columns: 1fr !important; }
+  h1 { font-size: 1.4rem !important; }
+  .fee-row { flex-direction: column; gap: 4px; }
+}

@@ -1,0 +1,80 @@
+/* MULTI GYM */
+
+/* ===== GYM PAGE STYLE ===== */
+
+.gym-wrap {
+  font-family: "Poppins", sans-serif;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gym-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gym-tag {
+  color: #ff3c00;
+  letter-spacing: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gym-title {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #0f172a !important;
+}
+
+.gym-sub {
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* GRID */
+.gym-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.gym-card {
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.gym-icon {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.gym-card h3 {
+  color: #1a2a6c !important;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.gym-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* HOVER */
+.gym-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .gym-title {
+    font-size: 28px;
+  }
+}
