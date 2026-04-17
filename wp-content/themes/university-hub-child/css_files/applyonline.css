@@ -1,13 +1,16 @@
 /* =============================================
    applyonline.css
-   Page ID 903 — Apply Online Page
+   Apply Online Page — Page ID 903
    Max Width: 1200px
    ============================================= */
 
 
-/* ---- RESET GUTENBERG DEFAULTS ---- */
-.page-id-903 .entry-content,
-.page-id-903 .wp-block-group__inner-container {
+/* ============================================
+   RESET GUTENBERG DEFAULTS
+   ============================================ */
+
+.entry-content,
+.wp-block-group__inner-container {
   max-width: 100%;
   padding: 0;
 }
@@ -17,20 +20,20 @@
    HERO SECTION
    ============================================ */
 
-.page-id-903 .pmt-apply-wrap {
+.pmt-apply-wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 70px 24px 10px;
   box-sizing: border-box;
 }
 
-.page-id-903 .pmt-apply-hero {
+.pmt-apply-hero {
   text-align: center;
   max-width: 680px;
   margin: 0 auto;
 }
 
-.page-id-903 .pmt-apply-tag {
+.pmt-apply-tag {
   display: block;
   font-size: 13px;
   font-weight: 500;
@@ -40,14 +43,14 @@
   margin: 0 0 14px;
 }
 
-.page-id-903 .pmt-apply-hero h1 {
+.pmt-apply-hero h1 {
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 700;
   line-height: 1.15;
   margin: 0 0 18px;
 }
 
-.page-id-903 .pmt-apply-hero p:not(.pmt-apply-tag) {
+.pmt-apply-hero p:not(.pmt-apply-tag) {
   font-size: 17px;
   color: #666666;
   line-height: 1.65;
@@ -59,7 +62,7 @@
    TWO-COLUMN LAYOUT
    ============================================ */
 
-.page-id-903 .wp-block-columns.pmt-apply-columns {
+.wp-block-columns.pmt-apply-columns {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -71,7 +74,7 @@
   align-items: flex-start;
 }
 
-.page-id-903 .wp-block-columns.pmt-apply-columns .wp-block-column {
+.wp-block-columns.pmt-apply-columns .wp-block-column {
   flex: 1 1 calc(50% - 26px);
   min-width: 280px;
   box-sizing: border-box;
@@ -82,15 +85,15 @@
    IMAGE COLUMN
    ============================================ */
 
-.page-id-903 .pmt-apply-columns .wp-block-image {
+.pmt-apply-columns .wp-block-image {
   margin: 0;
 }
 
-.page-id-903 .pmt-apply-columns .wp-block-image figure {
+.pmt-apply-columns .wp-block-image figure {
   margin: 0;
 }
 
-.page-id-903 .pmt-apply-columns .wp-block-image img {
+.pmt-apply-columns .wp-block-image img {
   width: 100%;
   height: 100%;
   max-height: 620px;
@@ -104,27 +107,27 @@
    FORM COLUMN (WPForms)
    ============================================ */
 
-.page-id-903 .pmt-apply-columns .wpforms-container {
+.pmt-apply-columns .wpforms-container {
   padding: 0;
   margin: 0;
 }
 
-.page-id-903 .pmt-apply-columns .wpforms-form .wpforms-field {
+.pmt-apply-columns .wpforms-form .wpforms-field {
   margin-bottom: 18px;
 }
 
-.page-id-903 .pmt-apply-columns .wpforms-form input[type="text"],
-.page-id-903 .pmt-apply-columns .wpforms-form input[type="email"],
-.page-id-903 .pmt-apply-columns .wpforms-form input[type="tel"],
-.page-id-903 .pmt-apply-columns .wpforms-form input[type="number"],
-.page-id-903 .pmt-apply-columns .wpforms-form select,
-.page-id-903 .pmt-apply-columns .wpforms-form textarea {
+.pmt-apply-columns .wpforms-form input[type="text"],
+.pmt-apply-columns .wpforms-form input[type="email"],
+.pmt-apply-columns .wpforms-form input[type="tel"],
+.pmt-apply-columns .wpforms-form input[type="number"],
+.pmt-apply-columns .wpforms-form select,
+.pmt-apply-columns .wpforms-form textarea {
   width: 100%;
   box-sizing: border-box;
   border-radius: 8px;
 }
 
-.page-id-903 .pmt-apply-columns .wpforms-submit-container {
+.pmt-apply-columns .wpforms-submit-container {
   margin-top: 8px;
 }
 
@@ -134,7 +137,7 @@
    ============================================ */
 
 @media (max-width: 900px) {
-  .page-id-903 .wp-block-columns.pmt-apply-columns {
+  .wp-block-columns.pmt-apply-columns {
     gap: 36px;
     padding: 36px 20px 52px;
   }
@@ -146,23 +149,23 @@
    ============================================ */
 
 @media (max-width: 768px) {
-  .page-id-903 .wp-block-columns.pmt-apply-columns {
+  .wp-block-columns.pmt-apply-columns {
     flex-direction: column;
     gap: 32px;
     padding: 28px 20px 48px;
   }
 
-  .page-id-903 .wp-block-columns.pmt-apply-columns .wp-block-column {
+  .wp-block-columns.pmt-apply-columns .wp-block-column {
     flex: 1 1 100%;
     min-width: 100%;
   }
 
-  .page-id-903 .pmt-apply-wrap {
+  .pmt-apply-wrap {
     padding-top: 44px;
     padding-bottom: 4px;
   }
 
-  .page-id-903 .pmt-apply-columns .wp-block-image img {
+  .pmt-apply-columns .wp-block-image img {
     max-height: 340px;
   }
 }
@@ -173,16 +176,16 @@
    ============================================ */
 
 @media (max-width: 480px) {
-  .page-id-903 .pmt-apply-hero h1 {
+  .pmt-apply-hero h1 {
     font-size: 26px;
   }
 
-  .page-id-903 .pmt-apply-hero p:not(.pmt-apply-tag) {
+  .pmt-apply-hero p:not(.pmt-apply-tag) {
     font-size: 15px;
   }
 
-  .page-id-903 .pmt-apply-wrap,
-  .page-id-903 .wp-block-columns.pmt-apply-columns {
+  .pmt-apply-wrap,
+  .wp-block-columns.pmt-apply-columns {
     padding-left: 16px;
     padding-right: 16px;
   }
