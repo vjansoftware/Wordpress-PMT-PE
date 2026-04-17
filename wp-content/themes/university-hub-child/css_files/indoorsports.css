@@ -1,0 +1,148 @@
+/* ═══════════════════════════════════════
+═══════════════════════════════════════ */
+.indoor-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.indoor-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.indoor-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #253b80;
+  margin: 10px 0 14px;
+}
+.indoor-hero p {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.indoor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.indoor-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(37, 59, 128, 0.08);
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.25s;
+}
+.indoor-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.indoor-card-placeholder {
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(135deg, #253b80, #179bd7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+.indoor-card-body {
+  padding: 18px 20px 22px;
+  border-top: 3px solid #ff6000;
+}
+.indoor-card-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 8px;
+}
+.indoor-card-body p {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+.indoor-facilities {
+  background: #f4f6fb;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 0;
+}
+.indoor-facilities h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #253b80;
+  margin-bottom: 20px;
+}
+.indoor-fac-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.indoor-fac-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(37, 59, 128, 0.07);
+  font-size: 14px;
+  color: #3d4557;
+  font-weight: 500;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.25s;
+}
+.indoor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff6000;
+  flex-shrink: 0;
+}
+.indoor-cta {
+  background: linear-gradient(135deg, #253b80, #179bd7);
+  border-radius: 10px;
+  padding: 48px 40px;
+  text-align: center;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.indoor-cta h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.indoor-cta p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 24px;
+}
+.indoor-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  background: #ff6000;
+  color: #fff;
+  margin: 6px;
+}
+.indoor-btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
