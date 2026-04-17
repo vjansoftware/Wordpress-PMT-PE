@@ -1,12 +1,16 @@
-/* ===== ABOUT / OUR COLLEGE PAGE (page-id-1008) ===== */
+/* ===================================================
+   PMT ABOUT / OUR COLLEGE PAGE (page-id-1008)
+   GitHub CSS — about-college.css
+   Colors: Navy #253b80 | Orange #FF6000 | Sky #179bd7
+=================================================== */
 
-/* Hide page title */
+/* ── Hide page title ── */
 .page-id-1008 .entry-title,
 .page-id-1008 .entry-header {
     display: none !important;
 }
 
-/* Fix theme override */
+/* ── Remove article wrapper styles ── */
 .page-id-1008 #primary article.hentry {
     background: transparent !important;
     box-shadow: none !important;
@@ -14,22 +18,32 @@
     margin: 0 !important;
 }
 
-/* Remove entry padding */
+/* ── Main content area ── */
 .page-id-1008 .entry-content {
-    padding: 0 !important;
-    max-width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 40px 24px 64px !important;
 }
 
-/* ── ABOUT WRAP ── */
+/* ── Base spacing between sections ── */
+.page-id-1008 .entry-content > * {
+    margin-bottom: 24px;
+}
+
+/* ═══════════════════════════════════════
+   SHARED UTILITIES
+═══════════════════════════════════════ */
+
+/* ── Wrap container ── */
 .about-wrap {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 24px 40px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-/* ── SECTION LABEL ── */
+/* ── Section label (orange ALL CAPS) ── */
 .about-label {
     color: #FF6000;
     font-weight: 700;
@@ -47,18 +61,22 @@
     width: 20px;
     height: 2px;
     background: #FF6000;
+    flex-shrink: 0;
 }
 
-/* ── SECTION TITLE ── */
+/* ── Section heading ── */
 .about-section-title {
     font-size: 2rem;
     font-weight: 700;
     color: #253b80;
     line-height: 1.2;
     margin-bottom: 20px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    clear: none !important;
 }
 
-/* ── BODY TEXT ── */
+/* ── Body text ── */
 .about-body-text {
     font-size: 15px;
     color: #4b5563;
@@ -66,7 +84,7 @@
     margin-bottom: 14px;
 }
 
-/* ── QUOTE BOX ── */
+/* ── Quote block ── */
 .about-quote {
     border-left: 4px solid #179bd7;
     padding: 14px 20px;
@@ -79,12 +97,23 @@
     font-style: italic;
 }
 
-/* ── SECTION 1: INTRO GRID ── */
+/* ── Fix WP empty paragraph gaps ── */
+.page-id-1008 .entry-content p:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ═══════════════════════════════════════
+   SECTION 1 — INTRO (Image + Text)
+═══════════════════════════════════════ */
+
 .about-intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid !important;
+    grid-template-columns: 40% 60%;
     gap: 50px;
     align-items: center;
+    padding-top: 8px;
 }
 
 .about-intro-image {
@@ -94,10 +123,13 @@
     box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
 }
 
-/* ── SECTION 2: STATS ── */
+/* ═══════════════════════════════════════
+   SECTION 2 — STATS
+═══════════════════════════════════════ */
+
 .about-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 24px;
     width: 100%;
 }
@@ -108,6 +140,7 @@
     padding: 32px 24px;
     text-align: center;
     transition: transform 0.25s, box-shadow 0.25s;
+    box-sizing: border-box;
 }
 .about-stat:hover {
     transform: translateY(-5px);
@@ -131,25 +164,34 @@
     margin-top: 8px;
 }
 
-/* ── SECTION 3: HISTORY BOX ── */
+/* ═══════════════════════════════════════
+   SECTION 3 — HISTORY BOX
+═══════════════════════════════════════ */
+
 .about-history-box {
     background: #f4f6fb;
     border-radius: 10px;
     padding: 48px 40px;
     border-top: 3px solid #179bd7;
     transition: box-shadow 0.3s;
+    box-sizing: border-box;
 }
 .about-history-box:hover {
     box-shadow: 0 8px 32px rgba(37, 59, 128, 0.08);
 }
 
-/* ── SECTION 4: WHY GRID ── */
+/* ═══════════════════════════════════════
+   SECTION 4 — WHY CHOOSE US
+═══════════════════════════════════════ */
+
 .about-why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 8px;
+    margin-bottom: 16px !important;
 }
+
 .about-why-item {
     display: flex;
     align-items: flex-start;
@@ -159,11 +201,13 @@
     padding: 18px 20px;
     border-left: 3px solid #FF6000;
     transition: transform 0.25s, box-shadow 0.25s;
+    box-sizing: border-box;
 }
 .about-why-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(37, 59, 128, 0.1);
 }
+
 .about-why-check {
     width: 28px;
     height: 28px;
@@ -178,20 +222,18 @@
     justify-content: center;
     flex-shrink: 0;
 }
-.about-why-text {
-    font-size: 14px;
-    color: #374151;
-    line-height: 1.6;
-    margin: 0;
+
+/* ═══════════════════════════════════════
+   SECTION 5 — MOTTO CARDS
+═══════════════════════════════════════ */
+
+.about-motto-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px;
+    margin-top: 8px;
 }
 
-/* ── SECTION 5: MOTTO GRID ── */
-.about-motto-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 24px;
-}
 .about-motto-card {
     background: #253b80;
     border-radius: 10px;
@@ -200,6 +242,7 @@
     transition: transform 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .about-motto-card::after {
     content: '';
@@ -214,17 +257,21 @@
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(37, 59, 128, 0.25);
 }
+
 .about-motto-emoji {
     font-size: 2.4rem;
     display: block;
     margin-bottom: 14px;
 }
+
 .about-motto-card h3 {
     font-size: 18px;
     font-weight: 700;
     color: #FF6000;
     margin: 0 0 10px;
+    padding-top: 0 !important;
 }
+
 .about-motto-card p {
     font-size: 13.5px;
     color: rgba(255, 255, 255, 0.7);
@@ -232,9 +279,9 @@
     margin: 0;
 }
 
-/* ══════════════════════════════════════
-   CSS-ONLY ANIMATIONS
-══════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   CSS-ONLY SCROLL ANIMATIONS
+═══════════════════════════════════════ */
 
 .about-fade {
     opacity: 0;
@@ -268,7 +315,7 @@
 .about-fade-d4 { animation-delay: 0.4s; }
 .about-fade-d5 { animation-delay: 0.5s; }
 
-/* ── SHOW FULLY IN WP VISUAL EDITOR ── */
+/* Show fully in WP block editor */
 .wp-admin .about-fade,
 .wp-admin .about-fade.about-fade-left,
 .wp-admin .about-fade.about-fade-right {
@@ -277,10 +324,89 @@
     transform: none !important;
 }
 
-/* ── TABLET (max 1024px) ── */
+/* ═══════════════════════════════════════
+   SHARED PMT UTILITIES (used across pages)
+═══════════════════════════════════════ */
+
+.pmt-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.pmt-why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid rgba(10, 31, 92, 0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.pmt-why-item:hover {
+    box-shadow: 0 6px 24px rgba(10, 31, 92, 0.1);
+    transform: translateY(-2px);
+}
+.pmt-why-check {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #0a1f5c;
+    color: #e8b84b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.pmt-why-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #3d4557;
+}
+.pmt-why-text strong { color: #0a1f5c; }
+
+.pmt-motto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.pmt-motto-card {
+    background: #0a1f5c;
+    border-radius: 6px;
+    padding: 38px 26px;
+    text-align: center;
+    transition: transform 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+.pmt-motto-card:hover { transform: translateY(-4px); }
+.pmt-motto-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #c9922a, transparent);
+}
+.pmt-motto-emoji { font-size: 2.2rem; display: block; margin-bottom: 14px; }
+.pmt-motto-card h3 { font-size: 1.3rem; color: #ffffff; margin-bottom: 10px; }
+.pmt-motto-card p  { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; }
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — TABLET (max 1024px)
+═══════════════════════════════════════ */
+
 @media (max-width: 1024px) {
     .about-wrap {
-        padding: 0 30px;
+        padding: 24px 30px;
     }
     .about-motto-grid {
         gap: 16px;
@@ -288,12 +414,22 @@
     .about-motto-card {
         padding: 28px 20px;
     }
+    .about-why-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
 }
 
-/* ── MOBILE (max 768px) ── */
+/* ═══════════════════════════════════════
+   RESPONSIVE — MOBILE (max 768px)
+═══════════════════════════════════════ */
+
 @media (max-width: 768px) {
+    .page-id-1008 .entry-content {
+        padding: 24px 16px 40px !important;
+    }
+
     .about-wrap {
-        padding: 0 16px;
+        padding: 16px 16px;
     }
 
     .about-intro-grid {
@@ -302,14 +438,9 @@
         gap: 24px !important;
     }
 
-    .about-fade.about-fade-left {
+    .about-intro-grid .wp-block-column:first-child {
         width: 100% !important;
-        order: -1 !important;
-    }
-    .about-fade.about-fade-left img {
-        width: 100% !important;
-        height: auto !important;
-        display: block !important;
+        flex-basis: 100% !important;
     }
 
     .about-stats-grid {
@@ -319,7 +450,6 @@
     }
     .about-stat {
         width: 100% !important;
-        box-sizing: border-box !important;
         padding: 24px 20px !important;
     }
 
@@ -354,12 +484,18 @@
     .about-fade.about-fade-right {
         animation: aboutFadeUp 0.6s ease forwards !important;
     }
+
+    .pmt-why-grid  { grid-template-columns: 1fr !important; gap: 12px !important; }
+    .pmt-motto-grid { grid-template-columns: 1fr; }
 }
 
-/* ── SMALL MOBILE (max 480px) ── */
+/* ═══════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max 480px)
+═══════════════════════════════════════ */
+
 @media (max-width: 480px) {
     .about-wrap {
-        padding: 0 12px;
+        padding: 12px 12px;
     }
     .about-section-title {
         font-size: 1.2rem;
@@ -376,81 +512,7 @@
     .about-history-box {
         padding: 20px 16px;
     }
-}
-
-/* ── WHY CHOOSE (shared with about) ── */
-.pmt-why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-.pmt-why-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 22px;
-    background: #ffffff;
-    border-radius: 4px;
-    border: 1px solid rgba(10,31,92,0.07);
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-.pmt-why-item:hover {
-    box-shadow: 0 6px 24px rgba(10,31,92,0.1);
-    transform: translateY(-2px);
-}
-.pmt-why-check {
-    flex-shrink: 0;
-    width: 26px; height: 26px;
-    border-radius: 50%;
-    background: #0a1f5c;
-    color: #e8b84b;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
-    margin-top: 2px;
-}
-.pmt-why-text {
-    font-size: 14.5px;
-    line-height: 1.6;
-    color: #3d4557;
-}
-.pmt-why-text strong { color: #0a1f5c; }
-
-/* ── MOTTO CARDS (shared with about) ── */
-.pmt-motto-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-.pmt-motto-card {
-    background: #0a1f5c;
-    border-radius: 6px;
-    padding: 38px 26px;
-    text-align: center;
-    transition: transform 0.25s;
-    position: relative;
-    overflow: hidden;
-}
-.pmt-motto-card:hover { transform: translateY(-4px); }
-.pmt-motto-card::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #c9922a, transparent);
-}
-.pmt-motto-emoji { font-size: 2.2rem; display: block; margin-bottom: 14px; }
-.pmt-motto-card h3 { font-size: 1.3rem; color: #ffffff; margin-bottom: 10px; }
-.pmt-motto-card p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; }
-
-/* ── RESPONSIVE (shared) ── */
-@media (max-width: 768px) {
-    .pmt-why-grid  { grid-template-columns: 1fr !important; gap: 12px !important; }
-    .pmt-motto-grid { grid-template-columns: 1fr; }
+    .about-stat-number {
+        font-size: 2rem;
+    }
 }
