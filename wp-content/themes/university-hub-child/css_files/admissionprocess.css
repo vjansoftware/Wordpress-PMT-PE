@@ -90,9 +90,13 @@
   margin-bottom:6px;
 }
 p.a.admission-apply-link {
+  display: inline-block;
+  padding: 5px 10px;
   font-weight: bold;
   color: #eee !important;
   background-color: #253B80;
+  text-decoration: none;
+  border-radius: 3px;
 }
 .pmt-adm-list li::marker{
   color:#ff6000;
