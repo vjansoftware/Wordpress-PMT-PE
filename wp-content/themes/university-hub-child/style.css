@@ -11,7 +11,6 @@ Version: 1.0
 @import "css_files/principalsmessage.css";
 @import "css_files/placements.css";
 @import "css_files/affiliationapproval.css"; 
-@import "css_files/outdoorsports.css";
 @import "css_files/professionaltechnicalclubs.css";
 @import "css_files/serviceenvironmentclubs.css";
 @import "css_files/traditionalculturalclubs.css";
@@ -20,7 +19,6 @@ Version: 1.0
 @import "css_files/playground.css";
 @import "css_files/hostel.css";
 @import "css_files/multigym.css";
-@import "css_files/indoorstadium.css";
 @import "css_files/library.css";
 @import "css_files/laboratory.css";
 @import "css_files/medicalfacility.css";
@@ -968,221 +966,9 @@ article.hentry,
   gap: 30px;
   align-items: center;
 }
-/* ═══════════════════════════════════════
-   PMT INDOOR — CARD SCROLL ANIMATIONS
-═══════════════════════════════════════ */
 
-/* — Hidden state — */
-.indoor-card.pmt-animate {
-  opacity: 0;
-  transform: translateY(30px);
-}
-/* — Visible state — */
-.indoor-card.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* — Stagger delays — */
-.indoor-card:nth-child(2) { transition-delay: 0.1s; }
-.indoor-card:nth-child(3) { transition-delay: 0.2s; }
-.indoor-card:nth-child(4) { transition-delay: 0.1s; }
-.indoor-card:nth-child(5) { transition-delay: 0.2s; }
-.indoor-card:nth-child(6) { transition-delay: 0.3s; }
 
-/* ═══════════════════════════════════════
-   PMT INDOOR — FACILITY ITEM ANIMATIONS
-═══════════════════════════════════════ */
 
-/* — Hidden state — */
-.indoor-fac-item.pmt-animate {
-  opacity: 0;
-  transform: translateY(20px);
-}
-/* — Visible state — */
-.indoor-fac-item.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* — Stagger delays — */
-.indoor-fac-item:nth-child(2) { transition-delay: 0.05s; }
-.indoor-fac-item:nth-child(3) { transition-delay: 0.10s; }
-.indoor-fac-item:nth-child(4) { transition-delay: 0.15s; }
-.indoor-fac-item:nth-child(5) { transition-delay: 0.20s; }
-.indoor-fac-item:nth-child(6) { transition-delay: 0.25s; }
-
-/* ═══════════════════════════════════════
-   PMT INDOOR — CTA ANIMATION
-═══════════════════════════════════════ */
-
-/* — Hidden state — */
-.indoor-cta.pmt-animate {
-  opacity: 0;
-  transform: translateY(30px);
-}
-/* — Visible state — */
-.indoor-cta.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ═══════════════════════════════════════
-   PMT INDOOR — HOVER EFFECTS
-═══════════════════════════════════════ */
-
-/* — Card hover — */
-.indoor-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(37,59,128,0.13);
-}
-/* — Card image zoom — */
-.indoor-card img { transition: transform 0.4s ease; }
-.indoor-card:hover img { transform: scale(1.05); }
-
-/* — Facility item hover — */
-.indoor-fac-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(37,59,128,0.1);
-}
-
-/* — CTA button hover — */
-.indoor-btn:hover { background: #e05500; }
-.indoor-btn-outline:hover { background: rgba(255,255,255,0.1); }
-
-/* ═══════════════════════════════════════
-   PMT INDOOR — MOBILE RESPONSIVE
-   Breakpoint: 768px and below
-═══════════════════════════════════════ */
-@media(max-width:768px){
-  .indoor-wrap { padding: 0 16px !important; }
-  .indoor-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
-  .indoor-fac-grid { grid-template-columns: 1fr !important; }
-  .indoor-facilities { padding: 24px 16px !important; }
-  .indoor-cta { padding: 28px 16px !important; }
-  .indoor-hero h1 { font-size: 1.6rem !important; }
-  .indoor-cta h2  { font-size: 1.4rem !important; }
-}
-
-/* ═══════════════════════════════════════
-   PMT INDOOR — MOBILE RESPONSIVE
-   Breakpoint: 480px and below
-═══════════════════════════════════════ */
-@media(max-width:480px){
-  .indoor-hero h1 { font-size: 1.3rem !important; }
-  .indoor-cta h2  { font-size: 1.2rem !important; }
-}
-
-/* ═══════════════════════════════════════
-   PMT OUTDOOR — CARD SCROLL ANIMATIONS
-═══════════════════════════════════════ */
-
-/* — Base transition — */
-.outdoor-card {
-  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s;
-}
-
-/* — Hidden state — */
-.outdoor-card.pmt-animate {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-/* — Visible state — */
-.outdoor-card.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* — Stagger delays — */
-.outdoor-card:nth-child(2) { transition-delay: 0.1s; }
-.outdoor-card:nth-child(3) { transition-delay: 0.2s; }
-.outdoor-card:nth-child(4) { transition-delay: 0.1s; }
-.outdoor-card:nth-child(5) { transition-delay: 0.2s; }
-.outdoor-card:nth-child(6) { transition-delay: 0.3s; }
-
-/* ═══════════════════════════════════════
-   PMT OUTDOOR — FACILITY ITEM ANIMATIONS
-═══════════════════════════════════════ */
-
-/* — Base transition — */
-.facility-item {
-  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s;
-}
-
-/* — Hidden state — */
-.facility-item.pmt-animate {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-/* — Visible state — */
-.facility-item.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* — Stagger delays — */
-.facility-item:nth-child(2) { transition-delay: 0.05s; }
-.facility-item:nth-child(3) { transition-delay: 0.10s; }
-.facility-item:nth-child(4) { transition-delay: 0.15s; }
-.facility-item:nth-child(5) { transition-delay: 0.20s; }
-.facility-item:nth-child(6) { transition-delay: 0.25s; }
-.facility-item:nth-child(7) { transition-delay: 0.30s; }
-.facility-item:nth-child(8) { transition-delay: 0.35s; }
-.facility-item:nth-child(9) { transition-delay: 0.40s; }
-
-/* ═══════════════════════════════════════
-   PMT OUTDOOR — CTA ANIMATION
-═══════════════════════════════════════ */
-
-/* — Hidden state — */
-.outdoor-cta.pmt-animate {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-/* — Visible state — */
-.outdoor-cta.pmt-animate.pmt-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ═══════════════════════════════════════
-   PMT OUTDOOR — HOVER EFFECTS
-═══════════════════════════════════════ */
-
-/* — Card hover — */
-.outdoor-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(37,59,128,0.13);
-}
-
-/* — Facility item hover — */
-.facility-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(37,59,128,0.1);
-}
-
-/* — CTA button hover — */
-.cta-btn:hover { background: #e05500; }
-.cta-btn-outline:hover { background: rgba(255,255,255,0.1); }
-/* ═══════════════════════════════════════
-   PMT OUTDOOR — MOBILE RESPONSIVE
-   Breakpoint: 768px and below
-═══════════════════════════════════════ */
-@media(max-width:768px){
-  .outdoor-wrap { padding: 0 16px !important; }
-  .outdoor-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
-  .facilities-grid { grid-template-columns: 1fr !important; }
-  .facilities-section { padding: 24px 16px !important; }
-  .outdoor-cta { padding: 28px 16px !important; }
-  .outdoor-hero h1 { font-size: 1.6rem !important; }
-  .outdoor-cta h2 { font-size: 1.4rem !important; }
-}
-
-@media(max-width:480px){
-  .outdoor-hero h1 { font-size: 1.3rem !important; }
-  .outdoor-cta h2 { font-size: 1.2rem !important; }
-}
 
 /* ═══════════════════════════════════════
    PMT AFFILIATION — MOBILE RESPONSIVE
