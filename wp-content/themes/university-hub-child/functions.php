@@ -97,26 +97,16 @@ function pmt_theme_styles() {
     // =========================
     $club_pages = array(3392, 3398, 3405, 3413, 3417);
 
-   if (is_page($club_pages)) {
+    if (is_page($club_pages)) {
 
-    wp_enqueue_style(
-        'clubs-common',
-        get_stylesheet_directory_uri() . '/css_files/club.css',
-        array('theme-style'),
-        '1.0'
-    );
+        wp_enqueue_style('clubs-professional', get_stylesheet_directory_uri() . '/css_files/professionaltechnicalclubs.css', array(), '1.0');
+        wp_enqueue_style('clubs-service', get_stylesheet_directory_uri() . '/css_files/serviceenvironmentclubs.css', array(), '1.0');
+        wp_enqueue_style('clubs-traditional', get_stylesheet_directory_uri() . '/css_files/traditionalculturalclubs.css', array(), '1.0');
+        wp_enqueue_style('clubs-adventure', get_stylesheet_directory_uri() . '/css_files/adventurewellnessclubs.css', array(), '1.0');
+        wp_enqueue_style('clubs-personality', get_stylesheet_directory_uri() . '/css_files/personalitymediaclubs.css', array(), '1.0');
+
+    }
 
 }
 
 add_action('wp_enqueue_scripts', 'pmt_theme_styles');
-
-function add_club_body_class($classes) {
-    $club_pages = array(3392, 3398, 3405, 3413, 3417);
-
-    if (is_page($club_pages)) {
-        $classes[] = 'pmt-clubs';
-    }
-
-    return $classes;
-}
-add_filter('body_class', 'add_club_body_class');
