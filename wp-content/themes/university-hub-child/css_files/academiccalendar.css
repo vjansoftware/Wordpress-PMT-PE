@@ -1,75 +1,132 @@
-/* FULL WIDTH FIX */
-.pmt-cal-wrap {
-  width: 100%;
-  padding: 10px 5px;
-  box-sizing: border-box;
+.pmt-cal-wrap{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:10px 5px;
+  box-sizing:border-box;
+  font-family:Segoe UI, Tahoma, sans-serif;
+  color:#253b80;
 }
 
-/* HERO */
-.pmt-cal-hero {
-  text-align: center;
-  margin-bottom: 40px;
+.pmt-cal-hero{
+  text-align:center;
+  margin-bottom:40px;
 }
 
-.pmt-cal-tag {
-  color: #ff6000;
-  font-size: 16px;
-  letter-spacing: 2px;
+.pmt-cal-tag{
+  color:#FF6000;
+  font-size:16px;
+  letter-spacing:2px;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-bottom:10px;
 }
 
-.pmt-cal-hero h1 {
-  color: #0a1f5c;
+.pmt-cal-title{
+  color:#253b80;
+  font-size:38px;
+  font-weight:800;
+  margin:0 0 10px;
 }
 
-.pmt-cal-sub {
-  color: #666;
-  max-width: 600px;
-  margin: auto;
+.pmt-cal-sub{
+  color:#179bd7;
+  max-width:600px;
+  margin:0 auto;
+  line-height:1.7;
+  font-size:15px;
 }
 
-/* GRID (MAIN FIX 🔥) */
-.pmt-cal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  max-width: 1200px;
-  margin: auto;
+.wp-block-columns{
+  display:flex;
+  gap:25px;
+  max-width:1200px;
+  margin:0 auto 25px;
+  flex-wrap:wrap;
 }
 
-/* CARD */
-.pmt-cal-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #eee;
+.wp-block-columns > .wp-block-column{
+  flex:1;
+  min-width:0;
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid rgba(37,59,128,0.12);
+  box-shadow:0 8px 24px rgba(37,59,128,0.08);
 }
 
-.pmt-cal-card h3 {
-  color: #0a1f5c;
-  margin-bottom: 10px;
+.wp-block-column h4,
+.wp-block-heading.is-level-4{
+  color:#253b80;
+  font-size:22px;
+  font-weight:800;
+  margin:0 0 12px;
 }
 
-.pmt-cal-card ul {
-  padding-left: 18px;
+.wp-block-column ul,
+.wp-block-list{
+  margin:0;
+  padding-left:18px;
 }
 
-/* HIGHLIGHT */
-.pmt-cal-highlight {
-  max-width: 1200px;
-  margin: 40px auto 0;
-  background: #253B80;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px;
+.wp-block-column li,
+.wp-block-list li{
+  margin-bottom:8px;
+  color:#253b80;
+  line-height:1.6;
 }
 
-.pmt-cal-highlight h2 {
-  color: #e8b84b;
+.wp-block-columns > .wp-block-column li::marker{
+  color:#FF6000;
 }
 
-/* MOBILE */
-@media (max-width:768px) {
-  .pmt-cal-grid {
-    grid-template-columns: 1fr;
+.pmt-cal-note-title{
+  max-width:1200px;
+  margin:30px auto 12px;
+  color:#253b80;
+  font-size:28px;
+  font-weight:800;
+}
+
+.pmt-cal-note-title + .wp-block-list{
+  max-width:1200px;
+  margin:0 auto;
+  padding:20px 24px;
+  background:#253b80;
+  color:#fff;
+  border-radius:10px;
+  border-left:6px solid #FF6000;
+}
+
+.pmt-cal-note-title + .wp-block-list li{
+  color:#fff;
+  margin-bottom:8px;
+}
+
+@media (max-width:991px){
+  .wp-block-columns{
+    gap:20px;
+  }
+}
+
+@media (max-width:768px){
+  .pmt-cal-wrap{
+    padding:10px 12px;
+  }
+
+  .pmt-cal-title{
+    font-size:30px;
+  }
+
+  .wp-block-columns{
+    flex-direction:column;
+  }
+
+  .wp-block-columns > .wp-block-column{
+    width:100%;
+  }
+
+  .pmt-cal-note-title{
+    font-size:24px;
   }
 }
