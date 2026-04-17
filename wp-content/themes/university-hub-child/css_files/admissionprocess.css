@@ -89,7 +89,11 @@
   line-height:1.8;
   margin-bottom:6px;
 }
-
+a.admission-apply-link {
+  font-weight: bold;
+  color: #eee !important;
+  background-color: #253B80;
+}
 .pmt-adm-list li::marker{
   color:#ff6000;
 }
