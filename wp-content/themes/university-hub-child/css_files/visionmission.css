@@ -8,7 +8,7 @@
 
 /* ── Shared Utilities ─────────────────────────────── */
 .pmt-vm-wrap {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -21,8 +21,21 @@
   letter-spacing: 2px;
   font-size: 12px;
   text-transform: uppercase;
-  display: block;
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pmt-label::before,
+.pmt-label::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #FF6000;
+  display: inline-block;
 }
 
 .pmt-section-title {
