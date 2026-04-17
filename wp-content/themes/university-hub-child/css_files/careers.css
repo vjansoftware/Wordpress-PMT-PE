@@ -1,28 +1,256 @@
-/* CAREERS */
-/* ===== CAREERS PAGE ===== */
+/* ============================================================
+   careers.css  –  PMTCPE Careers Page
+   ============================================================ */
+
+/* ── Keyframe Animations ───────────────────────────────────── */
+@keyframes pmt-fadeInUp    { from { opacity:0; transform:translateY(28px); }  to { opacity:1; transform:translateY(0); } }
+@keyframes pmt-fadeInLeft  { from { opacity:0; transform:translateX(-32px); } to { opacity:1; transform:translateX(0); } }
+@keyframes pmt-fadeInRight { from { opacity:0; transform:translateX(32px); }  to { opacity:1; transform:translateX(0); } }
+@keyframes pmt-shimmer     { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
+@keyframes pmt-pulse-border { 0%,100% { box-shadow:0 0 0 0 rgba(255,96,0,0); } 50% { box-shadow:0 0 0 5px rgba(255,96,0,0.18); } }
+@keyframes pmt-float       { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+@keyframes pmt-label-slide { from { opacity:0; letter-spacing:6px; } to { opacity:1; letter-spacing:normal; } }
+@keyframes pmt-modal-pop   { from { opacity:0; transform:scale(0.94) translateY(12px); } to { opacity:1; transform:scale(1) translateY(0); } }
 
 
-/* --- Buttons --- */
+/* ── Section Label ─────────────────────────────────────────── */
+.has-text-align-center .has-inline-color {
+  display: inline-block;
+  animation: pmt-label-slide 0.8s ease both;
+}
+
+
+/* ── Column Animations ─────────────────────────────────────── */
+.wp-block-columns .wp-block-column:last-child .wp-block-heading {
+  animation: pmt-fadeInUp 0.7s ease 0.3s both;
+}
+.wp-block-columns .wp-block-column:last-child > p:nth-of-type(1) {
+  animation: pmt-fadeInUp 0.6s ease 0.45s both;
+}
+.wp-block-columns .wp-block-column:last-child > p:nth-of-type(2) {
+  animation: pmt-fadeInUp 0.6s ease 0.6s both;
+}
+
+.wp-block-columns.are-vertically-aligned-center > .wp-block-column:first-child img {
+  animation: pmt-fadeInLeft 0.8s cubic-bezier(.22,.68,0,1.2) 0.1s both,
+             pmt-float 5s ease-in-out 1.5s infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.wp-block-columns.are-vertically-aligned-center > .wp-block-column:first-child img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 48px rgba(10,46,110,0.15);
+  animation-play-state: paused;
+}
+.wp-block-columns.are-vertically-aligned-center > .wp-block-column:last-child {
+  animation: pmt-fadeInRight 0.8s cubic-bezier(.22,.68,0,1.2) 0.25s both;
+}
+
+
+/* ── Blockquote ────────────────────────────────────────────── */
+.pmt-careers-blockquote {
+  animation: pmt-fadeInUp 0.65s ease 0.7s both;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #FF6000;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  background: #f7f9ff;
+  color: #253b80;
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+.pmt-careers-blockquote:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10,46,110,0.12);
+}
+
+
+/* ── Buttons Wrapper ───────────────────────────────────────── */
+.pmt-career-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1.5rem;
+  animation: pmt-fadeInUp 0.6s ease 0.85s both;
+}
+
+
+/* ── Apply Now Button ──────────────────────────────────────── */
 .pmt-btn-apply {
-  background: #0a2e6e;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 11px 26px;
+  background: #FF6000;
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 11px 26px;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: pmt-pulse-border 3s ease-in-out 2s infinite;
 }
-.pmt-btn-apply:hover { background: #0d3a8a; }
+.pmt-btn-apply::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.28) 50%, transparent 60%);
+  background-size: 200% 100%;
+  animation: pmt-shimmer 2.8s linear infinite;
+  pointer-events: none;
+}
+.pmt-btn-apply:hover  { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,96,0,0.3); }
+.pmt-btn-apply:active { transform: translateY(0); }
 
-/* --- WPForms responsive fix inside modal --- */
+
+/* ── Salary Structure Button ───────────────────────────────── */
+.pmt-btn-salary {
+  display: block;
+  width: 100%;
+  padding: 11px 26px;
+  background: #253b80;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.pmt-btn-salary:hover {
+  background: #1a2d66;
+  transform: translateY(-2px);
+}
+
+
+/* ── Salary PDF Modal ──────────────────────────────────────── */
+#resume-modal {
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: rgba(0,0,0,0.85) !important;
+  z-index: 999999 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.pmt-modal-inner-salary {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  height: 90vh;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.pmt-modal-header-salary {
+  padding: 14px 20px;
+  background: #253b80;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.pmt-modal-header-salary span {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#pmt-salary-close {
+  color: #FF6000;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+#pmt-salary-close:hover {
+  transform: rotate(90deg) scale(1.2);
+  color: #ff3300;
+}
+
+.pmt-modal-body-salary {
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.pmt-modal-body-salary iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+
+/* ── Career Application Modal ──────────────────────────────── */
+#pmtApplyModal {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+  background: rgba(0,0,0,0.55) !important;
+  z-index: 9999 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.pmt-modal-inner-apply {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  width: 100%;
+  max-width: 520px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.pmt-apply-title {
+  margin: 0 0 1.25rem;
+  font-size: 18px;
+  color: #0a2e6e;
+  font-weight: 700;
+}
+
+
+/* ── Modal Pop Animation ───────────────────────────────────── */
+#pmtApplyModal[style*="flex"] .pmt-modal-inner-apply,
+#resume-modal[style*="flex"]  .pmt-modal-inner-salary {
+  animation: pmt-modal-pop 0.35s cubic-bezier(.22,.68,0,1.2) both;
+}
+
+
+/* ── WPForms Responsive Fixes ──────────────────────────────── */
 #pmtApplyModal .wpforms-container,
 #pmtApplyModal .wpforms-form {
   width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* Name row: side-by-side on desktop, stacked on mobile */
 #pmtApplyModal .wpforms-field-name .wpforms-field-row {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -36,20 +264,18 @@
   box-sizing: border-box !important;
   display: block !important;
 }
-
 #pmtApplyModal .wpforms-field-name .wpforms-field-row .wpforms-field-row-block input {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   display: block !important;
 }
-  #pmtApplyModal .wpforms-field-name input[type="text"] {
+#pmtApplyModal .wpforms-field-name input[type="text"] {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   display: block !important;
 }
-
 #pmtApplyModal .wpforms-field-name .wpforms-field-row,
 #pmtApplyModal .wpforms-field-name .wpforms-field-row-block,
 #pmtApplyModal .wpforms-field-name .wpforms-name-first,
@@ -61,7 +287,7 @@
   float: none !important;
   padding: 0 !important;
 }
-/* All inputs, selects, textareas — full width, no overflow */
+
 #pmtApplyModal .wpforms-field input[type="text"],
 #pmtApplyModal .wpforms-field input[type="email"],
 #pmtApplyModal .wpforms-field input[type="tel"],
@@ -77,7 +303,6 @@
   font-size: 14px !important;
 }
 
-/* Radio buttons — horizontal row */
 #pmtApplyModal .wpforms-field-radio ul {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -90,13 +315,11 @@
   margin: 0 !important;
 }
 
-/* Field spacing */
 #pmtApplyModal .wpforms-field {
   margin-bottom: 14px !important;
   padding: 0 !important;
 }
 
-/* Labels */
 #pmtApplyModal .wpforms-field-label {
   font-size: 13px !important;
   font-weight: 600 !important;
@@ -104,7 +327,8 @@
   margin-bottom: 5px !important;
 }
 
-/* Submit + Cancel button row */
+
+/* ── Submit + Cancel Row ───────────────────────────────────── */
 #pmtApplyModal .wpforms-submit-container {
   display: flex !important;
   gap: 10px !important;
@@ -112,7 +336,6 @@
   margin-top: 6px !important;
 }
 
-/* Submit button */
 #pmtApplyModal .wpforms-submit {
   flex: 1 !important;
   width: auto !important;
@@ -130,7 +353,6 @@
   background: #0d3a8a !important;
 }
 
-/* Cancel button */
 #pmt-cancel-btn {
   flex: 1;
   background: transparent;
@@ -147,7 +369,23 @@
   background: #e8eef7;
 }
 
-/* Mobile: stack name fields */
+
+/* ── Admin Bar Fix ─────────────────────────────────────────── */
+.admin-bar #resume-modal,
+.admin-bar #pmtApplyModal {
+  top: 0 !important;
+  height: 100vh !important;
+  padding-top: 32px !important;
+}
+@media screen and (max-width: 782px) {
+  .admin-bar #resume-modal,
+  .admin-bar #pmtApplyModal {
+    padding-top: 46px !important;
+  }
+}
+
+
+/* ── Mobile ────────────────────────────────────────────────── */
 @media (max-width: 480px) {
   #pmtApplyModal .wpforms-field-name .wpforms-field-row-block {
     flex: 1 1 100% !important;
@@ -162,5 +400,15 @@
   #pmtApplyModal .wpforms-submit,
   #pmt-cancel-btn {
     width: 100% !important;
+  }
+}
+
+
+/* ── Reduce Motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
