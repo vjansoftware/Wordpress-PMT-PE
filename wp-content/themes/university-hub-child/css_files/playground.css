@@ -1,7 +1,12 @@
+/* =============================================
+   PLAYGROUND PAGE CSS
+   Balanced spacing version
+   ============================================= */
+
 .pmt-playground-wrap{
   max-width:1200px;
   margin:0 auto;
-  padding:32px 20px 10px;
+  padding:32px 20px 20px;
   box-sizing:border-box;
 }
 
@@ -11,28 +16,27 @@
   box-sizing:border-box;
 }
 
+/* Only control key block wrappers, do not remove all margins globally */
 .pmt-playground-wrap .wp-block-group,
-.pmt-playground-wrap .wp-block-columns,
-.pmt-playground-wrap .wp-block-column,
-.pmt-playground-wrap .wp-block-heading,
-.pmt-playground-wrap .wp-block-image,
-.pmt-playground-wrap p{
-  margin-bottom:0 !important;
+.pmt-playground-wrap .wp-block-columns{
+  margin-bottom:0;
 }
 
+/* HERO */
 .pmt-playground-hero{
   display:grid !important;
   grid-template-columns:1fr 1fr;
   gap:40px;
   align-items:center;
-  padding:0 0 24px;
+  padding:0 0 30px;
 }
 
 .pmt-playground-hero.wp-block-columns{
   display:grid !important;
 }
 
-.pmt-playground-hero-img{
+.pmt-playground-hero-img,
+.pmt-playground-hero-img figure{
   margin:0 !important;
 }
 
@@ -51,6 +55,7 @@
   box-shadow:0 14px 34px rgba(37,59,128,0.22);
 }
 
+/* TAG */
 .pmt-playground-tag{
   color:#FF6000;
   font-weight:700;
@@ -74,6 +79,7 @@
   opacity:0.85;
 }
 
+/* TITLE + BODY */
 .pmt-playground-title{
   font-size:2rem;
   font-weight:800;
@@ -86,14 +92,15 @@
   font-size:15px;
   color:#4b5563;
   line-height:1.8;
-  margin:0 0 8px !important;
+  margin:0 0 12px !important;
 }
 
+/* STATS */
 .pmt-playground-stats{
   display:grid !important;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
-  padding:8px 0 24px;
+  padding:10px 0 28px;
 }
 
 .pmt-playground-stats.wp-block-columns{
@@ -106,6 +113,7 @@
   padding:22px 20px;
   text-align:center;
   transition:transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:0 8px 24px rgba(37,59,128,0.08);
 }
 
 .pmt-playground-stat:hover{
@@ -113,34 +121,64 @@
   box-shadow:0 12px 30px rgba(37,59,128,0.22);
 }
 
-.pmt-playground-stat-num{
-  display:block;
-  font-size:2.2rem;
-  font-weight:800;
+.pmt-playground-stat h3{
+  font-size:22px;
   color:#FF6000;
-  line-height:1;
+  margin:0 0 8px !important;
+  font-weight:800;
+  line-height:1.1;
+}
+
+.pmt-playground-stat p{
   margin:0 !important;
-}
-
-.pmt-playground-stat-label{
-  display:block;
   font-size:12px;
-  letter-spacing:1.8px;
+  letter-spacing:2px;
   text-transform:uppercase;
-  color:rgba(255,255,255,0.72);
-  margin:10px 0 0 !important;
-  line-height:1.4;
+  color:rgba(255,255,255,0.75);
+  line-height:1.5;
 }
 
+/* FEATURES SECTION */
 .pmt-playground-features-section{
-  padding:10px 0 24px;
+  padding:10px 0 28px;
+}
+
+.pmt-playground-section-tag{
+  color:#FF6000;
+  font-weight:700;
+  letter-spacing:3px;
+  font-size:12px;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 12px !important;
+  line-height:1;
+}
+
+.pmt-playground-section-tag::before,
+.pmt-playground-section-tag::after{
+  content:"";
+  display:block;
+  width:38px;
+  height:1px;
+  background:#FF6000;
+  opacity:0.85;
+}
+
+.pmt-playground-section-title{
+  font-size:clamp(28px,4vw,46px);
+  font-weight:800;
+  color:#253b80;
+  line-height:1.14;
+  margin:0 0 16px !important;
 }
 
 .pmt-playground-features-grid{
   display:grid !important;
   grid-template-columns:repeat(2,1fr);
   gap:18px;
-  margin-top:12px;
+  margin-top:16px;
 }
 
 .pmt-playground-features-grid.wp-block-columns{
@@ -148,41 +186,44 @@
 }
 
 .pmt-playground-feature-card{
-  padding:22px;
-  border:1px solid rgba(37,59,128,0.08);
-  border-radius:10px;
-  background:#fff;
-  box-shadow:0 2px 12px rgba(37,59,128,0.06);
-  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  background:#ffffff;
+  border:1px solid rgba(37,59,128,0.10);
+  border-radius:12px;
+  padding:20px 20px 18px;
+  box-shadow:0 4px 16px rgba(37,59,128,0.05);
+  transition:transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .pmt-playground-feature-card:hover{
   transform:translateY(-4px);
-  box-shadow:0 10px 24px rgba(37,59,128,0.12);
+  border-color:rgba(255,96,0,0.24);
+  box-shadow:0 10px 24px rgba(37,59,128,0.10);
 }
 
 .pmt-playground-feature-card h4{
+  font-size:18px;
   color:#253b80;
-  font-size:15px;
   font-weight:700;
-  margin:0 0 8px !important;
+  margin:0 0 10px !important;
+  line-height:1.3;
 }
 
 .pmt-playground-feature-card p{
-  color:#6b7280;
-  font-size:14px;
-  line-height:1.6;
+  font-size:15px;
+  color:#4b5563;
+  line-height:1.75;
   margin:0 !important;
 }
 
+/* PILLARS / EXTRA CARDS */
 .pmt-playground-pillars-section{
-  padding:10px 0 4px;
+  padding:12px 0 10px;
 }
 
 .pmt-playground-pillars-grid{
   display:grid !important;
   grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  gap:18px;
   margin-top:18px;
 }
 
@@ -191,96 +232,128 @@
 }
 
 .pmt-playground-pillar{
-  background:#253b80;
-  border-radius:10px;
-  padding:30px 22px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
+  background:#f8f9fc;
+  border:1px solid rgba(37,59,128,0.08);
+  border-radius:12px;
+  padding:22px 20px;
   transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pmt-playground-pillar::after{
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  height:3px;
-  background:linear-gradient(90deg,transparent,#FF6000,transparent);
-}
-
 .pmt-playground-pillar:hover{
-  transform:translateY(-5px);
-  box-shadow:0 12px 30px rgba(37,59,128,0.22);
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(37,59,128,0.08);
 }
 
-.pmt-playground-pillar h3{
-  color:#FF6000;
-  font-size:1.2rem;
+.pmt-playground-pillar h4{
+  font-size:18px;
+  color:#253b80;
   font-weight:700;
   margin:0 0 10px !important;
+  line-height:1.3;
 }
 
 .pmt-playground-pillar p{
-  color:rgba(255,255,255,0.74);
-  font-size:13.5px;
-  line-height:1.65;
+  font-size:15px;
+  color:#4b5563;
+  line-height:1.75;
   margin:0 !important;
 }
 
+/* FOOTER NOTE / LAST TEXT */
 .pmt-playground-footer-note{
-  text-align:center;
-  padding:0;
-  margin:8px 0 0 !important;
-  color:#6b7280;
-  font-size:14px;
-  line-height:1.6;
+  margin:12px 0 0 !important;
+  font-size:15px;
+  color:#4b5563;
+  line-height:1.8;
 }
 
-.pmt-playground-footer-note strong{
-  color:#253b80;
-}
-
-@media(max-width:768px){
-  .pmt-playground-wrap{
-    padding:24px 16px 8px;
-  }
-
+/* RESPONSIVE */
+@media (max-width: 991px){
   .pmt-playground-hero{
-    grid-template-columns:1fr !important;
-    gap:20px;
-    padding:0 0 20px;
-  }
-
-  .pmt-playground-hero-img img{
-    height:auto;
+    grid-template-columns:1fr;
+    gap:28px;
+    padding-bottom:24px;
   }
 
   .pmt-playground-stats{
-    grid-template-columns:1fr !important;
-    padding:8px 0 18px;
+    grid-template-columns:1fr;
   }
 
   .pmt-playground-features-grid{
-    grid-template-columns:1fr !important;
+    grid-template-columns:1fr;
   }
 
   .pmt-playground-pillars-grid{
-    grid-template-columns:1fr !important;
+    grid-template-columns:1fr;
   }
 
-  .pmt-playground-tag{
+  .pmt-playground-hero-img img{
+    height:320px;
+  }
+}
+
+@media (max-width: 768px){
+  .pmt-playground-wrap{
+    padding:24px 16px 16px;
+  }
+
+  .pmt-playground-title{
+    font-size:1.8rem;
+  }
+
+  .pmt-playground-section-title{
+    font-size:2rem;
+  }
+
+  .pmt-playground-tag,
+  .pmt-playground-section-tag{
     gap:8px;
     letter-spacing:2px;
   }
 
   .pmt-playground-tag::before,
-  .pmt-playground-tag::after{
-    width:26px;
+  .pmt-playground-tag::after,
+  .pmt-playground-section-tag::before,
+  .pmt-playground-section-tag::after{
+    width:24px;
   }
 
+  .pmt-playground-stat{
+    padding:20px 16px;
+  }
+
+  .pmt-playground-feature-card,
+  .pmt-playground-pillar{
+    padding:18px 16px;
+  }
+}
+
+@media (max-width: 480px){
   .pmt-playground-title{
+    font-size:1.55rem;
+  }
+
+  .pmt-playground-section-title{
     font-size:1.7rem;
+  }
+
+  .pmt-playground-body,
+  .pmt-playground-feature-card p,
+  .pmt-playground-pillar p,
+  .pmt-playground-footer-note{
+    font-size:14px;
+  }
+
+  .pmt-playground-hero-img img{
+    height:260px;
+  }
+
+  .pmt-playground-stat h3{
+    font-size:20px;
+  }
+
+  .pmt-playground-stat p{
+    font-size:11px;
+    letter-spacing:1.5px;
   }
 }
