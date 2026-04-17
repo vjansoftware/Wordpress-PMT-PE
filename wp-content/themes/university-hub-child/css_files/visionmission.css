@@ -252,9 +252,9 @@
 .pmt-vm-card,
 .pmt-value-card,
 .pmt-goal-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pmt-vm-card.pmt-visible,
