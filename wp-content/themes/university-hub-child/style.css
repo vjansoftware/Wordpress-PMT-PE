@@ -6,6 +6,10 @@ Version: 1.0
 
 /* ── Header & Logo ── */
 
+@import "css_files/library.css";
+@import "css_files/home.css";
+
+
 
 #quick-contact li::before {
         font-size: 20px;
