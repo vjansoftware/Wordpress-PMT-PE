@@ -5,7 +5,16 @@
 .principal-wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box;}
 .principal-grid{display:grid;grid-template-columns:1fr 2fr;gap:50px;align-items:start;}
 .principal-img-wrap{border-radius:10px;overflow:hidden;margin-bottom:20px;}
-.principal-img-wrap img{width:75%;display:block;box-shadow:0 8px 30px rgba(10,31,92,0.15);animation:principalFloat 3s ease-in-out infinite;transition:box-shadow 0.3s;}
+.principal-img-wrap img {
+  width: 75%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  box-shadow: 0 8px 30px rgba(10,31,92,0.15);
+  animation: principalFloat 3s ease-in-out infinite;
+  transition: box-shadow 0.3s;
+}
 .principal-img-wrap:hover img{box-shadow:0 16px 48px rgba(10,31,92,0.3);}
 .principal-name-card{background:#253b80 ;border-radius:8px;padding:20px;text-align:center;transition:transform 0.25s,box-shadow 0.25s;}
 .principal-name-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(10,31,92,0.3);}
