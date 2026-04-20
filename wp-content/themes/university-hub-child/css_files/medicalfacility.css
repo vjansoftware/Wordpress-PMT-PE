@@ -1,166 +1,408 @@
-.pmt-medical {
+/* ═══════════════════════════════════════
+   PMT MEDICAL FACILITY — STYLES
+   Colors & fonts matching About College
+═══════════════════════════════════════ */
+
+.pmt-medical-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 40px 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.pmt-medical-wrap *,
+.pmt-medical-wrap *::before,
+.pmt-medical-wrap *::after {
   box-sizing: border-box;
 }
-.pmt-medical h5 {
-  color: #ff6000;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+
+/* ── WordPress theme overrides ── */
+.entry-content .pmt-medical-wrap h1,
+.entry-content .pmt-medical-wrap h2,
+.entry-content .pmt-medical-wrap h3,
+.entry-content .pmt-medical-wrap h4 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
-.pmt-medical h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #253b80;
-  line-height: 1.2;
-  margin-bottom: 16px;
+
+.entry-content .pmt-medical-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.pmt-medical p {
-  font-size: 15px;
-  color: #4b5563;
-  line-height: 1.85;
+
+/* ════════════════════════════════
+   INTRO ROW
+════════════════════════════════ */
+
+.pmt-medical-intro {
+  gap: 40px !important;
+  align-items: center !important;
+  margin-bottom: 0 !important;
 }
-.pmt-medical .img-hover {
-  flex: 1;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
+
+/* Image column */
+.pmt-medical-img-col {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12) !important;
+  padding: 0 !important;
 }
-.pmt-medical .img-hover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
+
+.pmt-medical-img {
+  margin: 0 !important;
 }
-.pmt-medical .img-hover:hover img {
-  transform: scale(1.04);
+
+.pmt-medical-img img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 320px !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+  border-radius: 0 !important;
 }
-.pmt-medical .card-hover {
-  padding: 28px 24px;
-  border-radius: 10px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-top: 3px solid #ff6000;
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s;
+
+.pmt-medical-img-col:hover .pmt-medical-img img {
+  transform: scale(1.04) !important;
 }
-.pmt-medical .card-hover:hover {
+
+/* Orange label — matches About College */
+p.pmt-medical-label,
+p.pmt-medical-label.has-text-align-center,
+.entry-content p.pmt-medical-label,
+.wp-block-group p.pmt-medical-label,
+body p.pmt-medical-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.pmt-medical-label::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* H2 title */
+.pmt-medical-wrap .pmt-medical-title,
+.entry-content .pmt-medical-wrap h2.pmt-medical-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 16px !important;
+}
+
+/* Body text */
+.pmt-medical-wrap .pmt-medical-body {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.85 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Highlight quote box */
+.pmt-medical-wrap .pmt-medical-highlight {
+  background: #f0f9ff !important;
+  border-left: 4px solid #179bd7 !important;
+  border-radius: 0 10px 10px 0 !important;
+  padding: 20px 24px !important;
+  margin-top: 20px !important;
+}
+
+.pmt-medical-wrap .pmt-medical-highlight p {
+  font-size: 14px !important;
+  color: #374151 !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+  font-style: italic !important;
+}
+
+/* ════════════════════════════════
+   STATS
+════════════════════════════════ */
+
+.pmt-medical-stats {
+  gap: 20px !important;
+}
+
+.pmt-medical-stat {
+  background: #253b80 !important;
+  border-radius: 10px !important;
+  padding: 28px 20px !important;
+  text-align: center !important;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pmt-medical-stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(37, 59, 128, 0.25);
+}
+
+.pmt-medical-wrap .pmt-medical-stat-number,
+.entry-content .pmt-medical-wrap h3.pmt-medical-stat-number {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.pmt-medical-stat .pmt-medical-stat-label {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+}
+
+/* ════════════════════════════════
+   SECTION LABELS & TITLES
+════════════════════════════════ */
+
+p.pmt-medical-section-label,
+.entry-content p.pmt-medical-section-label,
+.wp-block-group p.pmt-medical-section-label,
+body p.pmt-medical-section-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.pmt-medical-section-label::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+.pmt-medical-wrap .pmt-medical-section-title,
+.entry-content .pmt-medical-wrap h2.pmt-medical-section-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 20px !important;
+  line-height: 1.3 !important;
+}
+
+/* ════════════════════════════════
+   SERVICE CARDS
+════════════════════════════════ */
+
+.pmt-medical-cards-grid {
+  gap: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.pmt-medical-card {
+  padding: 28px 24px !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  border: 1px solid #e5e7eb !important;
+  border-top: 3px solid #FF6000 !important;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pmt-medical-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.12);
+  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.12) !important;
 }
-.pmt-medical .card-hover h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #253b80;
-  margin: 0 0 10px;
+
+.pmt-medical-wrap .pmt-medical-card-title,
+.entry-content .pmt-medical-wrap h4.pmt-medical-card-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 10px !important;
 }
-.pmt-medical .card-hover p {
-  font-size: 14px;
-  color: #6b7280;
-  line-height: 1.7;
-  margin: 0;
+
+.pmt-medical-wrap .pmt-medical-card-text {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
 }
-.pmt-medical .stat-box {
-  background: #253b80;
-  border-radius: 10px;
-  padding: 28px 20px;
+
+/* ════════════════════════════════
+   TEAM CARDS
+════════════════════════════════ */
+
+.pmt-medical-team-grid {
+  gap: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.pmt-medical-team-card {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  background: #fff !important;
+  border-radius: 10px !important;
+  padding: 20px 24px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pmt-medical-team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.1) !important;
+}
+
+.pmt-medical-team-icon {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50% !important;
+  background: #179bd7 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.4rem !important;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.pmt-medical-team-info {
+  flex: 1;
+}
+
+.pmt-medical-wrap .pmt-medical-team-name,
+.entry-content .pmt-medical-wrap h4.pmt-medical-team-name {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 4px !important;
+}
+
+.pmt-medical-wrap .pmt-medical-team-role {
+  font-size: 13px !important;
+  color: #4b5563 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+/* ════════════════════════════════
+   BOTTOM BANNER
+════════════════════════════════ */
+
+.pmt-medical-banner {
+  background: #253b80 !important;
+  border-radius: 10px !important;
+  padding: 40px !important;
   text-align: center;
 }
-.pmt-medical .stat-box span {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ff6000;
-  line-height: 1;
+
+.pmt-medical-banner-icon {
+  font-size: 2rem !important;
+  display: block !important;
+  margin-bottom: 16px !important;
+  margin-top: 0 !important;
 }
-.pmt-medical .stat-box p {
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: 8px;
+
+.pmt-medical-wrap .pmt-medical-banner-quote {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 700px !important;
 }
-.pmt-medical .highlight-box {
-  background: #f0f9ff;
-  border-left: 4px solid #179bd7;
-  border-radius: 0 10px 10px 0;
-  padding: 20px 24px;
+
+.pmt-medical-wrap .pmt-medical-banner-quote p {
+  font-size: 1.1rem !important;
+  font-style: italic !important;
+  color: #fff !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+  text-align: center !important;
 }
-.pmt-medical .highlight-box p {
-  font-size: 14px;
-  color: #374151;
-  line-height: 1.7;
-  margin: 0;
-  font-style: italic;
+
+.pmt-medical-banner-divider {
+  width: 60px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  border: none !important;
+  margin: 14px auto !important;
 }
-.pmt-medical .team-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px 24px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s;
+
+p.pmt-medical-banner-sub,
+.entry-content p.pmt-medical-banner-sub {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin: 0 !important;
+  opacity: 1 !important;
 }
-.pmt-medical .team-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.1);
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .pmt-medical-wrap {
+    padding: 0 16px !important;
+  }
+
+  .pmt-medical-intro .wp-block-column,
+  .pmt-medical-team-grid .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .pmt-medical-stats .wp-block-column {
+    flex-basis: calc(50% - 10px) !important;
+    min-width: calc(50% - 10px) !important;
+  }
+
+  .pmt-medical-cards-grid .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .pmt-medical-wrap .pmt-medical-title,
+  .pmt-medical-wrap .pmt-medical-section-title {
+    font-size: 1.4rem !important;
+  }
+
+  .pmt-medical-banner {
+    padding: 28px 20px !important;
+  }
 }
-.pmt-medical .team-icon {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  border-radius: 50%;
-  background: #179bd7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-}
-.pmt-medical .team-card h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #253b80;
-  margin: 0 0 4px;
-}
-.pmt-medical .team-card p {
-  font-size: 13px;
-  color: #6b7280;
-  margin: 0;
-  line-height: 1.5;
-}
-.pmt-medical .section-label {
-  color: #ff6000;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.pmt-medical .section-label::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: #ff6000;
-}
-.pmt-medical .section-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #253b80;
-  margin: 0 0 20px;
+
+@media (max-width: 480px) {
+  .pmt-medical-wrap .pmt-medical-title {
+    font-size: 1.2rem !important;
+  }
+
+  .pmt-medical-stats .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
 }
