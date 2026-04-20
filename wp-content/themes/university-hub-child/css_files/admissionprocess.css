@@ -1,154 +1,220 @@
-.pmt-adm-wrap{
-  width:100%;
-  max-width:1200px;
-  margin:0 auto;
-  padding:10px 5px;
-  box-sizing:border-box;
-  font-family:Segoe UI, Tahoma, sans-serif;
-  color:#253B80;
+/* ═══════════════════════════════════════
+   PMT ADMISSION PAGE — STYLES
+═══════════════════════════════════════ */
+
+.pmt-adm-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #253b80;
 }
 
-.pmt-adm-hero{
-  text-align:center;
-  margin-bottom:40px;
+.pmt-adm-hero {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.pmt-adm-tag{
-  color:#ff6000;
-  font-size:14px;
-  letter-spacing:2px;
-  margin-bottom:10px;
-  font-weight:700;
-  text-transform:uppercase;
+/* Orange label — matches About College tag */
+.pmt-adm-tag {
+  color: #FF6000;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.pmt-adm-title{
-  font-size:36px;
-  color:#253B80;
-  margin-bottom:10px;
-  font-weight:700;
+.pmt-adm-tag::before,
+.pmt-adm-tag::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
-.pmt-adm-sub{
-  color:#555;
-  margin-bottom:10px;
-  max-width:700px;
-  margin-left:auto;
-  margin-right:auto;
-  line-height:1.7;
+/* Main title — matches About College H1 */
+.pmt-adm-title {
+  font-size: 2rem;
+  color: #253b80;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-.pmt-adm-row{
-  display:flex;
-  gap:25px;
-  margin:0 auto 25px;
+/* Subtitle */
+.pmt-adm-sub {
+  color: #4b5563;
+  margin-bottom: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
-.pmt-adm-row > .wp-block-column{
-  flex:1;
+/* ── Cards Row ── */
+.pmt-adm-row {
+  display: flex;
+  gap: 25px;
+  margin: 0 auto 25px;
 }
 
-.pmt-adm-card{
-  background:#fff;
-  padding:25px;
-  border-radius:12px;
-  border:1px solid rgba(37,59,128,0.10);
-  text-align:left;
-  transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-  box-shadow:0 6px 18px rgba(37,59,128,0.05);
-  height:100%;
+.pmt-adm-row > .wp-block-column {
+  flex: 1;
 }
 
-.pmt-adm-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 12px 28px rgba(37,59,128,0.12);
-  border-color:rgba(255,96,0,0.35);
+.pmt-adm-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(37, 59, 128, 0.10);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 6px 18px rgba(37, 59, 128, 0.05);
+  height: 100%;
 }
 
-.pmt-adm-card-title{
-  color:#253B80;
-  margin-bottom:12px;
-  font-size:22px;
-  font-weight:700;
+.pmt-adm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(37, 59, 128, 0.12);
+  border-color: rgba(255, 96, 0, 0.35);
 }
 
-.pmt-adm-card p{
-  color:#555;
-  font-size:15px;
-  line-height:1.7;
-  margin:0;
+/* Card title — matches About College H3 */
+.pmt-adm-card-title {
+  color: #253b80;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0;
 }
 
-.pmt-adm-list{
-  margin:0;
-  padding-left:20px;
+/* Card body text */
+.pmt-adm-card p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
 }
 
-.pmt-adm-list li{
-  color:#555;
-  line-height:1.8;
-  margin-bottom:6px;
+/* ── List ── */
+.pmt-adm-list {
+  margin: 0;
+  padding-left: 20px;
 }
+
+.pmt-adm-list li {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.pmt-adm-list li::marker {
+  color: #FF6000;
+}
+
+/* ── Apply link ── */
 p.a.admission-apply-link {
   font-weight: bold;
   color: #eee !important;
-  background-color: #253B80;
-}
-.pmt-adm-list li::marker{
-  color:#ff6000;
+  background-color: #253b80;
 }
 
-.pmt-adm-note{
-  margin-top:35px;
-  background:#253B80;
-  color:#fff;
-  padding:35px;
-  border-radius:12px;
-  border-left:5px solid #ff6000;
+/* ── Note Box ── */
+.pmt-adm-note {
+  margin-top: 35px;
+  background: #253b80;
+  color: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  border-left: 5px solid #FF6000;
 }
 
-.pmt-adm-note-title{
-  margin:0 0 12px;
-  color:#ff6000;
-  font-size:28px;
-  font-weight:700;
+/* Note title — matches About College H3 */
+.pmt-adm-note-title {
+  margin: 0 0 12px;
+  color: #FF6000;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-.pmt-adm-note p{
-  margin:0;
-  color:#fff;
-  line-height:1.8;
+.pmt-adm-note p {
+  margin: 0;
+  color: #fff;
+  line-height: 1.8;
+  font-size: 15px;
 }
 
-@media (max-width:991px){
-  .pmt-adm-row{
-    gap:20px;
+/* ── WordPress theme overrides ── */
+.entry-content .pmt-adm-wrap h1,
+.entry-content .pmt-adm-wrap h2,
+.entry-content .pmt-adm-wrap h3,
+.entry-content .pmt-adm-wrap h4 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .pmt-adm-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ── Responsive — Tablet ── */
+@media (max-width: 991px) {
+  .pmt-adm-row {
+    gap: 20px;
   }
 
-  .pmt-adm-card{
-    padding:20px;
+  .pmt-adm-card {
+    padding: 20px;
   }
 }
 
-@media (max-width:768px){
-  .pmt-adm-wrap{
-    padding:10px 12px;
+/* ── Responsive — Mobile ── */
+@media (max-width: 768px) {
+  .pmt-adm-wrap {
+    padding: 10px 12px;
   }
 
-  .pmt-adm-title{
-    font-size:30px;
+  .pmt-adm-title {
+    font-size: 1.4rem;
   }
 
-  .pmt-adm-row{
-    flex-direction:column;
-    gap:18px;
+  .pmt-adm-row {
+    flex-direction: column;
+    gap: 18px;
   }
 
-  .pmt-adm-note{
-    padding:24px 20px;
+  .pmt-adm-note {
+    padding: 24px 20px;
   }
 
-  .pmt-adm-note-title{
-    font-size:24px;
+  .pmt-adm-note-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ── Responsive — Small Mobile ── */
+@media (max-width: 480px) {
+  .pmt-adm-title {
+    font-size: 1.2rem;
+  }
+
+  .pmt-adm-card p,
+  .pmt-adm-list li,
+  .pmt-adm-note p {
+    font-size: 13.5px;
   }
 }
