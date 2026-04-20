@@ -1,3 +1,8 @@
+/* ═══════════════════════════════════════
+   PMT B.PED SECTION — STYLES
+   Colors matching About College
+═══════════════════════════════════════ */
+
 .bped-section {
   width: 100%;
   box-sizing: border-box;
@@ -5,35 +10,41 @@
 }
 
 .bped-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* Orange label — matches About College tag */
 .bped-tag {
-  color: #ff6000;
-  font-size: 13px;
+  color: #FF6000;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
   margin: 0 0 10px;
   display: block;
 }
 
+/* Main title — matches About College H2 */
 .bped-title {
-  font-size: 32px;
-  color: #0b1f3a;
+  font-size: 1.8rem;
+  color: #253b80;
   font-weight: 700;
   margin: 0 0 12px;
+  line-height: 1.3;
 }
 
+/* Subtitle / body text */
 .bped-subtitle {
-  color: #555;
+  color: #4b5563;
   font-size: 15px;
   line-height: 1.7;
   max-width: 720px;
   margin: 0 auto 40px;
 }
 
+/* ── Cards Grid ── */
 .bped-grid {
   gap: 24px;
   text-align: left;
@@ -50,7 +61,7 @@
 
 .bped-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.08);
 }
 
 .bped-card-icon {
@@ -65,15 +76,17 @@
   margin-bottom: 14px;
 }
 
+/* Card title — matches About College heading color */
 .bped-card-title {
-  color: #0b1f3a;
+  color: #253b80;
   font-size: 17px;
   font-weight: 700;
   margin: 0 0 10px;
 }
 
+/* Card body text — matches About College body */
 .bped-card-text {
-  color: #666;
+  color: #4b5563;
   font-size: 14px;
   line-height: 1.7;
   margin: 0 0 10px;
@@ -81,12 +94,13 @@
 
 .bped-card-tag {
   display: inline-block;
-  color: #ff6000;
+  color: #FF6000;
   font-size: 13px;
   font-weight: 600;
   margin: 0;
 }
 
+/* ── Highlight Section ── */
 .bped-highlight {
   gap: 24px;
   margin-top: 48px;
@@ -102,7 +116,7 @@
 
 .bped-highlight-box h2 {
   color: #FF6000;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 16px;
 }
@@ -114,6 +128,7 @@
   margin: 0 0 18px;
 }
 
+/* ── Schedule Table ── */
 .bped-schedule-table table {
   width: 100%;
   border-collapse: collapse;
@@ -135,6 +150,7 @@
   color: #dde4f5;
 }
 
+/* ── Points List ── */
 .bped-points {
   list-style: none;
   padding: 0;
@@ -161,12 +177,23 @@
   border-bottom: none;
 }
 
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .bped-title {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
 
   .bped-highlight-box {
     padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bped-title {
+    font-size: 1.2rem;
+  }
+
+  .bped-subtitle {
+    font-size: 14px;
   }
 }
