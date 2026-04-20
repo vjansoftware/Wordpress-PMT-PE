@@ -54,7 +54,7 @@
 /* HOVER */
 .pmt-exam-card:hover {
   background: #ffffff;
-  color: #179bd7;
+  color: #253b80;
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
