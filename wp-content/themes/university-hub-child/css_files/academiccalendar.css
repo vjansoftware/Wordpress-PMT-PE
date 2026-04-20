@@ -15,8 +15,8 @@
 
 .pmt-cal-tag{
   color:#FF6000;
-  font-size:16px;
-  letter-spacing:2px;
+  font-size:12px;
+  letter-spacing:3px;
   font-weight:700;
   text-transform:uppercase;
   margin-bottom:10px;
@@ -24,13 +24,13 @@
 
 .pmt-cal-title{
   color:#253b80;
-  font-size:38px;
-  font-weight:800;
+  font-size:2rem;
+  font-weight:700;
   margin:0 0 10px;
 }
 
 .pmt-cal-sub{
-  color:#179bd7;
+  color:#4b5563;
   max-width:600px;
   margin:0 auto;
   line-height:1.7;
@@ -58,8 +58,8 @@
 .wp-block-column h4,
 .wp-block-heading.is-level-4{
   color:#253b80;
-  font-size:22px;
-  font-weight:800;
+  font-size:15px;
+  font-weight:700;
   margin:0 0 12px;
 }
 
@@ -84,8 +84,8 @@
   max-width:1200px;
   margin:30px auto 12px;
   color:#253b80;
-  font-size:28px;
-  font-weight:800;
+  font-size:1.2rem;
+  font-weight:700;
 }
 
 .pmt-cal-note-title + .wp-block-list{
@@ -115,7 +115,7 @@
   }
 
   .pmt-cal-title{
-    font-size:30px;
+    font-size:1.4rem;
   }
 
   .wp-block-columns{
