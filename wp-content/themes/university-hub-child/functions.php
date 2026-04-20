@@ -33,7 +33,7 @@ function pmt_theme_styles() {
     // =========================
     $page_styles = array(
 
-        1977 => 'examcell.css',
+        1977 => ['examcell.css', 'principalsmessage.css'],
 
         1008 => 'ourcollege.css',
         866  => 'visionmission.css',
