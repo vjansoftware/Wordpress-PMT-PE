@@ -1,37 +1,192 @@
- .gallery-section {
-  padding: 4px 20px;
+/* ═══════════════════════════════════════════════════════
+   PMT GALLERY — gallery.css
+   GitHub CSS repo
+   Colors: Navy #253b80 | Orange #FF6000
+═══════════════════════════════════════════════════════ */
+
+/* ════════════════════════════════
+   SECTION WRAPPER
+════════════════════════════════ */
+
+.gallery-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 60px;
   text-align: center;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.gallery-title {
-  font-size: 30px;
-  margin-bottom: 30px;
-  color: #0b1f3a;
+.gallery-section *,
+.gallery-section *::before,
+.gallery-section *::after {
+  box-sizing: border-box;
 }
 
-/* GRID */
+/* ── WP theme overrides ── */
+.entry-content .gallery-section h2 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .gallery-section p:empty {
+  display: none !important;
+  margin: 0 !important;
+}
+
+/* ════════════════════════════════
+   ORANGE LABEL
+════════════════════════════════ */
+
+p.gallery-label,
+p.gallery-label.has-text-align-center,
+.entry-content p.gallery-label {
+  color: #FF6000 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+p.gallery-label::before,
+p.gallery-label::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* ════════════════════════════════
+   TITLE
+════════════════════════════════ */
+
+.gallery-section .gallery-title,
+.entry-content .gallery-section h2.gallery-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 8px 0 32px !important;
+  line-height: 1.2 !important;
+}
+
+/* ════════════════════════════════
+   GRID
+════════════════════════════════ */
+
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 1100px;
-  margin: auto;
-  gap: 20px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 20px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
 }
 
-/* IMAGE CARD */
+/* ════════════════════════════════
+   GALLERY ITEMS
+════════════════════════════════ */
+
 .gallery-item {
-  overflow: hidden;
-  border-radius: 10px;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #f4f6fb;
+  line-height: 0;
+}
+
+/* Remove WP figure margin */
+.gallery-item figure,
+.gallery-item .wp-block-image {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: 0.4s;
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
-/* HOVER EFFECT 🔥 */
+/* ── Hover zoom ── */
 .gallery-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08) !important;
+}
+
+/* ── Box shadow on card hover ── */
+.gallery-item {
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 8px 28px rgba(37, 59, 128, 0.15);
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — TABLET (max 1024px)
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .gallery-section {
+    padding: 32px 30px 48px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — MOBILE (max 768px)
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 24px 16px 40px !important;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .gallery-item img {
+    height: 160px !important;
+  }
+
+  .gallery-section .gallery-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max 480px)
+════════════════════════════════ */
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery-item img {
+    height: 200px !important;
+  }
+
+  .gallery-section .gallery-title {
+    font-size: 1.3rem !important;
+  }
 }
