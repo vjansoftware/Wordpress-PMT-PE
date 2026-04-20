@@ -1,12 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    PMT STUDENT & WOMEN HELP DESK — shd.css
-   GitHub CSS repo — used on both Help Desk pages
-   Colors: Navy #253b80 | Orange #FF6000 | Sky #179bd7
 ═══════════════════════════════════════════════════════ */
-
-/* ════════════════════════════════
-   ANIMATIONS
-════════════════════════════════ */
 
 @keyframes zoomInCard {
   from { opacity: 0; transform: scale(0.7) translateY(30px); }
@@ -28,7 +22,7 @@
 ════════════════════════════════ */
 
 .shd-wrap {
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
@@ -62,7 +56,6 @@
 
 .shd-hero {
   text-align: center;
-  padding-top: 40px;
   padding-bottom: 10px;
 }
 
