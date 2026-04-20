@@ -6,29 +6,6 @@ Version: 1.0
 
 /* ── Header & Logo ── */
 
-@import "css_files/visionmission.css";
-@import "css_files/principalsmessage.css";
-@import "css_files/placements.css";
-@import "css_files/affiliationapproval.css"; 
-@import "css_files/professionaltechnicalclubs.css";
-@import "css_files/serviceenvironmentclubs.css";
-@import "css_files/traditionalculturalclubs.css";
-@import "css_files/adventurewellnessclubs.css";
-@import "css_files/coachingprograms.css";
-@import "css_files/playground.css";
-@import "css_files/hostel.css";
-@import "css_files/library.css";
-@import "css_files/laboratory.css";
-@import "css_files/medicalfacility.css";
-@import "css_files/studentgrievance.css";
-@import "css_files/antiragging.css";
-@import "css_files/womenhelpdesk.css";
-@import "css_files/studenthelpdesk.css";
-@import "css_files/teachingstaff.css";
-@import "css_files/nonteachingstaff.css";
-@import "css_files/home.css";
-@import "css_files/videos.css";
-
 
 #quick-contact li::before {
         font-size: 20px;
