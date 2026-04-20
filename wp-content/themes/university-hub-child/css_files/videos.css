@@ -12,7 +12,7 @@
 
 /* ══ HERO ══ */
 .vp-hero {
-  max-width: 1200px;
+ padding: 60px 40px 40px;
   text-align: center;
   background: #fff;
 }
