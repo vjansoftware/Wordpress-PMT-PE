@@ -6,7 +6,7 @@
 .principal-grid{display:grid;grid-template-columns:1fr 2fr;gap:50px;align-items:start;}
 .principal-img-wrap{border-radius:10px;overflow:hidden;margin-bottom:20px;}
 .principal-img-wrap img {
-  width: 75%;
+  width: 100%;
   height: 420px;
   object-fit: cover;
   object-position: top;
