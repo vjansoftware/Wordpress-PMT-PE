@@ -1,149 +1,369 @@
 /* ═══════════════════════════════════════
-PMT INDOOR — CARD SCROLL ANIMATIONS
+   PMT INDOOR SPORTS — STYLES
 ═══════════════════════════════════════ */
+
 .indoor-wrap {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+
+.indoor-wrap *,
+.indoor-wrap *::before,
+.indoor-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* ── WordPress theme overrides ── */
+.entry-content .indoor-wrap h1,
+.entry-content .indoor-wrap h2,
+.entry-content .indoor-wrap h3 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .indoor-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+
 .indoor-hero {
   text-align: center;
   margin-bottom: 40px;
 }
-.indoor-hero h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #253b80;
-  margin: 10px 0 14px;
+
+/* Orange label — matches About College tag */
+p.indoor-label,
+.entry-content p.indoor-label,
+.indoor-facilities p.indoor-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
 }
-.indoor-hero p {
-  font-size: 15px;
-  color: #6b7280;
-  max-width: 600px;
-  margin: 0 auto;
+
+p.indoor-label::before,
+p.indoor-label::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
+
+/* Facilities label — left aligned */
+.indoor-facilities p.indoor-label {
+  justify-content: flex-start !important;
+}
+
+.indoor-facilities p.indoor-label::after {
+  display: none !important;
+}
+
+/* H1 title */
+.indoor-wrap .indoor-title,
+.entry-content .indoor-wrap h1.indoor-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 10px 0 14px !important;
+  line-height: 1.3 !important;
+}
+
+/* Subtitle */
+.indoor-wrap .indoor-sub {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  line-height: 1.7 !important;
+}
+
+/* ════════════════════════════════
+   SPORTS CARDS GRID
+════════════════════════════════ */
+
 .indoor-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 24px !important;
+  margin-bottom: 24px !important;
 }
+
 .indoor-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgba(37, 59, 128, 0.08);
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease,
-    box-shadow 0.25s;
+  background: #fff !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(37, 59, 128, 0.08) !important;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  padding: 0 !important;
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s;
 }
-.indoor-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+
+.indoor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(37, 59, 128, 0.13) !important;
 }
-.indoor-card-placeholder {
-  width: 100%;
-  height: 220px;
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
+
+/* Card image */
+.indoor-card-img {
+  margin: 0 !important;
 }
+
+.indoor-card-img img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 0 !important;
+}
+
+/* Card body */
 .indoor-card-body {
-  padding: 18px 20px 22px;
-  border-top: 3px solid #ff6000;
+  padding: 18px 20px 22px !important;
+  border-top: 3px solid #FF6000 !important;
 }
-.indoor-card-body h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: #253b80;
-  margin: 0 0 8px;
+
+/* Card H3 title */
+.indoor-wrap .indoor-card-title,
+.entry-content .indoor-wrap h3.indoor-card-title {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 8px !important;
 }
-.indoor-card-body p {
-  font-size: 13.5px;
-  color: #6b7280;
-  line-height: 1.6;
-  margin: 0;
+
+/* Card text */
+.indoor-wrap .indoor-card-text {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
 }
+
+/* ── Scroll animations ── */
+.indoor-card.pmt-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.indoor-card.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.indoor-card:nth-child(2) { transition-delay: 0.1s; }
+.indoor-card:nth-child(3) { transition-delay: 0.2s; }
+
+/* ════════════════════════════════
+   FACILITIES SECTION
+════════════════════════════════ */
+
 .indoor-facilities {
-  background: #f4f6fb;
-  border-radius: 10px;
-  padding: 40px;
-  margin-bottom: 0;
+  background: #f4f6fb !important;
+  border-radius: 10px !important;
+  padding: 40px !important;
+  margin-bottom: 0 !important;
 }
-.indoor-facilities h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #253b80;
-  margin-bottom: 20px;
+
+/* Facilities H2 */
+.indoor-wrap .indoor-facilities-title,
+.entry-content .indoor-wrap h2.indoor-facilities-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 20px !important;
+  margin-top: 0 !important;
+  line-height: 1.3 !important;
 }
+
 .indoor-fac-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 14px !important;
+  margin-bottom: 14px !important;
 }
+
+.indoor-fac-grid:last-child {
+  margin-bottom: 0 !important;
+}
+
 .indoor-fac-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: #fff;
-  padding: 14px 16px;
-  border-radius: 8px;
-  border: 1px solid rgba(37, 59, 128, 0.07);
-  font-size: 14px;
-  color: #3d4557;
-  font-weight: 500;
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease,
-    box-shadow 0.25s;
+  display: flex !important;
+  align-items: center !important;
+  background: #fff !important;
+  padding: 14px 16px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(37, 59, 128, 0.07) !important;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
+
+.indoor-fac-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 59, 128, 0.1);
+}
+
+.indoor-fac-item p {
+  margin: 0 !important;
+  font-size: 14px !important;
+  color: #3d4557 !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
 .indoor-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #ff6000;
+  background: #FF6000;
   flex-shrink: 0;
-}
-.indoor-cta {
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  border-radius: 10px;
-  padding: 48px 40px;
-  text-align: center;
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
-}
-.indoor-cta h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 12px;
-}
-.indoor-cta p {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 24px;
-}
-.indoor-btn {
   display: inline-block;
-  padding: 12px 30px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  background: #ff6000;
-  color: #fff;
-  margin: 6px;
 }
-.indoor-btn-outline {
-  background: transparent;
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+
+/* ── Facility animations ── */
+.indoor-fac-item.pmt-animate {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.indoor-fac-item.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ════════════════════════════════
+   CTA SECTION
+════════════════════════════════ */
+
+.indoor-cta {
+  background: linear-gradient(135deg, #253b80, #179bd7) !important;
+  border-radius: 10px !important;
+  padding: 48px 40px !important;
+  text-align: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.indoor-cta.pmt-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.indoor-cta.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA H2 */
+.indoor-wrap .indoor-cta-title,
+.entry-content .indoor-wrap h2.indoor-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* CTA text */
+.indoor-cta .indoor-cta-text {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 24px !important;
+  line-height: 1.7 !important;
+}
+
+/* CTA Buttons */
+.indoor-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  border: none !important;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.indoor-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
+  transform: translateY(-2px);
+}
+
+.indoor-cta-btn-outline .wp-block-button__link {
+  background: transparent !important;
+  color: #fff !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  transition: background 0.25s;
+}
+
+.indoor-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .indoor-wrap {
+    padding: 0 16px !important;
+  }
+
+  .indoor-grid .wp-block-column,
+  .indoor-fac-grid .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .indoor-grid {
+    gap: 16px !important;
+  }
+
+  .indoor-facilities {
+    padding: 24px 16px !important;
+  }
+
+  .indoor-cta {
+    padding: 28px 16px !important;
+  }
+
+  .indoor-wrap .indoor-title {
+    font-size: 1.4rem !important;
+  }
+
+  .indoor-wrap .indoor-cta-title,
+  .indoor-wrap .indoor-facilities-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .indoor-wrap .indoor-title {
+    font-size: 1.2rem !important;
+  }
+
+  .indoor-wrap .indoor-cta-title {
+    font-size: 1.2rem !important;
+  }
 }
