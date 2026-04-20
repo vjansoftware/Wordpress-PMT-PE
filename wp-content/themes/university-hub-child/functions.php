@@ -77,20 +77,27 @@ function pmt_theme_styles() {
 
     );
 
-    foreach ($page_styles as $page_id => $file) {
+    foreach ($page_styles as $page_id => $files) {
 
-        if (is_page($page_id)) {
+    if (is_page($page_id)) {
+
+        // convert single file to array
+        if (!is_array($files)) {
+            $files = array($files);
+        }
+
+        foreach ($files as $file) {
 
             wp_enqueue_style(
-                'page-' . $page_id,
+                'page-' . $page_id . '-' . $file,
                 get_stylesheet_directory_uri() . '/css_files/' . $file,
                 array('theme-style'),
                 '1.0'
             );
 
         }
-
     }
+}
 
     // =========================
     // CLUB PAGES
