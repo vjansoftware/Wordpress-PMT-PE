@@ -12,11 +12,12 @@
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 /* — Entry content full width — */
 .pmt-clubs .entry-content {
-  max-width: 1300px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px 60px !important;
 }
