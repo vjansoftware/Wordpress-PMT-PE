@@ -3505,3 +3505,68 @@ p.intra-label::after {
     font-size: 1.2rem !important;
   }
 }
+
+
+/* =============================================
+   footer loader for pmt
+   ============================================= */
+
+#pmt-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #253b80;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pmt-loader-box {
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.pmt-runner div {
+  width: 18px;
+  height: 18px;
+  background: #FF6000;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  animation: run 0.8s infinite alternate ease-in-out;
+}
+
+.pmt-loader-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.pmt-line {
+  width: 220px;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pmt-line span {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: #FF6000;
+  animation: move 1.5s linear infinite;
+}
+
+@keyframes run {
+  from { transform: translateY(0); }
+  to { transform: translateY(-12px); }
+}
+
+@keyframes move {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(250%); }
+}
