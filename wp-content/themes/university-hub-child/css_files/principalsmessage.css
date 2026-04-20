@@ -7,7 +7,7 @@
 .principal-img-wrap{border-radius:10px;overflow:hidden;margin-bottom:20px;}
 .principal-img-wrap img {
   width: 75%;
-  max-height: 500px;
+  max-height: 400px;
   object-fit: contain;
   object-position: top center;
   display: block;
