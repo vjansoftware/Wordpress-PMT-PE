@@ -6,6 +6,7 @@ Version: 1.0
 
 /* ── Header & Logo ── */
 
+@import "css_files/library.css";
 @import "css_files/home.css";
 @import "css_files/scholarships.css";
 
