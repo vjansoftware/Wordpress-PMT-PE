@@ -67,7 +67,14 @@ p.outdoor-label::before {
   background: #FF6000;
   flex-shrink: 0;
 }
-
+p.outdoor-label::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
+}
 /* H1 title */
 .outdoor-wrap .outdoor-title,
 .entry-content .outdoor-wrap h1.outdoor-title {
