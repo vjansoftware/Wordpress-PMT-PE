@@ -4,7 +4,7 @@
 ═══════════════════════════════════════ */
 
 .outdoor-wrap {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
@@ -48,6 +48,7 @@ p.outdoor-label,
   color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
+   justify-content: center !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
   margin-bottom: 8px !important;
