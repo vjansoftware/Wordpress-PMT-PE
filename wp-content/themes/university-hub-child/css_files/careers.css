@@ -1,57 +1,387 @@
-/* CAREERS */
-/* ===== CAREERS PAGE ===== */
+/* ═══════════════════════════════════════
+   PMT CAREERS PAGE — STYLES
+   Colors & fonts matching About College
+═══════════════════════════════════════ */
 
+@keyframes pmt-fadeInUp    { from { opacity:0; transform:translateY(28px); }  to { opacity:1; transform:translateY(0); } }
+@keyframes pmt-fadeInLeft  { from { opacity:0; transform:translateX(-32px); } to { opacity:1; transform:translateX(0); } }
+@keyframes pmt-fadeInRight { from { opacity:0; transform:translateX(32px); }  to { opacity:1; transform:translateX(0); } }
+@keyframes pmt-shimmer     { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
+@keyframes pmt-pulse-border { 0%,100% { box-shadow:0 0 0 0 rgba(255,96,0,0); } 50% { box-shadow:0 0 0 5px rgba(255,96,0,0.18); } }
+@keyframes pmt-float       { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+@keyframes pmt-modal-pop   { from { opacity:0; transform:scale(0.94) translateY(12px); } to { opacity:1; transform:scale(1) translateY(0); } }
 
-/* --- Buttons --- */
+/* ── Wrapper ── */
+.pmt-careers-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.pmt-careers-wrap *,
+.pmt-careers-wrap *::before,
+.pmt-careers-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* ── WordPress theme overrides ── */
+.entry-content .pmt-careers-wrap h1,
+.entry-content .pmt-careers-wrap h2,
+.entry-content .pmt-careers-wrap h3 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .pmt-careers-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+
+.pmt-careers-hero {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Orange label — matches About College */
+p.pmt-careers-label,
+p.pmt-careers-label.has-text-align-center,
+.entry-content p.pmt-careers-label,
+.wp-block-group p.pmt-careers-label,
+body p.pmt-careers-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+  animation: pmt-fadeInUp 0.8s ease both;
+}
+
+p.pmt-careers-label::before,
+p.pmt-careers-label::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Subtitle */
+.pmt-careers-wrap .pmt-careers-sub {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  font-weight: 600 !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  line-height: 1.7 !important;
+  animation: pmt-fadeInUp 0.8s ease 0.1s both;
+}
+
+/* ════════════════════════════════
+   INTRO ROW
+════════════════════════════════ */
+
+.pmt-careers-intro {
+  gap: 50px !important;
+  align-items: center !important;
+}
+
+/* Image */
+.pmt-careers-img-col {
+  padding: 0 !important;
+  animation: pmt-fadeInLeft 0.8s cubic-bezier(.22,.68,0,1.2) 0.1s both;
+}
+
+.pmt-careers-img {
+  margin: 0 !important;
+}
+
+.pmt-careers-img img {
+  width: 100% !important;
+  border-radius: 10px !important;
+  display: block !important;
+  box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12) !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+  animation: pmt-float 5s ease-in-out 1.5s infinite;
+}
+
+.pmt-careers-img img:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 16px 48px rgba(37, 59, 128, 0.18) !important;
+  animation-play-state: paused;
+}
+
+/* Text col */
+.pmt-careers-text-col {
+  animation: pmt-fadeInRight 0.8s cubic-bezier(.22,.68,0,1.2) 0.25s both;
+}
+
+/* H2 title */
+.pmt-careers-wrap .pmt-careers-title,
+.entry-content .pmt-careers-wrap h2.pmt-careers-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 20px !important;
+  animation: pmt-fadeInUp 0.7s ease 0.3s both;
+}
+
+/* Body text */
+.pmt-careers-wrap .pmt-careers-body {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.85 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Blockquote */
+.pmt-careers-blockquote {
+  border-left: 4px solid #FF6000 !important;
+  padding: 14px 20px !important;
+  margin: 20px 0 !important;
+  background: #f4f6fb !important;
+  color: #253b80 !important;
+  font-style: italic !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  animation: pmt-fadeInUp 0.65s ease 0.7s both;
+}
+
+.pmt-careers-blockquote:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.1) !important;
+}
+
+/* ── Buttons ── */
+.pmt-career-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1.5rem;
+  animation: pmt-fadeInUp 0.6s ease 0.85s both;
+}
+
 .pmt-btn-apply {
-  background: #0a2e6e;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 12px 26px;
+  background: #FF6000;
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 11px 26px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: pmt-pulse-border 3s ease-in-out 2s infinite;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-.pmt-btn-apply:hover { background: #0d3a8a; }
 
-/* --- WPForms responsive fix inside modal --- */
+.pmt-btn-apply::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.28) 50%, transparent 60%);
+  background-size: 200% 100%;
+  animation: pmt-shimmer 2.8s linear infinite;
+  pointer-events: none;
+}
+
+.pmt-btn-apply:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 96, 0, 0.3);
+  background: #e65500;
+}
+
+.pmt-btn-salary {
+  display: block;
+  width: 100%;
+  padding: 12px 26px;
+  background: #253b80;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.pmt-btn-salary:hover {
+  background: #1a2d6b;
+  transform: translateY(-2px);
+}
+
+/* ════════════════════════════════
+   SALARY MODAL
+════════════════════════════════ */
+
+#resume-modal {
+  display: none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: rgba(0, 0, 0, 0.85) !important;
+  z-index: 999999 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.pmt-salary-modal-inner {
+  position: relative !important;
+  width: 90% !important;
+  max-width: 900px !important;
+  height: 90vh !important;
+  background: #fff !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.pmt-salary-modal-header {
+  padding: 14px 20px;
+  background: #253b80;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pmt-salary-modal-header span {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pmt-modal-close {
+  color: #FF6000 !important;
+  text-decoration: none !important;
+  font-size: 26px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  transition: transform 0.2s ease, color 0.2s ease !important;
+  display: inline-block !important;
+}
+
+.pmt-modal-close:hover {
+  transform: rotate(90deg) scale(1.2) !important;
+  color: #ff3300 !important;
+}
+
+.pmt-salary-modal-body {
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* ════════════════════════════════
+   APPLY MODAL
+════════════════════════════════ */
+
+#pmtApplyModal {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  z-index: 9999 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.pmt-apply-modal-inner {
+  background: #fff !important;
+  border-radius: 12px !important;
+  padding: 2rem 1.75rem !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  position: relative !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+.pmt-apply-modal-title {
+  margin: 0 0 1.25rem !important;
+  font-size: 1.2rem !important;
+  color: #253b80 !important;
+  font-weight: 700 !important;
+}
+
+#pmtApplyModal[style*="flex"] .pmt-apply-modal-inner,
+#resume-modal[style*="flex"] .pmt-salary-modal-inner {
+  animation: pmt-modal-pop 0.35s cubic-bezier(.22,.68,0,1.2) both;
+}
+
+/* Admin bar fix */
+.admin-bar #resume-modal,
+.admin-bar #pmtApplyModal {
+  top: 0 !important;
+  height: 100vh !important;
+  padding-top: 32px !important;
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar #resume-modal,
+  .admin-bar #pmtApplyModal {
+    padding-top: 46px !important;
+  }
+}
+
+/* ════════════════════════════════
+   WPFORMS INSIDE MODAL
+════════════════════════════════ */
+
 #pmtApplyModal .wpforms-container,
 #pmtApplyModal .wpforms-form {
   width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* Name row: side-by-side on desktop, stacked on mobile */
 #pmtApplyModal .wpforms-field-name .wpforms-field-row {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 12px !important;
 }
-#pmtApplyModal .wpforms-field-name .wpforms-field-row .wpforms-field-row-block {
-  flex: 1 1 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  display: block !important;
-}
 
-#pmtApplyModal .wpforms-field-name .wpforms-field-row .wpforms-field-row-block input {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  display: block !important;
-}
-  #pmtApplyModal .wpforms-field-name input[type="text"] {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  display: block !important;
-}
-
+#pmtApplyModal .wpforms-field-name .wpforms-field-row .wpforms-field-row-block,
 #pmtApplyModal .wpforms-field-name .wpforms-field-row,
-#pmtApplyModal .wpforms-field-name .wpforms-field-row-block,
 #pmtApplyModal .wpforms-field-name .wpforms-name-first,
 #pmtApplyModal .wpforms-field-name .wpforms-name-last {
   width: 100% !important;
@@ -61,7 +391,7 @@
   float: none !important;
   padding: 0 !important;
 }
-/* All inputs, selects, textareas — full width, no overflow */
+
 #pmtApplyModal .wpforms-field input[type="text"],
 #pmtApplyModal .wpforms-field input[type="email"],
 #pmtApplyModal .wpforms-field input[type="tel"],
@@ -77,7 +407,6 @@
   font-size: 14px !important;
 }
 
-/* Radio buttons — horizontal row */
 #pmtApplyModal .wpforms-field-radio ul {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -86,17 +415,12 @@
   list-style: none !important;
   margin: 0 !important;
 }
-#pmtApplyModal .wpforms-field-radio ul li {
-  margin: 0 !important;
-}
 
-/* Field spacing */
 #pmtApplyModal .wpforms-field {
   margin-bottom: 14px !important;
   padding: 0 !important;
 }
 
-/* Labels */
 #pmtApplyModal .wpforms-field-label {
   font-size: 13px !important;
   font-weight: 600 !important;
@@ -104,7 +428,6 @@
   margin-bottom: 5px !important;
 }
 
-/* Submit + Cancel button row */
 #pmtApplyModal .wpforms-submit-container {
   display: flex !important;
   gap: 10px !important;
@@ -112,11 +435,9 @@
   margin-top: 6px !important;
 }
 
-/* Submit button */
 #pmtApplyModal .wpforms-submit {
   flex: 1 !important;
-  width: auto !important;
-  background: #0a2e6e !important;
+  background: #253b80 !important;
   color: #fff !important;
   border: none !important;
   border-radius: 8px !important;
@@ -126,41 +447,72 @@
   cursor: pointer !important;
   margin-top: 0 !important;
 }
+
 #pmtApplyModal .wpforms-submit:hover {
-  background: #0d3a8a !important;
+  background: #1a2d6b !important;
 }
 
-/* Cancel button */
 #pmt-cancel-btn {
   flex: 1;
   background: transparent;
-  color: #0a2e6e;
-  border: 2px solid #0a2e6e;
+  color: #253b80;
+  border: 2px solid #253b80;
   border-radius: 8px;
   padding: 11px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
-}
-#pmt-cancel-btn:hover {
-  background: #e8eef7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* Mobile: stack name fields */
-@media (max-width: 480px) {
-  #pmtApplyModal .wpforms-field-name .wpforms-field-row-block {
-    flex: 1 1 100% !important;
+#pmt-cancel-btn:hover {
+  background: #f4f6fb;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .pmt-careers-wrap {
+    padding: 0 16px !important;
   }
+
+  .pmt-careers-intro .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .pmt-careers-wrap .pmt-careers-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pmt-careers-wrap .pmt-careers-title {
+    font-size: 1.2rem !important;
+  }
+
   #pmtApplyModal .wpforms-field-radio ul {
     flex-direction: column !important;
     gap: 8px !important;
   }
+
   #pmtApplyModal .wpforms-submit-container {
     flex-direction: column !important;
   }
+
   #pmtApplyModal .wpforms-submit,
   #pmt-cancel-btn {
     width: 100% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
