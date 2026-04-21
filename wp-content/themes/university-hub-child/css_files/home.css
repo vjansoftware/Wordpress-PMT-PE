@@ -383,14 +383,16 @@ p.pmt-stat-lbl {
 
 .pmt-courses-img-col .wp-block-image figure {
   margin: 0 !important;
+  height: 100% !important;   /* 👈 add this */
 }
 
 .pmt-courses-img-col .wp-block-image img {
-  border-radius: 12px !important;
-  box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
+  height: 100% !important;   /* 👈 MOST IMPORTANT FIX */
   object-fit: cover !important;
   object-position: center top !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   display: block !important;
   transition: transform 0.4s ease !important;
 }
