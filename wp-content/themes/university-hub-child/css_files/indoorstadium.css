@@ -290,6 +290,20 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .page-id-3386 .entry-content,
+  .page-id-3386 .entry-content > * {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Fix full-width Gutenberg blocks */
+  .page-id-3386 .wp-block-columns,
+  .page-id-3386 .wp-block-media-text,
+  .page-id-3386 .wp-block-group {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
   .page-id-3386 .entry-content {
     padding: 18px 16px 40px !important;
   }
