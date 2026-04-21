@@ -252,7 +252,8 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 520px !important;
+  height: auto !important;
+  min-height: 300px !important;
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
@@ -388,7 +389,7 @@ p.pmt-stat-lbl {
 .pmt-courses-img-col .wp-block-image img {
   width: 100% !important;
   height: auto !important;
-  min-height: 300px !important;
+  min-height: 480px !important;
   object-fit: cover !important;
   object-position: center top !important;
   border-radius: 12px !important;
