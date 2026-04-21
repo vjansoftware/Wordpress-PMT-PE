@@ -237,14 +237,14 @@ p.pmt-stat-lbl {
   padding-right: 0 !important;
 }
 
-.pmt-about-img-col .wp-block-image figure {
-  margin: 0 !important;
-}
-
 .pmt-about-img-col .wp-block-image {
   width: 100% !important;
-  height: 620px !important;
-  overflow: hidden !important;
+  margin: 0 !important;
+  border: none !important;
+  display: block !important;
+}
+
+.pmt-about-img-col .wp-block-image figure {
   margin: 0 !important;
 }
 
@@ -252,7 +252,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 520px !important;
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
@@ -370,15 +370,14 @@ p.pmt-stat-lbl {
   padding: 0 0 50px 0 !important;
   overflow: visible !important;
 }
-
-.pmt-courses-img-col .wp-block-image figure {
-  margin: 0 !important;
-}
-
 .pmt-courses-img-col .wp-block-image {
   width: 100% !important;
-  height: 620px !important;
-  overflow: hidden !important;
+  margin: 0 !important;
+  border: none !important;
+  display: block !important;
+}
+
+.pmt-courses-img-col .wp-block-image figure {
   margin: 0 !important;
 }
 
@@ -386,7 +385,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 520px !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
@@ -857,16 +856,6 @@ p.pmt-contact-sub a {
     width: 100% !important;
   }
 
-  /* About image on tablet */
-  .pmt-about-img-col .wp-block-image {
-    height: 620px !important;
-  }
-
-  /* Courses image on tablet */
-  .pmt-courses-img-col .wp-block-image {
-    height: 620px !important;
-  }
-
   /* Badge position on tablet */
   .pmt-year-badge {
     bottom: 0 !important;
@@ -934,15 +923,11 @@ p.pmt-contact-sub a {
   p.pmt-stat-num { font-size: 1.6rem !important; }
 
   /* About image */
-  .pmt-about-img-col .wp-block-image {
-    height: 420px !important;
-  }
+  .pmt-about-img-col .wp-block-image img { height: 420px !important; }
   .pmt-about-img-col { padding-bottom: 50px !important; }
 
   /* Courses image */
-  .pmt-courses-img-col .wp-block-image {
-    height: 200px !important;
-  }
+  .pmt-courses-img-col .wp-block-image img { height: 200px !important; }
 
   /* Badge */
   .pmt-year-badge {
@@ -1007,8 +992,6 @@ p.pmt-contact-sub a {
 
   p.pmt-stat-num { font-size: 1.4rem !important; }
 
-  .pmt-about-img-col .wp-block-image,
-  .pmt-courses-img-col .wp-block-image {
-    height: 180px !important;
-  }
+  .pmt-about-img-col .wp-block-image img,
+  .pmt-courses-img-col .wp-block-image img { height: 180px !important; }
 }
