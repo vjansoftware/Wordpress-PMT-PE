@@ -400,7 +400,13 @@ p.pmt-stat-lbl {
 .pmt-courses-img-col .wp-block-image img:hover {
   transform: scale(1.02) !important;
 }
-
+.pmt-courses-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 .pmt-course-badge {
   position: absolute;
   bottom: 0;
