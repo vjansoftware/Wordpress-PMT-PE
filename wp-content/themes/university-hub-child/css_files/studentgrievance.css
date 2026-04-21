@@ -425,6 +425,7 @@ p.gr-section-label::after {
 
   .gr-img img {
     height: 240px !important;
+    padding-top: 16px !important;
   }
 
   .gr-cards .wp-block-column {
