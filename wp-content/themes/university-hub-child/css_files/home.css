@@ -367,9 +367,9 @@ p.pmt-stat-lbl {
 
 .pmt-courses-img-col {
   position: relative !important;
-  padding: 0 !important;
+  padding: 0 0 50px 0 !important;
+  overflow: visible !important;
 }
-
 .pmt-courses-img-col .wp-block-image {
   width: 100% !important;
   margin: 0 !important;
@@ -394,10 +394,6 @@ p.pmt-stat-lbl {
 
 .pmt-courses-img-col .wp-block-image img:hover {
   transform: scale(1.02) !important;
-}
-.pmt-courses-img-col {
-  position: relative !important;
-  padding-bottom: 50px !important;
 }
 
 .pmt-course-badge {
