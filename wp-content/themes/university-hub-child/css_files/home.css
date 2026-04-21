@@ -377,10 +377,8 @@ p.pmt-stat-lbl {
   overflow: visible !important;
 }
 .pmt-courses-img-col .wp-block-image {
-  width: 100% !important;
-  margin: 0 !important;
-  border: none !important;
-  display: block !important;
+  height: 500px !important;   /* 👈 change this value */
+  overflow: hidden;
 }
 
 .pmt-courses-img-col .wp-block-image figure {
@@ -391,7 +389,6 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 520px !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
