@@ -20,7 +20,6 @@
 .page-about .entry-content {
     max-width: 1200px !important;
     margin: 0 auto !important;
-    padding: 40px 24px 64px !important;
 }
 
 /* ── Base spacing between sections ── */
@@ -70,7 +69,14 @@
     background: #FF6000;
     flex-shrink: 0;
 }
-
+.about-label::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #FF6000;
+    flex-shrink: 0;
+}
 /* ── Section heading ── */
 .about-section-title {
     font-size: 2rem;
