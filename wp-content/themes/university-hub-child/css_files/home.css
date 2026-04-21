@@ -237,14 +237,15 @@ p.pmt-stat-lbl {
   padding-right: 0 !important;
 }
 
-.pmt-about-img-col .wp-block-image {
-  width: 100% !important;
-  margin: 0 !important;
-  border: none !important;
-  display: block !important;
-}
 
 .pmt-about-img-col .wp-block-image figure {
+  margin: 0 !important;
+}
+
+.pmt-about-img-col .wp-block-image {
+  width: 100% !important;
+  height: 620px !important;
+  overflow: hidden !important;
   margin: 0 !important;
 }
 
@@ -252,13 +253,12 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 520px !important;
+  height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
   transition: transform 0.4s ease !important;
 }
-
 .pmt-about-img-col .wp-block-image img:hover {
   transform: scale(1.02) !important;
 }
@@ -370,14 +370,15 @@ p.pmt-stat-lbl {
   padding: 0 0 50px 0 !important;
   overflow: visible !important;
 }
-.pmt-courses-img-col .wp-block-image {
-  width: 100% !important;
-  margin: 0 !important;
-  border: none !important;
-  display: block !important;
-}
 
 .pmt-courses-img-col .wp-block-image figure {
+  margin: 0 !important;
+}
+
+.pmt-courses-img-col .wp-block-image {
+  width: 100% !important;
+  height: 620px !important;
+  overflow: hidden !important;
   margin: 0 !important;
 }
 
@@ -385,7 +386,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 520px !important;
+  height: 100% !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
