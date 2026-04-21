@@ -225,7 +225,7 @@ p.pmt-stat-lbl {
 
 .pmt-about-cols.wp-block-columns {
   align-items: center !important;
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 60px !important;
@@ -254,7 +254,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 340px !important;
+   height: auto !important;
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
