@@ -1,652 +1,437 @@
+/* ═══════════════════════════════
+   PMT HOMEPAGE — GUTENBERG CSS
+═══════════════════════════════ */
 
-/* ══════════════════════════════════════
-   PMT MAIN HOMEPAGE — ALL STYLES
-══════════════════════════════════════ */
-.pmt-main-homepage * { box-sizing: border-box; }
-.pmt-main-homepage img { max-width: 100%; display: block; }
-/* ── ANIMATIONS ── */
-.pmt-main-homepage .pmt-anim {
-  opacity: 0;
-  transform: translateY(30px);
+/* ── SHARED TAG ── */
+p.pmt-section-tag {
+  color: #FF6000 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
 }
-.pmt-main-homepage .pmt-anim.pmt-visible { opacity: 1; transform: translateY(0); }
-.pmt-main-homepage .pmt-anim:nth-child(2) { transition-delay: 0.1s; }
-.pmt-main-homepage .pmt-anim:nth-child(3) { transition-delay: 0.2s; }
-.pmt-main-homepage .pmt-anim:nth-child(4) { transition-delay: 0.3s; }
-/* ── SHARED TYPOGRAPHY ── */
-.pmt-main-homepage .pmt-tag {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #FF6000;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.pmt-main-homepage .pmt-tag::before {
+p.pmt-section-tag::before,
+p.pmt-section-tag::after {
   content: '';
-  display: none;
-}
-.pmt-main-homepage .pmt-tag-center { justify-content: center; }
-.pmt-main-homepage .pmt-section-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #253b80;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-.pmt-main-homepage .pmt-section-h2-white { color: #fff; }
-.pmt-main-homepage .pmt-section-h2 .pmt-accent { color: #FF6000; }
-.pmt-main-homepage .pmt-body {
-  font-size: 15px;
-  line-height: 1.85;
-  color: #3d4557;
-  margin-bottom: 14px;
-}
-.pmt-main-homepage .pmt-body-white { color: rgba(255,255,255,0.75); }
-.pmt-main-homepage .pmt-section-header { text-align: center; margin-bottom: 30px; }
-.pmt-main-homepage .pmt-section-subtext {
-  font-size: 14px;
-  color: #6b7280;
-  margin-top: -10px;
-  margin-bottom: 0;
-}
-.pmt-main-homepage .pmt-note-sub {
-  font-size: 12px;
-  color: #9098a9;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
- /* ── BUTTONS ── */
-.pmt-main-homepage .pmt-vbtn-gold {
-  background: #FF6000;
-  color: #fff;
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background 0.3s;
   display: inline-block;
-}
-.pmt-main-homepage .pmt-vbtn-gold:hover { background: #e05500; }
-.pmt-main-homepage .pmt-vbtn-outline {
-  background: transparent;
-  color: #253b80;
-  border: 2px solid #253b80;
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  transition: border-color 0.3s, color 0.3s, background 0.3s;
-  display: inline-block;
-}
-.pmt-main-homepage .pmt-vbtn-outline:hover { background: #253b80; color: #fff; }
-.pmt-main-homepage .pmt-vbtn-ghost {
-  background: transparent;
-  color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.45);
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.3s;
-}
-.pmt-main-homepage .pmt-vbtn-ghost:hover { background: rgba(255,255,255,0.15); }
- /* ── STATS BAND ── */
-.pmt-main-homepage .pmt-stats-band {
-  background: #fff;
-  border-bottom: 1px solid rgba(37,59,128,0.08);
-  display: flex;
-  justify-content: center;
-}
-.pmt-main-homepage .pmt-stats-band,
-.pmt-main-homepage .pmt-about-strip,
-/* .pmt-main-homepage .pmt-notice-section, */
-.pmt-main-homepage .pmt-courses-section,
-.pmt-main-homepage .pmt-sports-section,
-.pmt-main-homepage .pmt-news-section,
-.pmt-main-homepage .pmt-deadline-banner,
-.pmt-main-homepage .pmt-elig-section,
-.pmt-main-homepage .pmt-docs-section,
-.pmt-main-homepage .pmt-contact-section {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: 0;
-}
-.pmt-main-homepage .pmt-stats-band-inner {
-  max-width: 1100px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
-}
-.pmt-main-homepage .pmt-stat-item {
-  padding: 24px 20px;
-  text-align: center;
-  border-right: 1px solid rgba(37,59,128,0.08);
-  transition: background 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.pmt-main-homepage .pmt-stat-item:hover { background: #f0f7fd; }
-.pmt-main-homepage .pmt-stat-item:last-child { border-right: none; }
-.pmt-main-homepage .pmt-stat-num {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #253b80;
-  display: block;
-}
-.pmt-main-homepage .pmt-stat-lbl {
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #9098a9;
-  margin-top: 4px;
-  display: block;
-}
- /* ── NOTICE BOARD ── */
-/* .pmt-main-homepage .pmt-notice-section {
-  background: #f0f7fd;
-  padding: 30px 40px;
-}
-.pmt-main-homepage .pmt-notice-inner {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 0;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.pmt-main-homepage .pmt-notice-box {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgba(37,59,128,0.08);
-  box-shadow: 0 2px 12px rgba(37,59,128,0.06);
-}
-.pmt-main-homepage .pmt-notice-head {
-  background: #253b80;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.pmt-main-homepage .pmt-notice-head h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #179bd7;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 0;
-}
-.pmt-main-homepage .pmt-notice-head a {
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  text-decoration: none;
-}
-.pmt-main-homepage .pmt-notice-head a:hover { color: #FF6000; }
-.pmt-main-homepage .pmt-notice-list {
-  padding: 8px 0;
-  max-height: 260px;
-  overflow-y: auto;
-}
-.pmt-main-homepage .pmt-notice-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 24px;
-  border-bottom: 1px solid rgba(37,59,128,0.05);
-  transition: background 0.2s;
-}
-.pmt-main-homepage .pmt-notice-item:hover { background: #f0f7fd; }
-.pmt-main-homepage .pmt-notice-item:last-child { border-bottom: none; }
-.pmt-main-homepage .pmt-notice-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
+  width: 20px;
+  height: 2px;
   background: #FF6000;
   flex-shrink: 0;
-  margin-top: 6px;
 }
-.pmt-main-homepage .pmt-notice-item p { font-size: 13px; color: #3d4557; line-height: 1.5; margin: 0; }
-.pmt-main-homepage .pmt-notice-item span { font-size: 11px; color: #9098a9; display: block; margin-top: 3px; } */
- /* ── ABOUT ── */
-.pmt-main-homepage .pmt-about-strip { padding: 50px 40px 30px; background: #fff; }
-.pmt-main-homepage .pmt-about-strip-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+
+/* ── SHARED H2 ── */
+.pmt-section-h2.wp-block-heading,
+h2.pmt-section-h2 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 16px !important;
+  line-height: 1.25 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-about-img-wrap {
-  position: relative;
-  padding-bottom: 30px;
-  padding-right: 30px;
+.pmt-section-h2 .pmt-accent { color: #FF6000; }
+
+p.pmt-section-subtext {
+  font-size: 14px !important;
+  color: #6b7280 !important;
+  margin: 0 !important;
 }
-.pmt-main-homepage .pmt-about-img-wrap img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(37,59,128,0.15);
+
+p.pmt-body-text {
+  font-size: 15px !important;
+  line-height: 1.85 !important;
+  color: #3d4557 !important;
+  margin-bottom: 14px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-about-badge {
-  position: absolute;
-  bottom: 0; right: 0;
-  background: #253b80;
-  border-radius: 10px;
-  padding: 20px 24px;
-  text-align: center;
-  border: 3px solid #FF6000;
+
+/* ── STATS ── */
+.pmt-stats-band {
+  border-bottom: 1px solid rgba(37,59,128,0.08) !important;
 }
-.pmt-main-homepage .pmt-about-badge strong {
-  font-size: 2rem;
-  color: #FF6000;
-  display: block;
+.pmt-stats-inner.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  gap: 0 !important;
 }
-.pmt-main-homepage .pmt-about-badge span {
-  font-size: 12px;
-  color: rgba(255,255,255,0.7);
+.pmt-stat-item.wp-block-column {
+  padding: 28px 20px !important;
+  border-right: 1px solid rgba(37,59,128,0.08) !important;
+  text-align: center !important;
+  transition: background 0.3s !important;
 }
-.pmt-main-homepage .pmt-about-features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 24px;
+.pmt-stat-item.wp-block-column:last-child { border-right: none !important; }
+.pmt-stat-item.wp-block-column:hover { background: #f0f7fd !important; }
+
+p.pmt-stat-num {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-about-feat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13.5px;
-  color: #3d4557;
-  font-weight: 500;
+p.pmt-stat-lbl {
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: #9098a9 !important;
+  margin: 4px 0 0 !important;
 }
-.pmt-main-homepage .pmt-about-feat-dot {
-  width: 10px; height: 10px;
+
+/* ── ABOUT ── */
+.pmt-about-cols.wp-block-columns {
+  align-items: center !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+}
+.pmt-about-img-col .wp-block-image img {
+  border-radius: 10px !important;
+  box-shadow: 0 8px 30px rgba(37,59,128,0.15) !important;
+  width: 100% !important;
+}
+.pmt-about-content-col p.pmt-section-tag {
+  justify-content: flex-start !important;
+}
+.pmt-about-content-col p.pmt-section-tag::before,
+.pmt-about-content-col p.pmt-section-tag::after { display: none !important; }
+.pmt-about-content-col h2.pmt-section-h2 { text-align: left !important; }
+
+/* ── FEATS ── */
+.pmt-feats-grid.wp-block-columns {
+  gap: 12px !important;
+  margin-bottom: 0 !important;
+}
+.pmt-feat-item p {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 13.5px !important;
+  color: #3d4557 !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+.pmt-feat-dot {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #179bd7;
   flex-shrink: 0;
+  display: inline-block;
 }
- /* ── COURSES ── */
-.pmt-main-homepage .pmt-courses-section { padding: 20px 40px 50px; background: #f0f7fd; }
-.pmt-main-homepage .pmt-courses-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-courses-layout {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-  align-items: stretch;
-  width: 100%;
-  margin-top: 30px;
+
+/* ── COURSES ── */
+.pmt-courses-section { border-top: 1px solid rgba(37,59,128,0.06) !important; }
+.pmt-courses-cols.wp-block-columns {
+  align-items: center !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
-.pmt-main-homepage .pmt-courses-img-wrap {
-  flex: 1;
-  min-width: 0;
-  position: relative;
-  padding-bottom: 60px;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column;
+.pmt-courses-img-col .wp-block-image img {
+  border-radius: 10px !important;
+  box-shadow: 0 8px 30px rgba(37,59,128,0.15) !important;
+  width: 100% !important;
+  transition: transform 0.4s ease !important;
 }
-.pmt-main-homepage .pmt-courses-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(37,59,128,0.15);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  flex: 1;
+.pmt-courses-img-col .wp-block-image img:hover { transform: scale(1.02) !important; }
+.pmt-courses-content-col p.pmt-section-tag { justify-content: flex-start !important; }
+.pmt-courses-content-col p.pmt-section-tag::before,
+.pmt-courses-content-col p.pmt-section-tag::after { display: none !important; }
+.pmt-courses-content-col h2.pmt-section-h2 { text-align: left !important; }
+
+.pmt-outline-btn .wp-block-button__link {
+  background: transparent !important;
+  color: #253b80 !important;
+  border: 2px solid #253b80 !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 28px !important;
+  transition: background 0.3s, color 0.3s !important;
 }
-.pmt-main-homepage .pmt-courses-img-wrap img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 18px 50px rgba(37,59,128,0.22);
+.pmt-outline-btn .wp-block-button__link:hover {
+  background: #253b80 !important;
+  color: #fff !important;
 }
-.pmt-main-homepage .pmt-courses-img-badge {
-  position: absolute;
-  bottom: 0; right: 0;
-  background: #253b80;
-  border-radius: 10px;
-  padding: 20px 24px;
-  text-align: center;
-  border: 3px solid #FF6000;
+
+/* ── SPORTS ── */
+.pmt-sports-section { border-top: 1px solid rgba(37,59,128,0.08) !important; }
+.pmt-sports-row.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
 }
-.pmt-main-homepage .pmt-courses-img-badge strong {
-  font-size: 2rem;
-  color: #FF6000;
-  display: block;
+.pmt-sport-card.wp-block-column {
+  background: #fff !important;
+  border: 1px solid rgba(37,59,128,0.12) !important;
+  border-radius: 10px !important;
+  padding: 24px 16px !important;
+  text-align: center !important;
+  transition: background 0.3s, transform 0.3s, border-color 0.3s !important;
+  box-shadow: 0 2px 10px rgba(37,59,128,0.06) !important;
 }
-.pmt-main-homepage .pmt-courses-img-badge span {
-  font-size: 12px;
-  color: rgba(255,255,255,0.7);
+.pmt-sport-card.wp-block-column:hover {
+  background: #e8f4fc !important;
+  border-color: #179bd7 !important;
+  transform: translateY(-4px) !important;
 }
-.pmt-main-homepage .pmt-courses-img-label {
-  position: absolute;
-  top: 16px; left: 16px;
-  background: #FF6000;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 20px;
+p.pmt-sport-icon {
+  font-size: 32px !important;
+  margin: 0 0 8px !important;
+  line-height: 1 !important;
 }
-.pmt-main-homepage .pmt-courses-content {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+h4.pmt-sport-name {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 4px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-courses-feats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 24px;
+p.pmt-sport-sub {
+  font-size: 12px !important;
+  color: #179bd7 !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
 }
-.pmt-main-homepage .pmt-courses-feat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13.5px;
-  color: #3d4557;
-  font-weight: 500;
+
+/* ── NEWS ── */
+.pmt-news-grid.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
 }
-.pmt-main-homepage .pmt-courses-feat-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: #179bd7;
-  flex-shrink: 0;
+.pmt-news-card.wp-block-column {
+  background: #fff !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(37,59,128,0.08) !important;
+  box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
+  padding: 0 !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
 }
-.pmt-main-homepage .pmt-courses-btns {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 28px;
+.pmt-news-card.wp-block-column:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 28px rgba(37,59,128,0.12) !important;
 }
- /* ── SPORTS ── */
-.pmt-main-homepage .pmt-sports-section { padding: 50px 40px; background: #f0f7fd; }
-.pmt-main-homepage .pmt-sports-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-sports-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 30px;
+.pmt-news-img-wrap.wp-block-image { margin: 0 !important; }
+.pmt-news-img-wrap img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 0 !important;
 }
-.pmt-main-homepage .pmt-sport-card {
-  background: #fff;
-  border: 1px solid rgba(37,59,128,0.12);
-  border-radius: 10px;
-  padding: 24px 16px;
-  text-align: center;
-  transition: background 0.3s, transform 0.3s, border-color 0.3s;
-  box-shadow: 0 2px 10px rgba(37,59,128,0.06);
+.pmt-news-body.wp-block-group { padding: 20px !important; }
+p.pmt-news-tag {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #FF6000 !important;
+  margin: 0 0 8px !important;
 }
-.pmt-main-homepage .pmt-sport-card:hover {
-  background: #e8f4fc;
-  border-color: #179bd7;
-  transform: translateY(-4px);
+h3.pmt-news-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  line-height: 1.4 !important;
+  margin: 0 0 8px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-sport-card h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #253b80;
-  margin-top: 10px;
-  margin-bottom: 0;
+p.pmt-news-text {
+  font-size: 13px !important;
+  color: #6b7280 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
 }
-.pmt-main-homepage .pmt-sport-card p {
-  font-size: 12px;
-  color: #179bd7;
-  margin-top: 4px;
-  margin-bottom: 0;
-  font-weight: 600;
+
+/* ── ELIGIBILITY ── */
+.pmt-elig-grid.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
 }
- /* ── NEWS ── */
-.pmt-main-homepage .pmt-news-section { padding: 50px 40px; background: #fff; }
-.pmt-main-homepage .pmt-news-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-news-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 30px;
+.pmt-elig-card.wp-block-column {
+  background: #f0f7fd !important;
+  border-radius: 10px !important;
+  padding: 32px 28px !important;
+  border-top: 4px solid #FF6000 !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
 }
-.pmt-main-homepage .pmt-news-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgba(37,59,128,0.08);
-  box-shadow: 0 2px 12px rgba(37,59,128,0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
+.pmt-elig-card.wp-block-column:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(37,59,128,0.12) !important;
 }
-.pmt-main-homepage .pmt-news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(37,59,128,0.12);
+p.pmt-elig-icon-wrap {
+  font-size: 32px !important;
+  width: 56px !important;
+  height: 56px !important;
+  background: #253b80 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 0 16px !important;
+  line-height: 1 !important;
 }
-.pmt-main-homepage .pmt-news-img { width: 100%; height: 180px; object-fit: cover; display: block; }
-.pmt-main-homepage .pmt-news-body { padding: 20px; }
-.pmt-main-homepage .pmt-news-tag {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #FF6000;
-  margin-bottom: 8px;
-  display: block;
+h3.pmt-elig-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 8px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
-.pmt-main-homepage .pmt-news-body h3 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #253b80;
-  line-height: 1.4;
-  margin-bottom: 8px;
-  margin-top: 0;
+p.pmt-elig-text {
+  font-size: 14px !important;
+  color: #3d4557 !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
 }
-.pmt-main-homepage .pmt-news-body p { font-size: 13px; color: #6b7280; line-height: 1.6; margin: 0; }
- /* ── ELIGIBILITY ── */
-.pmt-main-homepage .pmt-elig-section { padding: 50px 40px; background: #fff; }
-.pmt-main-homepage .pmt-elig-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-elig-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+
+/* ── DOCUMENTS ── */
+.pmt-docs-row.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto 14px !important;
+  padding: 0 40px !important;
 }
-.pmt-main-homepage .pmt-elig-card {
-  background: #f0f7fd;
-  border-radius: 10px;
-  padding: 32px 28px;
-  border-top: 4px solid #FF6000;
-  transition: transform 0.3s, box-shadow 0.3s;
+.pmt-doc-item.wp-block-column {
+  background: #fff !important;
+  border-radius: 10px !important;
+  padding: 16px 16px !important;
+  border: 1px solid rgba(37,59,128,0.08) !important;
+  box-shadow: 0 2px 8px rgba(37,59,128,0.05) !important;
+  transition: border-color 0.2s, transform 0.2s !important;
+  font-size: 13px !important;
+  color: #3d4557 !important;
+  font-weight: 500 !important;
 }
-.pmt-main-homepage .pmt-elig-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(37,59,128,0.12);
+.pmt-doc-item.wp-block-column:hover {
+  border-color: #179bd7 !important;
+  transform: translateY(-2px) !important;
 }
-.pmt-main-homepage .pmt-elig-icon {
-  width: 48px; height: 48px;
-  border-radius: 50%;
-  background: #253b80;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
+.pmt-doc-item p {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: #3d4557 !important;
+  font-weight: 500 !important;
 }
-.pmt-main-homepage .pmt-elig-icon svg { width: 24px; height: 24px; fill: #fff; }
-.pmt-main-homepage .pmt-elig-card h3 { font-size: 15px; font-weight: 700; color: #253b80; margin-bottom: 8px; margin-top: 0; }
-.pmt-main-homepage .pmt-elig-card p { font-size: 14px; color: #3d4557; line-height: 1.7; margin: 0; }
- /* ── DOCUMENTS ── */
-.pmt-main-homepage .pmt-docs-section { padding: 50px 40px; background: #f0f7fd; }
-.pmt-main-homepage .pmt-docs-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-docs-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-.pmt-main-homepage .pmt-doc-item {
-  background: #fff;
-  border-radius: 10px;
-  padding: 18px 16px;
-  border: 1px solid rgba(37,59,128,0.08);
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  box-shadow: 0 2px 8px rgba(37,59,128,0.05);
-  transition: border-color 0.2s, transform 0.2s;
-}
-.pmt-main-homepage .pmt-doc-item:hover { border-color: #179bd7; transform: translateY(-2px); }
-.pmt-main-homepage .pmt-doc-item-wide { grid-column: span 2; }
-.pmt-main-homepage .pmt-doc-num {
-  min-width: 28px; height: 28px;
+.pmt-doc-num {
+  min-width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: #253b80;
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
 }
-.pmt-main-homepage .pmt-doc-item p { font-size: 13px; color: #3d4557; line-height: 1.5; font-weight: 500; margin: 0; }
- /* ── CONTACT ── */
-.pmt-main-homepage .pmt-contact-section { padding: 50px 40px; background: #f0f7fd; }
-.pmt-main-homepage .pmt-contact-inner { max-width: 1100px; margin: 0 auto; }
-.pmt-main-homepage .pmt-contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+
+/* ── CONTACT ── */
+.pmt-contact-grid.wp-block-columns {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
 }
-.pmt-main-homepage .pmt-contact-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 30px 24px;
-  text-align: center;
-  border: 1px solid rgba(37,59,128,0.08);
-  box-shadow: 0 2px 12px rgba(37,59,128,0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
+.pmt-contact-card.wp-block-column {
+  background: #fff !important;
+  border-radius: 10px !important;
+  padding: 30px 24px !important;
+  text-align: center !important;
+  border: 1px solid rgba(37,59,128,0.08) !important;
+  box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
 }
-.pmt-main-homepage .pmt-contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(37,59,128,0.12);
+.pmt-contact-card.wp-block-column:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 28px rgba(37,59,128,0.12) !important;
 }
-.pmt-main-homepage .pmt-contact-icon {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  background: #f0f7fd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 14px;
+p.pmt-contact-icon-wrap {
+  font-size: 28px !important;
+  width: 56px !important;
+  height: 56px !important;
+  background: #f0f7fd !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto 14px !important;
+  line-height: 1 !important;
 }
-.pmt-main-homepage .pmt-contact-icon svg { width: 26px; height: 26px; }
-.pmt-main-homepage .pmt-contact-card h4 {
-  font-size: 11px;
-  font-weight: 700;
-  color: #9098a9;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 0;
+h4.pmt-contact-label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #9098a9 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 10px !important;
 }
-.pmt-main-homepage .pmt-contact-card a {
-  font-size: 17px;
-  font-weight: 700;
-  color: #253b80;
-  text-decoration: none;
-  display: block;
-  line-height: 1.5;
+p.pmt-contact-value a {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  text-decoration: none !important;
 }
-.pmt-main-homepage .pmt-contact-card a:hover { color: #FF6000; }
-.pmt-main-homepage .pmt-contact-sub {
-  font-size: 13px;
-  color: #9098a9;
-  font-weight: 400;
-  margin-top: 4px;
-  display: block;
+p.pmt-contact-value a:hover { color: #FF6000 !important; }
+p.pmt-contact-sub {
+  font-size: 13px !important;
+  color: #9098a9 !important;
+  margin: 0 !important;
 }
- /* ── RESPONSIVE TABLET ── */
-@media (max-width: 768px) {
-  .pmt-main-homepage .pmt-stats-band-inner { grid-template-columns: repeat(2, 1fr); }
-  .pmt-main-homepage .pmt-about-strip-inner { grid-template-columns: 1fr; gap: 30px; }
-  .pmt-main-homepage .pmt-about-img-wrap { padding-bottom: 20px; padding-right: 20px; }
-  .pmt-main-homepage .pmt-courses-layout { flex-direction: column; gap: 30px; }
-  .pmt-main-homepage .pmt-courses-img-wrap {
-    padding-bottom: 50px;
-    padding-right: 16px;
-    min-height: 280px;
-  }
-  .pmt-main-homepage .pmt-sports-grid { grid-template-columns: repeat(2, 1fr); }
-  .pmt-main-homepage .pmt-news-grid { grid-template-columns: 1fr; }
-  .pmt-main-homepage .pmt-section-h2 { font-size: 1.6rem; }
-  /* .pmt-main-homepage .pmt-notice-section, */
-  .pmt-main-homepage .pmt-courses-section,
-  .pmt-main-homepage .pmt-sports-section,
-  .pmt-main-homepage .pmt-news-section { padding: 30px 20px; }
-  .pmt-main-homepage .pmt-about-strip { padding: 20px 20px 20px; }
-  .pmt-main-homepage .pmt-about-features { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .pmt-main-homepage .pmt-elig-grid { grid-template-columns: 1fr 1fr; }
-  .pmt-main-homepage .pmt-docs-grid { grid-template-columns: 1fr 1fr; }
-  .pmt-main-homepage .pmt-contact-grid { grid-template-columns: 1fr; }
-  .pmt-main-homepage .pmt-elig-section,
-  .pmt-main-homepage .pmt-docs-section,
-  .pmt-main-homepage .pmt-contact-section { padding: 30px 20px; }
-  .pmt-main-homepage .pmt-deadline-banner { padding: 18px 20px; }
-  /* .pmt-main-homepage .pmt-notice-inner { max-width: 100% !important; } */
+
+/* ── SECTION HEADERS ── */
+.pmt-section-header.wp-block-group {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  margin-bottom: 0 !important;
 }
- /* ── RESPONSIVE MOBILE ── */
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 900px) {
+  .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; }
+  .pmt-stat-item.wp-block-column { flex-basis: 50% !important; min-width: 50% !important; }
+  .pmt-about-cols.wp-block-columns,
+  .pmt-courses-cols.wp-block-columns { flex-direction: column !important; padding: 0 20px !important; }
+  .pmt-about-img-col,
+  .pmt-courses-img-col { flex-basis: 100% !important; }
+  .pmt-about-content-col,
+  .pmt-courses-content-col { flex-basis: 100% !important; }
+  .pmt-sports-row.wp-block-columns { padding: 0 20px !important; }
+  .pmt-sport-card.wp-block-column { flex-basis: 48% !important; min-width: 48% !important; margin-bottom: 16px !important; }
+  .pmt-news-grid.wp-block-columns { flex-direction: column !important; padding: 0 20px !important; }
+  .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
+  .pmt-elig-grid.wp-block-columns { flex-wrap: wrap !important; padding: 0 20px !important; }
+  .pmt-elig-card.wp-block-column { flex-basis: 48% !important; min-width: 48% !important; }
+  .pmt-docs-row.wp-block-columns { flex-wrap: wrap !important; padding: 0 20px !important; }
+  .pmt-doc-item.wp-block-column { flex-basis: 48% !important; min-width: 48% !important; }
+  .pmt-contact-grid.wp-block-columns { flex-direction: column !important; padding: 0 20px !important; }
+  .pmt-contact-card.wp-block-column { flex-basis: 100% !important; }
+  .pmt-section-header.wp-block-group { padding: 0 20px !important; }
+  h2.pmt-section-h2 { font-size: 1.6rem !important; }
+}
+
 @media (max-width: 480px) {
-  .pmt-main-homepage .pmt-stats-band-inner { grid-template-columns: repeat(2, 1fr); }
-  .pmt-main-homepage .pmt-stat-num { font-size: 1.5rem; }
-  .pmt-main-homepage .pmt-stat-item { padding: 18px 10px; }
-  /* .pmt-main-homepage .pmt-notice-section { padding: 24px 16px; }
-  .pmt-main-homepage .pmt-notice-head { padding: 12px 16px; }
-  .pmt-main-homepage .pmt-notice-item { padding: 10px 16px; } */
-  .pmt-main-homepage .pmt-about-strip { padding: 24px 16px 16px; }
-  .pmt-main-homepage .pmt-about-strip-inner { gap: 20px; }
-  .pmt-main-homepage .pmt-about-img-wrap { padding-bottom: 16px; padding-right: 16px; }
-  .pmt-main-homepage .pmt-about-badge { padding: 12px 16px; }
-  .pmt-main-homepage .pmt-about-badge strong { font-size: 1.4rem; }
-  .pmt-main-homepage .pmt-about-features { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .pmt-main-homepage .pmt-about-feat { font-size: 12px; }
-  .pmt-main-homepage .pmt-section-h2 { font-size: 1.4rem; }
-  .pmt-main-homepage .pmt-body { font-size: 14px; }
-  .pmt-main-homepage .pmt-courses-section { padding: 24px 16px; }
-  .pmt-main-homepage .pmt-courses-btns { flex-direction: column; }
-  .pmt-main-homepage .pmt-courses-img-wrap { min-height: 240px; }
-  .pmt-main-homepage .pmt-sports-section { padding: 24px 16px; }
-  .pmt-main-homepage .pmt-sports-grid { gap: 10px; }
-  .pmt-main-homepage .pmt-sport-card { padding: 20px 10px; }
-  .pmt-main-homepage .pmt-sport-card h4 { font-size: 13px; }
-  .pmt-main-homepage .pmt-sport-card p { font-size: 11px; }
-  .pmt-main-homepage .pmt-news-section { padding: 24px 16px; }
-  .pmt-main-homepage .pmt-news-grid { gap: 16px; }
-  .pmt-main-homepage .pmt-news-body { padding: 14px; }
-  .pmt-main-homepage .pmt-news-body h3 { font-size: 14px; }
-  .pmt-main-homepage .pmt-tag { font-size: 10px; letter-spacing: 2px; }
-  .pmt-main-homepage .pmt-section-header { margin-bottom: 20px; }
-  .pmt-main-homepage .pmt-elig-grid { grid-template-columns: 1fr; }
-  .pmt-main-homepage .pmt-docs-grid { grid-template-columns: 1fr; }
-  .pmt-main-homepage .pmt-doc-item-wide { grid-column: span 1; }
-  .pmt-main-homepage .pmt-deadline-inner { flex-direction: column; text-align: center; }
-  .pmt-main-homepage .pmt-elig-section,
-  .pmt-main-homepage .pmt-docs-section,
-  .pmt-main-homepage .pmt-contact-section { padding: 24px 16px; }
-  .pmt-main-homepage .pmt-elig-card { padding: 24px 20px; }
-  .pmt-main-homepage .pmt-vbtn-gold,
-  .pmt-main-homepage .pmt-vbtn-outline,
-  .pmt-main-homepage .pmt-vbtn-ghost {
-    padding: 11px 20px;
-    font-size: 13px;
-    width: 100%;
-    text-align: center;
-  }
+  .pmt-stat-item.wp-block-column { flex-basis: 50% !important; min-width: 50% !important; padding: 18px 10px !important; }
+  p.pmt-stat-num { font-size: 1.5rem !important; }
+  .pmt-sport-card.wp-block-column { flex-basis: 48% !important; min-width: 48% !important; }
+  .pmt-elig-card.wp-block-column { flex-basis: 100% !important; }
+  .pmt-doc-item.wp-block-column { flex-basis: 100% !important; }
+  h2.pmt-section-h2 { font-size: 1.4rem !important; }
 }
