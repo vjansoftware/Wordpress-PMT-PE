@@ -403,9 +403,9 @@ article.hentry,
     }
 
     /* Notice section */
-    .pmt-notice-inner {
+    /* .pmt-notice-inner {
         grid-template-columns: 1fr !important;
-    }
+    } */
 
     /* About strip */
     .pmt-about-strip-inner {
@@ -474,7 +474,7 @@ article.hentry,
     }
 
     /* Section padding reduce */
-    .pmt-notice-section,
+    /* .pmt-notice-section, */
     .pmt-about-strip,
     .pmt-courses-section,
     .pmt-sports-section,
@@ -507,7 +507,7 @@ article.hentry,
     .pmt-docs-grid  { grid-template-columns: 1fr !important; }
     .pmt-hostel-stats { grid-template-columns: 1fr 1fr !important; }
     .pmt-deadline-banner { padding: 16px !important; }
-    .pmt-notice-section,
+    /* .pmt-notice-section, */
     .pmt-about-strip,
     .pmt-courses-section,
     .pmt-sports-section,
@@ -1916,7 +1916,7 @@ article.hentry,
 .pmt-stat-num { transition: color 0.3s; }
 
 /* ── NOTICE BOARD ── */
-.pmt-notice-box {
+/* .pmt-notice-box {
   transition: box-shadow 0.3s, transform 0.3s;
 }
 .pmt-notice-box:hover {
@@ -1931,7 +1931,7 @@ article.hentry,
   padding-left: 30px;
 }
 .pmt-notice-dot { transition: transform 0.2s; }
-.pmt-notice-item:hover .pmt-notice-dot { transform: scale(1.4); }
+.pmt-notice-item:hover .pmt-notice-dot { transform: scale(1.4); } */
 
 /* ── COURSE / NEWS CARDS ── */
 .pmt-course-card,
@@ -2473,10 +2473,10 @@ article.hentry,
   }
 
   /* Notice section full width */
-  .pmt-main-homepage .pmt-notice-inner {
+  /* .pmt-main-homepage .pmt-notice-inner {
     max-width: 100% !important;
     padding: 0 !important;
-  }
+  } */
 
   /* About strip image */
   .pmt-main-homepage .pmt-about-strip-inner {
@@ -2528,8 +2528,8 @@ article.hentry,
   .pmt-main-homepage .pmt-elig-section,
   .pmt-main-homepage .pmt-docs-section,
   .pmt-main-homepage .pmt-contact-section,
-  .pmt-main-homepage .pmt-about-strip,
-  .pmt-main-homepage .pmt-notice-section {
+  /* .pmt-main-homepage .pmt-notice-section, */
+  .pmt-main-homepage .pmt-about-strip {
     padding: 30px 16px !important;
   }
 }
@@ -2543,7 +2543,7 @@ article.hentry,
 
   .pmt-main-homepage .pmt-stats-band,
   .pmt-main-homepage .pmt-about-strip,
-  .pmt-main-homepage .pmt-notice-section,
+  /* .pmt-main-homepage .pmt-notice-section, */
   .pmt-main-homepage .pmt-courses-section,
   .pmt-main-homepage .pmt-sports-section,
   .pmt-main-homepage .pmt-news-section,
@@ -2562,7 +2562,7 @@ article.hentry,
 
   .pmt-main-homepage .pmt-stats-band-inner,
   .pmt-main-homepage .pmt-about-strip-inner,
-  .pmt-main-homepage .pmt-notice-inner,
+  /* .pmt-main-homepage .pmt-notice-inner, */
   .pmt-main-homepage .pmt-courses-inner,
   .pmt-main-homepage .pmt-sports-inner,
   .pmt-main-homepage .pmt-news-inner,
