@@ -608,13 +608,13 @@ p.pmt-news-text {
 /* ════════════════════════════════
    ELIGIBILITY SECTION
 ════════════════════════════════ */
-
 .pmt-elig-grid.wp-block-columns {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
   border: none !important;
+  align-items: stretch !important;  /* ← ADD THIS */
 }
 
 .pmt-elig-card.wp-block-column,
@@ -628,7 +628,11 @@ p.pmt-news-text {
   transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
+  display: flex !important;           /* ← ADD THIS */
+  flex-direction: column !important;  /* ← ADD THIS */
+  justify-content: flex-start !important; /* ← ADD THIS */
 }
+
 .pmt-elig-card.wp-block-column:hover {
   transform: translateY(-6px) !important;
   box-shadow: 0 14px 36px rgba(37,59,128,0.13) !important;
@@ -649,6 +653,7 @@ p.pmt-elig-icon-wrap {
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.3s !important;
   border: none !important;
   overflow: hidden !important;
+  flex-shrink: 0 !important;  /* ← ADD THIS */
 }
 
 .pmt-elig-card.wp-block-column:hover p.pmt-elig-icon-wrap {
@@ -672,6 +677,7 @@ p.pmt-elig-text {
   line-height: 1.75 !important;
   margin: 0 !important;
   border: none !important;
+  flex: 1 !important;  /* ← ADD THIS — pushes text to fill remaining space */
 }
 
 /* ════════════════════════════════
@@ -740,13 +746,13 @@ p.pmt-elig-text {
 /* ════════════════════════════════
    CONTACT SECTION
 ════════════════════════════════ */
-
 .pmt-contact-grid.wp-block-columns {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
   border: none !important;
+  align-items: stretch !important;  /* ← ADD THIS */
 }
 
 .pmt-contact-card.wp-block-column,
@@ -760,6 +766,10 @@ p.pmt-elig-text {
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s !important;
   position: relative !important;
   overflow: hidden !important;
+  display: flex !important;            /* ← ADD THIS */
+  flex-direction: column !important;   /* ← ADD THIS */
+  align-items: center !important;      /* ← ADD THIS */
+  justify-content: center !important;  /* ← ADD THIS */
 }
 
 .pmt-contact-card.wp-block-column::after {
@@ -798,6 +808,7 @@ p.pmt-contact-icon-wrap {
   line-height: 1 !important;
   transition: background 0.3s, transform 0.35s cubic-bezier(0.34,1.56,0.64,1) !important;
   border: none !important;
+  flex-shrink: 0 !important;  /* ← ADD THIS */
 }
 
 .pmt-contact-card.wp-block-column:hover p.pmt-contact-icon-wrap {
@@ -814,6 +825,12 @@ h4.pmt-contact-label {
   margin: 0 0 12px !important;
   text-decoration: none !important;
   border: none !important;
+  width: 100% !important;  /* ← ADD THIS */
+}
+
+p.pmt-contact-value {
+  margin: 0 0 4px !important;  /* ← ADD THIS */
+  width: 100% !important;       /* ← ADD THIS */
 }
 
 p.pmt-contact-value a {
@@ -834,13 +851,13 @@ p.pmt-contact-sub {
   margin: 8px 0 0 !important;
   border: none !important;
   text-decoration: none !important;
+  width: 100% !important;  /* ← ADD THIS */
 }
 
 p.pmt-contact-sub a {
   text-decoration: none !important;
   color: #9098a9 !important;
 }
-
 /* ════════════════════════════════
    RESPONSIVE — TABLET (max 900px)
 ════════════════════════════════ */
