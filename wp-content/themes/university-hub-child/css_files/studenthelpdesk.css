@@ -383,6 +383,7 @@ p.shd-section-label::after {
 
   .shd-img img {
     height: 240px !important;
+    padding-top: 16px !important;
   }
 
   .shd-cards .wp-block-column {

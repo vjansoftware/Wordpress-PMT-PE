@@ -473,6 +473,7 @@ p.shd-card-icon,
 
   .shd-img img {
     height: 240px !important;
+    padding-top: 16px !important;
   }
 
   .shd-cards {
