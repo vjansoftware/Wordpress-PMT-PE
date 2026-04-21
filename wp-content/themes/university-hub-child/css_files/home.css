@@ -108,7 +108,7 @@
 }
 .pmt-main-homepage .pmt-stats-band,
 .pmt-main-homepage .pmt-about-strip,
-.pmt-main-homepage .pmt-notice-section,
+/* .pmt-main-homepage .pmt-notice-section, */
 .pmt-main-homepage .pmt-courses-section,
 .pmt-main-homepage .pmt-sports-section,
 .pmt-main-homepage .pmt-news-section,
@@ -156,7 +156,7 @@
   display: block;
 }
  /* ── NOTICE BOARD ── */
-.pmt-main-homepage .pmt-notice-section {
+/* .pmt-main-homepage .pmt-notice-section {
   background: #f0f7fd;
   padding: 30px 40px;
 }
@@ -218,7 +218,7 @@
   margin-top: 6px;
 }
 .pmt-main-homepage .pmt-notice-item p { font-size: 13px; color: #3d4557; line-height: 1.5; margin: 0; }
-.pmt-main-homepage .pmt-notice-item span { font-size: 11px; color: #9098a9; display: block; margin-top: 3px; }
+.pmt-main-homepage .pmt-notice-item span { font-size: 11px; color: #9098a9; display: block; margin-top: 3px; } */
  /* ── ABOUT ── */
 .pmt-main-homepage .pmt-about-strip { padding: 50px 40px 30px; background: #fff; }
 .pmt-main-homepage .pmt-about-strip-inner {
@@ -587,7 +587,7 @@
   .pmt-main-homepage .pmt-sports-grid { grid-template-columns: repeat(2, 1fr); }
   .pmt-main-homepage .pmt-news-grid { grid-template-columns: 1fr; }
   .pmt-main-homepage .pmt-section-h2 { font-size: 1.6rem; }
-  .pmt-main-homepage .pmt-notice-section,
+  /* .pmt-main-homepage .pmt-notice-section, */
   .pmt-main-homepage .pmt-courses-section,
   .pmt-main-homepage .pmt-sports-section,
   .pmt-main-homepage .pmt-news-section { padding: 30px 20px; }
@@ -600,16 +600,16 @@
   .pmt-main-homepage .pmt-docs-section,
   .pmt-main-homepage .pmt-contact-section { padding: 30px 20px; }
   .pmt-main-homepage .pmt-deadline-banner { padding: 18px 20px; }
-  .pmt-main-homepage .pmt-notice-inner { max-width: 100% !important; }
+  /* .pmt-main-homepage .pmt-notice-inner { max-width: 100% !important; } */
 }
  /* ── RESPONSIVE MOBILE ── */
 @media (max-width: 480px) {
   .pmt-main-homepage .pmt-stats-band-inner { grid-template-columns: repeat(2, 1fr); }
   .pmt-main-homepage .pmt-stat-num { font-size: 1.5rem; }
   .pmt-main-homepage .pmt-stat-item { padding: 18px 10px; }
-  .pmt-main-homepage .pmt-notice-section { padding: 24px 16px; }
+  /* .pmt-main-homepage .pmt-notice-section { padding: 24px 16px; }
   .pmt-main-homepage .pmt-notice-head { padding: 12px 16px; }
-  .pmt-main-homepage .pmt-notice-item { padding: 10px 16px; }
+  .pmt-main-homepage .pmt-notice-item { padding: 10px 16px; } */
   .pmt-main-homepage .pmt-about-strip { padding: 24px 16px 16px; }
   .pmt-main-homepage .pmt-about-strip-inner { gap: 20px; }
   .pmt-main-homepage .pmt-about-img-wrap { padding-bottom: 16px; padding-right: 16px; }
