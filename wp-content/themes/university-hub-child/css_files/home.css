@@ -591,7 +591,7 @@
   .pmt-main-homepage .pmt-courses-section,
   .pmt-main-homepage .pmt-sports-section,
   .pmt-main-homepage .pmt-news-section { padding: 30px 20px; }
-  .pmt-main-homepage .pmt-about-strip { padding: 30px 20px 20px; }
+  .pmt-main-homepage .pmt-about-strip { padding: 20px 20px 20px; }
   .pmt-main-homepage .pmt-about-features { grid-template-columns: 1fr 1fr; gap: 10px; }
   .pmt-main-homepage .pmt-elig-grid { grid-template-columns: 1fr 1fr; }
   .pmt-main-homepage .pmt-docs-grid { grid-template-columns: 1fr 1fr; }
