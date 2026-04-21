@@ -3609,3 +3609,14 @@ p.intra-label::after {
     height: 40px;
   }
 }
+
+/* 🔥 Reduce logo size in mobile */
+@media (max-width: 768px) {
+
+  .site-logo img,
+  .custom-logo {
+    max-height: 50px !important;
+    width: auto !important;
+  }
+
+}
