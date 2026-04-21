@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   PMT LIBRARY — STYLES
+   PMT LIBRARY — FINAL FIXED CSS
 ═══════════════════════════════════════ */
 
 .library-wrap {
@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-/* ── Fix WordPress spacing issues ── */
+/* FIX WORDPRESS OVERRIDES */
 .entry-content .library-wrap h1,
 .entry-content .library-wrap h2,
 .entry-content .library-wrap h3 {
@@ -73,21 +73,45 @@
 }
 
 /* ════════════════════════════════
-   SPLIT SECTION
+   SPLIT + GRID FIX (IMPORTANT)
 ════════════════════════════════ */
 
-.library-split {
-  gap: 40px;
+.library-split,
+.library-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 40px !important;
   align-items: center;
   margin-bottom: 30px;
 }
 
+.library-split .wp-block-column,
+.library-grid .wp-block-column {
+  flex: 1 1 0;
+}
+
+/* COLUMN WIDTH FIX */
+.library-split .wp-block-column {
+  min-width: 48%;
+}
+
+.library-grid .wp-block-column {
+  min-width: 30%;
+}
+
+/* IMAGE FIX */
+.library-split-img {
+  overflow: hidden;
+}
+
 .library-split-img img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   display: block;
 }
 
+/* CONTENT */
 .library-split-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -102,6 +126,7 @@
   margin-bottom: 15px;
 }
 
+/* LIST */
 .library-split-list {
   list-style: none;
   padding: 0;
@@ -132,11 +157,6 @@
 /* ════════════════════════════════
    CARDS
 ════════════════════════════════ */
-
-.library-grid {
-  gap: 24px;
-  margin-bottom: 30px;
-}
 
 .library-card {
   background: #fff;
@@ -169,7 +189,7 @@
 }
 
 /* ════════════════════════════════
-   COLLAB SECTION
+   COLLAB
 ════════════════════════════════ */
 
 .library-collab {
@@ -216,28 +236,36 @@
   margin-bottom: 20px;
 }
 
-/* BUTTONS */
+/* BUTTON FIX */
+.library-cta .wp-block-buttons {
+  display: flex !important;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .library-cta-btn .wp-block-button__link {
-  background: #FF6000;
-  color: #fff;
+  background: #FF6000 !important;
+  color: #fff !important;
   padding: 12px 28px;
   border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
+  border: none !important;
 }
 
 .library-cta-btn .wp-block-button__link:hover {
-  background: #e05500;
+  background: #e05500 !important;
 }
 
 .library-cta-btn-outline .wp-block-button__link {
-  background: transparent;
-  color: #253b80;
-  border: 2px solid rgba(37,59,128,0.4);
+  background: transparent !important;
+  color: #253b80 !important;
+  border: 2px solid rgba(37,59,128,0.4) !important;
 }
 
 .library-cta-btn-outline .wp-block-button__link:hover {
-  background: rgba(37,59,128,0.05);
+  background: rgba(37,59,128,0.05) !important;
 }
 
 /* ════════════════════════════════
@@ -250,9 +278,14 @@
     padding: 0 16px;
   }
 
+  .library-split,
+  .library-grid {
+    flex-direction: column !important;
+  }
+
   .library-split .wp-block-column,
   .library-grid .wp-block-column {
-    flex-basis: 100% !important;
+    min-width: 100% !important;
   }
 
   .library-collab,
