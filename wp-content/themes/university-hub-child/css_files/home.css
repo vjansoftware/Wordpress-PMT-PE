@@ -1,13 +1,45 @@
 /* ═══════════════════════════════════════════════════════
    PMT HOMEPAGE — home.css
-   Fixed: underlines, alignment, white bg, hover animations
 ═══════════════════════════════════════════════════════ */
 
-/* ════════════════════════════════
-   GLOBAL RESETS FOR HOMEPAGE
-════════════════════════════════ */
+.pmt-stats-band .wp-block-columns,
+.pmt-stats-band .wp-block-column,
+.pmt-about-section .wp-block-columns,
+.pmt-about-section .wp-block-column,
+.pmt-courses-section .wp-block-columns,
+.pmt-courses-section .wp-block-column,
+.pmt-sports-section .wp-block-columns,
+.pmt-sports-section .wp-block-column,
+.pmt-news-section .wp-block-columns,
+.pmt-news-section .wp-block-column,
+.pmt-elig-section .wp-block-columns,
+.pmt-elig-section .wp-block-column,
+.pmt-docs-section .wp-block-columns,
+.pmt-docs-section .wp-block-column,
+.pmt-contact-section .wp-block-columns,
+.pmt-contact-section .wp-block-column {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
 
-/* Remove ALL underlines from headings on homepage */
+/* Remove grey lines between sections */
+.pmt-about-section,
+.pmt-courses-section,
+.pmt-sports-section,
+.pmt-news-section,
+.pmt-elig-section,
+.pmt-docs-section,
+.pmt-contact-section {
+  border-top: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Remove ALL heading underlines on homepage */
 .pmt-stats-band h1, .pmt-stats-band h2, .pmt-stats-band h3, .pmt-stats-band h4,
 .pmt-about-section h1, .pmt-about-section h2, .pmt-about-section h3,
 .pmt-courses-section h1, .pmt-courses-section h2, .pmt-courses-section h3,
@@ -21,30 +53,18 @@
   box-shadow: none !important;
 }
 
-/* Remove theme underline on wp-block-heading */
-.pmt-section-h2.wp-block-heading,
-h2.pmt-section-h2,
-h3.pmt-elig-title,
-h3.pmt-news-title,
-h4.pmt-sport-name,
-h4.pmt-contact-label {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
+/* ════════════════════════════════
+   WHITE BACKGROUNDS
+════════════════════════════════ */
 
-/* White background on all sections */
 .pmt-stats-band,
 .pmt-about-section,
-.pmt-courses-section,
-.pmt-sports-section,
 .pmt-news-section,
 .pmt-elig-section,
-.pmt-docs-section,
 .pmt-contact-section {
   background: #ffffff !important;
 }
 
-/* Alternating light bg for visual separation */
 .pmt-courses-section,
 .pmt-sports-section,
 .pmt-docs-section {
@@ -69,6 +89,7 @@ p.pmt-section-tag {
   margin-bottom: 10px !important;
   margin-top: 0 !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-section-tag::before,
@@ -81,7 +102,7 @@ p.pmt-section-tag::after {
   flex-shrink: 0 !important;
 }
 
-/* Left-aligned tag (inside content cols) */
+/* Left-aligned tag inside content cols */
 .pmt-about-content-col p.pmt-section-tag,
 .pmt-courses-content-col p.pmt-section-tag {
   justify-content: flex-start !important;
@@ -128,6 +149,10 @@ p.pmt-body-text {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
+.pmt-about-content-col p.pmt-body-text {
+  text-align: left !important;
+}
+
 /* ════════════════════════════════
    SECTION HEADER — centered
 ════════════════════════════════ */
@@ -137,6 +162,7 @@ p.pmt-body-text {
   margin: 0 auto !important;
   padding: 0 40px !important;
   text-align: center !important;
+  border: none !important;
 }
 
 .pmt-section-header .pmt-section-h2 {
@@ -148,18 +174,23 @@ p.pmt-body-text {
 ════════════════════════════════ */
 
 .pmt-stats-band {
-  border-bottom: 1px solid rgba(37, 59, 128, 0.08) !important;
+  border-bottom: none !important;
+  border-top: none !important;
 }
 
 .pmt-stats-inner.wp-block-columns {
   max-width: 1100px !important;
   margin: 0 auto !important;
   gap: 0 !important;
+  border: none !important;
 }
 
 .pmt-stat-item.wp-block-column {
   padding: 28px 20px !important;
   border-right: 1px solid rgba(37, 59, 128, 0.08) !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
   text-align: center !important;
   transition: background 0.3s !important;
 }
@@ -180,6 +211,7 @@ p.pmt-stat-num {
   line-height: 1.2 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-stat-lbl {
@@ -189,6 +221,7 @@ p.pmt-stat-lbl {
   color: #9098a9 !important;
   margin: 4px 0 0 !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 /* ════════════════════════════════
@@ -200,12 +233,15 @@ p.pmt-stat-lbl {
   max-width: 1100px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  border: none !important;
 }
 
 .pmt-about-img-col .wp-block-image img {
   border-radius: 10px !important;
   box-shadow: 0 8px 30px rgba(37, 59, 128, 0.15) !important;
   width: 100% !important;
+  height: 420px !important;
+  object-fit: cover !important;
   transition: transform 0.4s ease !important;
 }
 
@@ -218,12 +254,22 @@ p.pmt-stat-lbl {
 }
 
 /* ════════════════════════════════
-   FEATS (dot list)
+   FEATS (dot list) — NO BORDERS
 ════════════════════════════════ */
 
 .pmt-feats-grid.wp-block-columns {
   gap: 12px !important;
   margin-bottom: 0 !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.pmt-feat-item.wp-block-column {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 4px 0 !important;
 }
 
 .pmt-feat-item p {
@@ -236,6 +282,7 @@ p.pmt-stat-lbl {
   margin: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 .pmt-feat-dot {
@@ -252,7 +299,8 @@ p.pmt-stat-lbl {
 ════════════════════════════════ */
 
 .pmt-courses-section {
-  border-top: 1px solid rgba(37, 59, 128, 0.06) !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .pmt-courses-cols.wp-block-columns {
@@ -261,12 +309,15 @@ p.pmt-stat-lbl {
   margin: 0 auto !important;
   padding-left: 40px !important;
   padding-right: 40px !important;
+  border: none !important;
 }
 
 .pmt-courses-img-col .wp-block-image img {
   border-radius: 10px !important;
   box-shadow: 0 8px 30px rgba(37, 59, 128, 0.15) !important;
   width: 100% !important;
+  height: 400px !important;
+  object-fit: cover !important;
   transition: transform 0.4s ease !important;
 }
 
@@ -278,7 +329,6 @@ p.pmt-stat-lbl {
   text-align: left !important;
 }
 
-/* Apply Now button */
 .pmt-outline-btn .wp-block-button__link {
   background: transparent !important;
   color: #253b80 !important;
@@ -302,13 +352,15 @@ p.pmt-stat-lbl {
 ════════════════════════════════ */
 
 .pmt-sports-section {
-  border-top: 1px solid rgba(37, 59, 128, 0.08) !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .pmt-sports-row.wp-block-columns {
   max-width: 1100px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  border: none !important;
 }
 
 .pmt-sport-card.wp-block-column {
@@ -333,6 +385,7 @@ p.pmt-sport-icon {
   margin: 0 0 10px !important;
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  border: none !important;
 }
 
 .pmt-sport-card.wp-block-column:hover p.pmt-sport-icon {
@@ -346,6 +399,7 @@ h4.pmt-sport-name {
   margin: 0 0 4px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-sport-sub {
@@ -353,6 +407,7 @@ p.pmt-sport-sub {
   color: #179bd7 !important;
   font-weight: 600 !important;
   margin: 0 !important;
+  border: none !important;
 }
 
 /* ════════════════════════════════
@@ -363,6 +418,7 @@ p.pmt-sport-sub {
   max-width: 1100px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  border: none !important;
 }
 
 .pmt-news-card.wp-block-column {
@@ -383,6 +439,7 @@ p.pmt-sport-sub {
 .pmt-news-img-wrap.wp-block-image {
   margin: 0 !important;
   overflow: hidden !important;
+  border: none !important;
 }
 
 .pmt-news-img-wrap img {
@@ -392,6 +449,7 @@ p.pmt-sport-sub {
   display: block !important;
   border-radius: 0 !important;
   transition: transform 0.5s ease !important;
+  border: none !important;
 }
 
 .pmt-news-card.wp-block-column:hover .pmt-news-img-wrap img {
@@ -400,6 +458,7 @@ p.pmt-sport-sub {
 
 .pmt-news-body.wp-block-group {
   padding: 20px !important;
+  border: none !important;
 }
 
 p.pmt-news-tag {
@@ -409,6 +468,7 @@ p.pmt-news-tag {
   text-transform: uppercase !important;
   color: #FF6000 !important;
   margin: 0 0 8px !important;
+  border: none !important;
 }
 
 h3.pmt-news-title {
@@ -419,6 +479,7 @@ h3.pmt-news-title {
   margin: 0 0 8px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-news-text {
@@ -426,6 +487,7 @@ p.pmt-news-text {
   color: #6b7280 !important;
   line-height: 1.6 !important;
   margin: 0 !important;
+  border: none !important;
 }
 
 /* ════════════════════════════════
@@ -436,13 +498,13 @@ p.pmt-news-text {
   max-width: 1100px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  border: none !important;
 }
 
 .pmt-elig-card.wp-block-column {
   background: #fff !important;
   border-radius: 10px !important;
   padding: 32px 28px !important;
-  border-top: 4px solid #FF6000 !important;
   border: 1px solid rgba(37, 59, 128, 0.08) !important;
   border-top: 4px solid #FF6000 !important;
   box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
@@ -466,6 +528,7 @@ p.pmt-elig-icon-wrap {
   margin: 0 0 16px !important;
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s !important;
+  border: none !important;
 }
 
 .pmt-elig-card.wp-block-column:hover p.pmt-elig-icon-wrap {
@@ -480,6 +543,7 @@ h3.pmt-elig-title {
   margin: 0 0 8px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-elig-text {
@@ -487,6 +551,7 @@ p.pmt-elig-text {
   color: #3d4557 !important;
   line-height: 1.7 !important;
   margin: 0 !important;
+  border: none !important;
 }
 
 /* ════════════════════════════════
@@ -497,6 +562,7 @@ p.pmt-elig-text {
   max-width: 1100px !important;
   margin: 0 auto 14px !important;
   padding: 0 40px !important;
+  border: none !important;
 }
 
 .pmt-doc-item.wp-block-column {
@@ -526,6 +592,7 @@ p.pmt-elig-text {
   color: #3d4557 !important;
   font-weight: 500 !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 .pmt-doc-num {
@@ -541,6 +608,7 @@ p.pmt-elig-text {
   justify-content: center;
   flex-shrink: 0;
   transition: background 0.25s, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: none;
 }
 
 .pmt-doc-item.wp-block-column:hover .pmt-doc-num {
@@ -557,6 +625,7 @@ p.pmt-elig-text {
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
+  border: none !important;
 }
 
 .pmt-contact-card.wp-block-column {
@@ -571,7 +640,6 @@ p.pmt-elig-text {
   overflow: hidden !important;
 }
 
-/* Bottom accent line on hover */
 .pmt-contact-card.wp-block-column::after {
   content: '' !important;
   position: absolute !important;
@@ -606,6 +674,7 @@ p.pmt-contact-icon-wrap {
   margin: 0 auto 16px !important;
   line-height: 1 !important;
   transition: background 0.3s, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  border: none !important;
 }
 
 .pmt-contact-card.wp-block-column:hover p.pmt-contact-icon-wrap {
@@ -621,6 +690,7 @@ h4.pmt-contact-label {
   text-transform: uppercase !important;
   margin: 0 0 10px !important;
   text-decoration: none !important;
+  border: none !important;
 }
 
 p.pmt-contact-value a {
@@ -639,6 +709,7 @@ p.pmt-contact-sub {
   font-size: 13px !important;
   color: #9098a9 !important;
   margin: 6px 0 0 !important;
+  border: none !important;
 }
 
 /* ════════════════════════════════
@@ -652,6 +723,10 @@ p.pmt-contact-sub {
   .pmt-stat-item.wp-block-column {
     flex-basis: 50% !important;
     min-width: 50% !important;
+    border-bottom: 1px solid rgba(37, 59, 128, 0.08) !important;
+  }
+  .pmt-stat-item.wp-block-column:nth-child(2n) {
+    border-right: none !important;
   }
 
   .pmt-about-cols.wp-block-columns,
@@ -664,6 +739,10 @@ p.pmt-contact-sub {
   .pmt-about-content-col,
   .pmt-courses-content-col {
     flex-basis: 100% !important;
+  }
+  .pmt-about-img-col .wp-block-image img,
+  .pmt-courses-img-col .wp-block-image img {
+    height: 280px !important;
   }
 
   .pmt-sports-row.wp-block-columns {
@@ -747,5 +826,9 @@ p.pmt-contact-sub {
   }
   .pmt-contact-grid.wp-block-columns {
     max-width: 100% !important;
+  }
+  .pmt-about-img-col .wp-block-image img,
+  .pmt-courses-img-col .wp-block-image img {
+    height: 220px !important;
   }
 }
