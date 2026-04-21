@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   PMT HOMEPAGE — home.css  (COMPLETE FIXED VERSION)
+   PMT HOMEPAGE — home.css (FULL FIXED VERSION)
 ═══════════════════════════════════════════════════════ */
 
 /* ── Remove all default WP borders/outlines ── */
@@ -39,7 +39,7 @@
   outline: none !important;
 }
 
-/* Remove ALL heading underlines */
+/* Remove ALL heading underlines/borders */
 .pmt-stats-band h1, .pmt-stats-band h2, .pmt-stats-band h3, .pmt-stats-band h4,
 .pmt-about-section h1, .pmt-about-section h2, .pmt-about-section h3,
 .pmt-courses-section h1, .pmt-courses-section h2, .pmt-courses-section h3,
@@ -102,16 +102,13 @@ p.pmt-section-tag::after {
   flex-shrink: 0 !important;
 }
 
+/* Left-aligned tags in content columns — keep line on left only */
 .pmt-about-content-col p.pmt-section-tag,
 .pmt-courses-content-col p.pmt-section-tag {
   justify-content: flex-start !important;
-  font-size: 11px !important;
-  letter-spacing: 3px !important;
 }
 
-.pmt-about-content-col p.pmt-section-tag::before,
 .pmt-about-content-col p.pmt-section-tag::after,
-.pmt-courses-content-col p.pmt-section-tag::before,
 .pmt-courses-content-col p.pmt-section-tag::after {
   display: none !important;
 }
@@ -157,7 +154,7 @@ p.pmt-body-text {
 ════════════════════════════════ */
 
 .pmt-section-header.wp-block-group {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   text-align: center !important;
@@ -178,7 +175,7 @@ p.pmt-body-text {
 }
 
 .pmt-stats-inner.wp-block-columns {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   gap: 0 !important;
   border: none !important;
@@ -236,7 +233,8 @@ p.pmt-stat-lbl {
 .pmt-about-img-col {
   position: relative !important;
   overflow: visible !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 40px !important;
+  padding-right: 0 !important;
 }
 
 .pmt-about-img-col .wp-block-image {
@@ -254,7 +252,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-   height: auto !important;
+  height: 420px !important;
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
@@ -265,11 +263,11 @@ p.pmt-stat-lbl {
   transform: scale(1.02) !important;
 }
 
-/* ── 2017 BADGE ── */
+/* ── 2017 BADGE — fixed positioning ── */
 .pmt-year-badge {
   position: absolute !important;
   bottom: 0 !important;
-  right: 24px !important;
+  right: 0 !important;
   background: #253b80 !important;
   border: 4px solid #FF6000 !important;
   border-radius: 10px !important;
@@ -277,6 +275,7 @@ p.pmt-stat-lbl {
   text-align: center !important;
   z-index: 10 !important;
   min-width: 110px !important;
+  box-shadow: 0 8px 24px rgba(37,59,128,0.25) !important;
 }
 
 .pmt-year-num {
@@ -290,10 +289,10 @@ p.pmt-stat-lbl {
 
 .pmt-year-lbl {
   display: block !important;
-  font-size: 12px !important;
-  color: #fff !important;
+  font-size: 11px !important;
+  color: rgba(255,255,255,0.85) !important;
   margin-top: 6px !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
 }
 
@@ -308,16 +307,21 @@ p.pmt-stat-lbl {
 }
 
 /* ════════════════════════════════
-   FEATS (dot list) — FIXED NO GAPS
+   FEATS (dot list) — NO GAPS
 ════════════════════════════════ */
 
 .pmt-feats-grid.wp-block-columns {
   gap: 4px !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 4px !important;
   margin-top: 0 !important;
   border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
+}
+
+/* Kill Gutenberg default block gap inside content cols */
+.pmt-about-content-col .wp-block-columns,
+.pmt-courses-content-col .wp-block-columns {
+  margin-bottom: 4px !important;
+  margin-top: 0 !important;
 }
 
 .pmt-feat-item.wp-block-column {
@@ -349,21 +353,21 @@ p.pmt-stat-lbl {
 }
 
 /* ════════════════════════════════
-   COURSES SECTION — IMAGE FIX
+   COURSES SECTION
 ════════════════════════════════ */
 
 .pmt-courses-cols.wp-block-columns {
   align-items: center !important;
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding: 0 40px !important;
   gap: 60px !important;
   border: none !important;
 }
 
 .pmt-courses-img-col {
   position: relative !important;
+  padding: 0 !important;
 }
 
 .pmt-courses-img-col .wp-block-image {
@@ -381,7 +385,7 @@ p.pmt-stat-lbl {
   border-radius: 12px !important;
   box-shadow: 0 12px 40px rgba(37,59,128,0.18) !important;
   width: 100% !important;
-  height: 360px !important;
+  height: 420px !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
@@ -396,6 +400,7 @@ p.pmt-stat-lbl {
   text-align: left !important;
 }
 
+/* Apply Now button */
 .pmt-outline-btn .wp-block-button__link {
   background: transparent !important;
   color: #253b80 !important;
@@ -419,7 +424,7 @@ p.pmt-stat-lbl {
 ════════════════════════════════ */
 
 .pmt-sports-row.wp-block-columns {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 16px !important;
@@ -484,7 +489,7 @@ p.pmt-sport-sub {
 ════════════════════════════════ */
 
 .pmt-news-grid.wp-block-columns {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
@@ -565,17 +570,18 @@ p.pmt-news-text {
 ════════════════════════════════ */
 
 .pmt-elig-grid.wp-block-columns {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
   border: none !important;
 }
 
-.pmt-elig-card.wp-block-column {
+.pmt-elig-card.wp-block-column,
+.pmt-elig-section .pmt-elig-card.wp-block-column {
   background: #fff !important;
   border-radius: 12px !important;
-  padding: 40px 37px !important;
+  padding: 40px 32px !important;
   border: 1px solid rgba(37,59,128,0.08) !important;
   border-top: 4px solid #FF6000 !important;
   box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
@@ -597,6 +603,7 @@ p.pmt-elig-icon-wrap {
   align-items: center !important;
   justify-content: center !important;
   margin: 0 0 20px !important;
+  padding: 0 !important;
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.3s !important;
   border: none !important;
@@ -630,7 +637,7 @@ p.pmt-elig-text {
 ════════════════════════════════ */
 
 .pmt-docs-row.wp-block-columns {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   margin: 0 auto 14px !important;
   padding: 0 40px !important;
   gap: 14px !important;
@@ -693,14 +700,15 @@ p.pmt-elig-text {
 ════════════════════════════════ */
 
 .pmt-contact-grid.wp-block-columns {
-  max-width: 1000px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
   border: none !important;
 }
 
-.pmt-contact-card.wp-block-column {
+.pmt-contact-card.wp-block-column,
+.pmt-contact-section .pmt-contact-card.wp-block-column {
   background: #fff !important;
   border-radius: 14px !important;
   padding: 40px 30px !important;
@@ -744,6 +752,7 @@ p.pmt-contact-icon-wrap {
   align-items: center !important;
   justify-content: center !important;
   margin: 0 auto 18px !important;
+  padding: 0 !important;
   line-height: 1 !important;
   transition: background 0.3s, transform 0.35s cubic-bezier(0.34,1.56,0.64,1) !important;
   border: none !important;
@@ -782,6 +791,12 @@ p.pmt-contact-sub {
   color: #9098a9 !important;
   margin: 8px 0 0 !important;
   border: none !important;
+  text-decoration: none !important;
+}
+
+p.pmt-contact-sub a {
+  text-decoration: none !important;
+  color: #9098a9 !important;
 }
 
 /* ════════════════════════════════
@@ -789,6 +804,7 @@ p.pmt-contact-sub {
 ════════════════════════════════ */
 
 @media (max-width: 900px) {
+  /* Stats */
   .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; }
   .pmt-stat-item.wp-block-column {
     flex-basis: 50% !important;
@@ -797,11 +813,12 @@ p.pmt-contact-sub {
   }
   .pmt-stat-item.wp-block-column:nth-child(2n) { border-right: none !important; }
 
+  /* About & Courses — stack vertically */
   .pmt-about-cols.wp-block-columns,
   .pmt-courses-cols.wp-block-columns {
     flex-direction: column !important;
     padding: 0 24px !important;
-    gap: 48px !important;
+    gap: 32px !important;
   }
   .pmt-about-img-col,
   .pmt-courses-img-col,
@@ -810,11 +827,20 @@ p.pmt-contact-sub {
     flex-basis: 100% !important;
     width: 100% !important;
   }
-  .pmt-about-img-col .wp-block-image img,
-  .pmt-courses-img-col .wp-block-image img { height: 260px !important; }
+  .pmt-about-img-col .wp-block-image img { height: 300px !important; }
+  .pmt-courses-img-col .wp-block-image img { height: 280px !important; }
 
+  /* Badge position on tablet */
+  .pmt-year-badge {
+    bottom: 0 !important;
+    right: 0 !important;
+    padding: 12px 16px !important;
+  }
+  .pmt-year-num { font-size: 1.6rem !important; }
+
+  /* Sports */
   .pmt-sports-row.wp-block-columns {
-    padding: 0 20px !important;
+    padding: 0 24px !important;
     flex-wrap: wrap !important;
     gap: 12px !important;
   }
@@ -823,39 +849,123 @@ p.pmt-contact-sub {
     min-width: calc(50% - 6px) !important;
   }
 
-  .pmt-news-grid.wp-block-columns { flex-direction: column !important; padding: 0 20px !important; }
+  /* News */
+  .pmt-news-grid.wp-block-columns { flex-direction: column !important; padding: 0 24px !important; }
   .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
 
-  .pmt-elig-grid.wp-block-columns { flex-wrap: wrap !important; padding: 0 20px !important; gap: 16px !important; }
+  /* Eligibility */
+  .pmt-elig-grid.wp-block-columns { flex-wrap: wrap !important; padding: 0 24px !important; gap: 16px !important; }
   .pmt-elig-card.wp-block-column { flex-basis: calc(50% - 8px) !important; min-width: calc(50% - 8px) !important; }
 
-  .pmt-docs-row.wp-block-columns { flex-wrap: wrap !important; padding: 0 20px !important; gap: 10px !important; }
+  /* Docs */
+  .pmt-docs-row.wp-block-columns { flex-wrap: wrap !important; padding: 0 24px !important; gap: 10px !important; }
   .pmt-doc-item.wp-block-column { flex-basis: calc(50% - 5px) !important; min-width: calc(50% - 5px) !important; }
 
-  .pmt-contact-grid.wp-block-columns { flex-direction: column !important; padding: 0 20px !important; }
+  /* Contact */
+  .pmt-contact-grid.wp-block-columns { flex-direction: column !important; padding: 0 24px !important; }
   .pmt-contact-card.wp-block-column { flex-basis: 100% !important; }
 
-  .pmt-section-header.wp-block-group { padding: 0 20px !important; }
+  /* Section headers */
+  .pmt-section-header.wp-block-group { padding: 0 24px !important; }
   h2.pmt-section-h2 { font-size: 1.7rem !important; }
-
-  .pmt-year-badge { bottom: 0 !important; right: 16px !important; padding: 12px 16px !important; }
-  .pmt-year-num { font-size: 1.6rem !important; }
 }
 
 /* ════════════════════════════════
-   RESPONSIVE — MOBILE (max 480px)
+   RESPONSIVE — MOBILE (max 640px)
 ════════════════════════════════ */
 
-@media (max-width: 480px) {
-  .pmt-stat-item.wp-block-column { flex-basis: 50% !important; min-width: 50% !important; padding: 20px 12px !important; }
+@media (max-width: 640px) {
+  /* Remove all side padding on sections */
+  .pmt-about-cols.wp-block-columns,
+  .pmt-courses-cols.wp-block-columns,
+  .pmt-sports-row.wp-block-columns,
+  .pmt-news-grid.wp-block-columns,
+  .pmt-elig-grid.wp-block-columns,
+  .pmt-docs-row.wp-block-columns,
+  .pmt-contact-grid.wp-block-columns,
+  .pmt-section-header.wp-block-group {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Stats */
+  .pmt-stat-item.wp-block-column {
+    flex-basis: 50% !important;
+    min-width: 50% !important;
+    padding: 20px 12px !important;
+  }
   p.pmt-stat-num { font-size: 1.6rem !important; }
-  .pmt-sport-card.wp-block-column { flex-basis: calc(50% - 6px) !important; min-width: calc(50% - 6px) !important; padding: 24px 12px !important; }
-  .pmt-elig-card.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; }
-  .pmt-doc-item.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; }
-  h2.pmt-section-h2 { font-size: 1.5rem !important; }
-  .pmt-about-img-col .wp-block-image img,
+
+  /* About image */
+  .pmt-about-img-col .wp-block-image img { height: 220px !important; }
+  .pmt-about-img-col { padding-bottom: 50px !important; }
+
+  /* Courses image */
   .pmt-courses-img-col .wp-block-image img { height: 200px !important; }
-  .pmt-contact-grid.wp-block-columns { max-width: 100% !important; padding: 0 16px !important; }
-  .pmt-year-badge { bottom: 0 !important; right: 12px !important; padding: 10px 14px !important; }
+
+  /* Badge */
+  .pmt-year-badge {
+    bottom: 0 !important;
+    right: 0 !important;
+    padding: 10px 14px !important;
+    min-width: 90px !important;
+  }
   .pmt-year-num { font-size: 1.4rem !important; }
+  .pmt-year-lbl { font-size: 10px !important; }
+
+  /* H2 */
+  h2.pmt-section-h2 { font-size: 1.5rem !important; }
+
+  /* Sports — 2 per row */
+  .pmt-sport-card.wp-block-column {
+    flex-basis: calc(50% - 6px) !important;
+    min-width: calc(50% - 6px) !important;
+    padding: 20px 12px !important;
+  }
+
+  /* Eligibility — full width */
+  .pmt-elig-card.wp-block-column,
+  .pmt-elig-section .pmt-elig-card.wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+    padding: 28px 20px !important;
+  }
+
+  /* Docs — full width */
+  .pmt-doc-item.wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Contact — full width */
+  .pmt-contact-card.wp-block-column,
+  .pmt-contact-section .pmt-contact-card.wp-block-column {
+    flex-basis: 100% !important;
+    padding: 28px 20px !important;
+  }
+
+  /* News — full width */
+  .pmt-news-grid.wp-block-columns { gap: 16px !important; }
+  .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
+
+  /* Docs rows */
+  .pmt-docs-row.wp-block-columns { gap: 8px !important; }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max 400px)
+════════════════════════════════ */
+
+@media (max-width: 400px) {
+  .pmt-sport-card.wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  h2.pmt-section-h2 { font-size: 1.3rem !important; }
+
+  p.pmt-stat-num { font-size: 1.4rem !important; }
+
+  .pmt-about-img-col .wp-block-image img,
+  .pmt-courses-img-col .wp-block-image img { height: 180px !important; }
 }
