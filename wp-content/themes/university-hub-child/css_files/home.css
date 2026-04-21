@@ -237,7 +237,6 @@ p.pmt-stat-lbl {
   padding-right: 0 !important;
 }
 
-
 .pmt-about-img-col .wp-block-image figure {
   margin: 0 !important;
 }
@@ -259,6 +258,7 @@ p.pmt-stat-lbl {
   display: block !important;
   transition: transform 0.4s ease !important;
 }
+
 .pmt-about-img-col .wp-block-image img:hover {
   transform: scale(1.02) !important;
 }
@@ -857,6 +857,16 @@ p.pmt-contact-sub a {
     width: 100% !important;
   }
 
+  /* About image on tablet */
+  .pmt-about-img-col .wp-block-image {
+    height: 620px !important;
+  }
+
+  /* Courses image on tablet */
+  .pmt-courses-img-col .wp-block-image {
+    height: 620px !important;
+  }
+
   /* Badge position on tablet */
   .pmt-year-badge {
     bottom: 0 !important;
@@ -924,11 +934,15 @@ p.pmt-contact-sub a {
   p.pmt-stat-num { font-size: 1.6rem !important; }
 
   /* About image */
-  .pmt-about-img-col .wp-block-image img { height: 420px !important; }
+  .pmt-about-img-col .wp-block-image {
+    height: 420px !important;
+  }
   .pmt-about-img-col { padding-bottom: 50px !important; }
 
   /* Courses image */
-  .pmt-courses-img-col .wp-block-image img { height: 200px !important; }
+  .pmt-courses-img-col .wp-block-image {
+    height: 200px !important;
+  }
 
   /* Badge */
   .pmt-year-badge {
@@ -993,6 +1007,8 @@ p.pmt-contact-sub a {
 
   p.pmt-stat-num { font-size: 1.4rem !important; }
 
-  .pmt-about-img-col .wp-block-image img,
-  .pmt-courses-img-col .wp-block-image img { height: 180px !important; }
+  .pmt-about-img-col .wp-block-image,
+  .pmt-courses-img-col .wp-block-image {
+    height: 180px !important;
+  }
 }
