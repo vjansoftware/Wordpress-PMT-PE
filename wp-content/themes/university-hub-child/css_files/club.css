@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   PMT CLUBS — page-id-3392 & page-id-3405
+   PMT CLUBS 
 ═══════════════════════════════════════ */
 
 /* — Hide page title — */
@@ -261,6 +261,15 @@
   text-transform: none !important;
   cursor: pointer !important;
   margin: 0 !important;
+}
+/* Ensure button text is white */
+.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+/* Keep text white on hover */
+.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a:hover {
+  color: #fff !important;
 }
 .pmt-clubs .wp-block-columns:last-of-type .wp-block-column:first-child .wp-block-heading {
   background: #FF6000 !important;
