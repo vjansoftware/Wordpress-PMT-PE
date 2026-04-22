@@ -194,7 +194,7 @@
   margin: 0 !important;
   padding: 0 18px 18px !important;
   list-style: none !important;
-  border-top: 1px solid rgba(37,59,128,0.08) !important;
+  border-top: none !important;
 }
 .pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-list li {
   font-size: 13px !important;
