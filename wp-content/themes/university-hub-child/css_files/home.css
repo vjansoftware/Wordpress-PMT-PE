@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   PMT HOMEPAGE — home.css (FULL FIXED VERSION)
+   PMT HOMEPAGE — home.css (CLEAN MERGED VERSION)
 ═══════════════════════════════════════════════════════ */
 
 /* ── Remove all default WP borders/outlines ── */
@@ -72,6 +72,29 @@
 }
 
 /* ════════════════════════════════
+   SECTION PADDING — single source of truth
+════════════════════════════════ */
+
+.pmt-about-section,
+.pmt-courses-section,
+.pmt-sports-section,
+.pmt-news-section,
+.pmt-elig-section,
+.pmt-docs-section {
+  padding-top: 30px !important;
+  padding-bottom: 10px !important;
+}
+
+.pmt-about-section {
+  padding-bottom: 0 !important;
+}
+
+.pmt-contact-section {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+/* ════════════════════════════════
    SHARED — SECTION TAG
 ════════════════════════════════ */
 
@@ -102,7 +125,6 @@ p.pmt-section-tag::after {
   flex-shrink: 0 !important;
 }
 
-/* Left-aligned tags in content columns — keep line on left only */
 .pmt-about-content-col p.pmt-section-tag,
 .pmt-courses-content-col p.pmt-section-tag {
   justify-content: flex-start !important;
@@ -136,7 +158,7 @@ h2.pmt-section-h2 {
 p.pmt-section-subtext {
   font-size: 14px !important;
   color: #6b7280 !important;
-  margin: 0 !important;
+  margin: 0 0 20px !important;
   text-align: center !important;
 }
 
@@ -189,6 +211,11 @@ p.pmt-body-text {
   border-left: none !important;
   text-align: center !important;
   transition: background 0.3s !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100px !important;
 }
 
 .pmt-stat-item.wp-block-column:last-child {
@@ -199,11 +226,17 @@ p.pmt-body-text {
   background: #f0f7fd !important;
 }
 
+.pmt-stat-item.wp-block-column p {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
 p.pmt-stat-num {
   font-size: 2.2rem !important;
   font-weight: 800 !important;
   color: #253b80 !important;
-  margin: 0 !important;
+  margin: 0 0 6px !important;
   line-height: 1.2 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
@@ -213,7 +246,7 @@ p.pmt-stat-lbl {
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
   color: #9098a9 !important;
-  margin: 6px 0 0 !important;
+  margin: 0 !important;
 }
 
 /* ════════════════════════════════
@@ -225,11 +258,12 @@ p.pmt-stat-lbl {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  padding-bottom: 0 !important;
   gap: 60px !important;
   border: none !important;
+  margin-bottom: 0 !important;
 }
 
-/* ── IMAGE COLUMN ── */
 .pmt-about-img-col {
   position: relative !important;
   overflow: visible !important;
@@ -264,7 +298,6 @@ p.pmt-stat-lbl {
   transform: scale(1.02) !important;
 }
 
-/* ── 2017 BADGE — fixed positioning ── */
 .pmt-year-badge {
   position: absolute !important;
   bottom: 0 !important;
@@ -308,7 +341,7 @@ p.pmt-stat-lbl {
 }
 
 /* ════════════════════════════════
-   FEATS (dot list) — NO GAPS
+   FEATS (dot list)
 ════════════════════════════════ */
 
 .pmt-feats-grid.wp-block-columns {
@@ -359,6 +392,7 @@ p.pmt-stat-lbl {
   flex-shrink: 0;
   display: inline-block;
 }
+
 /* ════════════════════════════════
    COURSES SECTION
 ════════════════════════════════ */
@@ -377,6 +411,7 @@ p.pmt-stat-lbl {
   padding: 0 0 50px 0 !important;
   overflow: visible !important;
 }
+
 .pmt-courses-img-col .wp-block-image {
   overflow: visible !important;
   margin: 0 !important;
@@ -401,13 +436,7 @@ p.pmt-stat-lbl {
 .pmt-courses-img-col .wp-block-image img:hover {
   transform: scale(1.02) !important;
 }
-.pmt-courses-img-col img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
+
 .pmt-course-badge {
   position: absolute;
   bottom: 0;
@@ -419,6 +448,7 @@ p.pmt-stat-lbl {
   text-align: center;
   z-index: 10;
 }
+
 .pmt-course-num { display: block; font-size: 2rem; font-weight: 800; color: #FF6000; line-height: 1.1; }
 .pmt-course-lbl { display: block; font-size: 11px; color: rgba(255,255,255,0.85); margin-top: 6px; letter-spacing: 1.5px; text-transform: uppercase; }
 
@@ -436,11 +466,11 @@ p.pmt-stat-lbl {
   border-radius: 20px;
   z-index: 10;
 }
+
 .pmt-courses-content-col h2.pmt-section-h2 {
   text-align: left !important;
 }
 
-/* Apply Now button */
 .pmt-outline-btn .wp-block-button__link {
   background: transparent !important;
   color: #253b80 !important;
@@ -608,13 +638,14 @@ p.pmt-news-text {
 /* ════════════════════════════════
    ELIGIBILITY SECTION
 ════════════════════════════════ */
+
 .pmt-elig-grid.wp-block-columns {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   gap: 24px !important;
   border: none !important;
-  align-items: stretch !important;  /* ← ADD THIS */
+  align-items: stretch !important;
 }
 
 .pmt-elig-card.wp-block-column,
@@ -626,11 +657,11 @@ p.pmt-news-text {
   border-top: 4px solid #FF6000 !important;
   box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
   transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   box-sizing: border-box !important;
-  display: flex !important;           /* ← ADD THIS */
-  flex-direction: column !important;  /* ← ADD THIS */
-  justify-content: flex-start !important; /* ← ADD THIS */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
 }
 
 .pmt-elig-card.wp-block-column:hover {
@@ -652,8 +683,10 @@ p.pmt-elig-icon-wrap {
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.3s !important;
   border: none !important;
-  overflow: hidden !important;
-  flex-shrink: 0 !important;  /* ← ADD THIS */
+  overflow: visible !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .pmt-elig-card.wp-block-column:hover p.pmt-elig-icon-wrap {
@@ -677,7 +710,7 @@ p.pmt-elig-text {
   line-height: 1.75 !important;
   margin: 0 !important;
   border: none !important;
-  flex: 1 !important;  /* ← ADD THIS — pushes text to fill remaining space */
+  flex: 1 !important;
 }
 
 /* ════════════════════════════════
@@ -746,13 +779,15 @@ p.pmt-elig-text {
 /* ════════════════════════════════
    CONTACT SECTION
 ════════════════════════════════ */
+
 .pmt-contact-grid.wp-block-columns {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  padding-top: 20px !important;
   gap: 24px !important;
   border: none !important;
-  align-items: stretch !important;  /* ← ADD THIS */
+  align-items: stretch !important;
 }
 
 .pmt-contact-card.wp-block-column,
@@ -760,16 +795,17 @@ p.pmt-elig-text {
   background: #fff !important;
   border-radius: 14px !important;
   padding: 40px 30px !important;
+  min-height: 220px !important;
   text-align: center !important;
   border: 1px solid rgba(37,59,128,0.08) !important;
   box-shadow: 0 4px 16px rgba(37,59,128,0.07) !important;
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s !important;
   position: relative !important;
   overflow: hidden !important;
-  display: flex !important;            /* ← ADD THIS */
-  flex-direction: column !important;   /* ← ADD THIS */
-  align-items: center !important;      /* ← ADD THIS */
-  justify-content: center !important;  /* ← ADD THIS */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .pmt-contact-card.wp-block-column::after {
@@ -795,9 +831,9 @@ p.pmt-elig-text {
 }
 
 p.pmt-contact-icon-wrap {
-  font-size: 26px !important;
-  width: 64px !important;
-  height: 64px !important;
+  font-size: 20px !important;
+  width: 50px !important;
+  height: 50px !important;
   background: #253b80 !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -808,7 +844,7 @@ p.pmt-contact-icon-wrap {
   line-height: 1 !important;
   transition: background 0.3s, transform 0.35s cubic-bezier(0.34,1.56,0.64,1) !important;
   border: none !important;
-  flex-shrink: 0 !important;  /* ← ADD THIS */
+  flex-shrink: 0 !important;
 }
 
 .pmt-contact-card.wp-block-column:hover p.pmt-contact-icon-wrap {
@@ -825,12 +861,12 @@ h4.pmt-contact-label {
   margin: 0 0 12px !important;
   text-decoration: none !important;
   border: none !important;
-  width: 100% !important;  /* ← ADD THIS */
+  width: 100% !important;
 }
 
 p.pmt-contact-value {
-  margin: 0 0 4px !important;  /* ← ADD THIS */
-  width: 100% !important;       /* ← ADD THIS */
+  margin: 0 0 4px !important;
+  width: 100% !important;
 }
 
 p.pmt-contact-value a {
@@ -848,22 +884,22 @@ p.pmt-contact-value a:hover {
 p.pmt-contact-sub {
   font-size: 13px !important;
   color: #9098a9 !important;
-  margin: 8px 0 0 !important;
+  margin: 8px 0 20px !important;
   border: none !important;
   text-decoration: none !important;
-  width: 100% !important;  /* ← ADD THIS */
+  width: 100% !important;
 }
 
 p.pmt-contact-sub a {
   text-decoration: none !important;
   color: #9098a9 !important;
 }
+
 /* ════════════════════════════════
    RESPONSIVE — TABLET (max 900px)
 ════════════════════════════════ */
 
 @media (max-width: 900px) {
-  /* Stats */
   .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; }
   .pmt-stat-item.wp-block-column {
     flex-basis: 50% !important;
@@ -872,7 +908,6 @@ p.pmt-contact-sub a {
   }
   .pmt-stat-item.wp-block-column:nth-child(2n) { border-right: none !important; }
 
-  /* About & Courses — stack vertically */
   .pmt-about-cols.wp-block-columns,
   .pmt-courses-cols.wp-block-columns {
     flex-direction: column !important;
@@ -887,7 +922,6 @@ p.pmt-contact-sub a {
     width: 100% !important;
   }
 
-  /* Badge position on tablet */
   .pmt-year-badge {
     bottom: 0 !important;
     right: 0 !important;
@@ -895,7 +929,6 @@ p.pmt-contact-sub a {
   }
   .pmt-year-num { font-size: 1.6rem !important; }
 
-  /* Sports */
   .pmt-sports-row.wp-block-columns {
     padding: 0 24px !important;
     flex-wrap: wrap !important;
@@ -906,23 +939,18 @@ p.pmt-contact-sub a {
     min-width: calc(50% - 6px) !important;
   }
 
-  /* News */
   .pmt-news-grid.wp-block-columns { flex-direction: column !important; padding: 0 24px !important; }
   .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
 
-  /* Eligibility */
   .pmt-elig-grid.wp-block-columns { flex-wrap: wrap !important; padding: 0 24px !important; gap: 16px !important; }
   .pmt-elig-card.wp-block-column { flex-basis: calc(50% - 8px) !important; min-width: calc(50% - 8px) !important; }
 
-  /* Docs */
   .pmt-docs-row.wp-block-columns { flex-wrap: wrap !important; padding: 0 24px !important; gap: 10px !important; }
   .pmt-doc-item.wp-block-column { flex-basis: calc(50% - 5px) !important; min-width: calc(50% - 5px) !important; }
 
-  /* Contact */
   .pmt-contact-grid.wp-block-columns { flex-direction: column !important; padding: 0 24px !important; }
   .pmt-contact-card.wp-block-column { flex-basis: 100% !important; }
 
-  /* Section headers */
   .pmt-section-header.wp-block-group { padding: 0 24px !important; }
   h2.pmt-section-h2 { font-size: 1.7rem !important; }
 }
@@ -930,9 +958,8 @@ p.pmt-contact-sub a {
 /* ════════════════════════════════
    RESPONSIVE — MOBILE (max 640px)
 ════════════════════════════════ */
-@media (max-width: 640px) {
 
-  /* Remove all side padding on sections */
+@media (max-width: 640px) {
   .pmt-about-cols.wp-block-columns,
   .pmt-courses-cols.wp-block-columns,
   .pmt-sports-row.wp-block-columns,
@@ -945,7 +972,6 @@ p.pmt-contact-sub a {
     padding-right: 16px !important;
   }
 
-  /* Section padding */
   .pmt-about-section.wp-block-group,
   .pmt-courses-section.wp-block-group,
   .pmt-sports-section.wp-block-group,
@@ -953,15 +979,11 @@ p.pmt-contact-sub a {
   .pmt-elig-section.wp-block-group,
   .pmt-docs-section.wp-block-group,
   .pmt-contact-section.wp-block-group {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
   }
 
-  /* ── STATS ── */
-  .pmt-stats-inner.wp-block-columns {
-    flex-wrap: wrap !important;
-    display: flex !important;
-  }
+  .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; display: flex !important; }
   .pmt-stat-item.wp-block-column {
     flex-basis: 50% !important;
     min-width: 50% !important;
@@ -970,211 +992,56 @@ p.pmt-contact-sub a {
     border-right: 1px solid rgba(37,59,128,0.08) !important;
     border-bottom: 1px solid rgba(37,59,128,0.08) !important;
   }
-  .pmt-stat-item.wp-block-column:nth-child(2n) {
-    border-right: none !important;
-  }
+  .pmt-stat-item.wp-block-column:nth-child(2n) { border-right: none !important; }
   .pmt-stat-item.wp-block-column:nth-child(3),
-  .pmt-stat-item.wp-block-column:nth-child(4) {
-    border-bottom: none !important;
-  }
+  .pmt-stat-item.wp-block-column:nth-child(4) { border-bottom: none !important; }
   p.pmt-stat-num { font-size: 1.6rem !important; }
 
-  /* ── ABOUT IMAGE ── */
-  .pmt-about-cols.wp-block-columns {
-    gap: 20px !important;
-  }
-  .pmt-about-img-col {
-    padding-bottom: 60px !important;
-    padding-right: 0 !important;
-  }
-  .pmt-about-img-col .wp-block-image img {
-    height: auto !important;
-    min-height: 260px !important;
-  }
+  .pmt-about-cols.wp-block-columns { gap: 20px !important; }
+  .pmt-about-img-col { padding-bottom: 60px !important; padding-right: 0 !important; }
+  .pmt-about-img-col .wp-block-image img { height: auto !important; min-height: 260px !important; }
 
-  /* ── YEAR BADGE ── */
-  .pmt-year-badge {
-    bottom: 0 !important;
-    right: 0 !important;
-    padding: 10px 14px !important;
-    min-width: 90px !important;
-  }
+  .pmt-year-badge { bottom: 0 !important; right: 0 !important; padding: 10px 14px !important; min-width: 90px !important; }
   .pmt-year-num { font-size: 1.4rem !important; }
   .pmt-year-lbl { font-size: 10px !important; }
 
-  /* ── FEATS LIST — no gaps ── */
-  .pmt-feats-grid.wp-block-columns {
-    display: block !important;
-    gap: 0 !important;
-    row-gap: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  .pmt-feats-grid.wp-block-columns { display: block !important; gap: 0 !important; row-gap: 0 !important; margin: 0 !important; padding: 0 !important; }
   .pmt-feats-grid .wp-block-column,
-  .pmt-feat-item.wp-block-column {
-    width: 100% !important;
-    min-width: 100% !important;
-    flex-basis: 100% !important;
-    margin: 0 !important;
-    padding: 4px 0 !important;
-  }
-  .pmt-feat-item p {
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.4 !important;
-  }
+  .pmt-feat-item.wp-block-column { width: 100% !important; min-width: 100% !important; flex-basis: 100% !important; margin: 0 !important; padding: 4px 0 !important; }
+  .pmt-feat-item p { margin: 0 !important; padding: 0 !important; line-height: 1.4 !important; }
 
-  /* ── COURSES IMAGE ── */
-  .pmt-courses-img-col .wp-block-image img {
-    height: auto !important;
-    min-height: 240px !important;
-  }
+  .pmt-courses-img-col .wp-block-image img { height: auto !important; min-height: 240px !important; }
 
-  /* ── H2 ── */
   h2.pmt-section-h2 { font-size: 1.5rem !important; }
 
-  /* ── SPORTS — 2 per row ── */
-  .pmt-sports-row.wp-block-columns {
-    flex-wrap: wrap !important;
-    gap: 10px !important;
-  }
-  .pmt-sport-card.wp-block-column {
-    flex-basis: calc(50% - 5px) !important;
-    min-width: calc(50% - 5px) !important;
-    padding: 20px 12px !important;
-  }
+  .pmt-sports-row.wp-block-columns { flex-wrap: wrap !important; gap: 10px !important; }
+  .pmt-sport-card.wp-block-column { flex-basis: calc(50% - 5px) !important; min-width: calc(50% - 5px) !important; padding: 20px 12px !important; }
 
-  /* ── NEWS — full width ── */
   .pmt-news-grid.wp-block-columns { gap: 16px !important; }
   .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
 
-  /* ── ELIGIBILITY — full width ── */
   .pmt-elig-grid.wp-block-columns { gap: 12px !important; }
   .pmt-elig-card.wp-block-column,
-  .pmt-elig-section .pmt-elig-card.wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-    padding: 28px 20px !important;
-  }
+  .pmt-elig-section .pmt-elig-card.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; padding: 28px 20px !important; }
 
-  /* ── DOCUMENTS — full width, no gaps ── */
-  .pmt-docs-row.wp-block-columns {
-    gap: 8px !important;
-    row-gap: 8px !important;
-    margin-bottom: 8px !important;
-  }
-  .pmt-doc-item.wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-    padding: 14px 16px !important;
-    margin: 0 !important;
-    min-height: auto !important;
-  }
-  .pmt-doc-item p {
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.4 !important;
-  }
-  .pmt-doc-num {
-    flex-shrink: 0 !important;
-  }
+  .pmt-docs-row.wp-block-columns { gap: 8px !important; row-gap: 8px !important; margin-bottom: 8px !important; }
+  .pmt-doc-item.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; padding: 14px 16px !important; margin: 0 !important; min-height: auto !important; }
+  .pmt-doc-item p { margin: 0 !important; padding: 0 !important; line-height: 1.4 !important; }
+  .pmt-doc-num { flex-shrink: 0 !important; }
 
-  /* ── CONTACT — full width ── */
   .pmt-contact-grid.wp-block-columns { gap: 12px !important; }
   .pmt-contact-card.wp-block-column,
-  .pmt-contact-section .pmt-contact-card.wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-    padding: 28px 20px !important;
-  }
-}
-.pmt-about-section,
-.pmt-courses-section,
-.pmt-sports-section,
-.pmt-news-section,
-.pmt-elig-section,
-.pmt-docs-section,
-.pmt-contact-section {
-  padding-top: 30px !important;
-  padding-bottom: 10px !important;
-}
-/* ── FIX: Remove extra bottom space in about section ── */
-.pmt-about-section {
-  padding-bottom: 0 !important;
+  .pmt-contact-section .pmt-contact-card.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; padding: 28px 20px !important; }
 }
 
-.pmt-about-cols.wp-block-columns {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-/* ── FIX: Stats — center content vertically ── */
-.pmt-stat-item.wp-block-column {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 100px !important;
-}
-
-.pmt-stat-item.wp-block-column p {
-  width: 100% !important;
-  text-align: center !important;
-  margin: 0 !important;
-}
-
-p.pmt-stat-num {
-  margin-bottom: 6px !important;
-}
-
-p.pmt-stat-lbl {
-  margin-top: 0 !important;
-}
-/* ── FIX: Eligibility card — stop icon from hiding on hover ── */
-.pmt-elig-card.wp-block-column,
-.pmt-elig-section .pmt-elig-card.wp-block-column {
-  overflow: visible !important;
-}
-
-p.pmt-elig-icon-wrap {
-  position: relative !important;
-  z-index: 2 !important;
-  overflow: visible !important;
-}
-
-/* ── FIX: Space below "Submit Originals..." subtext ── */
-p.pmt-section-subtext {
-  margin-bottom: 20px !important;
-}
-/* ── FIX: Contact cards — increase height ── */
-.pmt-contact-card.wp-block-column,
-.pmt-contact-section .pmt-contact-card.wp-block-column {
-  padding: 60px 30px !important;
-}
-/* ── FIX: Space below "Call or WhatsApp..." text ── */
-p.pmt-contact-sub {
-  margin: 8px 0 20px !important;
-}
-
-/* ── FIX: Decrease contact icon size ── */
-p.pmt-contact-icon-wrap {
-  width: 50px !important;
-  height: 50px !important;
-  font-size: 20px !important;
-}
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
 ════════════════════════════════ */
+
 @media (max-width: 400px) {
-  .pmt-sport-card.wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-  }
+  .pmt-sport-card.wp-block-column { flex-basis: 100% !important; min-width: 100% !important; }
   h2.pmt-section-h2 { font-size: 1.3rem !important; }
   p.pmt-stat-num { font-size: 1.4rem !important; }
   .pmt-about-img-col .wp-block-image img,
-  .pmt-courses-img-col .wp-block-image img {
-    min-height: 200px !important;
-    height: auto !important;
-  }
+  .pmt-courses-img-col .wp-block-image img { min-height: 200px !important; height: auto !important; }
 }
