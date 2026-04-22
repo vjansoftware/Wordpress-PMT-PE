@@ -1095,8 +1095,8 @@ p.pmt-contact-sub a {
 .pmt-elig-section,
 .pmt-docs-section,
 .pmt-contact-section {
-  padding-top: 40px !important;
-  padding-bottom: 20px !important;
+  padding-top: 30px !important;
+  padding-bottom: 10px !important;
 }
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
