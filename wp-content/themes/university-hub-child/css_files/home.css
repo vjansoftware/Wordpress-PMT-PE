@@ -115,13 +115,8 @@ p.pmt-section-tag {
   border: none !important;
 }
 
-p.pmt-section-tag::before,
-p.pmt-section-tag::after {
-  content: '' !important;
-  flex: 1 !important;              /* ✅ makes line stretch */
-  height: 2px !important;
-  background: #FF6000 !important;
-}
+p.pmt-section-tag::before, p.pmt-section-tag::after { 
+   content: '' !important; display: inline-block !important; width: 20px !important; height: 2px !important; background: #FF6000 !important; flex-shrink: 0 !important; }
 
 .pmt-about-content-col p.pmt-section-tag,
 .pmt-courses-content-col p.pmt-section-tag {
