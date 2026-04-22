@@ -118,11 +118,9 @@ p.pmt-section-tag {
 p.pmt-section-tag::before,
 p.pmt-section-tag::after {
   content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
+  flex: 1 !important;              /* ✅ makes line stretch */
   height: 2px !important;
   background: #FF6000 !important;
-  flex-shrink: 0 !important;
 }
 
 .pmt-about-content-col p.pmt-section-tag,
