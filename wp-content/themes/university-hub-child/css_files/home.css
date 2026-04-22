@@ -1088,7 +1088,16 @@ p.pmt-contact-sub a {
     padding: 28px 20px !important;
   }
 }
-
+.pmt-about-section,
+.pmt-courses-section,
+.pmt-sports-section,
+.pmt-news-section,
+.pmt-elig-section,
+.pmt-docs-section,
+.pmt-contact-section {
+  padding-top: 40px !important;
+  padding-bottom: 20px !important;
+}
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
 ════════════════════════════════ */
