@@ -177,23 +177,8 @@
   box-sizing: border-box !important;
 }
 
-/* ── CARD TAMIL TEXT (p:2) ── */
+/* ── CARD DESCRIPTION (p:2) ── */
 .pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(2) {
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  color: #179bd7 !important;
-  margin: 0 !important;
-  padding: 0 18px 10px !important;
-  border-bottom: 1px solid rgba(37,59,128,0.08) !important;
-  background: transparent !important;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  box-sizing: border-box !important;
-}
-
-/* ── CARD DESCRIPTION (p:3) ── */
-.pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(3) {
   font-size: 13.5px !important;
   color: #6b7280 !important;
   line-height: 1.65 !important;
