@@ -213,7 +213,7 @@
 /* CTA heading */
 .page-id-3386 .entry-content > h2.wp-block-heading.has-text-align-center:last-of-type {
   background: linear-gradient(135deg, #253b80, #179bd7);
-  color: #fff !important;
+  color: #ff6000 !important;
   font-size: 2rem !important;
   font-weight: 800 !important;
   line-height: 1.3 !important;
@@ -225,7 +225,7 @@
 /* CTA text */
 .page-id-3386 .entry-content > p.has-text-align-center:last-of-type {
   background: linear-gradient(135deg, #253b80, #179bd7);
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: #f4f6fb !important;
   max-width: 100% !important;
   margin: 0 !important;
   padding: 0 20px 22px !important;
