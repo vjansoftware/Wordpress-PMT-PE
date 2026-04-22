@@ -1096,7 +1096,39 @@ p.pmt-contact-sub a {
 .pmt-docs-section,
 .pmt-contact-section {
   padding-top: 30px !important;
-  padding-bottom: 5px !important;
+  padding-bottom: 10px !important;
+}
+/* ── FIX: Remove extra bottom space in about section ── */
+.pmt-about-section {
+  padding-bottom: 0 !important;
+}
+
+.pmt-about-cols.wp-block-columns {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── FIX: Stats — center content vertically ── */
+.pmt-stat-item.wp-block-column {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100px !important;
+}
+
+.pmt-stat-item.wp-block-column p {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+p.pmt-stat-num {
+  margin-bottom: 6px !important;
+}
+
+p.pmt-stat-lbl {
+  margin-top: 0 !important;
 }
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
