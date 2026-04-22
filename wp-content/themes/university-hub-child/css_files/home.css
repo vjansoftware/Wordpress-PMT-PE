@@ -99,24 +99,30 @@
 ════════════════════════════════ */
 
 p.pmt-section-tag {
-  color: #FF6000 !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  margin-bottom: 10px !important;
-  margin-top: 0 !important;
-  text-decoration: none !important;
-  border: none !important;
+   color: #FF6000 !important; 
+   font-size: 11px !important; 
+   font-weight: 700 !important; 
+   letter-spacing: 3px !important; 
+   text-transform: uppercase !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+   display: flex !important; 
+   align-items: center !important;
+   justify-content: center !important;
+   gap: 10px !important;
+   margin-bottom: 10px !important;
+   margin-top: 0 !important;
+   text-decoration: none !important;
+   border: none !important;
+} 
+p.pmt-section-tag::before,
+p.pmt-section-tag::after {
+   content: '' !important; 
+   display: inline-block !important;
+   width: 20px !important;
+   height: 2px !important; 
+   background: #FF6000 !important; 
+   flex-shrink: 0 !important; 
 }
-
-p.pmt-section-tag::before, p.pmt-section-tag::after { 
-   content: '' !important; display: inline-block !important; width: 20px !important; height: 2px !important; background: #FF6000 !important; flex-shrink: 0 !important; }
 
 .pmt-about-content-col p.pmt-section-tag,
 .pmt-courses-content-col p.pmt-section-tag {
