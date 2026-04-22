@@ -1130,6 +1130,22 @@ p.pmt-stat-num {
 p.pmt-stat-lbl {
   margin-top: 0 !important;
 }
+/* ── FIX: Eligibility card — stop icon from hiding on hover ── */
+.pmt-elig-card.wp-block-column,
+.pmt-elig-section .pmt-elig-card.wp-block-column {
+  overflow: visible !important;
+}
+
+p.pmt-elig-icon-wrap {
+  position: relative !important;
+  z-index: 2 !important;
+  overflow: visible !important;
+}
+
+/* ── FIX: Space below "Submit Originals..." subtext ── */
+p.pmt-section-subtext {
+  margin-bottom: 20px !important;
+}
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
 ════════════════════════════════ */
