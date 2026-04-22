@@ -1146,6 +1146,11 @@ p.pmt-elig-icon-wrap {
 p.pmt-section-subtext {
   margin-bottom: 20px !important;
 }
+/* ── FIX: Contact cards — increase height ── */
+.pmt-contact-card.wp-block-column,
+.pmt-contact-section .pmt-contact-card.wp-block-column {
+  padding: 60px 30px !important;
+}
 /* ════════════════════════════════
    RESPONSIVE — SMALL MOBILE (max 400px)
 ════════════════════════════════ */
