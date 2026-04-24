@@ -671,9 +671,9 @@ p.pmt-news-text {
 }
 
 .pmt-elig-icon-wrap {
-  font-size: 18px !important;
-  width: 44px !important;
-  height: 44px !important;
+  font-size: 22px !important;
+  width: 52px !important;
+  height: 52px !important;
   background: #253b80 !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -690,7 +690,7 @@ p.pmt-news-text {
   z-index: 2 !important;
 }
 
-.pmt-elig-card.wp-block-column:hover p.pmt-elig-icon-wrap {
+.pmt-elig-card.wp-block-column:hover .pmt-elig-icon-wrap {
   background: #FF6000 !important;
   transform: scale(1.1) rotate(-6deg) !important;
 }
