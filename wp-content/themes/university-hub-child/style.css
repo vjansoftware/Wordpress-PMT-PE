@@ -3638,7 +3638,13 @@ p.intra-label::after {
 
 /* 🔥 Reduce logo size in mobile */
 @media (max-width: 768px) {
-  .site-branding,
+  .site-branding {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
   .site-branding .custom-logo-link,
   .site-branding .custom-logo-link img,
   .site-branding img.custom-logo,
@@ -3655,5 +3661,12 @@ p.intra-label::after {
     max-height: 55px !important;
     width: auto !important;
     filter: brightness(0) invert(1) !important;
+  }
+
+  .site-title {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    white-space: normal !important;
   }
 }
