@@ -3638,15 +3638,25 @@ p.intra-label::after {
 
 /* 🔥 Reduce logo size in mobile */
 @media (max-width: 768px) {
-  .site-logo img,
-  .custom-logo,
-  .custom-logo-link,
-  .custom-logo-link img {
-    max-height: 60px !important;
+  .site-branding .custom-logo-link,
+  .site-branding .custom-logo-link img,
+  .site-branding img.custom-logo,
+  header .custom-logo-link,
+  header .custom-logo-link img {
     display: block !important;
-    width: auto !important;
-    filter: brightness(0) invert(1) !important;
     visibility: visible !important;
     opacity: 1 !important;
+    max-height: 55px !important;
+    width: auto !important;
+    filter: brightness(0) invert(1) !important;
+  }
+
+  /* Override any inline style hiding */
+  .site-branding [style*="display:none"],
+  .site-branding [style*="display: none"],
+  .site-branding [style*="visibility:hidden"],
+  .site-branding [style*="visibility: hidden"] {
+    display: block !important;
+    visibility: visible !important;
   }
 }
