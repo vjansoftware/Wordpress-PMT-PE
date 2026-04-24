@@ -28,12 +28,44 @@ Version: 1.0
   content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
   white-space: pre;
 }
+@media (max-width: 768px) {
+  .site-description {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 200px !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+  }
+
+  .site-description::after {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+
+  .site-branding {
+    max-width: calc(100% - 60px) !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-description {
+    max-width: 160px !important;
+    font-size: 9px !important;
+  }
+}
 .custom-logo {
   max-height: 90px !important;
   width: auto !important;
   filter: brightness(0) invert(1) !important;
 }
-
+@media (max-width: 768px) {
+  .custom-logo {
+    filter: none !important;
+    max-height: 60px !important;
+  }
+}
 /* Hide all page titles */
 .entry-title,
 .entry-header {
