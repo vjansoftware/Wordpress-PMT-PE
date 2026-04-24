@@ -312,13 +312,13 @@ p.lab-label::after {
   .lab-grid {
     gap: 16px !important;
   }
-
+  
   .lab-highlight {
-    padding: 28px 20px !important;
+    padding: 18px 20px !important;
   }
 
   .lab-cta {
-    padding: 28px 16px !important;
+    padding: 18px 16px !important;
   }
 
   .lab-wrap .lab-title {
