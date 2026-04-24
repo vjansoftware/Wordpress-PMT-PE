@@ -3638,25 +3638,22 @@ p.intra-label::after {
 
 /* 🔥 Reduce logo size in mobile */
 @media (max-width: 768px) {
+  .site-branding,
   .site-branding .custom-logo-link,
   .site-branding .custom-logo-link img,
   .site-branding img.custom-logo,
+  .site-logo,
+  .site-logo img,
   header .custom-logo-link,
-  header .custom-logo-link img {
+  header .custom-logo-link img,
+  #masthead .custom-logo-link,
+  #masthead .custom-logo-link img,
+  #masthead img.custom-logo {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     max-height: 55px !important;
     width: auto !important;
     filter: brightness(0) invert(1) !important;
-  }
-
-  /* Override any inline style hiding */
-  .site-branding [style*="display:none"],
-  .site-branding [style*="display: none"],
-  .site-branding [style*="visibility:hidden"],
-  .site-branding [style*="visibility: hidden"] {
-    display: block !important;
-    visibility: visible !important;
   }
 }
