@@ -53,6 +53,8 @@ function pmt_theme_styles() {
         948  => 'indoorsports.css',
         951  => 'coachingprograms.css',
         954  => 'achievements.css',
+        4451 => 'intramural.css',
+        4447 => 'extramural.css',
         1164 => 'playground.css',
         967  => 'hostel.css',
         3382 => 'multigym.css',
