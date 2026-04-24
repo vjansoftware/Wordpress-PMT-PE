@@ -162,7 +162,7 @@ p.lab-label::after {
 .lab-highlight {
   background: #f4f6fb !important;
   border-radius: 10px !important;
-  padding: 48px 40px !important;
+  padding: 28px 40px !important;
   margin-top: 8px !important;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
@@ -229,7 +229,7 @@ p.lab-label::after {
 .lab-cta {
   background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 10px !important;
-  padding: 48px 40px !important;
+  padding: 28px 40px !important;
   text-align: center;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
