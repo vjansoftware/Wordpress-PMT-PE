@@ -171,6 +171,39 @@ p.a.admission-apply-link {
   padding: 0 !important;
 }
 
+.pmt-adm-note .wp-block-buttons {
+  display: flex !important;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.adm-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
+  padding: 12px 28px !important;
+  border-radius: 6px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.adm-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
+}
+
+.adm-cta-btn-outline .wp-block-button__link {
+  background: transparent !important;
+  color: #f4f6fb !important;
+  border: 2px solid #f4f6fb !important;
+  box-shadow: none !important;
+}
+
+.adm-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(37, 59, 128, 0.05) !important;
+}
+
 /* ── Responsive — Tablet ── */
 @media (max-width: 991px) {
   .pmt-adm-row {
