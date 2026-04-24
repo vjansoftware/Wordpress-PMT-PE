@@ -3342,6 +3342,12 @@ p.intra-label::after {
    HIGHLIGHT SECTION
 ════════════════════════════════ */
 
+.intra-highlight {
+  border-radius: 10px !;
+  padding: 48px 40px !important;
+  margin-top: 8px !important;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
 .intra-highlight.pmt-animate {
   opacity: 0;
