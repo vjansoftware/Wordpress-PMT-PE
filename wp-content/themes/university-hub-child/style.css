@@ -28,12 +28,7 @@ Version: 1.0
   content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
   white-space: pre;
 }
-@media (max-width: 768px) {
-  .site-description::after {
-    content: "\A Affiliated to Tamil Nadu Physical Education & Sports\A University, Chennai";
-    white-space: pre;
-  }
-}
+
 .custom-logo {
   max-height: 90px !important;
   width: auto !important;
