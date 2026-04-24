@@ -216,7 +216,6 @@ p.pmt-careers-label::after {
   padding: 14px 20px !important;
   margin: 20px 0 !important;
   background: #f4f6fb !important;
-  color: #253b80 !important;
   font-style: italic !important;
   border-radius: 0 8px 8px 0 !important;
   font-size: 14px !important;
@@ -286,7 +285,6 @@ p.pmt-careers-label::after {
   display: block;
   width: 100%;
   padding: 12px 26px;
-  background: #253b80;
   color: #fff !important;
   border-radius: 8px;
   text-decoration: none !important;
@@ -340,7 +338,6 @@ p.pmt-careers-label::after {
 
 .pmt-salary-modal-header {
   padding: 14px 20px;
-  background: #253b80;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -413,7 +410,6 @@ p.pmt-careers-label::after {
 .pmt-apply-modal-title {
   margin: 0 0 1.25rem !important;
   font-size: 1.2rem !important;
-  color: #253b80 !important;
   font-weight: 700 !important;
 }
 
