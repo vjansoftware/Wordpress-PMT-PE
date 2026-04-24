@@ -194,6 +194,7 @@ p.pmt-body-text {
   border-bottom: 1px solid rgba(37,59,128,0.08) !important;
   border-top: none !important;
   margin-top: -10px !important;
+  margin-bottom: 0 !important;
 }
 
 .pmt-stats-inner.wp-block-columns {
@@ -683,7 +684,7 @@ p.pmt-elig-icon-wrap {
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.3s !important;
   border: none !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   flex-shrink: 0 !important;
   position: relative !important;
   z-index: 2 !important;
