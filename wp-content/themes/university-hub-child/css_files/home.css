@@ -193,6 +193,7 @@ p.pmt-body-text {
 .pmt-stats-band {
   border-bottom: 1px solid rgba(37,59,128,0.08) !important;
   border-top: none !important;
+  margin-top: -10px !important;
 }
 
 .pmt-stats-inner.wp-block-columns {
@@ -203,7 +204,7 @@ p.pmt-body-text {
 }
 
 .pmt-stat-item.wp-block-column {
-  padding: 32px 24px !important;
+  padding: 20px 24px !important;
   border-right: 1px solid rgba(37,59,128,0.08) !important;
   border-top: none !important;
   border-bottom: none !important;
@@ -214,7 +215,7 @@ p.pmt-body-text {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  min-height: 100px !important;
+  min-height: 80px !important;
 }
 
 .pmt-stat-item.wp-block-column:last-child {
@@ -669,15 +670,15 @@ p.pmt-news-text {
 }
 
 p.pmt-elig-icon-wrap {
-  font-size: 22px !important;
-  width: 60px !important;
-  height: 60px !important;
+  font-size: 18px !important;
+  width: 44px !important;
+  height: 44px !important;
   background: #253b80 !important;
   border-radius: 50% !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin: 0 0 20px 0 !important;
+  margin: 0 0 16px 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
   transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), background 0.3s !important;
