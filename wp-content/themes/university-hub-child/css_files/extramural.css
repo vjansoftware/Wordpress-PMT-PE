@@ -285,7 +285,7 @@ p.extra-card-tag,
    CTA
 ════════════════════════════════ */
 
-.extra-cta {
+.extra-wrap {
   background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 10px !important;
   padding: 48px 40px !important;
