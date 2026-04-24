@@ -3638,22 +3638,15 @@ p.intra-label::after {
 
 /* 🔥 Reduce logo size in mobile */
 @media (max-width: 768px) {
-  .site-branding {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 10px !important;
-  }
-
-  .site-branding .custom-logo-link {
-    display: flex !important;
-    flex-shrink: 0 !important;
-  }
-
+  .site-branding,
+  .site-branding .custom-logo-link,
   .site-branding .custom-logo-link img,
   .site-branding img.custom-logo,
+  .site-logo,
   .site-logo img,
+  header .custom-logo-link,
   header .custom-logo-link img,
+  #masthead .custom-logo-link,
   #masthead .custom-logo-link img,
   #masthead img.custom-logo {
     display: block !important;
