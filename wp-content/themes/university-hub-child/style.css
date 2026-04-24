@@ -3643,6 +3643,7 @@ p.intra-label::after {
     flex-direction: row !important;
     align-items: center !important;
     gap: 8px !important;
+    min-width: 0 !important;
   }
 
   .site-branding .custom-logo-link {
@@ -3658,10 +3659,16 @@ p.intra-label::after {
     filter: brightness(0) invert(1) !important;
   }
 
+  #site-identity {
+    min-width: 0 !important;
+  }
+
   #site-identity .site-title {
     font-size: 11px !important;
     line-height: 1.3 !important;
     margin: 0 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
   }
 
   #site-identity .site-title a {
