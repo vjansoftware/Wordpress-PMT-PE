@@ -21,15 +21,13 @@ Version: 1.0
   max-width: 600px !important;
   word-wrap: break-word !important;
   line-height: 1.5 !important;
-  font-size: 12px !important;
-  padding-top: 3px !important;
+	font-size: 12px !important;
+	 padding-top: 3px !important;
 }
-
 .site-description::after {
   content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
   white-space: pre;
 }
-
 .custom-logo {
   max-height: 90px !important;
   width: auto !important;
@@ -39,9 +37,8 @@ Version: 1.0
 /* Hide all page titles */
 .entry-title,
 .entry-header {
-  display: none !important;
+    display: none !important;
 }
-
 .site-branding {
   display: flex !important;
   align-items: center !important;
@@ -63,90 +60,6 @@ Version: 1.0
   align-items: center !important;
   justify-content: space-between !important;
   width: 100% !important;
-}
-
-/* ── MOBILE (max 768px) ── */
-@media (max-width: 768px) {
-
-  /* Header — keep horizontal row */
-  .site-header-wrap {
-    flex-direction: row !important;
-    align-items: center !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    gap: 10px !important;
-  }
-
-  /* Branding — logo + text side by side */
-  .site-branding {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 10px !important;
-    flex: 1 !important;
-    max-width: calc(100% - 60px) !important;
-    overflow: hidden !important;
-  }
-
-  /* Logo — keep white on mobile */
-  .custom-logo {
-    filter: brightness(0) invert(1) !important;
-    max-height: 50px !important;
-    width: auto !important;
-    flex-shrink: 0 !important;
-  }
-
-  /* Site title */
-  .site-title {
-    font-size: 14px !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-    white-space: normal !important;
-  }
-
-  .site-title a {
-    color: #fff !important;
-  }
-
-  /* Description text */
-  .site-description {
-    white-space: normal !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    max-width: 100% !important;
-    font-size: 9px !important;
-    line-height: 1.4 !important;
-    color: rgba(255,255,255,0.85) !important;
-    margin: 2px 0 0 !important;
-    padding-top: 0 !important;
-  }
-
-  .site-description::after {
-    white-space: normal !important;
-    word-wrap: break-word !important;
-    display: block !important;
-  }
-
-  /* Hide contact details on mobile to save space */
-  #quick-contact {
-    display: none !important;
-  }
-}
-
-/* ── SMALL MOBILE (max 480px) ── */
-@media (max-width: 480px) {
-
-  .custom-logo {
-    max-height: 40px !important;
-  }
-
-  .site-title {
-    font-size: 12px !important;
-  }
-
-  .site-description {
-    font-size: 8px !important;
-  }
 }
 
 /* ── Slider Padding + Height ── */
@@ -3706,108 +3619,4 @@ p.intra-label::after {
     width: auto !important;
   }
 
-}
-/* ── MOBILE HEADER FINAL FIX ── */
-@media (max-width: 768px) {
-
-  /* Force horizontal layout */
-  .site-header-wrap {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    gap: 10px !important;
-  }
-
-  /* Branding row */
-  .site-branding {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-    flex: 1 !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-  }
-
-  /* Logo link — no flex column */
-  .site-branding .custom-logo-link {
-    display: flex !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-  }
-
-  /* Logo white and small */
-  .custom-logo,
-  .site-logo img {
-    filter: brightness(0) invert(1) !important;
-    max-height: 45px !important;
-    width: auto !important;
-  }
-
-  /* Text block next to logo */
-  .site-branding .site-title-wrap,
-  .site-branding > div:not(.custom-logo-link) {
-    display: flex !important;
-    flex-direction: column !important;
-    min-width: 0 !important;
-  }
-
-  /* College name */
-  .site-title {
-    font-size: 13px !important;
-    line-height: 1.2 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    white-space: normal !important;
-    word-break: break-word !important;
-  }
-
-  .site-title a {
-    color: #fff !important;
-    text-decoration: none !important;
-  }
-
-  /* Description — both lines wrap */
-  .site-description {
-    font-size: 8.5px !important;
-    line-height: 1.35 !important;
-    white-space: normal !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    max-width: 100% !important;
-    color: rgba(255,255,255,0.8) !important;
-    margin: 2px 0 0 !important;
-    padding: 0 !important;
-  }
-
-  .site-description::after {
-    white-space: normal !important;
-    word-break: break-word !important;
-    display: block !important;
-  }
-
-  /* Hide phone/address on mobile */
-  #quick-contact {
-    display: none !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .custom-logo,
-  .site-logo img {
-    max-height: 38px !important;
-  }
-
-  .site-title {
-    font-size: 11px !important;
-  }
-
-  .site-description {
-    font-size: 7.5px !important;
-  }
 }
