@@ -3707,3 +3707,107 @@ p.intra-label::after {
   }
 
 }
+/* ── MOBILE HEADER FINAL FIX ── */
+@media (max-width: 768px) {
+
+  /* Force horizontal layout */
+  .site-header-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    gap: 10px !important;
+  }
+
+  /* Branding row */
+  .site-branding {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* Logo link — no flex column */
+  .site-branding .custom-logo-link {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Logo white and small */
+  .custom-logo,
+  .site-logo img {
+    filter: brightness(0) invert(1) !important;
+    max-height: 45px !important;
+    width: auto !important;
+  }
+
+  /* Text block next to logo */
+  .site-branding .site-title-wrap,
+  .site-branding > div:not(.custom-logo-link) {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+  }
+
+  /* College name */
+  .site-title {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+
+  .site-title a {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  /* Description — both lines wrap */
+  .site-description {
+    font-size: 8.5px !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    color: rgba(255,255,255,0.8) !important;
+    margin: 2px 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .site-description::after {
+    white-space: normal !important;
+    word-break: break-word !important;
+    display: block !important;
+  }
+
+  /* Hide phone/address on mobile */
+  #quick-contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-logo,
+  .site-logo img {
+    max-height: 38px !important;
+  }
+
+  .site-title {
+    font-size: 11px !important;
+  }
+
+  .site-description {
+    font-size: 7.5px !important;
+  }
+}
