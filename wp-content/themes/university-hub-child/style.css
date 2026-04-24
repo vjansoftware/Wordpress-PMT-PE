@@ -32,8 +32,8 @@ Version: 1.0
   max-height: 90px !important;
   width: auto !important;
   filter: brightness(0) invert(1) !important;
+  display: block !important;
 }
-
 /* Hide all page titles */
 .entry-title,
 .entry-header {
@@ -262,8 +262,8 @@ Version: 1.0
   .site-header .container,
   .site-header-wrap,
   .main-navigation .container {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 17px !important;
+    padding-right: 17px !important;
   }
 }
 #quick-contact {
@@ -3615,7 +3615,8 @@ p.intra-label::after {
 
   .site-logo img,
   .custom-logo {
-    max-height: 50px !important;
+   max-height: 60px !important;
+  display: block !important;
     width: auto !important;
   }
 
