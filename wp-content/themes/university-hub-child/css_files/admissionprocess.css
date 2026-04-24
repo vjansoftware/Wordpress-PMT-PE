@@ -176,6 +176,7 @@ p.a.admission-apply-link {
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  padding-top: 16px;
 }
 
 .adm-cta-btn .wp-block-button__link {
