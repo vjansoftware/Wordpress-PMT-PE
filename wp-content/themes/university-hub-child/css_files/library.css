@@ -6,6 +6,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -34,7 +36,8 @@
 .library-hero {
   text-align: center;
   margin-bottom: 40px;
-  padding-top: 30px;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .library-label {
@@ -78,17 +81,18 @@
    SPLIT SECTION
 ════════════════════════════════ */
 
-.library-split {
+.library-wrap .wp-block-columns.library-split {
   display: flex !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
   gap: 40px !important;
-  align-items: center;
+  align-items: center !important;
   margin-bottom: 30px;
 }
 
-.library-split .wp-block-column {
-  flex: 1 1 0;
-  min-width: 48%;
+.library-wrap .wp-block-columns.library-split .wp-block-column {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  width: 50% !important;
 }
 
 .library-split-img {
@@ -153,16 +157,17 @@
    CARDS GRID
 ════════════════════════════════ */
 
-.library-grid {
+.library-wrap .wp-block-columns.library-grid {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 24px !important;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.library-grid .wp-block-column {
-  flex: 1 1 0;
-  min-width: 28%;
+.library-wrap .wp-block-columns.library-grid .wp-block-column {
+  flex: 1 1 0 !important;
+  min-width: 28% !important;
 }
 
 .library-card {
@@ -287,17 +292,39 @@
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .library-wrap { padding: 0 16px; }
-  .library-split,
-  .library-grid { flex-direction: column !important; }
-  .library-split .wp-block-column,
-  .library-grid .wp-block-column { min-width: 100% !important; }
+
+  .library-wrap {
+    padding: 0 16px;
+  }
+
+  .library-wrap .wp-block-columns.library-split,
+  .library-wrap .wp-block-columns.library-grid {
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+  .library-wrap .wp-block-columns.library-split .wp-block-column,
+  .library-wrap .wp-block-columns.library-grid .wp-block-column {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
   .library-collab,
-  .library-cta { padding: 25px 20px; }
-  .library-title { font-size: 1.4rem; }
+  .library-cta {
+    padding: 25px 20px;
+  }
+
+  .library-title {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .library-title { font-size: 1.2rem; }
-  .library-cta-title { font-size: 1.2rem; }
+  .library-title {
+    font-size: 1.2rem;
+  }
+
+  .library-cta-title {
+    font-size: 1.2rem;
+  }
 }
