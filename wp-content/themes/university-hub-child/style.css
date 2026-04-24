@@ -28,12 +28,7 @@ Version: 1.0
   content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
   white-space: pre;
 }
-@media (max-width: 768px) {
-  .site-description::after {
-    content: "\A Affiliated to Tamil Nadu Physical Education & Sports University,\A Chennai";
-    white-space: pre;
-  }
-}
+
 .custom-logo {
   max-height: 90px !important;
   width: auto !important;
@@ -3636,62 +3631,4 @@ p.intra-label::after {
   }
 }
 
-/* 🔥 Reduce logo size in mobile */
-@media (max-width: 768px) {
-  .site-branding {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-    overflow: hidden !important;
-    flex: 1 !important;
-  }
 
-  .site-branding .custom-logo-link {
-    display: flex !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-  }
-
-  .site-branding .custom-logo-link img,
-  .site-branding img.custom-logo,
-  #masthead img.custom-logo {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    max-height: 50px !important;
-    width: auto !important;
-    filter: brightness(0) invert(1) !important;
-  }
-
-  #site-identity {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    overflow: hidden !important;
-    flex: 1 !important;
-  }
-
-  #site-identity .site-title {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    font-size: 11px !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-    white-space: normal !important;
-    overflow: hidden !important;
-  }
-
-  #site-identity .site-title a {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    color: #fff !important;
-    text-decoration: none !important;
-  }
-
-  #site-identity .site-description {
-    display: none !important;
-  }
-}
