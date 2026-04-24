@@ -3636,46 +3636,4 @@ p.intra-label::after {
   }
 }
 
-/* 🔥 Reduce logo size in mobile */
-@media (max-width: 768px) {
-  .site-branding {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-    min-width: 0 !important;
-  }
 
-  .site-branding .custom-logo-link {
-    flex-shrink: 0 !important;
-  }
-
-  .site-branding .custom-logo-link img,
-  .site-branding img.custom-logo,
-  #masthead img.custom-logo {
-    display: block !important;
-    max-height: 50px !important;
-    width: auto !important;
-    filter: brightness(0) invert(1) !important;
-  }
-
-  #site-identity {
-    min-width: 0 !important;
-  }
-
-  #site-identity .site-title {
-    font-size: 11px !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-    white-space: normal !important;
-    word-break: break-word !important;
-  }
-
-  #site-identity .site-title a {
-    color: #fff !important;
-  }
-
-  #site-identity .site-description {
-    display: none !important;
-  }
-}
