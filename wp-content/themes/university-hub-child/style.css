@@ -30,7 +30,7 @@ Version: 1.0
 }
 @media (max-width: 768px) {
   .site-description::after {
-    content: "\A Affiliated to Tamil Nadu Physical Education & Sports University,\A Chennai";
+    content: "\A Affiliated to Tamil Nadu Physical Education & Sports\A University, Chennai";
     white-space: pre;
   }
 }
