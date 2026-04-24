@@ -3639,10 +3639,14 @@ p.intra-label::after {
 /* 🔥 Reduce logo size in mobile */
 @media (max-width: 768px) {
   .site-logo img,
-  .custom-logo {
+  .custom-logo,
+  .custom-logo-link,
+  .custom-logo-link img {
     max-height: 60px !important;
     display: block !important;
     width: auto !important;
-    filter: brightness(0) invert(1) !important; /* ADD THIS */
+    filter: brightness(0) invert(1) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
