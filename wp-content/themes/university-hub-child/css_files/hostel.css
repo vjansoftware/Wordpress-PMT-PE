@@ -1,15 +1,6 @@
 /* ═══════════════════════════════════════
    PMT HOSTEL — STYLES
-   NO hardcoded colors in this file.
-   All colors applied via utility classes:
-     .primary-page-color         → color #253b80
-     .secondary-page-color       → color #179bd7
-     .third-priority-page-color  → color #FF6000
-     .primary-page-color-b       → bg   #253b80
-     .secondary-page-color-b     → bg   #179bd7
-     .third-priority-page-color-b→ bg   #FF6000
-     .bc-g-color                 → highlight section bg
-     .bc-card-grad-color         → CTA section bg gradient
+   Colors & fonts matching Indoor Sports
 ═══════════════════════════════════════ */
 
 .hostel-wrap {
@@ -50,9 +41,10 @@
   margin-bottom: 40px;
 }
 
-/* Label — color comes from .third-priority-page-color on element */
 p.hostel-label,
-.entry-content p.hostel-label {
+.entry-content p.hostel-label,
+.hostel-facilities p.hostel-label {
+  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -66,30 +58,29 @@ p.hostel-label,
   opacity: 1 !important;
 }
 
-/* Decorative lines inherit currentColor from the utility class */
 p.hostel-label::before,
 p.hostel-label::after {
   content: '';
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: currentColor;
+  background: #FF6000;
   flex-shrink: 0;
 }
 
-/* Title — color from .primary-page-color on element */
 .hostel-wrap .hostel-title,
 .entry-content .hostel-wrap h1.hostel-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
+  color: #253b80 !important;
   margin: 10px 0 14px !important;
   line-height: 1.3 !important;
 }
 
 .hostel-wrap .hostel-sub {
   font-size: 15px !important;
-  font-weight: 600 !important;
-  max-width: 700px !important;
+  color: #4b5563 !important;
+  max-width: 620px !important;
   margin: 0 auto !important;
   line-height: 1.7 !important;
 }
@@ -107,15 +98,15 @@ p.hostel-label::after {
   background: #fff !important;
   border-radius: 10px !important;
   overflow: hidden !important;
-  border: 1px solid rgba(0, 0, 0, 0.08) !important;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid rgba(37, 59, 128, 0.08) !important;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
   padding: 0 !important;
   transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s;
 }
 
 .hostel-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13) !important;
+  box-shadow: 0 8px 28px rgba(37, 59, 128, 0.13) !important;
 }
 
 .hostel-card-body {
@@ -129,16 +120,17 @@ p.hostel-label::after {
   line-height: 1 !important;
 }
 
-/* Card title — color from .primary-page-color on element */
 .hostel-wrap .hostel-card-title,
 .entry-content .hostel-wrap h3.hostel-card-title {
   font-size: 17px !important;
   font-weight: 700 !important;
+  color: #253b80 !important;
   margin: 0 0 8px !important;
 }
 
 .hostel-wrap .hostel-card-text {
   font-size: 14px !important;
+  color: #4b5563 !important;
   line-height: 1.6 !important;
   margin: 0 !important;
 }
@@ -164,8 +156,8 @@ p.hostel-label::after {
    HIGHLIGHTS SECTION
 ════════════════════════════════ */
 
-/* Background from .bc-g-color on element */
 .hostel-highlight {
+  background: #f4f6fb !important;
   border-radius: 10px !important;
   padding: 48px 40px !important;
   margin-top: 8px !important;
@@ -182,11 +174,11 @@ p.hostel-label::after {
   transform: translateY(0);
 }
 
-/* Title — color from .third-priority-page-color on element */
 .hostel-wrap .hostel-highlight-title,
 .entry-content .hostel-wrap h2.hostel-highlight-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
+  color: #FF6000 !important;
   margin: 0 0 20px !important;
   line-height: 1.3 !important;
 }
@@ -202,29 +194,28 @@ p.hostel-label::after {
   padding: 14px 18px !important;
   border-radius: 8px !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  transition: background 0.25s, transform 0.25s;
+  transition: background 0.25s;
 }
 
 .hostel-highlight-item:hover {
   background: rgba(255, 255, 255, 0.14) !important;
-  transform: translateY(-2px);
 }
 
-/* Item text — color from .primary-page-color on <p> element */
 .hostel-highlight-item p {
   margin: 0 !important;
   font-size: 14px !important;
+  color: #253b80 !important;
   font-weight: 500 !important;
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
 }
 
-/* Dot — bg from .third-priority-page-color-b on element */
 .hostel-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background: #FF6000;
   flex-shrink: 0;
   display: inline-block;
 }
@@ -233,8 +224,8 @@ p.hostel-label::after {
    CTA
 ════════════════════════════════ */
 
-/* Background from .bc-card-grad-color on element */
 .hostel-cta {
+  background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 10px !important;
   padding: 48px 40px !important;
   text-align: center;
@@ -251,24 +242,26 @@ p.hostel-label::after {
   transform: translateY(0);
 }
 
-/* Title — color from .third-priority-page-color on element */
 .hostel-wrap .hostel-cta-title,
 .entry-content .hostel-wrap h2.hostel-cta-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
+  color: #fff !important;
   margin-bottom: 12px !important;
   margin-top: 0 !important;
   line-height: 1.3 !important;
 }
 
-/* Text — color from .secondary-page-color on element */
 .hostel-cta .hostel-cta-text {
   font-size: 15px !important;
+  color: #fff !important;
   margin-bottom: 24px !important;
   line-height: 1.7 !important;
 }
 
 .hostel-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
   border-radius: 6px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -279,11 +272,14 @@ p.hostel-label::after {
 }
 
 .hostel-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
   transform: translateY(-2px);
 }
 
 .hostel-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
+  color: #fff !important;
+  border: 2px solid rgba(37, 59, 128, 0.35) !important;
   border-radius: 6px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -293,7 +289,7 @@ p.hostel-label::after {
 }
 
 .hostel-cta-btn-outline .wp-block-button__link:hover {
-  background: rgba(0, 0, 0, 0.06) !important;
+  background: rgba(37, 59, 128, 0.06) !important;
 }
 
 /* ════════════════════════════════
@@ -301,7 +297,9 @@ p.hostel-label::after {
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .hostel-wrap { padding: 0 12px !important; }
+  .hostel-wrap {
+    padding: 0 12px !important;
+  }
 
   .hostel-grid .wp-block-column,
   .hostel-highlight-list .wp-block-column {
@@ -309,17 +307,34 @@ p.hostel-label::after {
     min-width: 100% !important;
   }
 
-  .hostel-grid      { gap: 16px !important; }
-  .hostel-highlight { padding: 28px 20px !important; }
-  .hostel-cta       { padding: 28px 16px !important; }
+  .hostel-grid {
+    gap: 16px !important;
+  }
 
-  .hostel-wrap .hostel-title { font-size: 1.4rem !important; }
+  .hostel-highlight {
+    padding: 28px 20px !important;
+  }
+
+  .hostel-cta {
+    padding: 28px 16px !important;
+  }
+
+  .hostel-wrap .hostel-title {
+    font-size: 1.4rem !important;
+  }
 
   .hostel-wrap .hostel-highlight-title,
-  .hostel-wrap .hostel-cta-title { font-size: 1.4rem !important; }
+  .hostel-wrap .hostel-cta-title {
+    font-size: 1.4rem !important;
+  }
 }
 
 @media (max-width: 480px) {
-  .hostel-wrap .hostel-title     { font-size: 1.2rem !important; }
-  .hostel-wrap .hostel-cta-title { font-size: 1.2rem !important; }
+  .hostel-wrap .hostel-title {
+    font-size: 1.2rem !important;
+  }
+
+  .hostel-wrap .hostel-cta-title {
+    font-size: 1.2rem !important;
+  }
 }
