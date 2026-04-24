@@ -3643,44 +3643,24 @@ p.intra-label::after {
     flex-direction: row !important;
     align-items: center !important;
     gap: 10px !important;
-    max-height: none !important;
-    width: 100% !important;
   }
 
   .site-branding .custom-logo-link {
     display: flex !important;
-    align-items: center !important;
     flex-shrink: 0 !important;
   }
 
   .site-branding .custom-logo-link img,
   .site-branding img.custom-logo,
+  .site-logo img,
+  header .custom-logo-link img,
   #masthead .custom-logo-link img,
   #masthead img.custom-logo {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    max-height: 44px !important;
+    max-height: 55px !important;
     width: auto !important;
     filter: brightness(0) invert(1) !important;
-  }
-
-  .site-title {
-    font-size: 13px !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-    white-space: normal !important;
-  }
-
-  .site-title a {
-    color: #fff !important;
-    text-decoration: none !important;
-  }
-
-  .site-description {
-    font-size: 9px !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
-    white-space: normal !important;
   }
 }
