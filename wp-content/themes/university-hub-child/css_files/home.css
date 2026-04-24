@@ -670,7 +670,7 @@ p.pmt-news-text {
   box-shadow: 0 14px 36px rgba(37,59,128,0.13) !important;
 }
 
-p.pmt-elig-icon-wrap {
+.pmt-elig-icon-wrap {
   font-size: 18px !important;
   width: 44px !important;
   height: 44px !important;
