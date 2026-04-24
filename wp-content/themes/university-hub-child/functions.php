@@ -58,7 +58,7 @@ function pmt_theme_styles() {
         3382 => 'multigym.css',
         3389 => 'yogahall.css',
         3386 => 'indoorstadium.css',
-        970  => 'library.css',
+        5230 => 'library.css',
         3464 => 'laboratory.css',
         973  => 'medicalfacility.css',
 
