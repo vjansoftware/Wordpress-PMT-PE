@@ -235,13 +235,18 @@ p.fee-label,
   gap: 20px !important;
 }
 
-.fee-note-icon {
-  font-size: 2rem !important;
-  margin: 0 !important;
-  flex-shrink: 0 !important;
-  line-height: 1 !important;
+p.fee-note-icon {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin: 0 0 8px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  opacity: 1 !important;
 }
-
 .fee-note-content {
   flex: 1 !important;
 }
