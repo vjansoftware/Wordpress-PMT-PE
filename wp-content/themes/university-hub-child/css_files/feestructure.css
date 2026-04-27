@@ -15,7 +15,6 @@
   box-sizing: border-box;
 }
 
-/* ── WordPress theme overrides ── */
 .entry-content .fee-wrap h1,
 .entry-content .fee-wrap h2,
 .entry-content .fee-wrap h3,
@@ -35,10 +34,8 @@
    HEADER
 ════════════════════════════════ */
 
-/* Orange label — matches About College tag */
 p.fee-label,
 .entry-content p.fee-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 2px !important;
@@ -48,30 +45,24 @@ p.fee-label,
   opacity: 1 !important;
 }
 
-/* Main H1 */
 .fee-wrap .fee-main-title,
 .entry-content .fee-wrap h1.fee-main-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 10px !important;
   line-height: 1.3 !important;
 }
 
-/* Sub H2 */
 .fee-wrap .fee-sub-title,
 .entry-content .fee-wrap h2.fee-sub-title {
   font-size: 1.1rem !important;
   font-weight: 600 !important;
-  color: #253b80 !important;
   letter-spacing: 0.5px !important;
   margin: 0 0 10px !important;
 }
 
-/* Intro paragraph */
 .fee-wrap .fee-intro-text {
   font-size: 15px !important;
-  color: #6b7280 !important;
   max-width: 500px !important;
   margin: 0 auto !important;
   line-height: 1.7 !important;
@@ -87,10 +78,8 @@ p.fee-label,
 }
 
 .fee-card {
-  background: #ffffff !important;
   border-radius: 10px !important;
   overflow: hidden !important;
-  border: 1px solid rgba(37, 59, 128, 0.08) !important;
   box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
   transition: transform 0.25s, box-shadow 0.25s;
   padding: 0 !important;
@@ -101,27 +90,22 @@ p.fee-label,
   box-shadow: 0 8px 28px rgba(37, 59, 128, 0.13) !important;
 }
 
-/* Card Header */
 .fee-card-header {
-  background: #253b80 !important;
   padding: 18px 20px !important;
   text-align: center;
 }
 
 .fee-card-header p {
-  color: #FF6000 !important;
   font-weight: 700 !important;
   font-size: 15px !important;
   letter-spacing: 1px !important;
   margin: 0 !important;
 }
 
-/* Card Body */
 .fee-card-body {
   padding: 24px 22px !important;
 }
 
-/* Fee Row */
 .fee-row {
   display: flex !important;
   justify-content: space-between !important;
@@ -132,21 +116,17 @@ p.fee-label,
 
 .fee-row p {
   font-size: 14px !important;
-  color: #4b5563 !important;
   margin: 0 !important;
 }
 
 .fee-row p span {
   font-weight: 700 !important;
-  color: #253b80 !important;
 }
 
-/* Card Total */
 .fee-card-total {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  border-top: 2px solid #FF6000 !important;
   margin-top: 14px !important;
   padding-top: 14px !important;
   gap: 8px;
@@ -155,14 +135,9 @@ p.fee-label,
 .fee-card-total p {
   font-size: 15px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 !important;
 }
 
-.fee-card-total p span {
-  font-weight: 700 !important;
-  color: #253b80 !important;
-}
 /* ════════════════════════════════
    ADMISSION FEE TABLE
 ════════════════════════════════ */
@@ -170,7 +145,6 @@ p.fee-label,
 .fee-table-heading {
   font-size: 1.1rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 14px !important;
 }
 
@@ -181,8 +155,6 @@ p.fee-label,
 }
 
 .fee-table thead tr th {
-  background: #253b80 !important;
-  color: #FF6000 !important;
   padding: 12px 16px !important;
   text-align: center !important;
   font-weight: 700 !important;
@@ -193,41 +165,23 @@ p.fee-label,
   border: 1px solid rgba(37,59,128,0.12) !important;
   padding: 10px 16px !important;
   text-align: center !important;
-  color: #4b5563 !important;
 }
 
 .fee-table tbody tr td[colspan] {
-  background: #f4f6fb !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   text-align: center !important;
-}
-
-.fee-table tbody tr:hover td {
-  background: #f9fafb !important;
 }
 
 .fee-table-note {
   font-size: 13px !important;
-  color: #6b7280 !important;
   margin-top: 8px !important;
 }
 
-@media (max-width: 768px) {
-  .fee-table table {
-    font-size: 11px !important;
-  }
-  .fee-table thead tr th,
-  .fee-table tbody td {
-    padding: 8px 6px !important;
-  }
-}
 /* ════════════════════════════════
    NOTE BOX
 ════════════════════════════════ */
 
 .fee-note {
-  background: #253b80 !important;
   border-radius: 10px !important;
   padding: 32px 10px !important;
   display: flex !important;
@@ -238,7 +192,6 @@ p.fee-label,
 p.fee-note-icon {
   font-size: 14px !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
   margin: 0 0 8px !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
@@ -247,24 +200,13 @@ p.fee-note-icon {
   gap: 8px !important;
   opacity: 1 !important;
 }
+
 .fee-note-content {
   flex: 1 !important;
 }
 
-p.fee-note-title,
-.entry-content p.fee-note-title {
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  color: #FF6000 !important;
-  margin: 0 0 8px !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
-  opacity: 1 !important;
-}
-
 .fee-note-text {
   font-size: 14px !important;
-  color: rgba(255, 255, 255, 0.75) !important;
   line-height: 1.7 !important;
   margin: 0 !important;
 }
@@ -274,32 +216,18 @@ p.fee-note-title,
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .fee-wrap {
-    padding: 0 16px !important;
-  }
-
+  .fee-wrap { padding: 0 16px !important; }
   .fee-cards .wp-block-column {
     flex-basis: calc(50% - 12px) !important;
     min-width: calc(50% - 12px) !important;
   }
-
-  .fee-card-body {
-    padding: 16px !important;
-  }
-
-  .fee-row p,
-  .fee-card-total p {
-    font-size: 13px !important;
-  }
-
-  .fee-note {
-    flex-direction: column !important;
-    padding: 20px !important;
-  }
-
-  .fee-wrap .fee-main-title {
-    font-size: 1.6rem !important;
-  }
+  .fee-card-body { padding: 16px !important; }
+  .fee-row p, .fee-card-total p { font-size: 13px !important; }
+  .fee-note { flex-direction: column !important; padding: 20px !important; }
+  .fee-wrap .fee-main-title { font-size: 1.6rem !important; }
+  .fee-table table { font-size: 11px !important; }
+  .fee-table thead tr th,
+  .fee-table tbody td { padding: 8px 6px !important; }
 }
 
 @media (max-width: 480px) {
@@ -307,11 +235,7 @@ p.fee-note-title,
     flex-basis: 100% !important;
     min-width: 100% !important;
   }
-
-  .fee-wrap .fee-main-title {
-    font-size: 1.4rem !important;
-  }
-
+  .fee-wrap .fee-main-title { font-size: 1.4rem !important; }
   .fee-row {
     flex-direction: column !important;
     align-items: flex-start !important;
