@@ -71,7 +71,7 @@
 
 /* ── EACH COLUMN = CARD ── */
 .page-id-979 .wp-block-column {
-     flex: 1 1 calc(25% - 15px) !important;
+    flex: 1 1 calc(25% - 15px) !important;
     min-width: 220px !important;
     max-width: calc(25% - 15px) !important;
     background: #ffffff !important;
@@ -80,11 +80,9 @@
     border: 1px solid rgba(37,59,128,0.08) !important;
     box-shadow: 0 2px 16px rgba(37,59,128,0.08) !important;
     padding: 0 !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    animation: fadeUp 0.6s ease both;
     display: flex !important;
     flex-direction: column !important;
-    box-sizing: border-box !important;
+    height: auto !important; 
 }
 .page-id-979 .wp-block-column:hover {
     transform: translateY(-6px) !important;
@@ -104,8 +102,8 @@
     border-radius: 0 !important;
 }
 .page-id-979 .wp-block-column .wp-block-image img {
-    width: 100% !important;
-    height: 260px !important;
+     width: 100% !important;
+    height: 250px !important; /* Set this to match your teaching staff exactly */
     object-fit: cover !important;
     object-position: top !important;
     display: block !important;
@@ -196,10 +194,10 @@
 @media (max-width: 1024px) {
     .page-id-979 .entry-content { padding: 0 20px 40px !important; }
     .page-id-979 .wp-block-column .wp-block-image img { height: 220px !important; }
-    .page-id-979 .wp-block-column {
-        flex: 0 0 calc(33.333% - 14px) !important;
-        max-width: calc(33.333% - 14px) !important;
-    }
+   .page-id-979 .wp-block-column {
+    flex: 1 1 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+}
 }
 
 /* ── MOBILE ── */
@@ -221,7 +219,7 @@
 /* ── SMALL MOBILE ── */
 @media (max-width: 480px) {
     .page-id-979 .entry-content {  padding: 0 16px 30px 17px !important; }
-    .page-id-979 .wp-block-column .wp-block-image img { height: 260px !important; }
+  .page-id-979 .wp-block-column .wp-block-image img { height: 220px !important; }
     .page-id-979 .entry-content > .wp-block-paragraph.has-text-align-center:nth-of-type(2) {
         font-size: 1.5rem !important;
     }
