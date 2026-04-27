@@ -196,6 +196,9 @@ p.fee-note-icon {
 .fee-table tbody tr:last-child:empty {
   display: none !important;
 }
+.fee-table-heading {
+  border-bottom: none !important;
+}
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
