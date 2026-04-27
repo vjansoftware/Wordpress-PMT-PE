@@ -179,7 +179,23 @@ p.fee-note-icon {
   margin: 0 !important;
   opacity: 0.85 !important;
 }
+.fee-table tbody tr:empty,
+.fee-table tbody td:empty {
+  display: none !important;
+}
 
+.fee-wrap .wp-block-group:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.fee-table tbody tr td:only-child:empty {
+  display: none !important;
+}
+
+.fee-table tbody tr:last-child:empty {
+  display: none !important;
+}
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
