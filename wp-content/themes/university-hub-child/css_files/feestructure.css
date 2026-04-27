@@ -199,11 +199,6 @@ p.fee-note-icon {
 .fee-table-heading {
   border-bottom: none !important;
 }
-.fee-note.bc-card-grad-color .fee-note-text,
-.fee-note.bc-card-grad-color p {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
