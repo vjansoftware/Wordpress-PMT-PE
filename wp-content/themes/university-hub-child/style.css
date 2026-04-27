@@ -13,6 +13,22 @@ Version: 1.0
 #quick-contact li::before {
         font-size: 20px;
     }
+
+#primary article.hentry img {
+  width: 100%;
+}
+.site-description {
+  white-space: pre-line !important; 
+  max-width: 600px !important;
+  word-wrap: break-word !important;
+  line-height: 1.5 !important;
+	font-size: 12px !important;
+	 padding-top: 3px !important;
+}
+.site-description::after {
+  content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
+  white-space: pre;
+}
 @media (max-width: 768px) {
 
   /* Main header wrapper */
@@ -164,22 +180,6 @@ Version: 1.0
   font-size: 17px !important;
   font-weight: 400 !important;
 }
-#primary article.hentry img {
-  width: 100%;
-}
-.site-description {
-  white-space: pre-line !important; 
-  max-width: 600px !important;
-  word-wrap: break-word !important;
-  line-height: 1.5 !important;
-	font-size: 12px !important;
-	 padding-top: 3px !important;
-}
-.site-description::after {
-  content: "\A Affiliated to Tamil Nadu Physical Education & Sports University, Chennai";
-  white-space: pre;
-}
-
 .custom-logo {
   max-height: 90px !important;
   width: auto !important;
