@@ -25,7 +25,6 @@
     padding-top: 40px !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
-    color: #FF6000 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -47,7 +46,6 @@
 .page-id-982 .wp-block-heading.has-text-align-center:is(h1) {
     font-size: 2.8rem !important;
     font-weight: 700 !important;
-    color: #253b80 !important;
     margin: 10px 0 !important;
     line-height: 1.2 !important;
     animation: fadeDown 0.6s ease 0.1s both;
@@ -81,7 +79,6 @@
     font-weight: 700 !important;
     letter-spacing: 3px !important;
     text-transform: uppercase !important;
-    color: #253b80 !important;
     margin: 50px 0 24px !important;
     padding-bottom: 14px !important;
     border-bottom: 2px solid #253b80 !important;
@@ -103,7 +100,6 @@
 
 /* ── BADGE on H3 ── */
 .page-id-982 .wp-block-heading:is(h3) .pmt-badge {
-    background: #179bd7 !important;
     color: #fff !important;
     font-size: 11px !important;
     font-weight: 700 !important;
