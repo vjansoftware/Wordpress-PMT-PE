@@ -163,7 +163,65 @@ p.fee-label,
   font-weight: 700 !important;
   color: #253b80 !important;
 }
+/* ════════════════════════════════
+   ADMISSION FEE TABLE
+════════════════════════════════ */
 
+.fee-table-heading {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 14px !important;
+}
+
+.fee-table table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 14px !important;
+}
+
+.fee-table thead tr th {
+  background: #253b80 !important;
+  color: #FF6000 !important;
+  padding: 12px 16px !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+
+.fee-table tbody td {
+  border: 1px solid rgba(37,59,128,0.12) !important;
+  padding: 10px 16px !important;
+  text-align: center !important;
+  color: #4b5563 !important;
+}
+
+.fee-table tbody tr td[colspan] {
+  background: #f4f6fb !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  text-align: center !important;
+}
+
+.fee-table tbody tr:hover td {
+  background: #f9fafb !important;
+}
+
+.fee-table-note {
+  font-size: 13px !important;
+  color: #6b7280 !important;
+  margin-top: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .fee-table table {
+    font-size: 11px !important;
+  }
+  .fee-table thead tr th,
+  .fee-table tbody td {
+    padding: 8px 6px !important;
+  }
+}
 /* ════════════════════════════════
    NOTE BOX
 ════════════════════════════════ */
