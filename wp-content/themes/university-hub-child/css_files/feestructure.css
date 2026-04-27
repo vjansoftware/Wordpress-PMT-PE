@@ -33,7 +33,11 @@
 /* ════════════════════════════════
    HEADER
 ════════════════════════════════ */
-
+.fee-table-heading {
+  border-bottom: 3px solid #FF6000 !important;
+  padding-bottom: 10px !important;
+  display: inline-block !important;
+}
 p.fee-label,
 .entry-content p.fee-label {
   font-size: 12px !important;
