@@ -11,9 +11,9 @@
 }
 
 .page-id-982 .entry-content {
-    max-width: 1300px !important;
+    max-width: 1400px !important;
     margin: 0 auto !important;
-    padding: 0 30px 60px !important;
+    padding: 0 20px 60px !important;
     background: transparent !important;
     background-color: transparent !important;
 }
@@ -33,6 +33,7 @@
     margin-bottom: 0 !important;
     animation: fadeDown 0.6s ease both;
 }
+
 .page-id-982 .wp-block-heading.has-text-align-center:is(h2)::before,
 .page-id-982 .wp-block-heading.has-text-align-center:is(h2)::after {
     content: '' !important;
@@ -66,6 +67,7 @@
     border-bottom: none !important;
     position: relative !important;
 }
+
 .page-id-982 .entry-content > .wp-block-paragraph.has-text-align-center::after {
     display: none !important;
 }
@@ -177,9 +179,9 @@
 }
 
 .page-id-982 .wp-block-column {
-    flex: 1 1 calc(33.333% - 14px) !important;
+    flex: 1 1 calc(25% - 15px) !important;
     min-width: 220px !important;
-    max-width: calc(33.333% - 14px) !important;
+    max-width: calc(25% - 15px) !important;
     background: #ffffff !important;
     border-radius: 10px !important;
     overflow: visible !important;
@@ -218,14 +220,16 @@
     box-shadow: none !important;
     border-radius: 10px 10px 0 0 !important;
 }
+
 .page-id-982 .wp-block-column .wp-block-image img {
     width: 100% !important;
-    height: 360px !important;
+    height: 250px !important;
     object-fit: cover !important;
     object-position: top !important;
     display: block !important;
     transition: transform 0.4s ease !important;
 }
+
 .page-id-982 .wp-block-column:hover .wp-block-image img {
     transform: scale(1.05) !important;
 }
@@ -279,6 +283,7 @@
     border: none !important;
     box-sizing: border-box !important;
 }
+
 .page-id-982 .wp-block-column p:nth-of-type(3)::before {
     content: '✉' !important;
     font-size: 13px !important;
@@ -301,20 +306,24 @@
     border: none !important;
     box-sizing: border-box !important;
 }
+
 .page-id-982 .wp-block-column p:nth-of-type(4)::before {
     content: '📞' !important;
     font-size: 12px !important;
     flex-shrink: 0 !important;
 }
-.page-id-982 .wp-block-column p:nth-of-type(5){
-	padding-left:10px;
+
+.page-id-982 .wp-block-column p:nth-of-type(5) {
+    padding-left: 10px;
 }
+
 /* ── MORE INFO BUTTON ── */
 .page-id-982 .wp-block-column .wp-block-html {
     padding: 0 16px 16px !important;
     text-align: left !important;
     margin-top: auto !important;
 }
+
 .page-id-982 .wp-block-column .wp-block-html a {
     display: inline-block !important;
     padding: 8px 18px !important;
@@ -326,6 +335,7 @@
     font-weight: 600 !important;
     transition: background 0.3s ease !important;
 }
+
 .page-id-982 .wp-block-column .wp-block-html a:hover {
     background: #FF6000 !important;
 }
@@ -334,16 +344,19 @@
 .page-id-982 .wp-block-column:nth-child(1) { animation-delay: 0.1s; }
 .page-id-982 .wp-block-column:nth-child(2) { animation-delay: 0.2s; }
 .page-id-982 .wp-block-column:nth-child(3) { animation-delay: 0.3s; }
+.page-id-982 .wp-block-column:nth-child(4) { animation-delay: 0.4s; }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes fadeDown {
     from { opacity: 0; transform: translateY(-20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes fadeLeft {
     from { opacity: 0; transform: translateX(-20px); }
     to   { opacity: 1; transform: translateX(0); }
@@ -352,19 +365,33 @@
 /* ── TABLET ── */
 @media (max-width: 1024px) {
     .page-id-982 .entry-content { padding: 0 20px 40px !important; }
-    .page-id-982 .wp-block-column .wp-block-image img { height: 300px !important; }
-    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) { font-size: 2.2rem !important; }
+
+    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) {
+        font-size: 2.2rem !important;
+    }
+
     .page-id-982 .wp-block-column {
-        flex: 1 1 calc(33.333% - 14px) !important;
-        max-width: calc(33.333% - 14px) !important;
+        flex: 1 1 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+    }
+
+    .page-id-982 .wp-block-column .wp-block-image img {
+        height: 220px !important;
     }
 }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
     .page-id-982 .entry-content { padding: 0 16px 40px !important; }
-    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) { font-size: 1.8rem !important; }
-    .page-id-982 .wp-block-columns { flex-direction: column !important; }
+
+    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) {
+        font-size: 1.8rem !important;
+    }
+
+    .page-id-982 .wp-block-columns {
+        flex-direction: column !important;
+    }
+
     .page-id-982 .wp-block-column {
         flex: 1 1 100% !important;
         min-width: 100% !important;
@@ -372,19 +399,35 @@
         margin-bottom: 16px !important;
         margin-top: 0 !important;
     }
+
     .page-id-982 .wp-block-column:hover {
         margin-top: 0 !important;
         margin-bottom: 16px !important;
     }
-    .page-id-982 .wp-block-column .wp-block-image img { height: 260px !important; }
-    .page-id-982 .wp-block-heading:is(h3) { margin: 36px 0 20px !important; }
+
+    .page-id-982 .wp-block-column .wp-block-image img {
+        height: 240px !important;
+    }
+
+    .page-id-982 .wp-block-heading:is(h3) {
+        margin: 36px 0 20px !important;
+    }
 }
 
 /* ── SMALL MOBILE ── */
 @media (max-width: 480px) {
-    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) { font-size: 1.5rem !important; }
-    .page-id-982 .wp-block-column .wp-block-image img { height: 260px !important; }
-    .page-id-982 .entry-content { padding: 0 16px 30px !important; }
+    .page-id-982 .wp-block-heading.has-text-align-center:is(h1) {
+        font-size: 1.5rem !important;
+    }
+
+    .page-id-982 .wp-block-column .wp-block-image img {
+        height: 220px !important;
+    }
+
+    .page-id-982 .entry-content {
+        padding: 0 16px 30px !important;
+    }
+
     .page-id-982 .wp-block-column {
         flex: 1 1 100% !important;
         min-width: 100% !important;
