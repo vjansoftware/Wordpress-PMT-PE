@@ -232,7 +232,7 @@
 /* ── SMALL MOBILE ── */
 @media (max-width: 480px) {
     .page-id-979 .entry-content {  padding: 0 16px 30px 17px !important; }
-  .page-id-979 .wp-block-column .wp-block-image img { height: 220px !important; }
+  .page-id-979 .wp-block-column .wp-block-image img { height: 250px !important; }
     .page-id-979 .entry-content > .wp-block-paragraph.has-text-align-center:nth-of-type(2) {
         font-size: 1.5rem !important;
     }
