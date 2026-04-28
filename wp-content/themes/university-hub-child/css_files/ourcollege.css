@@ -91,6 +91,7 @@
 
 /* ── Body text ── */
 .about-body-text {
+    text-align: justify;
     font-size: 15px;
     color: #4b5563;
     line-height: 1.85;
