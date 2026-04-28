@@ -28,7 +28,6 @@
   font-weight: 700 !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
-  color: #FF6000 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -215,18 +214,15 @@
 
 /* ── CTA TITLE (3rd h2) ── */
 .pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) {
-  background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 10px 10px 0 0 !important;
   margin: 0 !important;
   padding: 48px 40px 10px !important;
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
 }
 
 /* ── CTA SUBTITLE ── */
 .pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) + p {
-  background: linear-gradient(135deg, #253b80, #179bd7) !important;
   margin: 0 !important;
   padding: 0 40px 24px !important;
   font-size: 15px !important;
@@ -236,7 +232,6 @@
 
 /* ── CTA BUTTONS ── */
 .pmt-clubs .wp-block-columns:last-of-type {
-  background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 0 0 10px 10px !important;
   padding: 0 40px 48px !important;
   text-align: center !important;
