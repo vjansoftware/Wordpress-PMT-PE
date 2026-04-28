@@ -130,33 +130,3 @@ function add_club_body_class($classes) {
 }
 add_filter('body_class', 'add_club_body_class');
 
-function university_hub_news_ticker_details(){
-
-    $output = array();
-
-    $ticker_category = university_hub_get_option( 'ticker_category' );
-    $ticker_number   = university_hub_get_option( 'ticker_number' );
-
-    $qargs = array(
-        'posts_per_page' => absint( $ticker_number ),
-        'no_found_rows'  => true,
-        'post_type'      => 'post',
-    );
-    if ( absint( $ticker_category ) > 0 ) {
-        $qargs['cat'] = absint( $ticker_category );
-    }
-
-    $all_posts = get_posts( $qargs );
-
-    if ( $all_posts ) {
-        $i = 0;
-        foreach ( $all_posts as $post ) {
-            $output[$i]['text'] = get_the_title( $post->ID );
-            $output[$i]['link'] = 'https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/apply-online/';
-            $i++;
-        }
-    }
-
-    return $output;
-
-}
