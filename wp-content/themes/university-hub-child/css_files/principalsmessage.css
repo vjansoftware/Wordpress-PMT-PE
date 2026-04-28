@@ -26,12 +26,11 @@
 }
 .principal-img-wrap img {
   width: 100%;
-  max-height: 400px;
+  max-height: 290px;
   object-fit: contain;
   object-position: top center;
   display: block;
   box-shadow: 0 8px 30px rgba(10, 31, 92, 0.15);
-  animation: principalFloat 3s ease-in-out infinite;
   transition: box-shadow 0.3s;
 }
 .principal-img-wrap:hover img {
