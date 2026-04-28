@@ -130,3 +130,77 @@ function add_club_body_class($classes) {
 }
 add_filter('body_class', 'add_club_body_class');
 
+/* ════════════════════════════════
+   PMT NEWS TABLE SHORTCODE
+════════════════════════════════ */
+
+function pmt_news_table_shortcode() {
+
+    ob_start();
+
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 5,
+        'paged' => $paged
+    );
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) :
+
+        echo '<div class="pmt-news-table">';
+        echo '<table>';
+        echo '<thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                </tr>
+              </thead>';
+        echo '<tbody>';
+
+        $count = 0;
+
+        while ($query->have_posts()) : $query->the_post();
+            $count++;
+
+            echo '<tr>';
+            echo '<td>' . get_the_date('d M Y') . '</td>';
+
+            echo '<td>
+                    <a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+
+            // Show NEW only for latest post on first page
+            if ($paged == 1 && $count == 1) {
+                echo '<span class="pmt-new-badge">NEW</span>';
+            }
+
+            echo '</td>';
+            echo '</tr>';
+
+        endwhile;
+
+        echo '</tbody>';
+        echo '</table>';
+
+        // Pagination
+        echo '<div class="pmt-pagination">';
+        echo paginate_links(array(
+            'total' => $query->max_num_pages,
+            'prev_text' => '← Prev',
+            'next_text' => 'Next →'
+        ));
+        echo '</div>';
+
+        echo '</div>';
+
+        wp_reset_postdata();
+
+    endif;
+
+    return ob_get_clean();
+}
+
+add_shortcode('pmt_news_table', 'pmt_news_table_shortcode');
+
