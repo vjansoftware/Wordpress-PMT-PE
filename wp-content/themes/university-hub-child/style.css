@@ -2935,4 +2935,88 @@ article.hentry,
   }
 }
 
+/* Shortcut pae css for latest news */
+.pmt-latest-news-shortcut-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pmt-latest-news-shortcut-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.pmt-latest-news-shortcut-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.pmt-latest-news-shortcut-date {
+    min-width: 80px;
+    text-align: center;
+    background: #00ea6b;
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.pmt-latest-news-shortcut-day {
+    display: block;
+    font-size: 20px;
+}
+
+.pmt-latest-news-shortcut-month {
+    font-size: 12px;
+}
+
+.pmt-latest-news-shortcut-content {
+    flex: 1;
+}
+
+.pmt-latest-news-shortcut-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #253b80;
+    text-decoration: none;
+}
+
+.pmt-latest-news-shortcut-title:hover {
+    color: #00ea6b;
+}
+
+.pmt-latest-news-shortcut-badge {
+    margin-left: 10px;
+    background: red;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.pmt-latest-news-shortcut-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pmt-latest-news-shortcut-pagination a {
+    margin: 0 5px;
+    padding: 6px 10px;
+    background: #253b80;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.pmt-latest-news-shortcut-pagination .current {
+    background: #00ea6b;
+    color: #000;
+}
 

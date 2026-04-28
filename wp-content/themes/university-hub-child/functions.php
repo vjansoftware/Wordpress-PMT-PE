@@ -134,7 +134,7 @@ add_filter('body_class', 'add_club_body_class');
    PMT NEWS TABLE SHORTCODE
 ════════════════════════════════ */
 
-function pmt_news_table_shortcode() {
+fufunction pmt_latest_news_shortcode() {
 
     ob_start();
 
@@ -150,42 +150,37 @@ function pmt_news_table_shortcode() {
 
     if ($query->have_posts()) :
 
-        echo '<div class="pmt-news-table">';
-        echo '<table>';
-        echo '<thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Title</th>
-                </tr>
-              </thead>';
-        echo '<tbody>';
+        echo '<div class="pmt-latest-news-shortcut-wrapper">';
 
         $count = 0;
 
         while ($query->have_posts()) : $query->the_post();
             $count++;
 
-            echo '<tr>';
-            echo '<td>' . get_the_date('d M Y') . '</td>';
+            echo '<div class="pmt-latest-news-shortcut-card">';
 
-            echo '<td>
-                    <a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+            // Date
+            echo '<div class="pmt-latest-news-shortcut-date">';
+            echo '<span class="pmt-latest-news-shortcut-day">' . get_the_date('d') . '</span>';
+            echo '<span class="pmt-latest-news-shortcut-month">' . get_the_date('M Y') . '</span>';
+            echo '</div>';
 
-            // Show NEW only for latest post on first page
+            // Content
+            echo '<div class="pmt-latest-news-shortcut-content">';
+            echo '<a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-title">' . get_the_title() . '</a>';
+
             if ($paged == 1 && $count == 1) {
-                echo '<span class="pmt-new-badge">NEW</span>';
+                echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
 
-            echo '</td>';
-            echo '</tr>';
+            echo '</div>';
+
+            echo '</div>';
 
         endwhile;
 
-        echo '</tbody>';
-        echo '</table>';
-
         // Pagination
-        echo '<div class="pmt-pagination">';
+        echo '<div class="pmt-latest-news-shortcut-pagination">';
         echo paginate_links(array(
             'total' => $query->max_num_pages,
             'prev_text' => '← Prev',
@@ -202,5 +197,5 @@ function pmt_news_table_shortcode() {
     return ob_get_clean();
 }
 
-add_shortcode('pmt_news_table', 'pmt_news_table_shortcode');
+add_shortcode('pmt_latest_news', 'pmt_latest_news_shortcode');
 
