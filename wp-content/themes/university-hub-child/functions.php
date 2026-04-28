@@ -150,14 +150,16 @@ function pmt_news_table_shortcode() {
 
     if ($query->have_posts()) :
 
-        echo '<div class="pmt-news-table">';
-        echo '<table>';
+        echo '<div class="pmt-latest-news-shortcut-table">';
+        echo '<table class="pmt-latest-news-shortcut-table-inner">';
+
         echo '<thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Title</th>
+                    <th class="pmt-latest-news-shortcut-th">Date</th>
+                    <th class="pmt-latest-news-shortcut-th">Title</th>
                 </tr>
               </thead>';
+
         echo '<tbody>';
 
         $count = 0;
@@ -165,15 +167,19 @@ function pmt_news_table_shortcode() {
         while ($query->have_posts()) : $query->the_post();
             $count++;
 
-            echo '<tr>';
-            echo '<td>' . get_the_date('d M Y') . '</td>';
+            echo '<tr class="pmt-latest-news-shortcut-row">';
 
-            echo '<td>
-                    <a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+            echo '<td class="pmt-latest-news-shortcut-date">' 
+                . get_the_date('d M Y') . 
+                '</td>';
 
-            // Show NEW only for latest post on first page
+            echo '<td class="pmt-latest-news-shortcut-title-cell">
+                    <a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-link">' 
+                    . get_the_title() . 
+                    '</a>';
+
             if ($paged == 1 && $count == 1) {
-                echo '<span class="pmt-new-badge">NEW</span>';
+                echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
 
             echo '</td>';
@@ -185,7 +191,7 @@ function pmt_news_table_shortcode() {
         echo '</table>';
 
         // Pagination
-        echo '<div class="pmt-pagination">';
+        echo '<div class="pmt-latest-news-shortcut-pagination">';
         echo paginate_links(array(
             'total' => $query->max_num_pages,
             'prev_text' => '← Prev',

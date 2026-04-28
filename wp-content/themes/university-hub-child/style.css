@@ -2936,62 +2936,62 @@ article.hentry,
 }
 
 /* Shortcut pae css for latest news */
-.pmt-latest-news-shortcut-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.pmt-latest-news-shortcut-table {
+    width: 100%;
+    overflow-x: auto;
 }
 
-.pmt-latest-news-shortcut-card {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
+.pmt-latest-news-shortcut-table-inner {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
     border-radius: 10px;
-    padding: 15px 20px;
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
 }
 
-.pmt-latest-news-shortcut-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+/* Header */
+.pmt-latest-news-shortcut-th {
+    background: #253b80;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
 }
 
+/* Rows */
+.pmt-latest-news-shortcut-row:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.pmt-latest-news-shortcut-row:hover {
+    background: #eef7ff;
+}
+
+/* Cells */
 .pmt-latest-news-shortcut-date {
-    min-width: 80px;
-    text-align: center;
-    background: #00ea6b;
-    color: #000;
-    border-radius: 8px;
-    padding: 10px;
-    margin-right: 20px;
-    font-weight: bold;
+    padding: 12px;
+    font-size: 13px;
+    color: #555;
+    width: 140px;
 }
 
-.pmt-latest-news-shortcut-day {
-    display: block;
-    font-size: 20px;
+.pmt-latest-news-shortcut-title-cell {
+    padding: 12px;
 }
 
-.pmt-latest-news-shortcut-month {
-    font-size: 12px;
-}
-
-.pmt-latest-news-shortcut-content {
-    flex: 1;
-}
-
-.pmt-latest-news-shortcut-title {
-    font-size: 16px;
-    font-weight: 600;
+/* Link */
+.pmt-latest-news-shortcut-link {
     color: #253b80;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.pmt-latest-news-shortcut-title:hover {
+.pmt-latest-news-shortcut-link:hover {
     color: #00ea6b;
 }
 
+/* NEW badge */
 .pmt-latest-news-shortcut-badge {
     margin-left: 10px;
     background: red;
@@ -3001,6 +3001,7 @@ article.hentry,
     border-radius: 4px;
 }
 
+/* Pagination */
 .pmt-latest-news-shortcut-pagination {
     margin-top: 20px;
     text-align: center;
