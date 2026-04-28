@@ -82,6 +82,7 @@
   margin: 0 0 18px;
 }
 .principal-body {
+  text-align: justify;
   font-size: 15px;
   line-height: 1.75;
   margin-bottom: 14px;
