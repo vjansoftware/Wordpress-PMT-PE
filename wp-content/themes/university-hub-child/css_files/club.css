@@ -50,7 +50,6 @@
 .pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(2) {
   font-size: 2.2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 8px 0 14px !important;
   animation: clubsFadeDown 0.6s ease 0.1s both;
 }
