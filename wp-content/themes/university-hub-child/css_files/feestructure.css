@@ -216,6 +216,11 @@ p.fee-note-icon {
   padding: 16px !important;
   gap: 8px !important;
 }
+   .fee-wrap .fee-note {
+  margin-left: -16px;
+  margin-right: -16px;
+  border-radius: 0;
+}
    .fee-table {
   overflow-x: auto ;
   display: block ;
