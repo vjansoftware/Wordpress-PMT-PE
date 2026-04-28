@@ -142,7 +142,7 @@ function pmt_news_table_shortcode() {
 
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => 5,
+        'posts_per_page' => 6,
         'paged' => $paged
     );
 
@@ -150,56 +150,37 @@ function pmt_news_table_shortcode() {
 
     if ($query->have_posts()) :
 
-        echo '<div class="pmt-latest-news-shortcut-table">';
-        echo '<table class="pmt-latest-news-shortcut-table-inner">';
-
-        echo '<thead>
-                <tr>
-                    <th class="pmt-latest-news-shortcut-th">Date</th>
-                    <th class="pmt-latest-news-shortcut-th">Title</th>
-                </tr>
-              </thead>';
-
-        echo '<tbody>';
+        echo '<div class="pmt-latest-news-shortcut-container">';
+        echo '<div class="pmt-latest-news-shortcut-scroll">';
 
         $count = 0;
 
         while ($query->have_posts()) : $query->the_post();
             $count++;
 
-            echo '<tr class="pmt-latest-news-shortcut-row">';
+            echo '<div class="pmt-latest-news-shortcut-card">';
 
-            echo '<td class="pmt-latest-news-shortcut-date">' 
-                . get_the_date('d M Y') . 
-                '</td>';
+            echo '<div class="pmt-latest-news-shortcut-date">'
+                    . get_the_date('d M Y') .
+                 '</div>';
 
-            echo '<td class="pmt-latest-news-shortcut-title-cell">
-                    <a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-link">' 
-                    . get_the_title() . 
-                    '</a>';
+            echo '<div class="pmt-latest-news-shortcut-content">';
+
+            echo '<a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-link">'
+                    . get_the_title() .
+                 '</a>';
 
             if ($paged == 1 && $count == 1) {
                 echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
 
-            echo '</td>';
-            echo '</tr>';
+            echo '</div>';
+            echo '</div>';
 
         endwhile;
 
-        echo '</tbody>';
-        echo '</table>';
-
-        // Pagination
-        echo '<div class="pmt-latest-news-shortcut-pagination">';
-        echo paginate_links(array(
-            'total' => $query->max_num_pages,
-            'prev_text' => '← Prev',
-            'next_text' => 'Next →'
-        ));
-        echo '</div>';
-
-        echo '</div>';
+        echo '</div>'; // scroll
+        echo '</div>'; // container
 
         wp_reset_postdata();
 
@@ -210,3 +191,28 @@ function pmt_news_table_shortcode() {
 
 add_shortcode('pmt_news_table', 'pmt_news_table_shortcode');
 
+function pmt_admission_overview_shortcode() {
+
+    ob_start();
+    ?>
+
+    <div class="pmt-admission-overview-card">
+
+        <h3>Admissions Open 2026</h3>
+
+        <p>
+            Kickstart your career in Physical Education with expert training,
+            modern facilities, and professional guidance.
+        </p>
+
+        <a href="/admission-open/" class="pmt-admission-overview-btn">
+            Learn More →
+        </a>
+
+    </div>
+
+    <?php
+    return ob_get_clean();
+}
+
+add_shortcode('pmt_admission_overview', 'pmt_admission_overview_shortcode');
