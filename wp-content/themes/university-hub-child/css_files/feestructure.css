@@ -212,7 +212,10 @@ p.fee-note-icon {
 @media (max-width: 768px) {
   .fee-wrap { padding: 0 16px ; }
   .fee-wrap .fee-main-title { font-size: 1.6rem ; }
-  .fee-note { flex-direction: column ; padding: 18px ; gap: 9px ; }
+ .fee-note {
+  padding: 16px !important;
+  gap: 8px !important;
+}
    .fee-table {
   overflow-x: auto ;
   display: block ;
