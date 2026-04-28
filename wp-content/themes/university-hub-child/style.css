@@ -2988,7 +2988,7 @@ article.hentry,
 }
 
 .pmt-latest-news-shortcut-link:hover {
-    color: #00ea6b;
+    color: #FF6000;
 }
 
 /* NEW badge */
@@ -3017,7 +3017,7 @@ article.hentry,
 }
 
 .pmt-latest-news-shortcut-pagination .current {
-    background: #00ea6b;
+    background: #FF6000;
     color: #000;
 }
 
