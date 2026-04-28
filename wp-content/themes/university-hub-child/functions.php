@@ -63,7 +63,7 @@ function pmt_theme_styles() {
         5230 => 'library.css',
         3464 => 'laboratory.css',
         973  => 'medicalfacility.css',
-
+        5755 => 'eoc.css',
         1982 => 'studentgrievance.css',
         1993 => 'antiragging.css',
         3125 => 'womenhelpdesk.css',
