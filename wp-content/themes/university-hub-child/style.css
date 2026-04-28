@@ -3025,7 +3025,12 @@ article.hentry,
     flex-direction: column;
     justify-content: center;
 }
-
+.pmt-admission-overview-card h3{
+  color: #fff;
+}
+.pmt-admission-overview-card p{
+  color: #FF6000;
+}
 .pmt-admission-overview-btn {
     margin-top: 15px;
     background: #fff;
