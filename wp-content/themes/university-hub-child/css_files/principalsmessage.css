@@ -32,11 +32,8 @@
   display: block;
   transition: box-shadow 0.3s;
 }
-.principal-img-wrap:hover img {
-  box-shadow: 0 16px 48px rgba(10, 31, 92, 0.3);
-}
+
 .principal-name-card {
-  background: #253b80;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -51,12 +48,10 @@
 .principal-name-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ff6000;
   margin: 0 0 6px;
 }
 .principal-name-card p {
   font-size: 13px;
-  color: #e8b84b;
   margin: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -69,11 +64,9 @@
 }
 .principal-name-college {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 .principal-label {
-  color: #ff6000;
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 12px;
@@ -84,27 +77,22 @@
 .principal-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #253b80;
   margin: 0 0 18px;
 }
 .principal-body {
   font-size: 15px;
-  color: #4b5563;
   line-height: 1.75;
   margin-bottom: 14px;
 }
 .principal-quote {
   border-left: 4px solid #ff6000;
   padding: 14px 20px;
-  background: #f4f6fb;
   border-radius: 0 8px 8px 0;
   font-size: 14px;
-  color: #374151;
   line-height: 1.7;
   margin-top: 20px;
 }
 .principal-history-box {
-  background: #f4f6fb;
   border-radius: 10px;
   padding: 48px 40px;
   transition: box-shadow 0.3s;
@@ -124,7 +112,6 @@
 .principal-signature-icon {
   width: 60px;
   height: 60px;
-  background: #253b80;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -135,12 +122,10 @@
 .principal-signature h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #253b80;
   margin: 0 0 4px;
 }
 .principal-signature-role {
   font-size: 13px;
-  color: #ff6000;
   margin: 0;
   font-weight: 600;
   letter-spacing: 1px;
@@ -148,7 +133,6 @@
 }
 .principal-signature-location {
   font-size: 13px;
-  color: #253b80;
   margin: 4px 0 0;
 }
 .principal-info-grid {
@@ -157,7 +141,6 @@
   gap: 20px;
 }
 .principal-info-card {
-  background: #253b80;
   border-radius: 8px;
   padding: 24px;
   text-align: center;
@@ -183,7 +166,6 @@
 }
 .principal-info-label {
   font-size: 13px;
-  color: #ff6000;
   font-weight: 600;
   margin: 0 0 6px;
   letter-spacing: 1px;
@@ -191,7 +173,6 @@
 }
 .principal-info-value {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.7);
   margin: 0;
 }
 
