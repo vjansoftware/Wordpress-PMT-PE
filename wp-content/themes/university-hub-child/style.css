@@ -2940,16 +2940,14 @@ article.hentry,
 .pmt-latest-news-shortcut-container {
     height: 300px;
     overflow: hidden;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
 }
 
 /* Scroll wrapper */
 .pmt-latest-news-shortcut-scroll {
     display: flex;
     flex-direction: column;
-    animation: pmt-news-scroll 15s linear infinite;
+    animation: pmt-news-scroll 20s linear infinite;
 }
 
 /* Pause on hover */
@@ -3004,10 +3002,14 @@ article.hentry,
     border-radius: 4px;
 }
 
-/* Smooth scroll animation */
+/* Continuous smooth scroll */
 @keyframes pmt-news-scroll {
-    0%   { transform: translateY(0); }
-    100% { transform: translateY(-50%); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
 }
 
 
