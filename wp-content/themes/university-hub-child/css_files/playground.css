@@ -1,7 +1,7 @@
 .pmt-playground-wrap{
   max-width:1200px;
   margin:0 auto;
-  padding:24px 24px 24px;
+  padding:14px 20px 14px;
   box-sizing:border-box;
 }
 
@@ -30,7 +30,6 @@
 }
 
 .pmt-playground-tag{
-  color:#FF6000;
   font-weight:700;
   letter-spacing:3px;
   font-size:12px;
@@ -42,7 +41,6 @@
 .pmt-playground-title{
   font-size:2rem;
   font-weight:800;
-  color:#253b80;
   line-height:1.2;
   margin:0 0 20px !important;
 }
