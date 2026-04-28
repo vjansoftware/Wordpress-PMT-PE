@@ -193,7 +193,7 @@ p.pmt-body-text {
 .pmt-stats-band {
   border-bottom: 1px solid rgba(37,59,128,0.08) !important;
   border-top: none !important;
-  margin-top: -10px !important;
+  margin-top: 20px !important;
   margin-bottom: 0 !important;
 }
 
