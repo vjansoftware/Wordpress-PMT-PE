@@ -216,3 +216,26 @@ function pmt_admission_overview_shortcode() {
 }
 
 add_shortcode('pmt_admission_overview', 'pmt_admission_overview_shortcode');
+
+add_action('wp_footer', 'pmt_news_scroll_script');
+
+function pmt_news_scroll_script() {
+?>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const scrollBoxes = document.querySelectorAll(".pmt-latest-news-shortcut-scroll");
+
+    scrollBoxes.forEach(function(scrollBox) {
+
+        if (!scrollBox.classList.contains("duplicated")) {
+            scrollBox.innerHTML += scrollBox.innerHTML;
+            scrollBox.classList.add("duplicated");
+        }
+
+    });
+
+});
+</script>
+<?php
+}
