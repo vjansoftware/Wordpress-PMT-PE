@@ -203,6 +203,8 @@ p.fee-note-icon {
 .fee-table-heading {
   border-bottom: none ;
 }
+
+
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
@@ -210,7 +212,7 @@ p.fee-note-icon {
 @media (max-width: 768px) {
   .fee-wrap { padding: 0 16px ; }
   .fee-wrap .fee-main-title { font-size: 1.6rem ; }
-  .fee-note { flex-direction: column ; padding: 20px ; gap: 12px ; }
+  .fee-note { flex-direction: column ; padding: 18px ; gap: 9px ; }
    .fee-table {
   overflow-x: auto ;
   display: block ;
@@ -222,6 +224,11 @@ p.fee-note-icon {
   .fee-table thead tr th { padding: 10px 8px ; font-size: 11px ; }
   .fee-table tbody td { padding: 10px 8px ; font-size: 12px ; }
   .fee-table tbody td:first-child { padding-left: 10px ; }
+    .fee-wrap.wp-block-group,
+  .fee-wrap .wp-block-group {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
