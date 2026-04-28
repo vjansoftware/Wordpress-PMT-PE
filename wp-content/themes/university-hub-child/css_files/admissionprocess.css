@@ -133,11 +133,10 @@ p.a.admission-apply-link {
 /* ── Note Box ── */
 .pmt-adm-note {
   margin-top: 35px;
-  background: #253b80;
+  background: linear-gradient(135deg, #253b80, #179bd7);
   color: #fff;
   padding: 35px;
   border-radius: 12px;
-  border-left: 5px solid #FF6000;
 }
 
 /* Note title — matches About College H3 */
@@ -150,7 +149,8 @@ p.a.admission-apply-link {
 
 .pmt-adm-note p {
   margin: 0;
-  color: #fff;
+  text-align: center;
+  color: #f4f6fb;
   line-height: 1.8;
   font-size: 15px;
 }
