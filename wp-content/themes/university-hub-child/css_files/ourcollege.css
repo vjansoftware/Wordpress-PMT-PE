@@ -294,6 +294,41 @@
     transform: none !important;
 }
 
+/* WRAPPER SPACING */
+.campus-policy-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+/* CARD STYLE */
+.campus-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.campus-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TITLE */
+.campus-card h3 {
+    color: #253b80;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.campus-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
 /* ── TABLET (max 1024px) ── */
 @media (max-width: 1024px) {
     .about-wrap {
@@ -312,7 +347,12 @@
     .page-id-1008 .entry-content {
     padding-left: 20px !important;
     padding-right: 20px !important;
-}
+    }
+
+   .campus-policy-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .about-wrap {
         padding: 0 !important;
