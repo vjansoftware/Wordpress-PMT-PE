@@ -2702,17 +2702,15 @@ article.hentry,
 .pmt-home-layout {
     display: flex;
     gap: 20px;
-    align-items: stretch;
+    margin: 30px 0px;
 }
 
 .pmt-home-layout .left {
     flex: 2;
-    display: flex;
 }
 
 .pmt-home-layout .right {
     flex: 1;
-    display: flex;
 }
 
 @media (max-width: 768px) {
