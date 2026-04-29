@@ -2642,6 +2642,7 @@ article.hentry,
 
 /* CONTENT */
 .pmt-latest-news-shortcut-content {
+   margin-left: 150px;
     flex: 1;
 }
 
