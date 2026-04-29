@@ -138,25 +138,34 @@ function pmt_news_table_shortcode() {
 
     ob_start();
 
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
     $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 4,
-        'paged' => $paged
+        'post_type'      => 'post',
+        'posts_per_page' => -1, // ✅ ALL posts (no limit)
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC'
     );
 
     $query = new WP_Query($args);
 
     if ($query->have_posts()) :
 
+        // 👉 Get latest post date
+        $query->the_post();
+        $latest_month = get_the_date('m');
+        $latest_year  = get_the_date('Y');
+
+        // reset loop
+        $query->rewind_posts();
+
         echo '<div class="pmt-latest-news-shortcut-container">';
+        echo '<div class="pmt-latest-news-shortcut-header">Latest Updates</div>';
         echo '<div class="pmt-latest-news-shortcut-scroll">';
 
-        $count = 0;
-
         while ($query->have_posts()) : $query->the_post();
-            $count++;
+
+            $post_month = get_the_date('m');
+            $post_year  = get_the_date('Y');
 
             echo '<div class="pmt-latest-news-shortcut-card">';
 
@@ -170,7 +179,8 @@ function pmt_news_table_shortcode() {
                     . get_the_title() .
                  '</a>';
 
-            if ($paged == 1 && $count == 1) {
+            // ✅ NEW badge → latest batch only
+            if ($post_month == $latest_month && $post_year == $latest_year) {
                 echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
 

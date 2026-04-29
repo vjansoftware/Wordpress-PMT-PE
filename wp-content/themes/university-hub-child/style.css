@@ -2935,45 +2935,33 @@ article.hentry,
   }
 }
 
-/* Shortcut pae css for latest news */
-/* Container */
-/* Container */
+/* Shortcut post css for latest news */
+
 .pmt-latest-news-shortcut-container {
-    height: 320px;
+    height: 340px;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
 }
 
-/* Fade top & bottom (premium effect) */
-.pmt-latest-news-shortcut-container::before,
-.pmt-latest-news-shortcut-container::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    z-index: 2;
-    pointer-events: none;
+/* Title */
+.pmt-latest-news-shortcut-header {
+    background: #253b80;
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 15px;
 }
 
-.pmt-latest-news-shortcut-container::before {
-    top: 0;
-    background: linear-gradient(to bottom, #fff, transparent);
-}
-
-.pmt-latest-news-shortcut-container::after {
-    bottom: 0;
-    background: linear-gradient(to top, #fff, transparent);
-}
-
-/* Scroll wrapper */
+/* Scroll */
 .pmt-latest-news-shortcut-scroll {
     display: flex;
     flex-direction: column;
-    animation: pmt-marquee-up 18s linear infinite;
+    animation: pmt-marquee-up 20s linear infinite;
 }
 
 /* Pause on hover */
@@ -2994,7 +2982,6 @@ article.hentry,
     transition: all 0.3s ease;
 }
 
-/* Hover animation */
 .pmt-latest-news-shortcut-card:hover {
     transform: translateX(5px);
     background: #eef5ff;
@@ -3008,11 +2995,6 @@ article.hentry,
     font-weight: 500;
 }
 
-/* Content */
-.pmt-latest-news-shortcut-content {
-    flex: 1;
-}
-
 /* Link */
 .pmt-latest-news-shortcut-link {
     color: #253b80;
@@ -3024,24 +3006,20 @@ article.hentry,
     color: #FF6000;
 }
 
-/* Badge */
+/* NEW badge */
 .pmt-latest-news-shortcut-badge {
     margin-left: 8px;
-    background: red;
+    background: #ff3b3b;
     color: #fff;
     font-size: 10px;
-    padding: 2px 6px;
+    padding: 3px 6px;
     border-radius: 4px;
 }
 
-/* Smooth marquee animation */
+/* Animation */
 @keyframes pmt-marquee-up {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-50%);
-    }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
 }
 
 /* admission overview */
