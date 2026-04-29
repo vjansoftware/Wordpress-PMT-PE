@@ -157,7 +157,7 @@ p.pmt-careers-label::after {
 
 .pmt-careers-intro {
   gap: 50px !important;
-  align-items: center !important;
+  align-items: flex-start !important;
 }
 
 /* Image */
