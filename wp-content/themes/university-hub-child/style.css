@@ -2642,7 +2642,6 @@ article.hentry,
 
 /* CONTENT */
 .pmt-latest-news-shortcut-content {
-   margin-left: 150px;
     flex: 1;
 }
 
@@ -2679,10 +2678,10 @@ article.hentry,
     color: #fff;
     padding: 20px;
     border-radius: 12px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%; /* 🔥 KEY LINE */
 }
 .pmt-admission-overview-card h3,
 .pmt-admission-overview-card p {
@@ -2703,15 +2702,17 @@ article.hentry,
 .pmt-home-layout {
     display: flex;
     gap: 20px;
-    margin: 15px 0;
+    align-items: stretch;
 }
 
 .pmt-home-layout .left {
     flex: 2;
+    display: flex;
 }
 
 .pmt-home-layout .right {
     flex: 1;
+    display: flex;
 }
 
 @media (max-width: 768px) {
