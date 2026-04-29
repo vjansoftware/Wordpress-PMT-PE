@@ -2956,6 +2956,7 @@ article.hentry,
     font-size: 15px;
     flex-shrink: 0;
     z-index: 2;
+    text-align: center;
 }
 
 /* BODY (SCROLL AREA) */

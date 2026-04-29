@@ -160,7 +160,7 @@ function pmt_news_table_shortcode() {
         echo '<div class="pmt-latest-news-shortcut-container">';
 
         // HEADER (fixed)
-        echo '<div class="pmt-latest-news-shortcut-header">Latest Updates</div>';
+        echo '<div class="pmt-latest-news-shortcut-header">Campus News & Announcements</div>';
 
         // BODY (scroll area)
         echo '<div class="pmt-latest-news-shortcut-body">';
