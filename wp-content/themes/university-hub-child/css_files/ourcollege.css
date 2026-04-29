@@ -310,9 +310,9 @@
 @media (max-width: 768px) {
 
     .page-id-1008 .entry-content {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-    }
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
 
     .about-wrap {
         padding: 0 !important;
