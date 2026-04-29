@@ -295,14 +295,14 @@
 }
 
 /* WRAPPER SPACING */
-.campus-policy-wrap {
+/* .campus-policy-wrap {
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 20px;
 }
 
 /* CARD STYLE */
-.campus-card {
+/* .campus-card {
     background: #ffffff;
     padding: 25px;
     border-radius: 12px;
@@ -312,22 +312,22 @@
 }
 
 /* HOVER EFFECT */
-.campus-card:hover {
+/* .campus-card:hover {
     transform: translateY(-5px);
-}
+} */
 
 /* TITLE */
-.campus-card h3 {
+/* .campus-card h3 {
     color: #253b80;
     margin-bottom: 10px;
-}
+} */
 
 /* TEXT */
-.campus-card p {
+/* .campus-card p {
     color: #555;
     font-size: 15px;
     line-height: 1.6;
-}
+} */
 
 /* ── TABLET (max 1024px) ── */
 @media (max-width: 1024px) {
@@ -349,10 +349,10 @@
     padding-right: 20px !important;
     }
 
-   .campus-policy-wrap {
+   /* .campus-policy-wrap {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } */
 
     .about-wrap {
         padding: 0 !important;
