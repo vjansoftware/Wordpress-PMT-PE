@@ -300,6 +300,23 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
+/* SECTION TITLE (Campus Safety & Wellness) */
+.campus-label {
+    font-size: 2.2rem;   /* increase size */
+    color: #253b80;      /* your required color */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION TEXT */
+.campus-section-title {
+    font-size: 1rem;     /* reduce size */
+    color: #4b5563;      /* softer gray (you can change) */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
 /* remove gradient line */
 .campus-safety-wrap .about-motto-card::after {
     display: none;
