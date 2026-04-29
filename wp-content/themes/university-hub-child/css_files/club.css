@@ -1,6 +1,10 @@
 /* ═══════════════════════════════════════
    PMT CLUBS 
 ═══════════════════════════════════════ */
+.entry-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /* — Hide page title — */
 .pmt-clubs .entry-title,

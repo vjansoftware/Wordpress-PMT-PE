@@ -2,7 +2,30 @@
    PMT CAREERS PAGE — STYLES
    Colors & fonts matching About College
 ═══════════════════════════════════════ */
+.page-id-3755 .entry-title,
+.page-id-3755 .entry-header {
+    display: none !important;
+}
 
+.page-id-3755 #primary article.hentry {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.page-id-3755 .entry-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+}
+
+.page-id-3755 #primary,
+.page-id-3755 #content,
+.page-id-3755 .site-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
 @keyframes pmt-fadeInUp {
   from {
     opacity: 0;
@@ -74,7 +97,7 @@
 .pmt-careers-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 30px 40px;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -157,7 +180,7 @@ p.pmt-careers-label::after {
 
 .pmt-careers-intro {
   gap: 50px !important;
-  align-items: center !important;
+  align-items: flex-start !important;
 }
 
 /* Image */
@@ -208,6 +231,7 @@ p.pmt-careers-label::after {
   color: #4b5563 !important;
   line-height: 1.85 !important;
   margin-bottom: 14px !important;
+  text-align: justify !important;
 }
 
 /* Blockquote */

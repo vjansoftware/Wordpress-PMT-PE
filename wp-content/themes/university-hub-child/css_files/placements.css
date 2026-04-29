@@ -123,6 +123,7 @@ p.pmt-placement-label::after {
   color: #4b5563 !important;
   line-height: 1.85 !important;
   margin-bottom: 14px !important;
+  text-align: justify !important;
 }
 
 /* ════════════════════════════════
