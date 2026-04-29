@@ -367,40 +367,4 @@ function pmt_enqueue_media_on_settings($hook) {
 }
 add_action('admin_enqueue_scripts', 'pmt_enqueue_media_on_settings');
 
-/* ════════════════════════════════
-   SHORTCODE — [pmt_app_form_download]
-════════════════════════════════ */
 
-function pmt_app_form_download_shortcode() {
-
-    $url      = get_option('pmt_app_form_url', '');
-    $filename = basename($url);
-
-    if (empty($url)) {
-        return '<p style="color:red;">⚠️ Application form not uploaded yet. Please go to <strong>Settings → Application Form</strong> to upload.</p>';
-    }
-
-    $html  = '<div class="pmt-apply-offline-card">';
-
-        $html .= '<div class="pmt-apply-offline-steps">';
-            $html .= '<h4 class="pmt-apply-offline-title"><strong>&nbsp;How to Apply — Offline Process</strong></h4>';
-            $html .= '<ul class="pmt-apply-offline-list">';
-                $html .= '<li><strong>Step 1:</strong> Download the application form using the button.</li>';
-                $html .= '<li><strong>Step 2:</strong> Print the downloaded application form clearly on A4 paper.</li>';
-                $html .= '<li><strong>Step 3:</strong> Visit the college office and submit the printed form in person.</li>';
-            $html .= '</ul>';
-        $html .= '</div>';
-
-        $html .= '<div class="pmt-apply-offline-download">';
-            $html .= '<div class="pmt-apply-offline-file">';
-                $html .= '<span class="pmt-apply-offline-filename">📄 ' . esc_html($filename) . '</span>';
-                $html .= '<a href="' . esc_url($url) . '" class="pmt-apply-offline-btn" download="' . esc_attr($filename) . '" target="_blank">⬇ Download Application Form</a>';
-            $html .= '</div>';
-        $html .= '</div>';
-
-    $html .= '</div>';
-
-    return $html;
-}
-
-add_shortcode('pmt_app_form_download', 'pmt_app_form_download_shortcode');
