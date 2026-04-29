@@ -1,0 +1,545 @@
+ /* ═══════════════════════════════════════
+   PMT STUDENT GRIEVANCE PORTAL — STYLES
+   Colors & fonts matching About College
+═══════════════════════════════════════ */
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 96, 0, 0.4); }
+  50%       { box-shadow: 0 0 0 10px rgba(255, 96, 0, 0); }
+}
+
+@keyframes warningPulse {
+  0%, 100% { background: #fff3f3; }
+  50%       { background: #ffe0e0; }
+}
+
+/* ── Wrapper ── */
+.gr-wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.gr-wrap *,
+.gr-wrap *::before,
+.gr-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* ── WordPress theme overrides ── */
+.entry-content .gr-wrap h1,
+.entry-content .gr-wrap h2,
+.entry-content .gr-wrap h3,
+.entry-content .gr-wrap h4 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .gr-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+
+.gr-hero {
+  text-align: center;
+}
+
+/* Orange label */
+p.gr-label,
+p.gr-label.has-text-align-center,
+.entry-content p.gr-label,
+.wp-block-group p.gr-label,
+body p.gr-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.gr-label::before,
+p.gr-label::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* H1 */
+.gr-wrap .gr-title,
+.entry-content .gr-wrap h1.gr-title,
+body h1.gr-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 10px 0 14px !important;
+  line-height: 1.3 !important;
+}
+
+/* Subtitle */
+.gr-wrap .gr-sub {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  line-height: 1.8 !important;
+}
+
+/* ════════════════════════════════
+   WARNING BAR
+════════════════════════════════ */
+
+p.gr-warning,
+.entry-content p.gr-warning {
+  background: #fff3f3 !important;
+  border-left: 5px solid #FF6000 !important;
+  color: #c0392b !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 13px 24px !important;
+  border-radius: 0 8px 8px 0 !important;
+  margin-bottom: 0 !important;
+  opacity: 1 !important;
+  animation: warningPulse 2.5s ease infinite;
+}
+
+/* ════════════════════════════════
+   INTRO ROW
+════════════════════════════════ */
+
+.gr-intro {
+  gap: 40px !important;
+  align-items: flex-start !important;
+  margin-bottom: 0 !important;
+}
+
+.gr-img-col {
+  padding: 0 !important;
+}
+
+.gr-img {
+  margin: 0 !important;
+}
+
+.gr-img img {
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+  box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15) !important;
+}
+
+/* From label */
+p.gr-from-label,
+.entry-content p.gr-from-label,
+.wp-block-group p.gr-from-label,
+body p.gr-from-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.gr-from-label::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Intro H2 */
+.gr-wrap .gr-intro-title,
+.entry-content .gr-wrap h2.gr-intro-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 16px !important;
+  line-height: 1.3 !important;
+}
+
+/* Body text */
+.gr-wrap .gr-p {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.9 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Points list */
+.gr-points {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 24px !important;
+}
+
+.gr-points li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+  color: #444 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  list-style: none !important;
+}
+
+.gr-points li:last-child {
+  border-bottom: none !important;
+}
+
+.gr-points li::before {
+  content: '✓' !important;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  background: #253b80 !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  margin-top: 2px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Badge */
+/* p.gr-badge,
+.entry-content p.gr-badge {
+  display: inline-block !important;
+  background: #FF6000 !important;
+  color: #fff !important;
+  padding: 10px 24px !important;
+  border-radius: 25px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+} */
+
+/* ════════════════════════════════
+   SECTION LABEL
+════════════════════════════════ */
+
+p.gr-section-label,
+p.gr-section-label.has-text-align-center,
+.entry-content p.gr-section-label,
+body p.gr-section-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.gr-section-label::before,
+p.gr-section-label::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* ════════════════════════════════
+   CARDS
+════════════════════════════════ */
+
+.gr-cards {
+  gap: 20px !important;
+  margin-bottom: 24px !important;
+}
+
+.gr-card {
+  background: #fff !important;
+  padding: 28px 24px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07) !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.gr-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(37, 59, 128, 0.15) !important;
+}
+
+.gr-card-1 { border-top: 4px solid #253b80 !important; }
+.gr-card-2 { border-top: 4px solid #179bd7 !important; }
+.gr-card-3 { border-top: 4px solid #FF6000 !important; }
+
+.gr-card-icon {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 26px !important;
+  margin: 0 auto 16px !important;
+}
+
+.gr-card-1 .gr-card-icon { background: #eef1fb !important; }
+.gr-card-2 .gr-card-icon { background: #e6f5fc !important; }
+.gr-card-3 .gr-card-icon { background: #fff3ee !important; }
+
+/* Card H3 */
+.gr-wrap .gr-card-title,
+.entry-content .gr-wrap h3.gr-card-title {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 10px !important;
+}
+
+.gr-wrap .gr-card-text {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+.gr-card-list {
+  text-align: left !important;
+  padding-left: 18px !important;
+  margin: 0 !important;
+}
+
+.gr-card-list li {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  margin-bottom: 4px !important;
+}
+/* ════════════════════════════════
+   SC/ST CELL SECTION
+════════════════════════════════ */
+
+/* Section spacing */
+.wp-block-group {
+  margin-bottom: 30px;
+  padding: 20px 0px;
+}
+
+/* Heading */
+.gr-form-title {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin-bottom: 12px !important;
+  border-left: 4px solid #FF6000;
+  padding: 10px;
+}
+
+/* Paragraph */
+.gr-p {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  margin-bottom: 16px !important;
+}
+
+/* List */
+.gr-points {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* List items */
+.gr-points li {
+  position: relative;
+  padding: 10px 0 10px 32px !important;
+  font-size: 14px !important;
+  color: #444 !important;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove last border */
+.gr-points li:last-child {
+  border-bottom: none;
+}
+
+/* Custom icon */
+.gr-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #253b80;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Fix invalid spacing */
+.wp-block-group.gr-wrap {
+  margin-bottom: 30px !important;
+}
+/* ════════════════════════════════
+   MOBILE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+ /* Wrapper */
+  .gr-wrap {
+    padding: 0 16px !important;
+  }
+
+  .gr-form-title {
+    font-size: 1.3rem !important;
+  }
+
+  .gr-p {
+    font-size: 14px !important;
+  }
+
+  .gr-points li {
+    font-size: 13px !important;
+    padding-left: 28px !important;
+  }
+
+}
+
+/* ════════════════════════════════
+   EMERGENCY / CONTACT
+════════════════════════════════ */
+
+.gr-emergency {
+  background: #fff3f3 !important;
+  border-top: 4px solid #FF6000 !important;
+  border-radius: 12px !important;
+  padding: 24px 30px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 4px 20px rgba(255, 96, 0, 0.1) !important;
+  animation: pulse 2s ease 1s infinite;
+}
+
+.gr-emergency-icon {
+  font-size: 2.5rem !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Emergency H3 */
+.gr-wrap .gr-emergency-title,
+.entry-content .gr-wrap h3.gr-emergency-title {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin: 0 0 8px !important;
+}
+
+.gr-wrap .gr-emergency-text {
+  font-size: 14px !important;
+  color: #555 !important;
+  margin: 4px 0 !important;
+  line-height: 1.6 !important;
+}
+
+.gr-wrap .gr-emergency-text strong {
+  color: #253b80 !important;
+  margin-right: 6px !important;
+}
+
+/* ════════════════════════════════
+   FORM
+════════════════════════════════ */
+
+.gr-form {
+  background: #fff !important;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Form H2 */
+.gr-wrap .gr-form-title,
+.entry-content .gr-wrap h2.gr-form-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 20px !important;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .gr-wrap {
+    padding: 0 16px !important;
+  }
+
+  .gr-intro .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-img img {
+    height: 240px !important;
+    padding-top: 16px !important;
+  }
+
+  .gr-cards .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-wrap .gr-title {
+    font-size: 1.4rem !important;
+  }
+
+  .gr-emergency {
+    padding: 20px !important;
+  }
+
+  .gr-form {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gr-wrap .gr-title {
+    font-size: 1.2rem !important;
+  }
+}
