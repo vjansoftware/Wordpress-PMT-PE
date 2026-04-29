@@ -215,11 +215,11 @@ function pmt_admission_overview_shortcode() {
 
         <h3>Admissions Open 2026</h3>
 
-        <p>
+        <p class="third-priority-page-color">
             Kickstart your career in Physical Education with expert training,
             modern facilities, and professional guidance.
         </p>
-        <p>
+        <p class="third-priority-page-color">
            Shape your future in Physical Education through world-class training, modern infrastructure, and experienced faculty guidance.
         </p>
 

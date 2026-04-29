@@ -2683,10 +2683,11 @@ article.hentry,
     justify-content: center;
     height: 100%; /* 🔥 KEY LINE */
 }
-.pmt-admission-overview-card h3,
-.pmt-admission-overview-card p {
+.pmt-admission-overview-card h3{
   color: #fff;
+  font-weight: bold;
 }
+
 
 .pmt-admission-overview-btn {
     margin-top: 15px;
