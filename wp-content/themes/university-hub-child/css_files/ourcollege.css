@@ -16,13 +16,13 @@
 
 /* Remove entry padding */
 .page-id-1008 .entry-content {
-    padding: 0 !important;
+    padding: 24px 0 0 0 !important;
     max-width: 100% !important;
 }
 
 /* ── ABOUT WRAP ── */
 .about-wrap {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
     box-sizing: border-box;
