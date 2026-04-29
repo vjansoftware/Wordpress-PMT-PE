@@ -1,7 +1,31 @@
 /* ═══════════════════════════════════════
    PMT PLACEMENT — STYLES
 ═══════════════════════════════════════ */
+/* ── Remove theme padding ── */
+.page-id-388 .entry-title,
+.page-id-388 .entry-header {
+    display: none !important;
+}
 
+.page-id-388 #primary article.hentry {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.page-id-388 .entry-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin-top: 0 !important;
+}
+
+.page-id-388 #primary,
+.page-id-388 #content,
+.page-id-388 .site-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
 /* ── Wrapper ── */
 .pmt-placement-wrap {
   max-width: 1200px;
