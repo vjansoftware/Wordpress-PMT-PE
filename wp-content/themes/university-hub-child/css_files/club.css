@@ -211,69 +211,73 @@
   flex-shrink: 0 !important;
 }
 
-/* ── CTA TITLE (3rd h2) ── */
-.pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) {
-  border-radius: 10px 10px 0 0 !important;
-  margin: 0 !important;
-  padding: 48px 40px 10px !important;
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
+/* ════════════════════════════════
+   CTA SECTION
+════════════════════════════════ */
+
+.club-cta {
+  border-radius: 10px !important;
+  padding: 48px 40px !important;
+  text-align: center !important;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* ── CTA SUBTITLE ── */
-.pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) + p {
-  margin: 0 !important;
-  padding: 0 40px 24px !important;
+.club-cta.pmt-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.club-cta.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA H2 */
+.club-wrap .club-cta-title,
+.entry-content .club-wrap h2.club-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+}
+
+/* CTA text */
+.club-cta .club-cta-text {
   font-size: 15px !important;
   color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 24px !important;
   line-height: 1.7 !important;
 }
 
-/* ── CTA BUTTONS ── */
-.pmt-clubs .wp-block-columns:last-of-type {
-  border-radius: 0 0 10px 10px !important;
-  padding: 0 40px 48px !important;
-  text-align: center !important;
-  display: flex !important;
-  justify-content: center !important;
-  gap: 16px !important;
-  margin-top: 0 !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column {
-  flex: 0 1 auto !important;
-  min-width: 0 !important;
-  max-width: fit-content !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading {
-  display: inline-block !important;
-  padding: 12px 30px !important;
+/* CTA buttons */
+.club-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
   border-radius: 6px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
+  padding: 12px 30px !important;
   text-decoration: none !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
-  cursor: pointer !important;
-  margin: 0 !important;
-}
-/* Ensure button text is white */
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a {
-  color: #fff !important;
-  text-decoration: none !important;
-}
-/* Keep text white on hover */
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a:hover {
-  color: #fff !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column:first-child .wp-block-heading {
-  background: #FF6000 !important;
-  color: #fff !important;
   border: none !important;
+  transition: background 0.25s, transform 0.25s;
 }
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column:last-child .wp-block-heading {
+.club-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
+  transform: translateY(-2px);
+}
+
+.club-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
-  color: #fff !important;
-  border: 2px solid rgba(255,255,255,0.5) !important;
+  color: #f4f6fb !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  transition: background 0.25s;
+}
+.club-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* ── ANIMATIONS ── */
@@ -295,6 +299,18 @@
   text-align: center !important;
 }
 
+.club-cta {
+    padding: 28px 16px !important;
+  }
+
+  .club-wrap .club-title {
+    font-size: 1.6rem !important;
+  }
+
+  .club-wrap .club-timeline-title,
+  .club-wrap .club-cta-title {
+    font-size: 1.4rem !important;
+  }
 /* Move badge to next line + center */
 .pmt-clubs .wp-block-heading:is(h3) .pmt-badge {
   display: block !important;
