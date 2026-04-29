@@ -62,6 +62,7 @@
 .about-body-text {
     font-size: 15px;
     color: #4b5563;
+     text-align: justify;
     line-height: 1.85;
     margin-bottom: 14px;
 }
@@ -90,6 +91,7 @@
 .about-intro-image {
     width: 100%;
     border-radius: 10px;
+     height: 420px; 
     display: block;
     box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
 }
