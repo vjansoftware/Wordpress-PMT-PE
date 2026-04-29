@@ -195,7 +195,8 @@ p.pmt-body-text {
   border-top: none !important;
   margin-top: -10px !important;
   margin-bottom: 0 !important;
-  padding-top: 55px !important;
+  padding-top: 45px !important;
+  padding-bottom: -10px !important;
 }
 
 .pmt-stats-inner.wp-block-columns {
