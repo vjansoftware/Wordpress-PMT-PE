@@ -211,7 +211,74 @@
   flex-shrink: 0 !important;
 }
 
+/* ════════════════════════════════
+   CTA SECTION
+════════════════════════════════ */
 
+.club-cta {
+  border-radius: 10px !important;
+  padding: 48px 40px !important;
+  text-align: center !important;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.club-cta.pmt-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.club-cta.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA H2 */
+.club-wrap .club-cta-title,
+.entry-content .club-wrap h2.club-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+}
+
+/* CTA text */
+.club-cta .club-cta-text {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 24px !important;
+  line-height: 1.7 !important;
+}
+
+/* CTA buttons */
+.club-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  border: none !important;
+  transition: background 0.25s, transform 0.25s;
+}
+.club-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
+  transform: translateY(-2px);
+}
+
+.club-cta-btn-outline .wp-block-button__link {
+  background: transparent !important;
+  color: #f4f6fb !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  transition: background 0.25s;
+}
+.club-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
 
 /* ── ANIMATIONS ── */
 @keyframes clubsFadeUp {
@@ -232,6 +299,18 @@
   text-align: center !important;
 }
 
+.club-cta {
+    padding: 28px 16px !important;
+  }
+
+  .club-wrap .club-title {
+    font-size: 1.6rem !important;
+  }
+
+  .club-wrap .club-timeline-title,
+  .club-wrap .club-cta-title {
+    font-size: 1.4rem !important;
+  }
 /* Move badge to next line + center */
 .pmt-clubs .wp-block-heading:is(h3) .pmt-badge {
   display: block !important;
