@@ -311,7 +311,10 @@
     .about-wrap {
         padding: 0 16px;
     }
-
+   page-id-1008 .entry-content {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
     .about-intro-grid {
         display: flex !important;
         flex-direction: column !important;
