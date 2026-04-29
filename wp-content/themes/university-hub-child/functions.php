@@ -219,6 +219,9 @@ function pmt_admission_overview_shortcode() {
             Kickstart your career in Physical Education with expert training,
             modern facilities, and professional guidance.
         </p>
+        <p>
+           Shape your future in Physical Education through world-class training, modern infrastructure, and experienced faculty guidance.
+        </p>
 
         <a href="/admission-open/" class="pmt-admission-overview-btn">
             Learn More →
