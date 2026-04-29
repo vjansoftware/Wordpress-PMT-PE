@@ -91,7 +91,8 @@
 .about-intro-image {
     width: 100%;
     border-radius: 10px;
-     height: 420px; 
+     height: 400px; 
+     object-fit: cover;
     display: block;
     box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
 }
