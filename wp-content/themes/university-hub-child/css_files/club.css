@@ -211,70 +211,7 @@
   flex-shrink: 0 !important;
 }
 
-/* ── CTA TITLE (3rd h2) ── */
-.pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) {
-  border-radius: 10px 10px 0 0 !important;
-  margin: 0 !important;
-  padding: 48px 40px 10px !important;
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-}
 
-/* ── CTA SUBTITLE ── */
-.pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(3) + p {
-  margin: 0 !important;
-  padding: 0 40px 24px !important;
-  font-size: 15px !important;
-  color: rgba(255, 255, 255, 0.75) !important;
-  line-height: 1.7 !important;
-}
-
-/* ── CTA BUTTONS ── */
-.pmt-clubs .wp-block-columns:last-of-type {
-  border-radius: 0 0 10px 10px !important;
-  padding: 0 40px 48px !important;
-  text-align: center !important;
-  display: flex !important;
-  justify-content: center !important;
-  gap: 16px !important;
-  margin-top: 0 !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column {
-  flex: 0 1 auto !important;
-  min-width: 0 !important;
-  max-width: fit-content !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading {
-  display: inline-block !important;
-  padding: 12px 30px !important;
-  border-radius: 6px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
-  cursor: pointer !important;
-  margin: 0 !important;
-}
-/* Ensure button text is white */
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a {
-  color: #fff !important;
-  text-decoration: none !important;
-}
-/* Keep text white on hover */
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-heading a:hover {
-  color: #fff !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column:first-child .wp-block-heading {
-  background: #FF6000 !important;
-  color: #fff !important;
-  border: none !important;
-}
-.pmt-clubs .wp-block-columns:last-of-type .wp-block-column:last-child .wp-block-heading {
-  background: transparent !important;
-  color: #fff !important;
-  border: 2px solid rgba(255,255,255,0.5) !important;
-}
 
 /* ── ANIMATIONS ── */
 @keyframes clubsFadeUp {
