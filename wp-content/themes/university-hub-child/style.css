@@ -2936,40 +2936,72 @@ article.hentry,
 }
 
 /* Shortcut post css for latest news */
-
+/* MAIN CONTAINER */
 .pmt-latest-news-shortcut-container {
     height: 340px;
-    overflow: hidden;
-    position: relative;
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-/* Title */
+/* HEADER (FIXED) */
 .pmt-latest-news-shortcut-header {
     background: #253b80;
     color: #fff;
     padding: 12px 15px;
     font-weight: 600;
     font-size: 15px;
+    flex-shrink: 0;
+    z-index: 2;
+    border-bottom: 2px solid #00ea6b;
 }
 
-/* Scroll */
+/* BODY (SCROLL AREA) */
+.pmt-latest-news-shortcut-body {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+/* FADE EFFECT */
+.pmt-latest-news-shortcut-body::before,
+.pmt-latest-news-shortcut-body::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.pmt-latest-news-shortcut-body::before {
+    top: 0;
+    background: linear-gradient(to bottom, #fff, transparent);
+}
+
+.pmt-latest-news-shortcut-body::after {
+    bottom: 0;
+    background: linear-gradient(to top, #fff, transparent);
+}
+
+/* SCROLL WRAPPER */
 .pmt-latest-news-shortcut-scroll {
     display: flex;
     flex-direction: column;
-    animation: pmt-marquee-up 20s linear infinite;
+    animation: pmt-marquee-up 22s linear infinite;
 }
 
-/* Pause on hover */
-.pmt-latest-news-shortcut-container:hover .pmt-latest-news-shortcut-scroll {
+/* PAUSE ON HOVER */
+.pmt-latest-news-shortcut-container:hover 
+.pmt-latest-news-shortcut-scroll {
     animation-play-state: paused;
 }
 
-/* Card */
+/* CARD */
 .pmt-latest-news-shortcut-card {
     display: flex;
     gap: 12px;
@@ -2987,15 +3019,20 @@ article.hentry,
     background: #eef5ff;
 }
 
-/* Date */
+/* DATE */
 .pmt-latest-news-shortcut-date {
     font-size: 12px;
     color: #666;
-    min-width: 90px;
+    min-width: 95px;
     font-weight: 500;
 }
 
-/* Link */
+/* CONTENT */
+.pmt-latest-news-shortcut-content {
+    flex: 1;
+}
+
+/* LINK */
 .pmt-latest-news-shortcut-link {
     color: #253b80;
     font-weight: 600;
@@ -3006,7 +3043,7 @@ article.hentry,
     color: #FF6000;
 }
 
-/* NEW badge */
+/* NEW BADGE */
 .pmt-latest-news-shortcut-badge {
     margin-left: 8px;
     background: #ff3b3b;
@@ -3016,7 +3053,7 @@ article.hentry,
     border-radius: 4px;
 }
 
-/* Animation */
+/* SCROLL ANIMATION */
 @keyframes pmt-marquee-up {
     0% { transform: translateY(0); }
     100% { transform: translateY(-50%); }

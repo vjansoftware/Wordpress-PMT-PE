@@ -140,7 +140,7 @@ function pmt_news_table_shortcode() {
 
     $args = array(
         'post_type'      => 'post',
-        'posts_per_page' => -1, // ✅ ALL posts (no limit)
+        'posts_per_page' => -1, // all posts
         'post_status'    => 'publish',
         'orderby'        => 'date',
         'order'          => 'DESC'
@@ -150,16 +150,20 @@ function pmt_news_table_shortcode() {
 
     if ($query->have_posts()) :
 
-        // 👉 Get latest post date
+        // 👉 Get latest post month/year
         $query->the_post();
         $latest_month = get_the_date('m');
         $latest_year  = get_the_date('Y');
 
-        // reset loop
         $query->rewind_posts();
 
         echo '<div class="pmt-latest-news-shortcut-container">';
+
+        // HEADER (fixed)
         echo '<div class="pmt-latest-news-shortcut-header">Latest Updates</div>';
+
+        // BODY (scroll area)
+        echo '<div class="pmt-latest-news-shortcut-body">';
         echo '<div class="pmt-latest-news-shortcut-scroll">';
 
         while ($query->have_posts()) : $query->the_post();
@@ -179,7 +183,7 @@ function pmt_news_table_shortcode() {
                     . get_the_title() .
                  '</a>';
 
-            // ✅ NEW badge → latest batch only
+            // NEW badge logic (latest batch)
             if ($post_month == $latest_month && $post_year == $latest_year) {
                 echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
@@ -190,6 +194,7 @@ function pmt_news_table_shortcode() {
         endwhile;
 
         echo '</div>'; // scroll
+        echo '</div>'; // body
         echo '</div>'; // container
 
         wp_reset_postdata();
@@ -237,12 +242,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollBoxes = document.querySelectorAll(".pmt-latest-news-shortcut-scroll");
 
     scrollBoxes.forEach(function(scrollBox) {
-
         if (!scrollBox.classList.contains("duplicated")) {
             scrollBox.innerHTML += scrollBox.innerHTML;
             scrollBox.classList.add("duplicated");
         }
-
     });
 
 });
