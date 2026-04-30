@@ -256,25 +256,22 @@ document.addEventListener("DOMContentLoaded", function () {
 <?php
 }
 
-add_action('wp_footer', 'pmt_news_step_ticker');
+add_action('wp_footer', 'pmt_news_ticker_script');
 
-function pmt_news_step_ticker() {
+function pmt_news_ticker_script() {
 ?>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  if (window.innerWidth > 1024) return;
-
   const ticker = document.querySelector(".news-ticker-inner-wrap");
   if (!ticker) return;
 
-  let index = 0;
-  const items = ticker.querySelectorAll("a");
+  // prevent duplicate run
+  if (ticker.classList.contains("ticker-ready")) return;
+  ticker.classList.add("ticker-ready");
 
-  setInterval(() => {
-    index = (index + 1) % items.length;
-    ticker.style.transform = `translateX(-${index * 100}%)`;
-  }, 4000);
+  // duplicate content for continuous scroll
+  ticker.innerHTML += ticker.innerHTML;
 
 });
 </script>
