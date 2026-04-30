@@ -262,14 +262,20 @@ function pmt_news_ticker_script() {
 ?>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const tickers = document.querySelectorAll(".news-ticker-inner-wrap");
 
-  tickers.forEach(ticker => {
-    if (!ticker.classList.contains("ticker-ready")) {
-      ticker.innerHTML += ticker.innerHTML; // duplicate
-      ticker.classList.add("ticker-ready");
-    }
-  });
+  // ✅ run only mobile
+  if (window.innerWidth > 768) return;
+
+  const ticker = document.querySelector(".news-ticker-inner-wrap");
+  if (!ticker) return;
+
+  // prevent multiple runs
+  if (ticker.classList.contains("custom-ready")) return;
+  ticker.classList.add("custom-ready");
+
+  // duplicate safely
+  ticker.innerHTML += ticker.innerHTML;
+
 });
 </script>
 <?php
