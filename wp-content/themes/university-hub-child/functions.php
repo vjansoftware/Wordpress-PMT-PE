@@ -20,13 +20,13 @@ function pmt_theme_styles() {
     // HOME PAGE (ID: 1693)
     // =========================
     if (is_front_page() || is_page(1693)) {
-        wp_enqueue_style(
-            'home',
-            get_stylesheet_directory_uri() . '/css_files/home.css',
-            array('theme-style'),
-            '1.0'
-        );
-    }
+    wp_enqueue_style(
+        'home',
+        get_stylesheet_directory_uri() . '/css_files/home.css',
+        array('theme-style'),
+        '1.0'
+    );
+}
 
     // =========================
     // PAGE ID BASED STYLES
@@ -80,42 +80,52 @@ function pmt_theme_styles() {
     );
 
     foreach ($page_styles as $page_id => $files) {
-        if (is_page($page_id)) {
-            if (!is_array($files)) {
-                $files = array($files);
-            }
-            foreach ($files as $file) {
-                wp_enqueue_style(
-                    'page-' . $page_id . '-' . $file,
-                    get_stylesheet_directory_uri() . '/css_files/' . $file,
-                    array('theme-style'),
-                    '1.0'
-                );
-            }
+
+    if (is_page($page_id)) {
+
+        // convert single file to array
+        if (!is_array($files)) {
+            $files = array($files);
+        }
+
+        foreach ($files as $file) {
+
+            wp_enqueue_style(
+                'page-' . $page_id . '-' . $file,
+                get_stylesheet_directory_uri() . '/css_files/' . $file,
+                array('theme-style'),
+                '1.0'
+            );
+
         }
     }
+}
 
     // =========================
     // CLUB PAGES
     // =========================
     $club_pages = array(3392, 3398, 3405, 3413, 3417);
 
-    if (is_page($club_pages)) {
-        wp_enqueue_style(
-            'clubs-common',
-            get_stylesheet_directory_uri() . '/css_files/club.css',
-            array('theme-style'),
-            '1.0'
-        );
-    }
+   if (is_page($club_pages)) {
+
+    wp_enqueue_style(
+        'clubs-common',
+        get_stylesheet_directory_uri() . '/css_files/club.css',
+        array('theme-style'),
+        '1.0'
+    );
+
 }
+} 
 add_action('wp_enqueue_scripts', 'pmt_theme_styles');
 
 function add_club_body_class($classes) {
     $club_pages = array(3392, 3398, 3405, 3413, 3417);
+
     if (is_page($club_pages)) {
         $classes[] = 'pmt-clubs';
     }
+
     return $classes;
 }
 add_filter('body_class', 'add_club_body_class');
@@ -123,13 +133,14 @@ add_filter('body_class', 'add_club_body_class');
 /* ════════════════════════════════
    PMT NEWS TABLE SHORTCODE
 ════════════════════════════════ */
+
 function pmt_news_table_shortcode() {
 
     ob_start();
 
     $args = array(
         'post_type'      => 'post',
-        'posts_per_page' => -1,
+        'posts_per_page' => -1, // all posts
         'post_status'    => 'publish',
         'orderby'        => 'date',
         'order'          => 'DESC'
@@ -139,6 +150,7 @@ function pmt_news_table_shortcode() {
 
     if ($query->have_posts()) :
 
+        // 👉 Get latest post month/year
         $query->the_post();
         $latest_month = get_the_date('m');
         $latest_year  = get_the_date('Y');
@@ -146,7 +158,11 @@ function pmt_news_table_shortcode() {
         $query->rewind_posts();
 
         echo '<div class="pmt-latest-news-shortcut-container">';
+
+        // HEADER (fixed)
         echo '<div class="pmt-latest-news-shortcut-header">Campus News & Announcements</div>';
+
+        // BODY (scroll area)
         echo '<div class="pmt-latest-news-shortcut-body">';
         echo '<div class="pmt-latest-news-shortcut-scroll">';
 
@@ -156,10 +172,18 @@ function pmt_news_table_shortcode() {
             $post_year  = get_the_date('Y');
 
             echo '<div class="pmt-latest-news-shortcut-card">';
-            echo '<div class="pmt-latest-news-shortcut-date">' . get_the_date('d M Y') . '</div>';
-            echo '<div class="pmt-latest-news-shortcut-content">';
-            echo '<a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-link">' . get_the_title() . '</a>';
 
+            echo '<div class="pmt-latest-news-shortcut-date">'
+                    . get_the_date('d M Y') .
+                 '</div>';
+
+            echo '<div class="pmt-latest-news-shortcut-content">';
+
+            echo '<a href="' . get_permalink() . '" class="pmt-latest-news-shortcut-link">'
+                    . get_the_title() .
+                 '</a>';
+
+            // NEW badge logic (latest batch)
             if ($post_month == $latest_month && $post_year == $latest_year) {
                 echo '<span class="pmt-latest-news-shortcut-badge">NEW</span>';
             }
@@ -169,9 +193,9 @@ function pmt_news_table_shortcode() {
 
         endwhile;
 
-        echo '</div>';
-        echo '</div>';
-        echo '</div>';
+        echo '</div>'; // scroll
+        echo '</div>'; // body
+        echo '</div>'; // container
 
         wp_reset_postdata();
 
@@ -179,92 +203,55 @@ function pmt_news_table_shortcode() {
 
     return ob_get_clean();
 }
+
 add_shortcode('pmt_news_table', 'pmt_news_table_shortcode');
 
-/* ════════════════════════════════
-   PMT ADMISSION OVERVIEW SHORTCODE
-════════════════════════════════ */
 function pmt_admission_overview_shortcode() {
+
     ob_start();
     ?>
+
     <div class="pmt-admission-overview-card">
+
         <h3>Admissions Open 2026</h3>
+
         <p class="third-priority-page-color">
             Kickstart your career in Physical Education with expert training,
             modern facilities, and professional guidance.
         </p>
         <p class="third-priority-page-color">
-            Shape your future in Physical Education through world-class training, modern infrastructure, and experienced faculty guidance.
+           Shape your future in Physical Education through world-class training, modern infrastructure, and experienced faculty guidance.
         </p>
+
         <a href="/admission-open/" class="pmt-admission-overview-btn">
             Learn More →
         </a>
+
     </div>
+
     <?php
     return ob_get_clean();
 }
+
 add_shortcode('pmt_admission_overview', 'pmt_admission_overview_shortcode');
 
-/* ════════════════════════════════
-   NEWS SCROLL SCRIPT
-════════════════════════════════ */
+add_action('wp_footer', 'pmt_news_scroll_script');
+
 function pmt_news_scroll_script() {
 ?>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
     const scrollBoxes = document.querySelectorAll(".pmt-latest-news-shortcut-scroll");
+
     scrollBoxes.forEach(function(scrollBox) {
         if (!scrollBox.classList.contains("duplicated")) {
             scrollBox.innerHTML += scrollBox.innerHTML;
             scrollBox.classList.add("duplicated");
         }
     });
+
 });
 </script>
 <?php
 }
-add_action('wp_footer', 'pmt_news_scroll_script');
-
-/* ════════════════════════════════
-   MOBILE TICKER SCRIPT
-════════════════════════════════ */
-function pmt_mobile_ticker_script() {
-?>
-<script>
-jQuery(document).ready(function($) {
-  if ($(window).width() <= 768) {
-
-    var items = $('#news-ticker li');
-    if (items.length === 0) items = $('#news-ticker .list');
-    if (items.length === 0) items = $('#news-ticker a');
-
-    if (items.length === 0) return;
-
-    var fullText = '';
-    items.each(function() {
-      fullText += $(this).text().trim() + '   •   ';
-    });
-
-    $('#news-ticker').html(
-      '<div id="pmt-ticker-scroll" style="' +
-        'white-space: nowrap;' +
-        'display: inline-block;' +
-        'animation: pmtScroll 20s linear infinite;' +
-        'position: relative;' +
-      '">' + fullText + '</div>'
-    );
-
-    $('<style>')
-      .text(
-        '@keyframes pmtScroll {' +
-          '0%   { transform: translateX(100vw); }' +
-          '100% { transform: translateX(-100%); }' +
-        '}'
-      )
-      .appendTo('head');
-  }
-});
-</script>
-<?php
-}
-add_action('wp_footer', 'pmt_mobile_ticker_script');
