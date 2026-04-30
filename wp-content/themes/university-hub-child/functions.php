@@ -248,56 +248,40 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!scrollBox.classList.contains("duplicated")) {
             scrollBox.innerHTML += scrollBox.innerHTML;
             scrollBox.classList.add("duplicated");
-        }
-    });
-
-});
-</script>
-<?php
-}
-
-add_action('wp_footer', function() {
+        }add_action('wp_footer', function() {
 ?>
 <script>
-jQuery(document).ready(function($){
+jQuery(function($){
 
   if ($(window).width() <= 768) {
 
-    function initMobileTicker() {
+    var ticker = $('#news-ticker');
+    if (!ticker.length) return;
 
-      var ticker = $('#news-ticker');
+    var text = ticker.text().trim();
+    if (!text) return;
 
-      if (!ticker.length) return;
+    ticker.html(
+      '<div id="mobile-ticker">' + text + '</div>'
+    );
 
-      var text = ticker.text().trim();
-
-      // Retry until content is ready
-      if (!text) {
-        setTimeout(initMobileTicker, 300);
-        return;
+    $('<style>').text(`
+      #news-ticker {
+        overflow: hidden;
+        white-space: nowrap;
       }
 
-      // 🔥 DESTROY EasyTicker completely
-      if ($('.news-ticker-inner-wrap').data('easyTicker')) {
-        $('.news-ticker-inner-wrap').easyTicker('stop');
-        $('.news-ticker-inner-wrap').easyTicker('destroy');
+      #mobile-ticker {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll-left 20s linear infinite;
       }
 
-      // Remove inline styles applied by plugin
-      $('.news-ticker-inner-wrap').removeAttr('style');
-
-      // Replace with marquee
-      ticker.html(
-        '<div style="white-space: nowrap; overflow: hidden;">' +
-        '<marquee behavior="scroll" direction="left" scrollamount="4">' +
-        text +
-        '</marquee>' +
-        '</div>'
-      );
-
-    }
-
-    setTimeout(initMobileTicker, 300);
+      @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
+    `).appendTo('head');
 
   }
 
@@ -305,3 +289,22 @@ jQuery(document).ready(function($){
 </script>
 <?php
 });
+    });
+
+});
+</script>
+<?php
+}
+
+add_action('wp_enqueue_scripts', function () {
+
+    if (wp_is_mobile()) {
+
+        // Remove EasyTicker script
+        wp_dequeue_script('jquery-easy-ticker');
+        wp_deregister_script('jquery-easy-ticker');
+
+    }
+
+}, 100);
+
