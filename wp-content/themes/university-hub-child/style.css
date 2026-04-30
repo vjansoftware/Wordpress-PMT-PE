@@ -2786,3 +2786,38 @@ jQuery(function($){
   }
 
 }
+@media (max-width: 768px) {
+
+  /* STOP ALL ticker movement */
+  #news-ticker,
+  #news-ticker * {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Force vertical readable layout */
+  #news-ticker ul {
+    display: block !important;
+  }
+
+  #news-ticker li {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Improve readability */
+  #news-ticker a {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  /* Increase height so 2 items visible */
+  #news-ticker {
+    max-height: 80px !important;
+    overflow: hidden;
+  }
+
+}
