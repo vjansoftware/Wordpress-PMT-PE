@@ -271,14 +271,20 @@ jQuery(document).ready(function($){
 
       var text = ticker.text().trim();
 
-      // If empty, retry (important fix)
+      // Retry until content is ready
       if (!text) {
         setTimeout(initMobileTicker, 300);
         return;
       }
 
-      // Stop EasyTicker AFTER content is available
-      $('.news-ticker-inner-wrap').trigger('stop');
+      // 🔥 DESTROY EasyTicker completely
+      if ($('.news-ticker-inner-wrap').data('easyTicker')) {
+        $('.news-ticker-inner-wrap').easyTicker('stop');
+        $('.news-ticker-inner-wrap').easyTicker('destroy');
+      }
+
+      // Remove inline styles applied by plugin
+      $('.news-ticker-inner-wrap').removeAttr('style');
 
       // Replace with marquee
       ticker.html(
@@ -291,7 +297,6 @@ jQuery(document).ready(function($){
 
     }
 
-    // Start after slight delay
     setTimeout(initMobileTicker, 300);
 
   }
