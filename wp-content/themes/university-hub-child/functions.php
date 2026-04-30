@@ -256,53 +256,47 @@ document.addEventListener("DOMContentLoaded", function () {
 <?php
 }
 
-function pmt_mobile_ticker_script() {
+add_action('wp_footer', function() {
 ?>
 <script>
-jQuery(document).ready(function($) {
+jQuery(document).ready(function($){
 
   if ($(window).width() <= 768) {
 
-var items = $('#news-ticker li');
-    if (items.length === 0) return;
-
-    var fullText = '';
-
-    items.each(function() {
-      fullText += $(this).text().trim() + '   •   ';
-    });
-
-    // Duplicate for seamless loop
-    fullText = fullText + fullText;
-
-    $('#news-ticker').html(
-      '<div id="pmt-ticker-track">' + fullText + '</div>'
-    );
-
-    $('<style>')
-      .text(`
-        #news-ticker {
-          overflow: hidden;
-          white-space: nowrap;
-        }
-
-        #pmt-ticker-track {
-          display: inline-block;
-          white-space: nowrap;
-          animation: pmtScroll 25s linear infinite;
-        }
-
-        @keyframes pmtScroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `)
-      .appendTo('head');
+    // Stop EasyTicker completely
+    $('.news-ticker-inner-wrap').trigger('stop');
 
   }
 
 });
 </script>
 <?php
-}
-add_action('wp_footer', 'pmt_mobile_ticker_script');
+});
+add_action('wp_footer', function() {
+?>
+<script>
+jQuery(document).ready(function($){
+
+  if ($(window).width() <= 768) {
+
+    var ticker = $('#news-ticker');
+
+    if (!ticker.length) return;
+
+    var text = ticker.text().trim();
+    if (!text) return;
+
+    ticker.html(
+      '<div style="white-space: nowrap; overflow: hidden;">' +
+      '<marquee behavior="scroll" direction="left" scrollamount="4">' +
+      text +
+      '</marquee>' +
+      '</div>'
+    );
+
+  }
+
+});
+</script>
+<?php
+});
