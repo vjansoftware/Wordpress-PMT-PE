@@ -263,7 +263,7 @@ jQuery(document).ready(function($) {
 
   if ($(window).width() <= 768) {
 
-    var items = $('#news-ticker .list');
+var items = $('#news-ticker li');
     if (items.length === 0) return;
 
     var fullText = '';
