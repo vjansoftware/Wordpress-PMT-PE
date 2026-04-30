@@ -255,3 +255,22 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <?php
 }
+
+add_action('wp_footer', 'pmt_news_ticker_script');
+
+function pmt_news_ticker_script() {
+?>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tickers = document.querySelectorAll(".news-ticker-inner-wrap");
+
+  tickers.forEach(ticker => {
+    if (!ticker.classList.contains("ticker-duplicated")) {
+      ticker.innerHTML += ticker.innerHTML;
+      ticker.classList.add("ticker-duplicated");
+    }
+  });
+});
+</script>
+<?php
+}
