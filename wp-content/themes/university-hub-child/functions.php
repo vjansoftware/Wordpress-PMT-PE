@@ -131,6 +131,45 @@ function add_club_body_class($classes) {
 add_filter('body_class', 'add_club_body_class');
 
 /* ════════════════════════════════
+   MOBILE TICKER SCRIPT
+════════════════════════════════ */
+function pmt_mobile_ticker_script() {
+?>
+<script>
+jQuery(document).ready(function($) {
+  if ($(window).width() <= 768) {
+    var items = $('#news-ticker .list');
+    if (items.length === 0) return;
+
+    var fullText = '';
+    items.each(function() {
+      fullText += $(this).text().trim() + '   •   ';
+    });
+
+    $('#news-ticker').html(
+      '<div id="pmt-ticker-scroll" style="' +
+        'white-space: nowrap;' +
+        'display: inline-block;' +
+        'animation: pmtScroll 20s linear infinite;' +
+        'position: relative;' +
+      '">' + fullText + '</div>'
+    );
+
+    $('<style>')
+      .text(
+        '@keyframes pmtScroll {' +
+          '0%   { transform: translateX(100vw); }' +
+          '100% { transform: translateX(-100%); }' +
+        '}'
+      )
+      .appendTo('head');
+  }
+});
+</script>
+<?php
+}
+add_action('wp_footer', 'pmt_mobile_ticker_script');
+/* ════════════════════════════════
    PMT NEWS TABLE SHORTCODE
 ════════════════════════════════ */
 
