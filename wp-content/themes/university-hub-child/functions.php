@@ -263,36 +263,36 @@ jQuery(document).ready(function($){
 
   if ($(window).width() <= 768) {
 
-    // Stop EasyTicker completely
-    $('.news-ticker-inner-wrap').trigger('stop');
+    function initMobileTicker() {
 
-  }
+      var ticker = $('#news-ticker');
 
-});
-</script>
-<?php
-});
-add_action('wp_footer', function() {
-?>
-<script>
-jQuery(document).ready(function($){
+      if (!ticker.length) return;
 
-  if ($(window).width() <= 768) {
+      var text = ticker.text().trim();
 
-    var ticker = $('#news-ticker');
+      // If empty, retry (important fix)
+      if (!text) {
+        setTimeout(initMobileTicker, 300);
+        return;
+      }
 
-    if (!ticker.length) return;
+      // Stop EasyTicker AFTER content is available
+      $('.news-ticker-inner-wrap').trigger('stop');
 
-    var text = ticker.text().trim();
-    if (!text) return;
+      // Replace with marquee
+      ticker.html(
+        '<div style="white-space: nowrap; overflow: hidden;">' +
+        '<marquee behavior="scroll" direction="left" scrollamount="4">' +
+        text +
+        '</marquee>' +
+        '</div>'
+      );
 
-    ticker.html(
-      '<div style="white-space: nowrap; overflow: hidden;">' +
-      '<marquee behavior="scroll" direction="left" scrollamount="4">' +
-      text +
-      '</marquee>' +
-      '</div>'
-    );
+    }
+
+    // Start after slight delay
+    setTimeout(initMobileTicker, 300);
 
   }
 
