@@ -2760,3 +2760,29 @@ jQuery(function($){
 </script>
 <?php
 });
+@media (max-width: 768px) {
+
+  /* Force vertical stacking */
+  #news-ticker ul {
+    display: block !important;
+  }
+
+  #news-ticker li {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Prevent horizontal movement */
+  #news-ticker .news-ticker-inner-wrap {
+    transform: none !important;
+    white-space: normal !important;
+  }
+
+  /* Text readability */
+  #news-ticker a {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+  }
+
+}
