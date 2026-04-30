@@ -1,0 +1,370 @@
+/* ═══════════════════════════════════════
+   PMT AFFILIATION — STYLES
+═══════════════════════════════════════ */
+
+.pmt-affil-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.pmt-affil-wrap *,
+.pmt-affil-wrap *::before,
+.pmt-affil-wrap *::after {
+  box-sizing: border-box;
+}
+
+/* ── WordPress theme overrides ── */
+.entry-content .pmt-affil-wrap h1,
+.entry-content .pmt-affil-wrap h2,
+.entry-content .pmt-affil-wrap h3,
+.entry-content .pmt-affil-wrap h4 {
+  clear: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.entry-content .pmt-affil-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ════════════════════════════════
+   HEADER
+════════════════════════════════ */
+
+/* Orange label — matches About College */
+p.pmt-affil-label,
+.entry-content p.pmt-affil-label,
+.wp-block-group p.pmt-affil-label,
+body p.pmt-affil-label {
+  color: #FF6000 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 1 !important;
+}
+
+p.pmt-affil-label::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+  flex-shrink: 0 !important;
+}
+
+/* H2 title */
+.pmt-affil-wrap .pmt-affil-title,
+.entry-content .pmt-affil-wrap h2.pmt-affil-title {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 18px !important;
+  line-height: 1.3 !important;
+}
+
+/* Body text */
+.pmt-affil-wrap .pmt-affil-body {
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.75 !important;
+  max-width: 650px !important;
+  margin-bottom: 14px !important;
+}
+
+/* ════════════════════════════════
+   SECTION DIVIDER
+════════════════════════════════ */
+
+p.pmt-affil-divider,
+.entry-content p.pmt-affil-divider,
+body p.pmt-affil-divider {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: #FF6000 !important;
+  border-bottom: 2px solid #FF6000 !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 28px !important;
+  opacity: 1 !important;
+}
+
+/* ════════════════════════════════
+   PRIMARY AFFILIATION BOX
+════════════════════════════════ */
+
+.pmt-affil-box {
+  background: #253b80 !important;
+  border-radius: 10px !important;
+  padding: 40px !important;
+  display: flex !important;
+  gap: 28px !important;
+  align-items: flex-start !important;
+}
+
+.pmt-affil-icon-wrap {
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.pmt-affil-box-content {
+  flex: 1 !important;
+}
+
+/* Box H3 name */
+.pmt-affil-wrap .pmt-affil-box-name,
+.entry-content .pmt-affil-wrap h3.pmt-affil-box-name {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin: 0 0 8px !important;
+  line-height: 1.3 !important;
+}
+
+.pmt-affil-box .pmt-affil-box-location {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin: 0 0 6px !important;
+}
+
+.pmt-affil-box .pmt-affil-box-since {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 16px !important;
+}
+
+.pmt-affil-box .pmt-affil-box-desc {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+/* ════════════════════════════════
+   APPROVAL CARDS
+════════════════════════════════ */
+
+.pmt-approval-grid {
+  gap: 20px !important;
+}
+
+.pmt-affil-card {
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(37, 59, 128, 0.08) !important;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  padding: 28px !important;
+  text-align: center !important;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pmt-affil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.12) !important;
+}
+
+.pmt-icon-circle {
+  width: 56px !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  border-radius: 50% !important;
+  background: #f4f6fb !important;
+  border: 2px solid rgba(37, 59, 128, 0.1) !important;
+  margin: 0 auto 16px !important;
+}
+
+/* Card H4 name */
+.pmt-affil-wrap .pmt-affil-card-name,
+.entry-content .pmt-affil-wrap h4.pmt-affil-card-name {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 6px !important;
+}
+
+/* Card badge */
+p.pmt-affil-card-badge,
+.entry-content p.pmt-affil-card-badge {
+  font-size: 12px !important;
+  color: #FF6000 !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 12px !important;
+  opacity: 1 !important;
+}
+
+/* Card text */
+.pmt-affil-wrap .pmt-affil-card-text {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* ════════════════════════════════
+   CERTIFICATES
+════════════════════════════════ */
+
+.pmt-cert-grid {
+  gap: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+.pmt-cert-card {
+  background: #f4f6fb !important;
+  border-radius: 10px !important;
+  border: 2px dashed rgba(37, 59, 128, 0.15) !important;
+  padding: 40px 24px !important;
+  text-align: center !important;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.pmt-cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.08);
+}
+
+.pmt-cert-icon {
+  font-size: 2rem !important;
+  display: block !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+}
+
+/* Cert H4 name */
+.pmt-affil-wrap .pmt-cert-name,
+.entry-content .pmt-affil-wrap h4.pmt-cert-name {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 0 6px !important;
+}
+
+.pmt-affil-wrap .pmt-cert-sub {
+  font-size: 13px !important;
+  color: #9098a9 !important;
+  margin: 0 !important;
+}
+
+/* Cert note */
+p.pmt-cert-note,
+.entry-content p.pmt-cert-note {
+  font-size: 14px !important;
+  color: #9098a9 !important;
+  margin-top: 16px !important;
+  opacity: 1 !important;
+}
+
+/* ════════════════════════════════
+   CONTACT STRIP
+════════════════════════════════ */
+
+.pmt-affil-contact-box {
+  background: #253b80 !important;
+  border-radius: 10px !important;
+  padding: 40px !important;
+}
+
+.pmt-affil-contact-inner {
+  align-items: center !important;
+  gap: 40px !important;
+}
+
+/* Contact H3 title */
+.pmt-affil-wrap .pmt-affil-contact-title,
+.entry-content .pmt-affil-wrap h3.pmt-affil-contact-title {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #FF6000 !important;
+  margin: 0 0 8px !important;
+  line-height: 1.3 !important;
+}
+
+.pmt-affil-contact-text .pmt-affil-contact-desc {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+  margin: 0 !important;
+  line-height: 1.7 !important;
+}
+
+/* Call label */
+p.pmt-affil-contact-call-label,
+.entry-content p.pmt-affil-contact-call-label {
+  font-size: 12px !important;
+  color: #FF6000 !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 6px !important;
+  opacity: 1 !important;
+}
+
+/* Phone H3 */
+.pmt-affil-wrap .pmt-affil-contact-phone,
+.entry-content .pmt-affil-wrap h3.pmt-affil-contact-phone {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+/* Email */
+.pmt-affil-contact-info .pmt-affil-contact-email {
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin: 6px 0 0 !important;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .pmt-affil-wrap {
+    padding: 0 16px !important;
+  }
+
+  .pmt-approval-grid .wp-block-column,
+  .pmt-cert-grid .wp-block-column,
+  .pmt-affil-contact-inner .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .pmt-affil-box {
+    flex-direction: column !important;
+    padding: 28px 20px !important;
+  }
+
+  .pmt-affil-contact-box {
+    padding: 28px 20px !important;
+  }
+
+  .pmt-affil-wrap .pmt-affil-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pmt-affil-wrap .pmt-affil-title {
+    font-size: 1.2rem !important;
+  }
+}

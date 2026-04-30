@@ -1,0 +1,380 @@
+/* ═══════════════════════════════════════
+   PMT CLUBS 
+═══════════════════════════════════════ */
+.entry-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* — Hide page title — */
+.pmt-clubs .entry-title,
+.pmt-clubs .entry-header { display: none !important; }
+
+/* — Remove theme padding — */
+.pmt-clubs #primary article.hentry {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+/* — Entry content full width — */
+.pmt-clubs .entry-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 40px 60px !important;
+}
+
+/* ── HERO LABEL ── */
+.pmt-clubs .wp-block-heading.has-text-align-center:first-of-type {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-bottom: 0 !important;
+  padding-top: 30px !important;
+  animation: clubsFadeDown 0.6s ease both;
+}
+
+.pmt-clubs .wp-block-heading.has-text-align-center:first-of-type::before,
+.pmt-clubs .wp-block-heading.has-text-align-center:first-of-type::after {
+  content: '' !important;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+}
+
+/* ── MAIN TITLE ── */
+.pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(2) {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  margin: 8px 0 14px !important;
+  animation: clubsFadeDown 0.6s ease 0.1s both;
+}
+
+/* ── SUBTITLE PARAGRAPH ── */
+.pmt-clubs .has-text-align-center:not(h2):not(h4) {
+  font-size: 17px !important;
+  color: #6b7280 !important;
+  line-height: 1.75 !important;
+  animation: clubsFadeUp 0.6s ease 0.2s both;
+}
+
+/* ── SECTION H3 DIVIDER ── */
+.pmt-clubs .wp-block-heading:is(h3) {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: #253b80 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid #253b80 !important;
+  margin: 32px 0 24px !important;
+  position: relative !important;
+}
+.pmt-clubs .wp-block-heading:is(h3)::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -2px !important;
+  left: 0 !important;
+  width: 80px !important;
+  height: 2px !important;
+  background: #FF6000 !important;
+}
+
+/* ── BADGE ── */
+.pmt-clubs .wp-block-heading:is(h3) .pmt-badge {
+  background: #179bd7 !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 12px !important;
+  border-radius: 20px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  margin-left: 8px !important;
+  vertical-align: middle !important;
+}
+
+/* ── COLUMNS WRAPPER ── */
+.pmt-clubs .wp-block-columns:first-of-type {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+  margin-bottom: 30px !important;
+  align-items: stretch !important;
+}
+
+/* ── EACH COLUMN = CARD ── */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column {
+  flex: 1 1 calc(33.333% - 16px) !important;
+  min-width: 220px !important;
+  max-width: calc(33.333% - 16px) !important;
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(37,59,128,0.08) !important;
+  box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  transition: margin 0.3s ease, box-shadow 0.3s ease !important;
+  animation: clubsFadeUp 0.6s ease both;
+}
+
+/* — Stagger delays — */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column:nth-child(1) { animation-delay: 0.1s; }
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column:nth-child(2) { animation-delay: 0.2s; }
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column:nth-child(3) { animation-delay: 0.3s; }
+
+/* — Card hover — */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column:hover {
+  margin-top: -6px !important;
+  margin-bottom: 6px !important;
+  box-shadow: 0 14px 32px rgba(37,59,128,0.16) !important;
+}
+
+/* ── CARD IMAGE ── */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-image {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-image img {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column:hover .wp-block-image img {
+  transform: scale(1.05) !important;
+}
+
+/* ── CARD NAME (p:1) ── */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(1) {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #253b80 !important;
+  margin: 0 !important;
+  padding: 16px 18px 6px !important;
+  border-top: 3px solid #FF6000 !important;
+  background: transparent !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid rgba(37,59,128,0.08) !important;
+  box-sizing: border-box !important;
+}
+
+/* ── CARD DESCRIPTION (p:2) ── */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(2) {
+  font-size: 13.5px !important;
+  color: #6b7280 !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  padding: 12px 18px !important;
+  background: transparent !important;
+  border: none !important;
+  box-sizing: border-box !important;
+}
+
+/* ── CARD LIST ── */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-list {
+  margin: 0 !important;
+  padding: 0 18px 18px !important;
+  list-style: none !important;
+  border-top: none !important;
+}
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-list li {
+  font-size: 13px !important;
+  color: #4b5563 !important;
+  padding: 5px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  list-style: none !important;
+}
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-list li::before {
+  content: '✓' !important;
+  color: #FF6000 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  flex-shrink: 0 !important;
+}
+
+/* ════════════════════════════════
+   CTA SECTION
+════════════════════════════════ */
+
+.club-cta {
+  border-radius: 10px !important;
+  padding: 48px 40px !important;
+  text-align: center !important;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.club-cta.pmt-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.club-cta.pmt-animate.pmt-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA H2 */
+.club-wrap .club-cta-title,
+.entry-content .club-wrap h2.club-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+}
+
+/* CTA text */
+.club-cta .club-cta-text {
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 24px !important;
+  line-height: 1.7 !important;
+}
+
+/* CTA buttons */
+.club-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  border: none !important;
+  transition: background 0.25s, transform 0.25s;
+}
+.club-cta-btn .wp-block-button__link:hover {
+  background: #e05500 !important;
+  transform: translateY(-2px);
+}
+
+.club-cta-btn-outline .wp-block-button__link {
+  background: transparent !important;
+  color: #f4f6fb !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 12px 30px !important;
+  text-decoration: none !important;
+  transition: background 0.25s;
+}
+.club-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes clubsFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes clubsFadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── MOBILE (max 768px) ── */
+@media(max-width:768px){
+  .pmt-clubs .entry-content { padding: 0 16px 40px !important; }
+
+  /* Center H3 heading in mobile */
+.pmt-clubs .wp-block-heading:is(h3) {
+  text-align: center !important;
+}
+
+.club-cta {
+    padding: 28px 16px !important;
+  }
+
+  .club-wrap .club-title {
+    font-size: 1.6rem !important;
+  }
+
+  .club-wrap .club-timeline-title,
+  .club-wrap .club-cta-title {
+    font-size: 1.4rem !important;
+  }
+/* Move badge to next line + center */
+.pmt-clubs .wp-block-heading:is(h3) .pmt-badge {
+  display: block !important;
+  margin: 6px auto 0 !important;
+  width: fit-content !important;
+}
+
+  .pmt-clubs .wp-block-columns:first-of-type {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .pmt-clubs .wp-block-columns:first-of-type .wp-block-column {
+    flex: 1 1 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+    padding: 12px !important; /* left + right spacing */
+  }
+  /* Image spacing inside card */
+  .pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-image {
+  padding: 0 0 8px !important;
+  }
+  /* Rounded image (optional but clean) */
+  .pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-image img {
+  border-radius: 8px !important;
+  }
+  .pmt-clubs .wp-block-columns:first-of-type .wp-block-column:hover {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .pmt-clubs .wp-block-columns:last-of-type {
+    flex-direction: column !important;
+    padding: 0 20px 32px !important;
+    align-items: center !important;
+  }
+  /* Heading (club name) */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(1) {
+  padding: 12px 10px 6px !important;
+}
+
+/* Description */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column p:nth-of-type(2) {
+  padding: 10px !important;
+}
+
+/* List section */
+.pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-list {
+  padding: 0 10px 12px !important;
+}
+}
+
+/* ── SMALL MOBILE (max 480px) ── */
+@media(max-width:480px){
+  
+  .pmt-clubs .wp-block-columns:first-of-type .wp-block-column .wp-block-image img {
+    height: 180px !important;
+    border-radius: 8px !important;
+  }
+ 
+  .pmt-clubs .wp-block-heading.has-text-align-center:nth-of-type(2) {
+    font-size: 1.2rem !important;
+  }
+}

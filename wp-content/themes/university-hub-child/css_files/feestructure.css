@@ -1,0 +1,249 @@
+/* ═══════════════════════════════════════
+   PMT FEE STRUCTURE — STYLES
+═══════════════════════════════════════ */
+
+.fee-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.fee-wrap *,
+.fee-wrap *::before,
+.fee-wrap *::after {
+  box-sizing: border-box;
+}
+
+.entry-content .fee-wrap h1,
+.entry-content .fee-wrap h2,
+.entry-content .fee-wrap h3,
+.entry-content .fee-wrap h4 {
+  clear: none ;
+  margin-top: 0 ;
+  padding-top: 0 ;
+}
+
+.entry-content .fee-wrap p:empty {
+  display: none ;
+  margin: 0 ;
+  padding: 0 ;
+}
+
+/* ════════════════════════════════
+   HEADER
+════════════════════════════════ */
+.fee-table-heading {
+  border-bottom: 3px solid #FF6000 ;
+  padding-bottom: 10px ;
+  display: inline-block ;
+}
+p.fee-label,
+.entry-content p.fee-label {
+  font-size: 12px ;
+  font-weight: 700 ;
+  letter-spacing: 2px ;
+  text-transform: uppercase ;
+  margin-bottom: 8px ;
+  margin-top: 0 ;
+  opacity: 1 ;
+}
+
+.fee-wrap .fee-main-title,
+.entry-content .fee-wrap h1.fee-main-title {
+  font-size: 2rem ;
+  font-weight: 700 ;
+  margin: 0 0 10px ;
+  line-height: 1.3 ;
+}
+
+.fee-wrap .fee-sub-title,
+.entry-content .fee-wrap h2.fee-sub-title {
+  font-size: 1.1rem ;
+  font-weight: 600 ;
+  letter-spacing: 0.5px ;
+  margin: 0 0 10px ;
+}
+
+.fee-wrap .fee-intro-text {
+  font-size: 15px ;
+  max-width: 500px ;
+  margin: 0 auto ;
+  line-height: 1.7 ;
+}
+
+/* ════════════════════════════════
+   TABLES — SHARED
+════════════════════════════════ */
+
+.fee-table-heading {
+  font-size: 1.1rem ;
+  font-weight: 700 ;
+  margin: 0 0 14px ;
+  padding-bottom: 10px ;
+  border-bottom: 3px solid rgba(37,59,128,0.15) ;
+}
+
+.fee-table {
+  border-radius: 10px ;
+  overflow: hidden ;
+ box-shadow: 0 2px 12px rgba(37,59,128,0.06) ;
+  margin-bottom: 0 ;
+}
+
+.fee-table table {
+  width: 100% ;
+  border-collapse: collapse ;
+  font-size: 14px ;
+}
+
+/* ── Header row ── */
+.fee-table thead tr th {
+  padding: 14px 18px ;
+  text-align: center ;
+  font-weight: 700 ;
+  font-size: 13px ;
+  letter-spacing: 0.5px ;
+  border: none ;
+}
+
+/* ── Body rows ── */
+.fee-table tbody td {
+ border: 1px solid rgba(37,59,128,0.06) ;
+  padding: 12px 18px ;
+  text-align: center ;
+  font-size: 14px ;
+  transition: background 0.2s ;
+}
+
+/* First column left aligned */
+.fee-table tbody td:first-child {
+  text-align: left ;
+  font-weight: 600 ;
+  padding-left: 20px ;
+}
+
+/* Row hover — only shadow/bg tint, no color */
+.fee-table tbody tr:hover td {
+  background: rgba(37,59,128,0.04) ;
+}
+
+/* colspan section rows */
+.fee-table tbody tr td[colspan] {
+  font-weight: 700 ;
+  text-align: left ;
+  padding-left: 20px ;
+ border-left: 3px solid rgba(255,96,0,0.4) ;
+}
+
+/* ── Note ── */
+.fee-table-note {
+  font-size: 13px ;
+  font-weight: 600 ;
+  border-left: 4px solid rgba(255,96,0,0.7) ;
+  background: rgba(255,243,205,0.6) ;
+  padding: 10px 14px ;
+  border-radius: 0 6px 6px 0 ;
+  margin-top: 10px ;
+  display: block ;
+}
+
+/* ════════════════════════════════
+   NOTE BOX
+════════════════════════════════ */
+
+.fee-note {
+  border-radius: 10px ;
+  padding: 28px 24px ;
+  display: flex ;
+  align-items: flex-start ;
+  gap: 20px ;
+  box-shadow: 0 4px 20px rgba(37,59,128,0.15) ;
+}
+
+p.fee-note-icon {
+  font-size: 14px ;
+  font-weight: 700 ;
+  margin: 0 0 8px ;
+  letter-spacing: 1px ;
+  text-transform: uppercase ;
+  display: flex ;
+  align-items: center ;
+  gap: 8px ;
+  opacity: 1 ;
+}
+
+.fee-note-content {
+  flex: 1 ;
+}
+
+.fee-note-text {
+  font-size: 14px ;
+  line-height: 1.7 ;
+  margin: 0 ;
+  opacity: 0.85 ;
+}
+.fee-table tbody tr:empty,
+.fee-table tbody td:empty {
+  display: none ;
+}
+
+.fee-wrap .wp-block-group:empty {
+  display: none ;
+  margin: 0 ;
+  padding: 0 ;
+}
+.fee-table tbody tr td:only-child:empty {
+  display: none ;
+}
+
+.fee-table tbody tr:last-child:empty {
+  display: none ;
+}
+.fee-table-heading {
+  border-bottom: none ;
+}
+
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .fee-wrap { padding: 0 16px ; }
+  .fee-wrap .fee-main-title { font-size: 1.6rem ; }
+ .fee-note {
+  padding: 16px !important;
+  gap: 8px !important;
+}
+   .fee-wrap .fee-note {
+  margin-left: -16px;
+  margin-right: -16px;
+  border-radius: 0;
+}
+   .fee-table {
+  overflow-x: auto ;
+  display: block ;
+}
+.fee-table table {
+  min-width: 480px ;
+   font-size: 12px ;
+}
+  .fee-table thead tr th { padding: 10px 8px ; font-size: 11px ; }
+  .fee-table tbody td { padding: 10px 8px ; font-size: 12px ; }
+  .fee-table tbody td:first-child { padding-left: 10px ; }
+    .fee-wrap.wp-block-group,
+  .fee-wrap .wp-block-group {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .fee-wrap .fee-main-title { font-size: 1.4rem ; }
+  .fee-table table { font-size: 11px ; 
+                   min-width: 400px ;
+                   }
+  .fee-table thead tr th,
+  .fee-table tbody td { padding: 8px 5px ; }
+}
