@@ -262,12 +262,16 @@ function pmt_news_ticker_script() {
 ?>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const tickers = document.querySelectorAll(".news-ticker-inner-wrap");
+  const tickers = document.querySelectorAll(".pmt-latest-news-shortcut-scroll");
 
   tickers.forEach(ticker => {
-    if (!ticker.classList.contains("ticker-duplicated")) {
-      ticker.innerHTML += ticker.innerHTML;
-      ticker.classList.add("ticker-duplicated");
+    if (!ticker.classList.contains("duplicated")) {
+
+      const content = ticker.innerHTML;
+      ticker.insertAdjacentHTML("beforeend", content);
+      ticker.insertAdjacentHTML("beforeend", content); // 🔥 triple
+
+      ticker.classList.add("duplicated");
     }
   });
 });
