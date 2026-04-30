@@ -2735,29 +2735,22 @@ article.hentry,
     width: 100% !important;
     max-height: none !important;
     overflow: hidden !important;
-    position: relative;
+    white-space: nowrap !important;
   }
 
-  /* Create inner scrolling track */
   #news-ticker a {
     display: inline-block;
     white-space: nowrap;
-    position: absolute;
-    will-change: transform;
+    padding-left: 100%; /* start from right */
     animation: ticker-scroll 18s linear infinite;
   }
 
-  /* Start fully from right, move to left */
   @keyframes ticker-scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 
-  /* Pause on interaction */
+  /* Pause on touch/hover */
   #news-ticker a:hover,
   #news-ticker a:active {
     animation-play-state: paused;
