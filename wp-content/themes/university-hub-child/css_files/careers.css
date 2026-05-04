@@ -568,16 +568,17 @@ p.pmt-careers-label::after {
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
- .pmt-careers-wrap.wp-block-group {
+  .page-id-3755 .entry-content {
+    padding: 0 16px !important;
+  }
+  .pmt-careers-wrap.wp-block-group {
     padding-left: 16px !important;
     padding-right: 16px !important;
-}
-
+  }
   .pmt-careers-intro .wp-block-column {
     flex-basis: 100% !important;
     min-width: 100% !important;
   }
-
   .pmt-careers-wrap .pmt-careers-title {
     font-size: 1.4rem !important;
   }
