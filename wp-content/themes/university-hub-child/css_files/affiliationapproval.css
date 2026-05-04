@@ -272,7 +272,20 @@ p.pmt-cert-note,
   margin-top: 16px !important;
   opacity: 1 !important;
 }
+.pmt-cert-btn .wp-block-button__link {
+    background: #253b80;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+    transition: background 0.3s;
+}
 
+.pmt-cert-btn .wp-block-button__link:hover {
+    background: #FF6000;
+    color: #fff;
+}
 /* ════════════════════════════════
    CONTACT STRIP
 ════════════════════════════════ */
