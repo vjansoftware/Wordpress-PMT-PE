@@ -287,6 +287,50 @@ p.pmt-cert-note,
     color: #fff;
 }
 /* ════════════════════════════════
+   FILE BLOCK BUTTONS
+════════════════════════════════ */
+
+.pmt-cert-card .wp-block-file {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 16px !important;
+}
+
+/* View link */
+.pmt-cert-card .wp-block-file > a:not(.wp-block-file__button) {
+  background: transparent !important;
+  color: #253b80 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  padding: 0 !important;
+  transition: color 0.3s !important;
+}
+
+.pmt-cert-card .wp-block-file > a:not(.wp-block-file__button):hover {
+  color: #FF6000 !important;
+}
+
+/* Download button */
+.pmt-cert-card .wp-block-file__button {
+  background: #253b80 !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 8px 20px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  transition: background 0.3s !important;
+  display: inline-block !important;
+}
+
+.pmt-cert-card .wp-block-file__button:hover {
+  background: #FF6000 !important;
+  color: #fff !important;
+}
+/* ════════════════════════════════
    CONTACT STRIP
 ════════════════════════════════ */
 
