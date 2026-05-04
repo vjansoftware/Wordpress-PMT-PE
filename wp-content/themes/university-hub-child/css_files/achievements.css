@@ -535,6 +535,11 @@ p.achieve-section-title span {
     padding-top: 24px;
   }
 
+  .achieve-section-title {
+    font-size: 1rem !important;
+    padding-top: 16px;
+  }
+
   .achieve-stats {
     flex-direction: column !important;
     gap: 12px !important;
