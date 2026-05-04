@@ -528,7 +528,7 @@ p.achieve-section-title span {
 
 @media (max-width: 768px) {
   .achieve-wrap {
-    padding: 0 16px !important;
+    padding: 16px 16px !important;
   }
 
   .achieve-hero {
