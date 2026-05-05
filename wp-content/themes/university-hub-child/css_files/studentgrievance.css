@@ -422,7 +422,9 @@ p.gr-section-label::after {
     flex-basis: 100% !important;
     min-width: 100% !important;
   }
-
+   p.gr-section-label {
+    margin-top: 30px !important;
+  }
   .gr-img img {
     height: 240px !important;
     padding-top: 16px !important;
