@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════
    PMT EXTRAMURAL — STYLES
-   Colors & fonts matching other pages
+   Colors via global classes (no hardcoded colors)
 ═══════════════════════════════════════ */
 
 .extra-wrap {
@@ -41,6 +41,7 @@
   margin-bottom: 40px;
 }
 
+/* Label — color via .third-priority-page-color in HTML */
 p.extra-label,
 p.extra-label.has-text-align-center,
 .entry-content p.extra-label,
@@ -67,9 +68,11 @@ p.extra-label.has-text-align-center::after {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
+  background: currentColor !important; /* inherits from .third-priority-page-color */
   flex-shrink: 0 !important;
 }
 
+/* Title — color via .primary-page-color in HTML */
 .extra-wrap .extra-title,
 .entry-content .extra-wrap h1.extra-title,
 body .wp-block-group.extra-wrap h1.extra-title,
@@ -80,11 +83,13 @@ body h1.extra-title {
   line-height: 1.3 !important;
 }
 
+/* Sub — color via global class or default text */
 .extra-wrap .extra-sub {
   font-size: 15px !important;
   max-width: 680px !important;
   margin: 0 auto !important;
   line-height: 1.7 !important;
+  text-align: justify !important;
 }
 
 /* ════════════════════════════════
@@ -111,6 +116,7 @@ body h1.extra-title {
   padding: 0 !important;
 }
 
+/* Split title — color via .primary-page-color in HTML */
 .extra-wrap .extra-split-title,
 .entry-content .extra-wrap h2.extra-split-title {
   font-size: 1.6rem !important;
@@ -120,6 +126,7 @@ body h1.extra-title {
   position: relative !important;
 }
 
+/* Underline accent — color via currentColor (inherits from .primary-page-color) */
 .extra-wrap .extra-split-title::after {
   content: '';
   display: block;
@@ -127,6 +134,7 @@ body h1.extra-title {
   height: 3px;
   margin-top: 8px;
   border-radius: 2px;
+  background: currentColor;
   transition: width 0.4s ease;
 }
 
@@ -134,17 +142,21 @@ body h1.extra-title {
   width: 140px;
 }
 
+/* Split text — color via default or .secondary-page-color in HTML */
 .extra-wrap .extra-split-text {
   font-size: 14px !important;
   line-height: 1.7 !important;
   margin: 0 0 12px !important;
+  text-align: justify !important;
 }
 
-/* Blockquote */
+/* Blockquote — border/color via .primary-page-color in HTML */
 .extra-wrap .extra-quote {
+  border-left: 4px solid currentColor !important;
   border-radius: 0 10px 10px 0 !important;
   padding: 14px 20px !important;
   margin: 16px 0 0 !important;
+  background: #f4f6fb !important;
   position: relative !important;
   overflow: hidden !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
@@ -218,6 +230,7 @@ body h1.extra-title {
   padding: 16px 20px 20px !important;
 }
 
+/* Card tag — color via .third-priority-page-color in HTML */
 p.extra-card-tag,
 .entry-content p.extra-card-tag {
   font-size: 12px !important;
@@ -229,6 +242,7 @@ p.extra-card-tag,
   opacity: 1 !important;
 }
 
+/* Card title — color via .primary-page-color in HTML */
 .extra-wrap .extra-card-title,
 .entry-content .extra-wrap h3.extra-card-title {
   font-size: 16px !important;
@@ -241,6 +255,7 @@ p.extra-card-tag,
   font-size: 13px !important;
   line-height: 1.6 !important;
   margin: 0 !important;
+  text-align: justify !important;
 }
 
 /* ── Scroll animations ── */
@@ -267,6 +282,7 @@ p.extra-card-tag,
   text-align: center;
 }
 
+/* CTA title — color via .third-priority-page-color in HTML */
 .extra-wrap .extra-cta-title,
 .entry-content .extra-wrap h2.extra-cta-title {
   font-size: 1.8rem !important;
@@ -276,14 +292,15 @@ p.extra-card-tag,
   line-height: 1.3 !important;
 }
 
+/* CTA text — color via .secondary-page-color in HTML */
 .extra-cta .extra-cta-text {
   font-size: 15px !important;
   margin-bottom: 24px !important;
   line-height: 1.7 !important;
 }
 
+/* CTA primary button — bg via .third-priority-page-color-b in HTML */
 .extra-cta-btn .wp-block-button__link {
-  background: #FF6000 !important;
   color: #fff !important;
   border-radius: 6px !important;
   font-size: 14px !important;
@@ -291,14 +308,15 @@ p.extra-card-tag,
   padding: 12px 30px !important;
   text-decoration: none !important;
   border: none !important;
-  transition: background 0.25s, transform 0.25s;
+  transition: filter 0.25s, transform 0.25s;
 }
 
 .extra-cta-btn .wp-block-button__link:hover {
-  background: #e05500 !important;
+  filter: brightness(0.88) !important;
   transform: translateY(-2px);
 }
 
+/* CTA outline button — border/color stays neutral */
 .extra-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
   color: #f4f6fb !important;
@@ -316,7 +334,21 @@ p.extra-card-tag,
 }
 
 /* ════════════════════════════════
-   RESPONSIVE
+   RESPONSIVE — TABLET
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .extra-wrap {
+    padding: 0 24px !important;
+  }
+
+  .extra-wrap .extra-split-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — MOBILE
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
@@ -346,7 +378,22 @@ p.extra-card-tag,
   .extra-wrap .extra-split-title {
     font-size: 1.4rem !important;
   }
+
+  .extra-wrap .extra-sub,
+  .extra-wrap .extra-split-text,
+  .extra-wrap .extra-card-text {
+    font-size: 13.5px !important;
+    text-align: justify !important;
+  }
+
+  .extra-hero {
+    margin-bottom: 24px !important;
+  }
 }
+
+/* ════════════════════════════════
+   RESPONSIVE — SMALL MOBILE
+════════════════════════════════ */
 
 @media (max-width: 480px) {
   .extra-wrap .extra-title {
@@ -355,5 +402,32 @@ p.extra-card-tag,
 
   .extra-wrap .extra-cta-title {
     font-size: 1.2rem !important;
+  }
+
+  .extra-wrap .extra-split-title {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .extra-wrap .extra-sub,
+  .extra-wrap .extra-split-text {
+    font-size: 13px !important;
+    line-height: 1.8 !important;
+  }
+
+  .extra-cta {
+    padding: 20px 12px !important;
+  }
+}
+
+/* ════════════════════════════════
+   REDUCED MOTION
+════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
