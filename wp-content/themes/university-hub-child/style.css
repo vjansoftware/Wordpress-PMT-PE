@@ -2626,47 +2626,7 @@ article.hentry,
         flex-direction: column;
     }
 }
-add_action('wp_footer', function() {
-?>
-<script>
-jQuery(function($){
 
-  if ($(window).width() <= 768) {
-
-    var ticker = $('#news-ticker');
-    if (!ticker.length) return;
-
-    var text = ticker.text().trim();
-    if (!text) return;
-
-    ticker.html(
-      '<div id="mobile-ticker">' + text + '</div>'
-    );
-
-    $('<style>').text(`
-      #news-ticker {
-        overflow: hidden;
-        white-space: nowrap;
-      }
-
-      #mobile-ticker {
-        display: inline-block;
-        padding-left: 100%;
-        animation: scroll-left 20s linear infinite;
-      }
-
-      @keyframes scroll-left {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-      }
-    `).appendTo('head');
-
-  }
-
-});
-</script>
-<?php
-});
 @media (max-width: 768px) {
 
   /* Force vertical stacking */
