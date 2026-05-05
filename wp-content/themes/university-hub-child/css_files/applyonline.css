@@ -242,8 +242,8 @@
 
 /* ── LEFT card — How to Apply ── */
 .page-id-903 .has-white-background-color.has-background .wp-block-columns > .wp-block-column:first-child {
-  flex: 1 1 100% !important;
-  min-width: 100% !important;
+  flex: 1 1 calc(50% - 12px) !important;
+  min-width: 260px;
   background: #ffffff !important;
   border: 1.5px solid rgba(0,0,0,0.10) !important;
   border-top: 4px solid #253b80 !important;
@@ -251,6 +251,9 @@
   padding: 28px !important;
   box-shadow: 0 8px 24px rgba(0,0,0,0.07) !important;
   box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.6s ease forwards 0.1s;
 }
 
 .page-id-903 .has-white-background-color.has-background .wp-block-columns > .wp-block-column:first-child:hover {
@@ -260,10 +263,22 @@
 
 /* ── RIGHT card — Download ── */
 .page-id-903 .has-white-background-color.has-background .wp-block-columns > .wp-block-column:last-child {
-  display: none !important;
+  flex: 1 1 calc(50% - 12px) !important;
+  min-width: 260px;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(0,0,0,0.10) !important;
+  border-top: 4px solid #253b80 !important;
+  border-radius: 12px !important;
+  padding: 28px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07) !important;
+  box-sizing: border-box;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 0.6s ease forwards 0.2s;
 }
-
-
 
 .page-id-903 .has-white-background-color.has-background .wp-block-columns > .wp-block-column:last-child:hover {
   transform: translateY(-4px) !important;
