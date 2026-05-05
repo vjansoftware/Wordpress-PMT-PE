@@ -292,11 +292,12 @@ p.extra-card-tag,
   line-height: 1.3 !important;
 }
 
-/* CTA text — color via .secondary-page-color in HTML */
+/* CTA text — white on dark navy background */
 .extra-cta .extra-cta-text {
   font-size: 15px !important;
   margin-bottom: 24px !important;
   line-height: 1.7 !important;
+  color: #fff !important;
 }
 
 /* CTA primary button — bg via .third-priority-page-color-b in HTML */
