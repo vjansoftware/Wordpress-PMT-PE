@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════
    PMT INTRAMURAL — STYLES
-   Colors & fonts matching Indoor Sports
+   Colors via global classes (no hardcoded colors)
 ═══════════════════════════════════════ */
 
 .intra-wrap {
@@ -44,6 +44,7 @@
   margin-bottom: 40px;
 }
 
+/* Label — color via .third-priority-page-color in HTML */
 p.intra-label,
 .entry-content p.intra-label {
   font-size: 12px !important;
@@ -59,16 +60,18 @@ p.intra-label,
   opacity: 1 !important;
 }
 
+/* Lines inherit color from .third-priority-page-color */
 p.intra-label::before,
 p.intra-label::after {
   content: '';
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: #FF6000;
+  background: currentColor;
   flex-shrink: 0;
 }
 
+/* Title — color via .primary-page-color in HTML */
 .intra-wrap .intra-title,
 .entry-content .intra-wrap h1.intra-title {
   font-size: 2rem !important;
@@ -77,12 +80,13 @@ p.intra-label::after {
   line-height: 1.3 !important;
 }
 
+/* Sub — plain dark text, no color class needed */
 .intra-wrap .intra-sub {
   font-size: 15px !important;
-  color: #4b5563 !important;
   max-width: 680px !important;
   margin: 0 auto !important;
   line-height: 1.7 !important;
+  text-align: center !important;
 }
 
 /* ════════════════════════════════
@@ -102,13 +106,14 @@ p.intra-label::after {
 .intra-split-media .wp-block-jetpack-slideshow {
   border-radius: 10px !important;
   overflow: hidden !important;
-  box-shadow: 0 8px 28px rgba(37, 59, 128, 0.13) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.13) !important;
 }
 
 .intra-split-content {
   padding: 0 !important;
 }
 
+/* Split title — color via .primary-page-color in HTML */
 .intra-wrap .intra-split-title,
 .entry-content .intra-wrap h2.intra-split-title {
   font-size: 1.6rem !important;
@@ -118,12 +123,13 @@ p.intra-label::after {
   position: relative !important;
 }
 
+/* Underline inherits from .primary-page-color */
 .intra-wrap .intra-split-title::after {
   content: '';
   display: block;
   width: 50px;
   height: 3px;
-  background: #FF6000;
+  background: currentColor;
   margin-top: 8px;
   border-radius: 2px;
   transition: width 0.4s ease;
@@ -133,16 +139,17 @@ p.intra-label::after {
   width: 140px;
 }
 
+/* Split text — plain dark, no color class */
 .intra-wrap .intra-split-text {
   font-size: 14px !important;
-  color: #4b5563 !important;
   line-height: 1.7 !important;
   margin: 0 0 12px !important;
+  text-align: justify !important;
 }
 
-/* Blockquote */
+/* Blockquote — border/color via .primary-page-color in HTML */
 .intra-split-content .wp-block-quote {
-  border-left: 4px solid #253b80 !important;
+  border-left: 4px solid currentColor !important;
   background: #f4f6fb !important;
   border-radius: 0 10px 10px 0 !important;
   padding: 14px 20px !important;
@@ -154,13 +161,12 @@ p.intra-label::after {
 
 .intra-split-content .wp-block-quote:hover {
   transform: translateX(5px) !important;
-  box-shadow: 4px 4px 20px rgba(37, 59, 128, 0.1) !important;
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.1) !important;
 }
 
 .intra-split-content .wp-block-quote::before {
   content: '"';
   font-size: 80px;
-  color: #253b80;
   opacity: 0.07;
   position: absolute;
   top: -15px;
@@ -172,7 +178,6 @@ p.intra-label::after {
 
 .intra-split-content .wp-block-quote p {
   font-size: 14px !important;
-  color: #253b80 !important;
   font-style: italic !important;
   font-weight: 600 !important;
   margin: 0 !important;
@@ -191,15 +196,15 @@ p.intra-label::after {
   background: #fff !important;
   border-radius: 10px !important;
   overflow: hidden !important;
-  border: 1px solid rgba(37, 59, 128, 0.08) !important;
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
   padding: 0 !important;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .intra-card:hover {
   transform: translateY(-6px) !important;
-  box-shadow: 0 16px 40px rgba(37, 59, 128, 0.14) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.14) !important;
 }
 
 .intra-card-img {
@@ -219,35 +224,38 @@ p.intra-label::after {
   transform: scale(1.06) !important;
 }
 
+/* Card body top border — uses currentColor from .third-priority-page-color-b on .intra-card-body */
 .intra-card-body {
   padding: 16px 20px 20px !important;
-  border-top: 3px solid #FF6000 !important;
+  border-top: 3px solid currentColor !important;
 }
 
-.intra-card-tag {
+/* Card tag — color via .third-priority-page-color in HTML */
+p.intra-card-tag,
+.entry-content p.intra-card-tag {
   font-size: 12px !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
   margin: 0 0 6px !important;
   display: block !important;
+  opacity: 1 !important;
 }
 
+/* Card title — color via .primary-page-color in HTML */
 .intra-wrap .intra-card-title,
 .entry-content .intra-wrap h3.intra-card-title {
   font-size: 16px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 8px !important;
   line-height: 1.4 !important;
 }
 
 .intra-wrap .intra-card-text {
   font-size: 13px !important;
-  color: #4b5563 !important;
   line-height: 1.6 !important;
   margin: 0 !important;
+  text-align: justify !important;
 }
 
 /* ── Scroll animations ── */
@@ -285,6 +293,7 @@ p.intra-label::after {
   transform: translateY(0);
 }
 
+/* Highlight title — color via .primary-page-color in HTML */
 .intra-wrap .intra-highlight-title,
 .entry-content .intra-wrap h2.intra-highlight-title {
   font-size: 1.8rem !important;
@@ -302,29 +311,29 @@ p.intra-label::after {
   align-items: center !important;
   padding: 14px 18px !important;
   border-radius: 8px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
   transition: background 0.25s;
 }
 
 .intra-highlight-item:hover {
-  background: rgba(255, 255, 255, 0.14) !important;
+  background: rgba(255,255,255,0.14) !important;
 }
 
+/* Item text — color via .primary-page-color in HTML */
 .intra-highlight-item p {
   margin: 0 !important;
   font-size: 14px !important;
-  color: #4b5563 !important;
   font-weight: 500 !important;
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
 }
 
+/* Dot — bg via .third-priority-page-color-b in HTML */
 .intra-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #FF6000;
   flex-shrink: 0;
   display: inline-block;
 }
@@ -350,6 +359,7 @@ p.intra-label::after {
   transform: translateY(0);
 }
 
+/* CTA title — color via .third-priority-page-color in HTML */
 .intra-wrap .intra-cta-title,
 .entry-content .intra-wrap h2.intra-cta-title {
   font-size: 1.8rem !important;
@@ -359,15 +369,16 @@ p.intra-label::after {
   line-height: 1.3 !important;
 }
 
+/* CTA text — white on dark navy bg */
 .intra-cta .intra-cta-text {
   font-size: 15px !important;
-  color: #f4f6fb !important;
+  color: #fff !important;
   margin-bottom: 24px !important;
   line-height: 1.7 !important;
 }
 
+/* CTA primary button — bg via .third-priority-page-color-b in HTML */
 .intra-cta-btn .wp-block-button__link {
-  background: #FF6000 !important;
   color: #fff !important;
   border-radius: 6px !important;
   font-size: 14px !important;
@@ -375,14 +386,15 @@ p.intra-label::after {
   padding: 12px 30px !important;
   text-decoration: none !important;
   border: none !important;
-  transition: background 0.25s, transform 0.25s;
+  transition: filter 0.25s, transform 0.25s;
 }
 
 .intra-cta-btn .wp-block-button__link:hover {
-  background: #e05500 !important;
+  filter: brightness(0.88) !important;
   transform: translateY(-2px);
 }
 
+/* CTA outline button */
 .intra-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
   color: #f4f6fb !important;
@@ -396,11 +408,25 @@ p.intra-label::after {
 }
 
 .intra-cta-btn-outline .wp-block-button__link:hover {
-  background: rgba(37, 59, 128, 0.06) !important;
+  background: rgba(0,0,0,0.06) !important;
 }
 
 /* ════════════════════════════════
-   RESPONSIVE
+   RESPONSIVE — TABLET
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .intra-wrap {
+    padding: 0 24px !important;
+  }
+
+  .intra-wrap .intra-split-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — MOBILE
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
@@ -432,10 +458,25 @@ p.intra-label::after {
   }
 
   .intra-wrap .intra-highlight-title,
-  .intra-wrap .intra-cta-title {
+  .intra-wrap .intra-cta-title,
+  .intra-wrap .intra-split-title {
     font-size: 1.4rem !important;
   }
+
+  .intra-wrap .intra-sub,
+  .intra-wrap .intra-split-text,
+  .intra-wrap .intra-card-text {
+    font-size: 13.5px !important;
+  }
+
+  .intra-hero {
+    margin-bottom: 24px !important;
+  }
 }
+
+/* ════════════════════════════════
+   RESPONSIVE — SMALL MOBILE
+════════════════════════════════ */
 
 @media (max-width: 480px) {
   .intra-wrap .intra-title {
@@ -444,5 +485,26 @@ p.intra-label::after {
 
   .intra-wrap .intra-cta-title {
     font-size: 1.2rem !important;
+  }
+
+  .intra-wrap .intra-split-title {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .intra-cta {
+    padding: 20px 12px !important;
+  }
+}
+
+/* ════════════════════════════════
+   REDUCED MOTION
+════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
