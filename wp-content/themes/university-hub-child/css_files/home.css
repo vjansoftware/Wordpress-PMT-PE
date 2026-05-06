@@ -363,7 +363,7 @@ p.pmt-stat-lbl {
 .pmt-about-content-col .wp-block-columns,
 .pmt-courses-content-col .wp-block-columns {
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 20 !important;
   padding: 0 !important;
 }
 
@@ -568,6 +568,7 @@ p.pmt-sport-sub {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+   padding-bottom: 20px !important;
   gap: 24px !important;
   border: none !important;
 }
@@ -658,7 +659,7 @@ p.pmt-news-text {
 .pmt-elig-section .pmt-elig-card.wp-block-column {
   background: #fff !important;
   border-radius: 12px !important;
-  padding: 34px 28px 28px 28px !important;
+  padding: 14px 28px 28px 28px !important;
   border: 1px solid rgba(37,59,128,0.08) !important;
   border-top: 4px solid #FF6000 !important;
   box-shadow: 0 2px 12px rgba(37,59,128,0.06) !important;
@@ -960,7 +961,27 @@ p.pmt-contact-sub a {
   .pmt-section-header.wp-block-group { padding: 0 24px !important; }
   h2.pmt-section-h2 { font-size: 1.7rem !important; }
 }
+/* ── NEWS + ADMISSION LAYOUT FIX ── */
+.pmt-home-layout {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
 
+@media (max-width: 768px) {
+  .pmt-home-layout {
+    flex-direction: column !important;
+    padding: 0 16px !important;
+  }
+
+  .pmt-home-layout .left,
+  .pmt-home-layout .right {
+    width: 100% !important;
+    flex: none !important;
+  }
+}
 /* ════════════════════════════════
    RESPONSIVE — MOBILE (max 640px)
 ════════════════════════════════ */
