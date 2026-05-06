@@ -370,8 +370,8 @@ p.pmt-stat-lbl {
 .pmt-about-content-col .wp-block-columns,
 .pmt-courses-content-col .wp-block-columns {
   margin-top: 0 !important;
-  margin-bottom: 20px !important;
-  padding: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 0 20px 0 !important;
 }
 
 .pmt-feat-item.wp-block-column {
