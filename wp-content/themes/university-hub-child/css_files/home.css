@@ -1017,6 +1017,8 @@ p.pmt-contact-sub a {
   .pmt-year-lbl { font-size: 10px !important; }
 
   .pmt-feats-grid.wp-block-columns { display: block !important; gap: 0 !important; row-gap: 0 !important; margin: 0 !important; padding: 0 !important; }
+
+.pmt-feats-grid.wp-block-columns:last-of-type { padding-bottom: 20px !important; }
   .pmt-feats-grid .wp-block-column,
   .pmt-feat-item.wp-block-column { width: 100% !important; min-width: 100% !important; flex-basis: 100% !important; margin: 0 !important; padding: 4px 0 !important; }
   .pmt-feat-item p { margin: 0 !important; padding: 0 !important; line-height: 1.4 !important; }
