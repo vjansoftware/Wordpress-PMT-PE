@@ -2626,3 +2626,40 @@ article.hentry,
         flex-direction: column;
     }
 }
+/* Remove right whitespace */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/* Remove unwanted in post news */
+.single-post .entry-content > .wp-block-group {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .single-post .entry-content > .wp-block-group {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+.single-post .entry-meta,
+.single-post .posted-on,
+.single-post .byline {
+  display: none !important;
+}
+.single-post .related-posts,
+.single-post #related-posts,
+.single-post .post-navigation,
+.single-post .nav-links,
+.single-post .navigation.post-navigation {
+  display: none !important;
+}
+.single-post .related-posts,
+.single-post .sharedaddy,
+.single-post .jp-relatedposts,
+.single-post #jp-relatedposts,
+.single-post .entry-footer,
+.single-post .post-navigation {
+  display: none !important;
+}
