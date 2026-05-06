@@ -363,7 +363,7 @@ p.pmt-stat-lbl {
 }
 
 .pmt-feats-grid.wp-block-columns + .pmt-feats-grid.wp-block-columns {
-  margin-top: 0 !important;
+  margin-top: 10px !important;
 }
 
 .pmt-about-content-col .wp-block-columns,
