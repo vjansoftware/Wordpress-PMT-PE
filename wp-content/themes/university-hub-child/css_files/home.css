@@ -95,7 +95,10 @@
   padding-top: 30px !important;
   padding-bottom: 30px !important;
 }
-
+.pmt-about-content-col .pmt-feats-grid:last-child,
+.pmt-courses-content-col .pmt-feats-grid:last-child {
+  margin-bottom: 24px !important;
+}
 /* ════════════════════════════════
    SHARED — SECTION TAG
 ════════════════════════════════ */
@@ -479,7 +482,9 @@ p.pmt-stat-lbl {
 .pmt-courses-content-col h2.pmt-section-h2 {
   text-align: left !important;
 }
-
+.pmt-courses-content-col .wp-block-buttons {
+  margin-top: 24px !important;
+}
 .pmt-outline-btn .wp-block-button__link {
   background: transparent !important;
   color: #253b80 !important;
