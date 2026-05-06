@@ -70,7 +70,9 @@
 .pmt-docs-section {
   background: #f8fafc !important;
 }
-
+.pmt-latest-news-shortcut-container {
+  margin: 0 40px !important;
+}
 /* ════════════════════════════════
    SECTION PADDING — single source of truth
 ════════════════════════════════ */
@@ -82,7 +84,7 @@
 .pmt-elig-section,
 .pmt-docs-section {
   padding-top: 30px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 30px !important;
 }
 
 .pmt-about-section {
@@ -378,6 +380,7 @@ p.pmt-stat-lbl {
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
+  margin-bottom: 6px !important;
   font-size: 14px !important;
   color: #3d4557 !important;
   font-weight: 500 !important;
