@@ -83,8 +83,8 @@
 .pmt-news-section,
 .pmt-elig-section,
 .pmt-docs-section {
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 
 .pmt-about-section {
@@ -92,8 +92,8 @@
 }
 
 .pmt-contact-section {
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 .pmt-about-content-col .pmt-feats-grid:last-child,
 .pmt-courses-content-col .pmt-feats-grid:last-child {
@@ -183,6 +183,7 @@ p.pmt-body-text {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
+  padding-bottom: 30px !important;
   text-align: center !important;
   border: none !important;
 }
@@ -999,6 +1000,23 @@ p.pmt-contact-sub a {
     padding-bottom: 20px !important;
   }
 
+  /* ── News + Admission layout ── */
+  .pmt-home-layout {
+    flex-direction: column !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .pmt-home-layout .left,
+  .pmt-home-layout .right {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .pmt-latest-news-shortcut-container {
+    margin: 0 !important;
+  }
+
   .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; display: flex !important; }
   .pmt-stat-item.wp-block-column {
     flex-basis: 50% !important;
@@ -1023,7 +1041,7 @@ p.pmt-contact-sub a {
 
   .pmt-feats-grid.wp-block-columns { display: block !important; gap: 0 !important; row-gap: 0 !important; margin: 0 !important; padding: 0 !important; }
 
-.pmt-feats-grid.wp-block-columns:last-of-type { padding-bottom: 20px !important; }
+  .pmt-feats-grid.wp-block-columns:last-of-type { padding-bottom: 20px !important; }
   .pmt-feats-grid .wp-block-column,
   .pmt-feat-item.wp-block-column { width: 100% !important; min-width: 100% !important; flex-basis: 100% !important; margin: 0 !important; padding: 4px 0 !important; }
   .pmt-feat-item p { margin: 0 !important; padding: 0 !important; line-height: 1.4 !important; }
