@@ -83,8 +83,8 @@
 .pmt-news-section,
 .pmt-elig-section,
 .pmt-docs-section {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 .pmt-about-section {
@@ -92,8 +92,8 @@
 }
 
 .pmt-contact-section {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 .pmt-about-content-col .pmt-feats-grid:last-child,
 .pmt-courses-content-col .pmt-feats-grid:last-child {
@@ -183,7 +183,7 @@ p.pmt-body-text {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 20px !important;
   text-align: center !important;
   border: none !important;
 }
