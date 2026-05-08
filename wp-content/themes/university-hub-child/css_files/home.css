@@ -1001,7 +1001,7 @@ p.pmt-contact-sub a {
   }
 
   /* ── News + Admission layout ── */
-  .pmt-home-layout {
+ /*  .pmt-home-layout {
     flex-direction: column !important;
     padding: 0 16px !important;
     box-sizing: border-box !important;
@@ -1011,7 +1011,7 @@ p.pmt-contact-sub a {
   .pmt-home-layout .right {
     width: 100% !important;
     flex: none !important;
-  }
+  } */
 
   .pmt-latest-news-shortcut-container {
     margin: 0 !important;
