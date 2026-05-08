@@ -1012,12 +1012,7 @@ p.pmt-contact-sub a {
     width: 100% !important;
     flex: none !important;
   }
-  
-  @media (max-width: 768px) {
-    .pmt-home-layout {
-        flex-direction: column;
-    }
-}
+
   .pmt-latest-news-shortcut-container {
     margin: 0 !important;
   }
