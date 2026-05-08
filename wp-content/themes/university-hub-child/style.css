@@ -2516,6 +2516,20 @@ article.hentry,
     text-decoration: none;
     font-weight: 600;
 }
+/* Layout */
+
+
+
+.pmt-home-layout .left {
+    flex: 2;
+    min-width: 0;
+}
+
+.pmt-home-layout .right {
+    flex: 1;
+    min-width: 0;
+}
+
 
 /* Remove right whitespace */
 html, body {

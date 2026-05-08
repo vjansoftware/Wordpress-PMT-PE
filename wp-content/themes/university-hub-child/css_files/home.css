@@ -1002,25 +1002,18 @@ p.pmt-contact-sub a {
 
   /* ── News + Admission layout ── */
   .pmt-home-layout {
-    display: flex;
-    gap: 20px;
-    margin: 30px 0px;
-    padding: 0 40px;
-	padding-bottom: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+    flex-direction: column !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
 
-.pmt-home-layout .left {
-    flex: 2;
-    min-width: 0;
-}
-
-.pmt-home-layout .right {
-    flex: 1;
-    min-width: 0;
-}
-@media (max-width: 768px) {
+  .pmt-home-layout .left,
+  .pmt-home-layout .right {
+    width: 100% !important;
+    flex: none !important;
+  }
+  
+  @media (max-width: 768px) {
     .pmt-home-layout {
         flex-direction: column;
     }
