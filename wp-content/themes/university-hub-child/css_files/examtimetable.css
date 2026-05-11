@@ -1,0 +1,174 @@
+.page-id-2223 .entry-content {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+
+}
+
+/* ── TIMETABLE TITLE COLOR & SPACING ── */
+.page-id-2223 h1.wp-block-heading,
+.page-id-2223 h2.wp-block-heading:not(.wp-block-column h2.wp-block-heading) {
+  color: #253b80 !important;
+}
+
+/* Page title "Time table (2025-2026)" */
+.page-id-2223 .entry-content > h2,
+.page-id-2223 .entry-content > .wp-block-heading {
+  color: #253b80 !important;
+  margin-bottom: 32px !important;
+}
+
+/* ── COLUMNS WRAPPER ── */
+.page-id-2223 .wp-block-columns {
+    gap: 20px !important;
+    margin-bottom: 0px !important;
+    animation: fadeUp 0.6s ease 0.1s both;
+}
+
+/* ── EACH COLUMN CARD ── */
+.page-id-2223 .wp-block-column {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-top: 4px solid #179bd7 !important;
+    border-radius: 10px !important;
+    padding: 35px 24px !important;
+    text-align: center !important;
+    box-shadow: 0 2px 12px rgba(37,59,128,0.08) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.page-id-2223 .wp-block-column:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 10px 28px rgba(37,59,128,0.14) !important;
+    border-top-color: #FF6000 !important;
+}
+
+/* ── COLUMN HEADING ── */
+.page-id-2223 .wp-block-column h2.wp-block-heading {
+    font-size: 1.1rem !important;
+    color: #253b80 !important;
+    font-weight: 800 !important;
+    margin-bottom: 9px !important;
+    text-align: center !important;
+    position: relative;
+    padding-bottom: 13px;
+}
+.page-id-2223 .wp-block-column h2.wp-block-heading::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #FF6000;
+    margin: 8px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.page-id-2223 .wp-block-column:hover h2.wp-block-heading::after {
+    width: 90px;
+}
+
+/* ── COLUMN PARAGRAPH ── */
+.page-id-2223 .wp-block-column p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    margin-bottom: 22px !important;
+    text-align: center !important;
+    line-height: 1.7 !important;
+}
+
+/* ── FILE BLOCK INSIDE COLUMN ── */
+.page-id-2223 .wp-block-column .wp-block-file {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+    width: 100% !important;
+}
+
+/* Filename */
+.page-id-2223 .wp-block-column .wp-block-file a:first-child {
+    font-size: 12px !important;
+    color: #9098a9 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+.page-id-2223 .wp-block-column .wp-block-file a:first-child::before {
+    content: "📄";
+    font-size: 16px;
+}
+
+/* ── DOWNLOAD BUTTON ── */
+.page-id-2223 .wp-block-column .wp-block-file__button {
+    background: #253b80 !important;
+    color: #fff !important;
+    padding: 10px 28px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Button shine effect */
+.page-id-2223 .wp-block-column .wp-block-file__button::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 60% !important;
+    height: 100% !important;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent) !important;
+    transition: left 0.4s ease !important;
+}
+.page-id-2223 .wp-block-column .wp-block-file__button:hover::after {
+    left: 150% !important;
+}
+.page-id-2223 .wp-block-column .wp-block-file__button:hover {
+    background: #FF6000 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(255,96,0,0.35) !important;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-id-2223 .wp-block-column:nth-child(1) { animation: fadeUp 0.6s ease 0.1s both; }
+.page-id-2223 .wp-block-column:nth-child(2) { animation: fadeUp 0.6s ease 0.2s both; }
+.page-id-2223 .wp-block-column:nth-child(3) { animation: fadeUp 0.6s ease 0.3s both; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+    .page-id-2223 .wp-block-columns {
+        flex-direction: column !important;
+    }
+    .page-id-2223 .wp-block-column {
+        width: 100% !important;
+        margin-bottom: 16px !important;
+    }
+    .page-id-2223 .entry-content {
+        padding: 16px !important;
+    }
+}

@@ -34,7 +34,7 @@ function pmt_theme_styles() {
     $page_styles = array(
 
         1977 => ['examcell.css', 'principalsmessage.css'],
-
+        2223 => 'examtimetable.css',
         1008 => 'ourcollege.css',
         866  => 'visionmission.css',
         870  => 'principalsmessage.css',
