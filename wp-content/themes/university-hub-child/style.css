@@ -5,9 +5,6 @@ Version: 1.0
 */
 
 /* ── Header & Logo ── */
-
-/* @import "css_files/home.css"; */
-
 @font-face {
     font-family: 'Roboto';
     src: url('/wp-content/fonts/roboto/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2') format('woff2');
@@ -617,16 +614,6 @@ article.hentry,
         grid-template-columns: 1fr !important;
     }
 
-    /* Scholarship */
-    /* .pmt-schol-top {
-        grid-template-columns: 1fr !important;
-        gap: 24px !important;
-    }
-    .pmt-schol-card h4,
-    .pmt-schol-card p {
-        color: #fff !important;
-    } */
-
     /* Documents */
     .pmt-docs-grid {
         grid-template-columns: 1fr 1fr !important;
@@ -659,7 +646,6 @@ article.hentry,
     .pmt-sports-section,
     .pmt-news-section,
     .pmt-elig-section,
-    .pmt-schol-section,
     .pmt-docs-section,
     .pmt-hostel-section,
     .pmt-contact-section {
@@ -692,7 +678,6 @@ article.hentry,
     .pmt-sports-section,
     .pmt-news-section,
     .pmt-elig-section,
-    .pmt-schol-section,
     .pmt-docs-section,
     .pmt-hostel-section,
     .pmt-contact-section {
@@ -1610,16 +1595,6 @@ article.hentry,
 .pmt-elig-card:hover .pmt-elig-icon {
   background: #FF6000;
   transform: scale(1.1) rotate(-6deg);
-}
-
-/* ── SCHOLARSHIP CARDS ── */
-.pmt-schol-card {
-  transition: background 0.3s, border-color 0.3s, transform 0.3s;
-}
-.pmt-schol-card:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 96, 0, 0.5);
-  transform: translateX(4px);
 }
 
 /* ── DOCUMENT ITEMS ── */
