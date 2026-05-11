@@ -222,7 +222,7 @@
 
 /* Outer wrapper */
 .wp-block-columns:not(.pmt-apply-columns) {
-  max-width: 600px !important;
+  max-width: 1200px !important;
   margin: 0 auto 48px !important;
   background: #ffffff !important;
   border: 1.5px solid rgba(0,0,0,0.10) !important;
