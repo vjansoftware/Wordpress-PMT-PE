@@ -368,15 +368,18 @@ p.achieve-section-title span {
   gap: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+  width: 100% !important;
 }
 
 .timeline-item {
   display: flex !important;
+  flex-direction: row !important;
   gap: 16px !important;
   padding-bottom: 24px !important;
   position: relative !important;
   align-items: flex-start !important;
   transition: opacity 0.6s ease, transform 0.6s ease;
+  width: 100% !important;
 }
 
 .timeline-item:last-child {
@@ -395,26 +398,28 @@ p.achieve-section-title span {
 
 /* Timeline dot */
 .timeline-dot {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #253b80;
-  color: #FF6000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  z-index: 1;
-  position: relative;
-  margin-top: 0;
+  flex-shrink: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #253b80 !important;
+  color: #FF6000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  z-index: 1 !important;
+  position: relative !important;
+  margin-top: 0 !important;
+  min-width: 40px !important;
 }
-
 /* Timeline content */
 .timeline-content {
   padding-top: 6px !important;
   padding-bottom: 0 !important;
+  flex: 1 !important;
+  min-width: 0 !important;
 }
 
 .achieve-wrap .timeline-content-title,
