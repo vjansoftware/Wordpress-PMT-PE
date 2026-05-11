@@ -399,6 +399,10 @@ Version: 1.0
   padding-right: 100px !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
 }
 /* Navigation bar padding */
 .main-navigation .container,
