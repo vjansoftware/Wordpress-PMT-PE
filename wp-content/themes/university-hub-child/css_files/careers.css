@@ -156,6 +156,7 @@ body p.pmt-careers-label {
 p.pmt-careers-label::before,
 p.pmt-careers-label::after {
   content: "" !important;
+  padding-bottom: 10px;
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
