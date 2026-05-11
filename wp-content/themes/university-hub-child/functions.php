@@ -47,7 +47,7 @@ function pmt_theme_styles() {
         900  => 'eligibilitycriteria.css',
         903  => 'applyonline.css',
         386  => 'feestructure.css',
-        1444 => 'scholarship.css',
+        1444 => 'scholarships.css',
 
         945  => 'outdoorsports.css',
         948  => 'indoorsports.css',
