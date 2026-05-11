@@ -42,6 +42,25 @@
   margin: 0 auto 50px auto;
 }
 
+/* Scholarship */
+    .pmt-schol-top {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    .pmt-schol-card h4,
+    .pmt-schol-card p {
+        color: #fff !important;
+    }
+
+    .pmt-schol-card {
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+}
+.pmt-schol-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 96, 0, 0.5);
+  transform: translateX(4px);
+} 
+
 p.sc-tag,
 .entry-content p.sc-tag,
 .wp-block-group p.sc-tag,
