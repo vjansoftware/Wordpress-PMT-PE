@@ -6,8 +6,7 @@ Version: 1.0
 
 /* ── Header & Logo ── */
 
-@import "css_files/home.css";
-@import "css_files/scholarships.css";
+/* @import "css_files/home.css"; */
 
 @font-face {
     font-family: 'Roboto';
@@ -619,14 +618,14 @@ article.hentry,
     }
 
     /* Scholarship */
-    .pmt-schol-top {
+    /* .pmt-schol-top {
         grid-template-columns: 1fr !important;
         gap: 24px !important;
     }
     .pmt-schol-card h4,
     .pmt-schol-card p {
         color: #fff !important;
-    }
+    } */
 
     /* Documents */
     .pmt-docs-grid {
