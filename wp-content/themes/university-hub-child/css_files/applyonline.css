@@ -221,57 +221,33 @@
    ══════════════════════════════════════════ */
 
 /* Outer wrapper */
-.has-white-background-color.has-background {
+.wp-block-columns:not(.pmt-apply-columns) {
   max-width: 600px !important;
   margin: 0 auto 48px !important;
-  padding: 0 20px !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  box-sizing: border-box;
-}
-
-/* Inner columns — stack vertically */
-.has-white-background-color.has-background > .wp-block-columns {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0 !important;
-  margin: 0 !important;
-}
-
-/* ── Top Section — Steps ── */
-.has-white-background-color.has-background .wp-block-columns > .wp-block-column:first-child {
-  flex: 1 1 100% !important;
-  min-width: 100% !important;
   background: #ffffff !important;
   border: 1.5px solid rgba(0,0,0,0.10) !important;
   border-top: 4px solid #253b80 !important;
-  border-bottom: none !important;
-  border-radius: 12px 12px 0 0 !important;
-  padding: 28px 28px 20px !important;
-  box-shadow: none !important;
-  box-sizing: border-box !important;
-}
-
-/* ── Bottom Section — Download ── */
-.has-white-background-color.has-background .wp-block-columns > .wp-block-column:last-child {
-  flex: 1 1 100% !important;
-  min-width: 100% !important;
-  background: #ffffff !important;
-  border: 1.5px solid rgba(0,0,0,0.10) !important;
-  border-top: none !important;
-  border-radius: 0 0 12px 12px !important;
-  padding: 0 28px 28px !important;
+  border-radius: 12px !important;
+  padding: 28px !important;
   box-shadow: 0 8px 24px rgba(0,0,0,0.07) !important;
   box-sizing: border-box !important;
   display: flex !important;
-  align-items: stretch !important;
-  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+/* Remove column borders */
+.wp-block-columns:not(.pmt-apply-columns) > .wp-block-column {
+  flex: 1 1 100% !important;
+  min-width: 100% !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 /* Heading inside card */
-.has-white-background-color.has-background h2.wp-block-heading,
-.has-white-background-color.has-background h4.wp-block-heading {
+.wp-block-columns:not(.pmt-apply-columns) h2.wp-block-heading {
   font-size: 18px !important;
   font-weight: 700 !important;
   margin: 0 0 16px !important;
@@ -280,7 +256,7 @@
 }
 
 /* List inside card */
-.has-white-background-color.has-background .wp-block-list {
+.wp-block-columns:not(.pmt-apply-columns) .wp-block-list {
   margin: 0 !important;
   padding-left: 20px !important;
   display: flex !important;
@@ -288,29 +264,27 @@
   gap: 8px !important;
 }
 
-.has-white-background-color.has-background .wp-block-list li {
+.wp-block-columns:not(.pmt-apply-columns) .wp-block-list li {
   font-size: 14px !important;
   color: #4b5563 !important;
   line-height: 1.7 !important;
 }
 
 /* File Block */
-.has-white-background-color.has-background .wp-block-file {
+.wp-block-columns:not(.pmt-apply-columns) .wp-block-file {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
-  gap: 12px !important;
-  text-align: center !important;
   width: 100% !important;
 }
 
 /* Hide filename link */
-.has-white-background-color.has-background .wp-block-file > a:not(.wp-block-file__button) {
+.wp-block-columns:not(.pmt-apply-columns) 
+.wp-block-file > a:not(.wp-block-file__button) {
   display: none !important;
 }
 
 /* Download button — full width */
-.has-white-background-color.has-background .wp-block-file__button {
+.wp-block-columns:not(.pmt-apply-columns) .wp-block-file__button {
   display: block !important;
   width: 100% !important;
   color: #ffffff !important;
@@ -320,26 +294,25 @@
   font-size: 15px !important;
   font-style: normal !important;
   font-weight: 700 !important;
-  letter-spacing: 0.3px !important;
   text-align: center !important;
   cursor: pointer !important;
   background-color: #253b80 !important;
   box-sizing: border-box !important;
-  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
 }
 
-.has-white-background-color.has-background .wp-block-file__button:hover {
+.wp-block-columns:not(.pmt-apply-columns) .wp-block-file__button:hover {
   opacity: 0.88 !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 22px rgba(0,0,0,0.14) !important;
   color: #ffffff !important;
 }
 
-/* ── Responsive ── */
-@media (max-width: 900px) {
-  .wp-block-columns.pmt-apply-columns {
-    gap: 30px;
-    padding: 24px 20px 32px;
+/* Mobile */
+@media (max-width: 768px) {
+  .wp-block-columns:not(.pmt-apply-columns) {
+    margin: 0 16px 36px !important;
+    padding: 24px 20px !important;
   }
 }
 
