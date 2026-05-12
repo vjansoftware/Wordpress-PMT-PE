@@ -535,11 +535,11 @@ p.gr-section-label::after {
 ════════════════════════════════ */
 
 /* Form container center */
+
 .gr-form .wpforms-container {
-  max-width: 700px !important;
+  max-width: 100% !important;
   margin: 0 auto !important;
 }
-
 /* All input fields */
 .gr-form .wpforms-field input[type="text"],
 .gr-form .wpforms-field input[type="email"],
@@ -587,18 +587,23 @@ p.gr-section-label::after {
 }
 
 /* Field spacing */
+
 .gr-form .wpforms-field {
-  margin-bottom: 20px !important;
+  margin-bottom: 12px !important;
+  padding: 0 !important;
 }
 
 /* Name field - side by side */
 .gr-form .wpforms-field-name .wpforms-field-row {
   display: flex !important;
+  flex-direction: row !important;
   gap: 16px !important;
+  flex-wrap: nowrap !important;
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span {
   flex: 1 !important;
+  min-width: 0 !important;
 }
 
 /* Submit button */
