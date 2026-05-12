@@ -1022,7 +1022,9 @@ p.pmt-contact-sub a {
   .pmt-about-cols.wp-block-columns { gap: 20px !important; }
   .pmt-about-img-col { padding-bottom: 60px !important; padding-right: 0 !important; }
   .pmt-about-img-col .wp-block-image img { height: auto !important; min-height: 260px !important; }
-
+  p.pmt-body-text {
+    text-align: justify !important;
+  }
   .pmt-year-badge { bottom: 0 !important; right: 0 !important; padding: 10px 14px !important; min-width: 90px !important; }
   .pmt-year-num { font-size: 1.4rem !important; }
   .pmt-year-lbl { font-size: 10px !important; }
