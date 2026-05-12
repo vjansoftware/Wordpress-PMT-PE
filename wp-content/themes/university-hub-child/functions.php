@@ -257,3 +257,28 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <?php
 }
+// =========================
+// WPFORMS - SAME FORM (6210), DIFFERENT EMAIL PER PAGE
+// =========================
+add_filter( 'wpforms_entry_email_atts', function( $atts, $fields, $entry, $form_data, $notification_id ) {
+
+    // Only target form ID 6210
+    if ( (int) $form_data['id'] !== 6210 ) {
+        return $atts;
+    }
+
+    $page_id = get_the_ID();
+
+    // EOC Page (ID: 5755) → sends to EOC email
+    if ( $page_id === 5755 ) {
+        $atts['address'] = array( 'bsanand2897@gmail.com' );
+    }
+
+    // Student Grievance Page (ID: 1982) → sends to Grievance email
+    if ( $page_id === 1982 ) {
+        $atts['address'] = array( 'subiswarna@gmail.com' );
+    }
+
+    return $atts;
+
+}, 10, 5 );
