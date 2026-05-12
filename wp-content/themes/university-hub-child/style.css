@@ -690,100 +690,100 @@ article.hentry,
 ═══════════════════════════════════════ */
 
 /* — Hide page title — */
-.page-id-873 .entry-title,
-.page-id-873 .entry-header { display: none !important; }
+/* .page-id-873 .entry-title,
+.page-id-873 .entry-header { display: none !important; } */
 
 /* — Remove theme padding — */
-.page-id-873 #primary article.hentry {
+/* .page-id-873 #primary article.hentry {
   background: transparent !important;
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
-}
+} */
 
 /* — Entry content full width — */
-.page-id-873 .entry-content {
+/* .page-id-873 .entry-content {
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
-}
+} */
 
 /* ── GRID BASE STYLES ── */
 
 /* — Chairman grid — */
-.page-id-873 .mg-chairman-grid {
+/* .page-id-873 .mg-chairman-grid {
   display: grid;
   grid-template-columns: 210px 1fr;
   gap: 36px;
   align-items: start;
   padding: 36px;
-}
+} */
 
 /* — Secretary & Treasurer grid — */
-.page-id-873 .mg-sec-grid {
+/* .page-id-873 .mg-sec-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-}
+} */
 
 /* — Committee Members grid — */
-.page-id-873 .mg-com-grid {
+/* .page-id-873 .mg-com-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
+} */
 
 /* — Banner stats row — */
-.page-id-873 .mg-banner-stats {
-  display: flex;
-  gap: 28px;
-  justify-content: center;
-  margin-top: 28px;
-  flex-wrap: wrap;
-}
+  /* .page-id-873 .mg-banner-stats {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  } */
 
 /* ═══════════════════════════════════════
    PMT MANAGEMENT — MOBILE RESPONSIVE
    Breakpoint: 700px and below
 ═══════════════════════════════════════ */
-@media(max-width:700px){
+/* @media(max-width:700px){ */
 
   /* — Wrapper — */
-  .page-id-873 .mg-wrap { padding: 0 16px !important; }
+  /* .page-id-873 .mg-wrap { padding: 0 16px !important; } */
 
   /* — Chairman: 2 col → 1 col — */
-  .page-id-873 .mg-chairman-grid {
+  /* .page-id-873 .mg-chairman-grid {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
     padding: 24px 20px !important;
-  }
+  } */
 
   /* — Secretary & Treasurer: 2 col → 1 col — */
-  .page-id-873 .mg-sec-grid {
+  /* .page-id-873 .mg-sec-grid {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
-  }
+  } */
 
   /* — Committee Members: 3 col → 1 col — */
-  .page-id-873 .mg-com-grid {
+  /* .page-id-873 .mg-com-grid {
     grid-template-columns: 1fr !important;
     gap: 14px !important;
-  }
+  } */
 
   /* — Typography — */
-  .page-id-873 .mg-h2   { font-size: 1.4rem !important; }
+  /* .page-id-873 .mg-h2   { font-size: 1.4rem !important; }
   .page-id-873 .mg-body { font-size: 13px !important; }
-}
+} */
 
 /* ═══════════════════════════════════════
    PMT MANAGEMENT — MOBILE RESPONSIVE
    Breakpoint: 480px and below
 ═══════════════════════════════════════ */
-@media(max-width:480px){
+/* @media(max-width:480px){
   .page-id-873 .mg-h2 { font-size: 1.2rem !important; }
   .page-id-873 .mg-chairman-grid { padding: 18px 14px !important; }
   .page-id-873 .mg-body { font-size: 13px !important; }
-}
+} */
 /* ═══════════════════════════════════════
    PMT COACHING — CARD ANIMATIONS
 ═══════════════════════════════════════ */
