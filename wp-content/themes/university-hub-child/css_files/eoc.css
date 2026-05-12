@@ -530,3 +530,126 @@ p.gr-section-label::after {
     font-size: 1.2rem !important;
   }
 }
+/* ════════════════════════════════
+   WPFORMS - FORM FIELDS STYLING
+════════════════════════════════ */
+
+/* Form container center */
+.gr-form .wpforms-container {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+/* All input fields */
+.gr-form .wpforms-field input[type="text"],
+.gr-form .wpforms-field input[type="email"],
+.gr-form .wpforms-field input[type="tel"],
+.gr-form .wpforms-field textarea,
+.gr-form .wpforms-field select {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid #dde3f0 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  color: #444 !important;
+  background: #f9faff !important;
+  transition: border-color 0.3s, box-shadow 0.3s !important;
+  outline: none !important;
+}
+
+/* Focus state */
+.gr-form .wpforms-field input:focus,
+.gr-form .wpforms-field textarea:focus,
+.gr-form .wpforms-field select:focus {
+  border-color: #253b80 !important;
+  box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1) !important;
+  background: #fff !important;
+}
+
+/* Textarea height */
+.gr-form .wpforms-field textarea {
+  min-height: 140px !important;
+  resize: vertical !important;
+}
+
+/* Field labels */
+.gr-form .wpforms-field label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #253b80 !important;
+  margin-bottom: 6px !important;
+  display: block !important;
+}
+
+/* Required star */
+.gr-form .wpforms-required-label {
+  color: #FF6000 !important;
+}
+
+/* Field spacing */
+.gr-form .wpforms-field {
+  margin-bottom: 20px !important;
+}
+
+/* Name field - side by side */
+.gr-form .wpforms-field-name .wpforms-field-row {
+  display: flex !important;
+  gap: 16px !important;
+}
+
+.gr-form .wpforms-field-name .wpforms-field-row > span {
+  flex: 1 !important;
+}
+
+/* Submit button */
+.gr-form .wpforms-submit {
+  background: #253b80 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 14px 40px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background 0.3s, transform 0.2s !important;
+  display: block !important;
+  margin: 10px auto 0 !important;
+}
+
+.gr-form .wpforms-submit:hover {
+  background: #FF6000 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Error messages */
+.gr-form .wpforms-error {
+  color: #c0392b !important;
+  font-size: 12px !important;
+  margin-top: 4px !important;
+}
+
+/* Success message */
+.gr-form .wpforms-confirmation-container-full {
+  background: #eef1fb !important;
+  border-left: 4px solid #253b80 !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  color: #253b80 !important;
+  font-weight: 600 !important;
+}
+
+/* ════════════════════════════════
+   MOBILE - FORM
+════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .gr-form .wpforms-field-name .wpforms-field-row {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .gr-form .wpforms-submit {
+    width: 100% !important;
+    padding: 14px !important;
+  }
+}
