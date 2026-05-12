@@ -477,8 +477,9 @@ p.gr-section-label::after {
   padding: 30px !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
 }
-
 /* Form H2 */
 .gr-wrap .gr-form-title,
 .entry-content .gr-wrap h2.gr-form-title {
