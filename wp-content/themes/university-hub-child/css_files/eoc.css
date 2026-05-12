@@ -347,8 +347,13 @@ p.gr-section-label::after {
   font-weight: 700 !important;
   color: #253b80 !important;
   margin-bottom: 12px !important;
-  border-left: 4px solid #FF6000;
-  padding: 10px;
+  border-left: 4px solid #FF6000 !important;
+  padding: 10px !important;
+  max-width: 1160px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 40px !important;
+  box-sizing: border-box !important;
 }
 
 .gr-p {
@@ -462,7 +467,17 @@ p.gr-section-label::after {
   color: #253b80 !important;
   margin: 0 0 20px !important;
 }
-
+/* SC/ST section alignment */
+h2.gr-form-title,
+.gr-p,
+.gr-points {
+  max-width: 1160px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  box-sizing: border-box !important;
+}
 /* ════════════════════════════════
    WPFORMS - FORM FIELDS STYLING
 ════════════════════════════════ */
