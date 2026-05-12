@@ -478,7 +478,10 @@ p.gr-section-label::after {
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
   max-width: 700px !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
