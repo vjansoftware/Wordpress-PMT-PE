@@ -1577,8 +1577,6 @@ article.hentry,
     box-sizing: border-box !important;
   }
 
- 
-
   /* About strip image */
   .pmt-main-homepage .pmt-about-strip-inner {
     grid-template-columns: 1fr !important;
@@ -1637,8 +1635,6 @@ article.hentry,
 /* ═══════════════════════════════════════
    PMT CLUBS — page-id-3417
 ═══════════════════════════════════════ */
-
-
 /* ── MOBILE CENTER FIX ── */
 @media (max-width: 768px) {
 
@@ -1679,7 +1675,6 @@ article.hentry,
   }
 
 }
-
 
 /* homepage */
 /* Outer box with rounded corners */
