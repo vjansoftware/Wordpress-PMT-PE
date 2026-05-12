@@ -479,6 +479,8 @@ p.gr-section-label::after {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
   max-width: 700px !important;
   margin: 0 auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 /* Form H2 */
 .gr-wrap .gr-form-title,
@@ -539,7 +541,8 @@ p.gr-section-label::after {
 
 .gr-form .wpforms-container {
   max-width: 100% !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
+  width: 100% !important;
 }
 /* All input fields */
 .gr-form .wpforms-field input[type="text"],
@@ -600,11 +603,17 @@ p.gr-section-label::after {
   flex-direction: row !important;
   gap: 16px !important;
   flex-wrap: nowrap !important;
+  width: 100% !important;
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span {
   flex: 1 !important;
   min-width: 0 !important;
+  width: 50% !important;
+}
+
+.gr-form .wpforms-field-name .wpforms-field-row > span input {
+  width: 100% !important;
 }
 
 /* Submit button */
