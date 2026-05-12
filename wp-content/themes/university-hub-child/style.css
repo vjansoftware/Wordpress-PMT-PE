@@ -1323,19 +1323,6 @@ article.hentry,
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .page-id-2235 .wp-block-columns {
-    flex-direction: column !important;
-  }
-  .page-id-2235 .wp-block-column {
-    width: 100% !important;
-    margin-bottom: 16px !important;
-  }
-  .page-id-2235 .entry-content {
-    padding: 16px !important;
-  }
-}
 /* ══════════════════════════════════════
    PMT CONTACT PAGE — ENHANCED ANIMATIONS
 ══════════════════════════════════════ */

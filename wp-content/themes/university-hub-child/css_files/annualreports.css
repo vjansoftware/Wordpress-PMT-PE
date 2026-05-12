@@ -145,3 +145,16 @@
  .wp-block-columns:nth-child(3) .wp-block-column:nth-child(1) { animation: annualFadeUp 0.6s ease 0.3s both; }
  .wp-block-columns:nth-child(3) .wp-block-column:nth-child(2) { animation: annualFadeUp 0.6s ease 0.4s both; }
 
+/* Mobile */
+@media (max-width: 768px) {
+ .wp-block-columns {
+    flex-direction: column !important;
+  }
+ .wp-block-column {
+    width: 100% !important;
+    margin-bottom: 16px !important;
+  }
+ .entry-content {
+    padding: 16px !important;
+  }
+}
