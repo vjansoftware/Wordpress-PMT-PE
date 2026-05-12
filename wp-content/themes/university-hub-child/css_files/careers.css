@@ -97,7 +97,7 @@
 .pmt-careers-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 20px 0 0 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -156,7 +156,6 @@ body p.pmt-careers-label {
 p.pmt-careers-label::before,
 p.pmt-careers-label::after {
   content: "" !important;
-  padding-bottom: 10px;
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
