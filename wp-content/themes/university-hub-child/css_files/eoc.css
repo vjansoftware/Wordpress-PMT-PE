@@ -1,5 +1,5 @@
- /* ═══════════════════════════════════════
-   PMT STUDENT GRIEVANCE PORTAL — STYLES
+/* ═══════════════════════════════════════
+   PMT EOC PAGE — STYLES
    Colors & fonts matching About College
 ═══════════════════════════════════════ */
 
@@ -231,7 +231,6 @@ p.gr-from-label::before {
   flex-shrink: 0 !important;
 }
 
-
 /* ════════════════════════════════
    SECTION LABEL
 ════════════════════════════════ */
@@ -333,17 +332,16 @@ p.gr-section-label::after {
   line-height: 1.8 !important;
   margin-bottom: 4px !important;
 }
+
 /* ════════════════════════════════
    SC/ST CELL SECTION
 ════════════════════════════════ */
 
-/* Section spacing */
 .wp-block-group {
   margin-bottom: 30px;
   padding: -2px 0px;
 }
 
-/* Heading */
 .gr-form-title {
   font-size: 1.6rem !important;
   font-weight: 700 !important;
@@ -353,7 +351,6 @@ p.gr-section-label::after {
   padding: 10px;
 }
 
-/* Paragraph */
 .gr-p {
   font-size: 15px !important;
   color: #4b5563 !important;
@@ -361,14 +358,12 @@ p.gr-section-label::after {
   margin-bottom: 16px !important;
 }
 
-/* List */
 .gr-points {
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* List items */
 .gr-points li {
   position: relative;
   padding: 10px 0 10px 32px !important;
@@ -377,12 +372,10 @@ p.gr-section-label::after {
   border-bottom: 1px solid #eee;
 }
 
-/* Remove last border */
 .gr-points li:last-child {
   border-bottom: none;
 }
 
-/* Custom icon */
 .gr-points li::before {
   content: "✔";
   position: absolute;
@@ -398,33 +391,9 @@ p.gr-section-label::after {
   align-items: center;
   justify-content: center;
 }
-/* Fix invalid spacing */
+
 .wp-block-group.gr-wrap {
   margin-bottom: 30px !important;
-}
-/* ════════════════════════════════
-   MOBILE
-════════════════════════════════ */
-
-@media (max-width: 768px) {
- /* Wrapper */
-  .gr-wrap {
-    padding: 0 16px !important;
-  }
-
-  .gr-form-title {
-    font-size: 1.3rem !important;
-  }
-
-  .gr-p {
-    font-size: 14px !important;
-  }
-
-  .gr-points li {
-    font-size: 13px !important;
-    padding-left: 28px !important;
-  }
-
 }
 
 /* ════════════════════════════════
@@ -447,7 +416,6 @@ p.gr-section-label::after {
   line-height: 1 !important;
 }
 
-/* Emergency H3 */
 .gr-wrap .gr-emergency-title,
 .entry-content .gr-wrap h3.gr-emergency-title {
   font-size: 1.1rem !important;
@@ -469,7 +437,7 @@ p.gr-section-label::after {
 }
 
 /* ════════════════════════════════
-   FORM
+   FORM CARD
 ════════════════════════════════ */
 
 .gr-form {
@@ -485,6 +453,7 @@ p.gr-section-label::after {
   width: 100% !important;
   box-sizing: border-box !important;
 }
+
 /* Form H2 */
 .gr-wrap .gr-form-title,
 .entry-content .gr-wrap h2.gr-form-title {
@@ -495,58 +464,15 @@ p.gr-section-label::after {
 }
 
 /* ════════════════════════════════
-   RESPONSIVE
-════════════════════════════════ */
-
-@media (max-width: 768px) {
-  .gr-wrap {
-    padding: 0 16px !important;
-  }
-
-  .gr-intro .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-  }
-
-  .gr-img img {
-    height: 240px !important;
-    padding-top: 16px !important;
-  }
-
-  .gr-cards .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
-  }
-
-  .gr-wrap .gr-title {
-    font-size: 1.4rem !important;
-  }
-
-  .gr-emergency {
-    padding: 20px !important;
-  }
-
-  .gr-form {
-    padding: 20px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .gr-wrap .gr-title {
-    font-size: 1.2rem !important;
-  }
-}
-/* ════════════════════════════════
    WPFORMS - FORM FIELDS STYLING
 ════════════════════════════════ */
-
-/* Form container center */
 
 .gr-form .wpforms-container {
   max-width: 100% !important;
   margin: 0 !important;
   width: 100% !important;
 }
+
 /* All input fields */
 .gr-form .wpforms-field input[type="text"],
 .gr-form .wpforms-field input[type="email"],
@@ -562,6 +488,7 @@ p.gr-section-label::after {
   background: #f9faff !important;
   transition: border-color 0.3s, box-shadow 0.3s !important;
   outline: none !important;
+  box-sizing: border-box !important;
 }
 
 /* Focus state */
@@ -594,7 +521,6 @@ p.gr-section-label::after {
 }
 
 /* Field spacing */
-
 .gr-form .wpforms-field {
   margin-bottom: 12px !important;
   padding: 0 !important;
@@ -610,13 +536,18 @@ p.gr-section-label::after {
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span {
-  flex: 1 !important;
+  flex: 1 1 0 !important;
   min-width: 0 !important;
   width: 50% !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span input {
   width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
 }
 
 /* Submit button */
@@ -657,10 +588,54 @@ p.gr-section-label::after {
 }
 
 /* ════════════════════════════════
-   MOBILE - FORM
+   RESPONSIVE
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
+  .gr-wrap {
+    padding: 0 16px !important;
+  }
+
+  .gr-intro .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-img img {
+    height: 240px !important;
+    padding-top: 16px !important;
+  }
+
+  .gr-cards .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-wrap .gr-title {
+    font-size: 1.4rem !important;
+  }
+
+  .gr-emergency {
+    padding: 20px !important;
+  }
+
+  .gr-form {
+    padding: 20px !important;
+  }
+
+  .gr-form-title {
+    font-size: 1.3rem !important;
+  }
+
+  .gr-p {
+    font-size: 14px !important;
+  }
+
+  .gr-points li {
+    font-size: 13px !important;
+    padding-left: 28px !important;
+  }
+
   .gr-form .wpforms-field-name .wpforms-field-row {
     flex-direction: column !important;
     gap: 12px !important;
@@ -669,5 +644,11 @@ p.gr-section-label::after {
   .gr-form .wpforms-submit {
     width: 100% !important;
     padding: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gr-wrap .gr-title {
+    font-size: 1.2rem !important;
   }
 }
