@@ -199,6 +199,7 @@ p.shd-from-label::before {
   color: #4b5563 !important;
   line-height: 1.9 !important;
   margin-bottom: 14px !important;
+  text-align: justify !important;
 }
 
 /* Points list */
