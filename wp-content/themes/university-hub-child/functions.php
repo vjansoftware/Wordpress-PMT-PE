@@ -269,14 +269,16 @@ add_filter( 'wpforms_entry_email_atts', function( $atts, $fields, $entry, $form_
 
     $page_id = get_the_ID();
 
-    // EOC Page (ID: 5755) → sends to EOC email
+    // EOC Page (ID: 5755)
     if ( $page_id === 5755 ) {
         $atts['address'] = array( 'bsanand2897@gmail.com' );
+        $atts['subject'] = 'EOC Form Entry';
     }
 
-    // Student Grievance Page (ID: 1982) → sends to Grievance email
+    // Student Grievance Page (ID: 1982)
     if ( $page_id === 1982 ) {
         $atts['address'] = array( 'subiswarna@gmail.com' );
+        $atts['subject'] = 'Student Grievance Form Entry';
     }
 
     return $atts;
