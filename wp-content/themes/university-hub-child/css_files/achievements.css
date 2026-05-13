@@ -386,16 +386,6 @@ p.achieve-section-title span {
   padding-bottom: 0 !important;
 }
 
-.timeline-item:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 40px;
-  bottom: 0;
-  width: 2px;
-  background: rgba(37, 59, 128, 0.2);
-}
-
 /* Timeline dot */
 .timeline-dot {
   flex-shrink: 0 !important;
