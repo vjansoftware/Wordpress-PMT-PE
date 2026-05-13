@@ -12,14 +12,14 @@
 }
 
 .pmt-playground-hero{
-  display:grid !important;
+  display:grid;
   grid-template-columns:1fr 1fr;
   gap:50px;
   align-items:center;
 }
 
 .pmt-playground-hero.wp-block-columns{
-  display:grid !important;
+  display:grid;
 }
 
 .pmt-playground-hero-img img{
@@ -42,25 +42,26 @@
   font-size:2rem;
   font-weight:800;
   line-height:1.2;
-  margin:0 0 20px !important;
+  margin:0 0 20px;
 }
 
 .pmt-playground-body{
   font-size:15px;
   color:#4b5563;
   line-height:1.8;
-  margin-bottom:10px !important;
+  margin-bottom:10px;
+  text-align:justify;
 }
 
 .pmt-playground-stats{
-  display:grid !important;
+  display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
   padding:20px 0;
 }
 
 .pmt-playground-stats.wp-block-columns{
-  display:grid !important;
+  display:grid;
 }
 
 .pmt-playground-stat{
@@ -96,14 +97,14 @@
 }
 
 .pmt-playground-features-grid{
-  display:grid !important;
+  display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:20px;
   margin-top:14px;
 }
 
 .pmt-playground-features-grid.wp-block-columns{
-  display:grid !important;
+  display:grid;
 }
 
 .pmt-playground-feature-card{
@@ -133,14 +134,14 @@
 }
 
 .pmt-playground-pillars-grid{
-  display:grid !important;
+  display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
   margin-top:24px;
 }
 
 .pmt-playground-pillars-grid.wp-block-columns{
-  display:grid !important;
+  display:grid;
 }
 
 .pmt-playground-pillar{
@@ -189,8 +190,8 @@
 
 @media(max-width:768px){
   .pmt-playground-wrap{padding:18px 16px 40px;}
-  .pmt-playground-hero{grid-template-columns:1fr !important;padding:40px 0 20px;}
-  .pmt-playground-stats{grid-template-columns:1fr !important;}
-  .pmt-playground-features-grid{grid-template-columns:1fr !important;}
-  .pmt-playground-pillars-grid{grid-template-columns:1fr !important;}
+  .pmt-playground-hero{grid-template-columns:1fr;padding:40px 0 20px;}
+  .pmt-playground-stats{grid-template-columns:1fr;}
+  .pmt-playground-features-grid{grid-template-columns:1fr;}
+  .pmt-playground-pillars-grid{grid-template-columns:1fr;}
 }

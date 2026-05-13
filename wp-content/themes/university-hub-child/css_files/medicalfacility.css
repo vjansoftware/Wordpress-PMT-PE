@@ -22,15 +22,15 @@
 .entry-content .pmt-medical-wrap h2,
 .entry-content .pmt-medical-wrap h3,
 .entry-content .pmt-medical-wrap h4 {
-  clear: none !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  clear: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .entry-content .pmt-medical-wrap p:empty {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* ════════════════════════════════
@@ -38,35 +38,35 @@
 ════════════════════════════════ */
 
 .pmt-medical-intro {
-  gap: 40px !important;
-  align-items: center !important;
-  margin-bottom: 0 !important;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 /* Image column */
 .pmt-medical-img-col {
-  border-radius: 10px !important;
-  overflow: hidden !important;
-  box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12) !important;
-  padding: 0 !important;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(37, 59, 128, 0.12);
+  padding: 0;
 }
 
 .pmt-medical-img {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .pmt-medical-img img {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 320px !important;
-  object-fit: cover !important;
-  display: block !important;
-  transition: transform 0.4s ease !important;
-  border-radius: 0 !important;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  border-radius: 0;
 }
 
 .pmt-medical-img-col:hover .pmt-medical-img img {
-  transform: scale(1.04) !important;
+  transform: scale(1.04);
 }
 
 /* Orange label — matches About College */
@@ -75,61 +75,62 @@ p.pmt-medical-label.has-text-align-center,
 .entry-content p.pmt-medical-label,
 .wp-block-group p.pmt-medical-label,
 body p.pmt-medical-label {
-  color: #FF6000 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 10px !important;
-  margin-top: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  opacity: 1 !important;
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
 }
 
 p.pmt-medical-label::before {
-  content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  flex-shrink: 0 !important;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
 /* H2 title */
 .pmt-medical-wrap .pmt-medical-title,
 .entry-content .pmt-medical-wrap h2.pmt-medical-title {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  line-height: 1.3 !important;
-  margin-bottom: 16px !important;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #253b80;
+  line-height: 1.3;
+  margin-bottom: 16px;
 }
 
 /* Body text */
 .pmt-medical-wrap .pmt-medical-body {
-  font-size: 15px !important;
-  color: #4b5563 !important;
-  line-height: 1.85 !important;
-  margin-bottom: 14px !important;
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.85;
+  margin-bottom: 14px;
+  text-align: justify;
 }
 
 /* Highlight quote box */
 .pmt-medical-wrap .pmt-medical-highlight {
-  background: #f0f9ff !important;
-  border-left: 4px solid #179bd7 !important;
-  border-radius: 0 10px 10px 0 !important;
-  padding: 20px 24px !important;
-  margin-top: 20px !important;
+  background: #f0f9ff;
+  border-left: 4px solid #179bd7;
+  border-radius: 0 10px 10px 0;
+  padding: 20px 24px;
+  margin-top: 20px;
 }
 
 .pmt-medical-wrap .pmt-medical-highlight p {
-  font-size: 14px !important;
-  color: #374151 !important;
-  line-height: 1.7 !important;
-  margin: 0 !important;
-  font-style: italic !important;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
 }
 
 /* ════════════════════════════════
@@ -137,14 +138,14 @@ p.pmt-medical-label::before {
 ════════════════════════════════ */
 
 .pmt-medical-stats {
-  gap: 20px !important;
+  gap: 20px;
 }
 
 .pmt-medical-stat {
-  background: #253b80 !important;
-  border-radius: 10px !important;
-  padding: 28px 20px !important;
-  text-align: center !important;
+  background: #253b80;
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -155,20 +156,20 @@ p.pmt-medical-label::before {
 
 .pmt-medical-wrap .pmt-medical-stat-number,
 .entry-content .pmt-medical-wrap h3.pmt-medical-stat-number {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  color: #FF6000 !important;
-  line-height: 1 !important;
-  margin: 0 !important;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FF6000;
+  line-height: 1;
+  margin: 0;
 }
 
 .pmt-medical-stat .pmt-medical-stat-label {
-  font-size: 11px !important;
-  letter-spacing: 1.5px !important;
-  text-transform: uppercase !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  margin-top: 8px !important;
-  margin-bottom: 0 !important;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 /* ════════════════════════════════
@@ -179,35 +180,35 @@ p.pmt-medical-section-label,
 .entry-content p.pmt-medical-section-label,
 .wp-block-group p.pmt-medical-section-label,
 body p.pmt-medical-section-label {
-  color: #FF6000 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 10px !important;
-  margin-top: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  opacity: 1 !important;
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
 }
 
 p.pmt-medical-section-label::before {
-  content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  flex-shrink: 0 !important;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
 .pmt-medical-wrap .pmt-medical-section-title,
 .entry-content .pmt-medical-wrap h2.pmt-medical-section-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 20px !important;
-  line-height: 1.3 !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 20px;
+  line-height: 1.3;
 }
 
 /* ════════════════════════════════
@@ -215,38 +216,39 @@ p.pmt-medical-section-label::before {
 ════════════════════════════════ */
 
 .pmt-medical-cards-grid {
-  gap: 20px !important;
-  margin-bottom: 20px !important;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .pmt-medical-card {
-  padding: 28px 24px !important;
-  border-radius: 10px !important;
-  background: #fff !important;
-  border: 1px solid #e5e7eb !important;
-  border-top: 3px solid #FF6000 !important;
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  padding: 28px 24px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-top: 3px solid #FF6000;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .pmt-medical-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.12) !important;
+  box-shadow: 0 10px 28px rgba(37, 59, 128, 0.12);
 }
 
 .pmt-medical-wrap .pmt-medical-card-title,
 .entry-content .pmt-medical-wrap h4.pmt-medical-card-title {
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 10px !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 10px;
 }
 
 .pmt-medical-wrap .pmt-medical-card-text {
-  font-size: 14px !important;
-  color: #4b5563 !important;
-  line-height: 1.7 !important;
-  margin: 0 !important;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+  text-align: justify;
 }
 
 /* ════════════════════════════════
@@ -254,38 +256,38 @@ p.pmt-medical-section-label::before {
 ════════════════════════════════ */
 
 .pmt-medical-team-grid {
-  gap: 16px !important;
-  margin-bottom: 0 !important;
+  gap: 16px;
+  margin-bottom: 0;
 }
 
 .pmt-medical-team-card {
-  display: flex !important;
-  align-items: center !important;
-  gap: 16px !important;
-  background: #fff !important;
-  border-radius: 10px !important;
-  padding: 20px 24px !important;
-  border: 1px solid #e5e7eb !important;
-  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .pmt-medical-team-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.1);
 }
 
 .pmt-medical-team-icon {
-  width: 50px !important;
-  height: 50px !important;
-  min-width: 50px !important;
-  border-radius: 50% !important;
-  background: #179bd7 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 1.4rem !important;
-  margin: 0 !important;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background: #179bd7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0;
   flex-shrink: 0;
 }
 
@@ -295,17 +297,17 @@ p.pmt-medical-section-label::before {
 
 .pmt-medical-wrap .pmt-medical-team-name,
 .entry-content .pmt-medical-wrap h4.pmt-medical-team-name {
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 4px !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 4px;
 }
 
 .pmt-medical-wrap .pmt-medical-team-role {
-  font-size: 13px !important;
-  color: #4b5563 !important;
-  margin: 0 !important;
-  line-height: 1.5 !important;
+  font-size: 13px;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* ════════════════════════════════
@@ -313,52 +315,52 @@ p.pmt-medical-section-label::before {
 ════════════════════════════════ */
 
 .pmt-medical-banner {
-  background: #253b80 !important;
-  border-radius: 10px !important;
-  padding: 40px !important;
+  background: #253b80;
+  border-radius: 10px;
+  padding: 40px;
   text-align: center;
 }
 
 .pmt-medical-banner-icon {
-  font-size: 2rem !important;
-  display: block !important;
-  margin-bottom: 16px !important;
-  margin-top: 0 !important;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .pmt-medical-wrap .pmt-medical-banner-quote {
-  border: none !important;
-  background: transparent !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  max-width: 700px !important;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .pmt-medical-wrap .pmt-medical-banner-quote p {
-  font-size: 1.1rem !important;
-  font-style: italic !important;
-  color: #fff !important;
-  line-height: 1.8 !important;
-  margin: 0 !important;
-  text-align: center !important;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #fff;
+  line-height: 1.8;
+  margin: 0;
+  text-align: center;
 }
 
 .pmt-medical-banner-divider {
-  width: 60px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  border: none !important;
-  margin: 14px auto !important;
+  width: 60px;
+  height: 2px;
+  background: #FF6000;
+  border: none;
+  margin: 14px auto;
 }
 
 p.pmt-medical-banner-sub,
 .entry-content p.pmt-medical-banner-sub {
-  font-size: 11px !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-  color: rgba(255, 255, 255, 0.5) !important;
-  margin: 0 !important;
-  opacity: 1 !important;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  opacity: 1;
 }
 
 /* ════════════════════════════════
@@ -367,42 +369,42 @@ p.pmt-medical-banner-sub,
 
 @media (max-width: 768px) {
   .pmt-medical-wrap {
-    padding: 0 16px !important;
+    padding: 0 16px;
   }
 
   .pmt-medical-intro .wp-block-column,
   .pmt-medical-team-grid .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
+    flex-basis: 100%;
+    min-width: 100%;
   }
 
   .pmt-medical-stats .wp-block-column {
-    flex-basis: calc(50% - 10px) !important;
-    min-width: calc(50% - 10px) !important;
+    flex-basis: calc(50% - 10px);
+    min-width: calc(50% - 10px);
   }
 
   .pmt-medical-cards-grid .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
+    flex-basis: 100%;
+    min-width: 100%;
   }
 
   .pmt-medical-wrap .pmt-medical-title,
   .pmt-medical-wrap .pmt-medical-section-title {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
 
   .pmt-medical-banner {
-    padding: 28px 20px !important;
+    padding: 28px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .pmt-medical-wrap .pmt-medical-title {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
 
   .pmt-medical-stats .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
+    flex-basis: 100%;
+    min-width: 100%;
   }
 }
