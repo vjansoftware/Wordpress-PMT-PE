@@ -270,7 +270,6 @@ h3.wp-block-heading::after {
 }
 
 .indoorstadium-cta-btn-outline .wp-block-button__link {
-  background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
@@ -353,7 +352,7 @@ h3.wp-block-heading::after {
   .wp-block-media-text__content p:last-child {
     font-size: 14px;
     line-height: 1.7;
-    text-align: left;
+    text-align: justify;
   }
 
   /* Cards */
