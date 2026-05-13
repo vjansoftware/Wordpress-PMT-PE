@@ -311,7 +311,7 @@ p.yoga-label::after {
 .yoga-cta-btn-outline .wp-block-button__link {
   background: transparent;
   color: #f4f6fb;
-  border: 2px solid rgba(37, 59, 128, 0.35);
+  border: 2px solid #f4f6fb;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
