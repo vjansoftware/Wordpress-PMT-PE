@@ -1,5 +1,5 @@
- /* ═══════════════════════════════════════
-   PMT STUDENT GRIEVANCE PORTAL — STYLES
+/* ═══════════════════════════════════════
+   PMT EOC PAGE — STYLES
    Colors & fonts matching About College
 ═══════════════════════════════════════ */
 
@@ -33,15 +33,15 @@
 .entry-content .gr-wrap h2,
 .entry-content .gr-wrap h3,
 .entry-content .gr-wrap h4 {
-  clear: none !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  clear: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .entry-content .gr-wrap p:empty {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* ════════════════════════════════
@@ -58,48 +58,48 @@ p.gr-label.has-text-align-center,
 .entry-content p.gr-label,
 .wp-block-group p.gr-label,
 body p.gr-label {
-  color: #FF6000 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 8px !important;
-  margin-top: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  opacity: 1 !important;
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 1;
 }
 
 p.gr-label::before,
 p.gr-label::after {
-  content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  flex-shrink: 0 !important;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
 /* H1 */
 .gr-wrap .gr-title,
 .entry-content .gr-wrap h1.gr-title,
 body h1.gr-title {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 10px 0 14px !important;
-  line-height: 1.3 !important;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #253b80;
+  margin: 10px 0 14px;
+  line-height: 1.3;
 }
 
 /* Subtitle */
 .gr-wrap .gr-sub {
-  font-size: 15px !important;
-  color: #4b5563 !important;
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  line-height: 1.8 !important;
+  font-size: 15px;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 /* ════════════════════════════════
@@ -108,16 +108,17 @@ body h1.gr-title {
 
 p.gr-warning,
 .entry-content p.gr-warning {
-  background: #fff3f3 !important;
-  border-left: 5px solid #FF6000 !important;
-  color: #c0392b !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
-  padding: 13px 24px !important;
-  border-radius: 0 8px 8px 0 !important;
-  margin-bottom: 0 !important;
-  opacity: 1 !important;
+  background: #fff3f3;
+  border-left: 5px solid #FF6000;
+  color: #c0392b;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 13px 24px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0;
+  opacity: 1;
   animation: warningPulse 2.5s ease infinite;
+  text-align: justify;
 }
 
 /* ════════════════════════════════
@@ -125,26 +126,26 @@ p.gr-warning,
 ════════════════════════════════ */
 
 .gr-intro {
-  gap: 40px !important;
-  align-items: flex-start !important;
-  margin-bottom: 0 !important;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 0;
 }
 
 .gr-img-col {
-  padding: 0 !important;
+  padding: 0;
 }
 
 .gr-img {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .gr-img img {
-  width: 100% !important;
-  height: 400px !important;
-  object-fit: cover !important;
-  border-radius: 12px !important;
-  display: block !important;
-  box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15) !important;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15);
 }
 
 /* From label */
@@ -152,85 +153,85 @@ p.gr-from-label,
 .entry-content p.gr-from-label,
 .wp-block-group p.gr-from-label,
 body p.gr-from-label {
-  color: #FF6000 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 12px !important;
-  margin-top: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  opacity: 1 !important;
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
 }
 
 p.gr-from-label::before {
-  content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  flex-shrink: 0 !important;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
 /* Intro H2 */
 .gr-wrap .gr-intro-title,
 .entry-content .gr-wrap h2.gr-intro-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin-bottom: 16px !important;
-  line-height: 1.3 !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #253b80;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 /* Body text */
 .gr-wrap .gr-p {
-  font-size: 15px !important;
-  color: #4b5563 !important;
-  line-height: 1.9 !important;
-  margin-bottom: 14px !important;
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.9;
+  margin-bottom: 14px;
+  text-align: justify;
 }
 
 /* Points list */
 .gr-points {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 0 24px !important;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
 }
 
 .gr-points li {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-  padding: 10px 0 !important;
-  border-bottom: 1px solid #f0f0f0 !important;
-  color: #444 !important;
-  font-size: 14px !important;
-  line-height: 1.6 !important;
-  list-style: none !important;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  list-style: none;
 }
 
 .gr-points li:last-child {
-  border-bottom: none !important;
+  border-bottom: none;
 }
 
 .gr-points li::before {
-  content: '✓' !important;
-  width: 24px !important;
-  height: 24px !important;
-  min-width: 24px !important;
-  background: #253b80 !important;
-  color: #fff !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 12px !important;
-  margin-top: 2px !important;
-  flex-shrink: 0 !important;
+  content: '✓';
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: #253b80;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
 }
-
 
 /* ════════════════════════════════
    SECTION LABEL
@@ -240,27 +241,27 @@ p.gr-section-label,
 p.gr-section-label.has-text-align-center,
 .entry-content p.gr-section-label,
 body p.gr-section-label {
-  color: #FF6000 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 24px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  opacity: 1 !important;
+  color: #FF6000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 1;
 }
 
 p.gr-section-label::before,
 p.gr-section-label::after {
-  content: '' !important;
-  display: inline-block !important;
-  width: 20px !important;
-  height: 2px !important;
-  background: #FF6000 !important;
-  flex-shrink: 0 !important;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #FF6000;
+  flex-shrink: 0;
 }
 
 /* ════════════════════════════════
@@ -268,121 +269,121 @@ p.gr-section-label::after {
 ════════════════════════════════ */
 
 .gr-cards {
-  gap: 20px !important;
-  margin-bottom: 24px !important;
+  gap: 20px;
+  margin-bottom: 24px;
 }
 
 .gr-card {
-  background: #fff !important;
-  padding: 28px 24px !important;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07) !important;
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
 
 .gr-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(37, 59, 128, 0.15) !important;
+  box-shadow: 0 16px 40px rgba(37, 59, 128, 0.15);
 }
 
-.gr-card-1 { border-top: 4px solid #253b80 !important; }
-.gr-card-2 { border-top: 4px solid #179bd7 !important; }
-.gr-card-3 { border-top: 4px solid #FF6000 !important; }
+.gr-card-1 { border-top: 4px solid #253b80; }
+.gr-card-2 { border-top: 4px solid #179bd7; }
+.gr-card-3 { border-top: 4px solid #FF6000; }
 
 .gr-card-icon {
-  width: 56px !important;
-  height: 56px !important;
-  border-radius: 12px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 26px !important;
-  margin: 0 auto 16px !important;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 16px;
 }
 
-.gr-card-1 .gr-card-icon { background: #eef1fb !important; }
-.gr-card-2 .gr-card-icon { background: #e6f5fc !important; }
-.gr-card-3 .gr-card-icon { background: #fff3ee !important; }
+.gr-card-1 .gr-card-icon { background: #eef1fb; }
+.gr-card-2 .gr-card-icon { background: #e6f5fc; }
+.gr-card-3 .gr-card-icon { background: #fff3ee; }
 
 /* Card H3 */
 .gr-wrap .gr-card-title,
 .entry-content .gr-wrap h3.gr-card-title {
-  font-size: 17px !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 10px !important;
+  font-size: 17px;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 10px;
 }
 
 .gr-wrap .gr-card-text {
-  font-size: 14px !important;
-  color: #4b5563 !important;
-  line-height: 1.8 !important;
-  margin: 0 !important;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0;
 }
 
 .gr-card-list {
-  text-align: left !important;
-  padding-left: 18px !important;
-  margin: 0 !important;
+  text-align: left;
+  padding-left: 18px;
+  margin: 0;
 }
 
 .gr-card-list li {
-  font-size: 14px !important;
-  color: #4b5563 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 4px !important;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 4px;
 }
+
 /* ════════════════════════════════
    SC/ST CELL SECTION
 ════════════════════════════════ */
 
-/* Section spacing */
 .wp-block-group {
   margin-bottom: 30px;
   padding: -2px 0px;
 }
 
-/* Heading */
 .gr-form-title {
-  font-size: 1.6rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin-bottom: 12px !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #253b80;
+  margin-bottom: 12px;
   border-left: 4px solid #FF6000;
   padding: 10px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
-/* Paragraph */
 .gr-p {
-  font-size: 15px !important;
-  color: #4b5563 !important;
-  line-height: 1.8 !important;
-  margin-bottom: 16px !important;
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: justify;
 }
 
-/* List */
 .gr-points {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* List items */
 .gr-points li {
   position: relative;
-  padding: 10px 0 10px 32px !important;
-  font-size: 14px !important;
-  color: #444 !important;
+  padding: 10px 0 10px 32px;
+  font-size: 14px;
+  color: #444;
   border-bottom: 1px solid #eee;
 }
 
-/* Remove last border */
 .gr-points li:last-child {
   border-bottom: none;
 }
 
-/* Custom icon */
 .gr-points li::before {
   content: "✔";
   position: absolute;
@@ -398,33 +399,9 @@ p.gr-section-label::after {
   align-items: center;
   justify-content: center;
 }
-/* Fix invalid spacing */
+
 .wp-block-group.gr-wrap {
-  margin-bottom: 30px !important;
-}
-/* ════════════════════════════════
-   MOBILE
-════════════════════════════════ */
-
-@media (max-width: 768px) {
- /* Wrapper */
-  .gr-wrap {
-    padding: 0 16px !important;
-  }
-
-  .gr-form-title {
-    font-size: 1.3rem !important;
-  }
-
-  .gr-p {
-    font-size: 14px !important;
-  }
-
-  .gr-points li {
-    font-size: 13px !important;
-    padding-left: 28px !important;
-  }
-
+  margin-bottom: 30px;
 }
 
 /* ════════════════════════════════
@@ -432,61 +409,200 @@ p.gr-section-label::after {
 ════════════════════════════════ */
 
 .gr-emergency {
-  background: #fff3f3 !important;
-  border-top: 4px solid #FF6000 !important;
-  border-radius: 12px !important;
-  padding: 24px 30px !important;
-  margin-bottom: 20px !important;
-  box-shadow: 0 4px 20px rgba(255, 96, 0, 0.1) !important;
+  background: #fff3f3;
+  border-top: 4px solid #FF6000;
+  border-radius: 12px;
+  padding: 24px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(255, 96, 0, 0.1);
   animation: pulse 2s ease 1s infinite;
 }
 
 .gr-emergency-icon {
-  font-size: 2.5rem !important;
-  margin: 0 !important;
-  line-height: 1 !important;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1;
 }
 
-/* Emergency H3 */
 .gr-wrap .gr-emergency-title,
 .entry-content .gr-wrap h3.gr-emergency-title {
-  font-size: 1.1rem !important;
-  font-weight: 700 !important;
-  color: #FF6000 !important;
-  margin: 0 0 8px !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FF6000;
+  margin: 0 0 8px;
 }
 
 .gr-wrap .gr-emergency-text {
-  font-size: 14px !important;
-  color: #555 !important;
-  margin: 4px 0 !important;
-  line-height: 1.6 !important;
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+  line-height: 1.6;
 }
 
 .gr-wrap .gr-emergency-text strong {
-  color: #253b80 !important;
-  margin-right: 6px !important;
+  color: #253b80;
+  margin-right: 6px;
 }
 
 /* ════════════════════════════════
-   FORM
+   FORM CARD
 ════════════════════════════════ */
 
 .gr-form {
-  background: #fff !important;
-  padding: 30px !important;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
-  max-width: 700px !important;
-  margin: 0 auto !important;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 /* Form H2 */
 .gr-wrap .gr-form-title,
 .entry-content .gr-wrap h2.gr-form-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 20px !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #253b80;
+  margin: 0 0 20px;
+}
+/* SC/ST section alignment */
+h2.gr-form-title,
+.gr-p,
+.gr-points {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+/* ════════════════════════════════
+   WPFORMS - FORM FIELDS STYLING
+════════════════════════════════ */
+
+.gr-form .wpforms-container {
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+/* All input fields */
+.gr-form .wpforms-field input[type="text"],
+.gr-form .wpforms-field input[type="email"],
+.gr-form .wpforms-field input[type="tel"],
+.gr-form .wpforms-field textarea,
+.gr-form .wpforms-field select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #dde3f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #444;
+  background: #f9faff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Focus state */
+.gr-form .wpforms-field input:focus,
+.gr-form .wpforms-field textarea:focus,
+.gr-form .wpforms-field select:focus {
+  border-color: #253b80;
+  box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1);
+  background: #fff;
+}
+
+/* Textarea height */
+.gr-form .wpforms-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Field labels */
+.gr-form .wpforms-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #253b80;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Required star */
+.gr-form .wpforms-required-label {
+  color: #FF6000;
+}
+
+/* Field spacing */
+.gr-form .wpforms-field {
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+/* Name field - side by side */
+.gr-form .wpforms-field-name .wpforms-field-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.gr-form .wpforms-field-name .wpforms-field-row > span {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.gr-form .wpforms-field-name .wpforms-field-row > span input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Submit button */
+.gr-form .wpforms-submit {
+  background: #253b80;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.gr-form .wpforms-submit:hover {
+  background: #FF6000;
+  transform: translateY(-2px);
+}
+
+/* Error messages */
+.gr-form .wpforms-error {
+  color: #c0392b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Success message */
+.gr-form .wpforms-confirmation-container-full {
+  background: #eef1fb;
+  border-left: 4px solid #253b80;
+  padding: 20px;
+  border-radius: 8px;
+  color: #253b80;
+  font-weight: 600;
 }
 
 /* ════════════════════════════════
@@ -495,167 +611,62 @@ p.gr-section-label::after {
 
 @media (max-width: 768px) {
   .gr-wrap {
-    padding: 0 16px !important;
+    padding: 0 16px;
   }
 
   .gr-intro .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
+    flex-basis: 100%;
+    min-width: 100%;
   }
 
   .gr-img img {
-    height: 240px !important;
-    padding-top: 16px !important;
+    height: 240px;
+    padding-top: 16px;
   }
 
   .gr-cards .wp-block-column {
-    flex-basis: 100% !important;
-    min-width: 100% !important;
+    flex-basis: 100%;
+    min-width: 100%;
   }
 
   .gr-wrap .gr-title {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
 
   .gr-emergency {
-    padding: 20px !important;
+    padding: 20px;
   }
 
   .gr-form {
-    padding: 20px !important;
+    padding: 20px;
+  }
+
+  .gr-form-title {
+    font-size: 1.3rem;
+  }
+
+  .gr-p {
+    font-size: 14px;
+  }
+
+  .gr-points li {
+    font-size: 13px;
+    padding-left: 28px;
+  }
+
+  .gr-form .wpforms-field-name .wpforms-field-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .gr-form .wpforms-submit {
+    width: 100%;
+    padding: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .gr-wrap .gr-title {
-    font-size: 1.2rem !important;
-  }
-}
-/* ════════════════════════════════
-   WPFORMS - FORM FIELDS STYLING
-════════════════════════════════ */
-
-/* Form container center */
-
-.gr-form .wpforms-container {
-  max-width: 100% !important;
-  margin: 0 auto !important;
-}
-/* All input fields */
-.gr-form .wpforms-field input[type="text"],
-.gr-form .wpforms-field input[type="email"],
-.gr-form .wpforms-field input[type="tel"],
-.gr-form .wpforms-field textarea,
-.gr-form .wpforms-field select {
-  width: 100% !important;
-  padding: 12px 16px !important;
-  border: 1px solid #dde3f0 !important;
-  border-radius: 8px !important;
-  font-size: 14px !important;
-  color: #444 !important;
-  background: #f9faff !important;
-  transition: border-color 0.3s, box-shadow 0.3s !important;
-  outline: none !important;
-}
-
-/* Focus state */
-.gr-form .wpforms-field input:focus,
-.gr-form .wpforms-field textarea:focus,
-.gr-form .wpforms-field select:focus {
-  border-color: #253b80 !important;
-  box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1) !important;
-  background: #fff !important;
-}
-
-/* Textarea height */
-.gr-form .wpforms-field textarea {
-  min-height: 140px !important;
-  resize: vertical !important;
-}
-
-/* Field labels */
-.gr-form .wpforms-field label {
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  color: #253b80 !important;
-  margin-bottom: 6px !important;
-  display: block !important;
-}
-
-/* Required star */
-.gr-form .wpforms-required-label {
-  color: #FF6000 !important;
-}
-
-/* Field spacing */
-
-.gr-form .wpforms-field {
-  margin-bottom: 12px !important;
-  padding: 0 !important;
-}
-
-/* Name field - side by side */
-.gr-form .wpforms-field-name .wpforms-field-row {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 16px !important;
-  flex-wrap: nowrap !important;
-}
-
-.gr-form .wpforms-field-name .wpforms-field-row > span {
-  flex: 1 !important;
-  min-width: 0 !important;
-}
-
-/* Submit button */
-.gr-form .wpforms-submit {
-  background: #253b80 !important;
-  color: #fff !important;
-  border: none !important;
-  padding: 14px 40px !important;
-  border-radius: 8px !important;
-  font-size: 15px !important;
-  font-weight: 600 !important;
-  cursor: pointer !important;
-  transition: background 0.3s, transform 0.2s !important;
-  display: block !important;
-  margin: 10px auto 0 !important;
-}
-
-.gr-form .wpforms-submit:hover {
-  background: #FF6000 !important;
-  transform: translateY(-2px) !important;
-}
-
-/* Error messages */
-.gr-form .wpforms-error {
-  color: #c0392b !important;
-  font-size: 12px !important;
-  margin-top: 4px !important;
-}
-
-/* Success message */
-.gr-form .wpforms-confirmation-container-full {
-  background: #eef1fb !important;
-  border-left: 4px solid #253b80 !important;
-  padding: 20px !important;
-  border-radius: 8px !important;
-  color: #253b80 !important;
-  font-weight: 600 !important;
-}
-
-/* ════════════════════════════════
-   MOBILE - FORM
-════════════════════════════════ */
-
-@media (max-width: 768px) {
-  .gr-form .wpforms-field-name .wpforms-field-row {
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  .gr-form .wpforms-submit {
-    width: 100% !important;
-    padding: 14px !important;
+    font-size: 1.2rem;
   }
 }
