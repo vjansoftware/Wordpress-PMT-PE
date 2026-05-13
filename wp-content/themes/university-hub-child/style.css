@@ -785,23 +785,7 @@ article.hentry,
 }
 .pmt-sport-card:hover svg { transform: scale(1.2) rotate(-8deg); }
 
-/* ── ELIGIBILITY CARDS ── */
-.pmt-elig-card {
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-  box-shadow 0.35s, border-top-color 0.3s;
-}
-.pmt-elig-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 36px rgba(37, 59, 128, 0.13);
-  border-top-color: #253b80;
-}
-.pmt-elig-icon {
-  transition: background 0.3s, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.pmt-elig-card:hover .pmt-elig-icon {
-  background: #FF6000;
-  transform: scale(1.1) rotate(-6deg);
-}
+
 
 /* ── DOCUMENT ITEMS ── */
 .pmt-doc-item {
