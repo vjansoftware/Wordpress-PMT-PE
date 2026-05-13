@@ -1,11 +1,8 @@
-/* ═══════════════════════════════════════════════════════
-   PMT STUDENT & WOMEN HELP DESK — shd.css
-═══════════════════════════════════════════════════════ */
-
-@keyframes zoomInCard {
-  from { opacity: 0; transform: scale(0.7) translateY(30px); }
-  to   { opacity: 1; transform: scale(1) translateY(0); }
-}
+/* ═══════════════════════════════════════
+   PMT WOMEN HELP DESK — STYLES
+   Colors handled by global classes
+   Shares .shd-* classes with Student Help Desk
+═══════════════════════════════════════ */
 
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(23, 155, 215, 0.4); }
@@ -17,12 +14,9 @@
   50%       { background: #dcefff; }
 }
 
-/* ════════════════════════════════
-   WRAP & THEME OVERRIDES
-════════════════════════════════ */
-
+/* ── Wrapper ── */
 .shd-wrap {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;
@@ -35,6 +29,7 @@
   box-sizing: border-box;
 }
 
+/* ── WordPress theme overrides ── */
 .entry-content .shd-wrap h1,
 .entry-content .shd-wrap h2,
 .entry-content .shd-wrap h3,
@@ -59,18 +54,15 @@
   padding-bottom: 10px;
 }
 
-/* Orange label — hero */
 p.shd-label,
 p.shd-label.has-text-align-center,
 .entry-content p.shd-label,
 .wp-block-group p.shd-label,
 body p.shd-label {
-  color: #FF6000 !important;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   margin-bottom: 8px !important;
   margin-top: 0 !important;
   display: flex !important;
@@ -86,22 +78,19 @@ p.shd-label::after {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
-/* H1 title */
 .shd-wrap .shd-title,
 .entry-content .shd-wrap h1.shd-title,
 body h1.shd-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 10px 0 14px !important;
   line-height: 1.3 !important;
 }
 
-/* Subtitle */
 .shd-wrap .shd-sub {
   font-size: 15px !important;
   color: #4b5563 !important;
@@ -129,7 +118,7 @@ p.shd-warning,
 }
 
 /* ════════════════════════════════
-   INTRO — IMAGE + TEXT
+   INTRO ROW
 ════════════════════════════════ */
 
 .shd-intro {
@@ -138,13 +127,8 @@ p.shd-warning,
   margin-bottom: 0 !important;
 }
 
-.shd-img-col {
-  padding: 0 !important;
-}
-
-.shd-img {
-  margin: 0 !important;
-}
+.shd-img-col { padding: 0 !important; }
+.shd-img     { margin: 0 !important; }
 
 .shd-img img {
   width: 100% !important;
@@ -155,17 +139,14 @@ p.shd-warning,
   box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15) !important;
 }
 
-/* Orange label — intro */
 p.shd-from-label,
 .entry-content p.shd-from-label,
 .wp-block-group p.shd-from-label,
 body p.shd-from-label {
-  color: #FF6000 !important;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   margin-bottom: 12px !important;
   margin-top: 0 !important;
   display: flex !important;
@@ -179,21 +160,18 @@ p.shd-from-label::before {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
-/* Intro H2 */
 .shd-wrap .shd-intro-title,
 .entry-content .shd-wrap h2.shd-intro-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin-bottom: 16px !important;
   line-height: 1.3 !important;
 }
 
-/* Body paragraphs */
 .shd-wrap .shd-p {
   font-size: 15px !important;
   color: #4b5563 !important;
@@ -202,7 +180,6 @@ p.shd-from-label::before {
   text-align: justify !important;
 }
 
-/* Points list */
 .shd-points {
   list-style: none !important;
   padding: 0 !important;
@@ -230,7 +207,7 @@ p.shd-from-label::before {
   width: 24px !important;
   height: 24px !important;
   min-width: 24px !important;
-  background: #179bd7 !important;
+  background: #253b80 !important;
   color: #fff !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -241,20 +218,6 @@ p.shd-from-label::before {
   flex-shrink: 0 !important;
 }
 
-/* Badge */
-p.shd-badge,
-.entry-content p.shd-badge {
-  display: inline-block !important;
-  background: #179bd7 !important;
-  color: #fff !important;
-  padding: 10px 24px !important;
-  border-radius: 25px !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  margin: 0 !important;
-  opacity: 1 !important;
-}
-
 /* ════════════════════════════════
    SECTION LABEL
 ════════════════════════════════ */
@@ -263,12 +226,10 @@ p.shd-section-label,
 p.shd-section-label.has-text-align-center,
 .entry-content p.shd-section-label,
 body p.shd-section-label {
-  color: #FF6000 !important;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   margin-bottom: 24px !important;
   display: flex !important;
   align-items: center !important;
@@ -283,7 +244,7 @@ p.shd-section-label::after {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
@@ -292,8 +253,6 @@ p.shd-section-label::after {
 ════════════════════════════════ */
 
 .shd-cards {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
   gap: 20px !important;
   margin-bottom: 24px !important;
 }
@@ -305,7 +264,6 @@ p.shd-section-label::after {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07) !important;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .shd-card:hover {
@@ -313,12 +271,10 @@ p.shd-section-label::after {
   box-shadow: 0 16px 40px rgba(37, 59, 128, 0.15) !important;
 }
 
-/* Card top border colors */
 .shd-card-1 { border-top: 4px solid #253b80 !important; }
 .shd-card-2 { border-top: 4px solid #179bd7 !important; }
 .shd-card-3 { border-top: 4px solid #FF6000 !important; }
 
-/* Card icon */
 p.shd-card-icon,
 .entry-content p.shd-card-icon {
   width: 56px !important;
@@ -336,16 +292,13 @@ p.shd-card-icon,
 .shd-card-2 p.shd-card-icon { background: #e6f5fc !important; }
 .shd-card-3 p.shd-card-icon { background: #fff3ee !important; }
 
-/* Card title */
 .shd-wrap .shd-card-title,
 .entry-content .shd-wrap h3.shd-card-title {
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 12px !important;
 }
 
-/* Card list */
 .shd-card-list {
   list-style: none !important;
   padding: 0 !important;
@@ -402,7 +355,6 @@ p.shd-card-icon,
 .entry-content .shd-wrap h3.shd-contact-title {
   font-size: 1.1rem !important;
   font-weight: 700 !important;
-  color: #179bd7 !important;
   margin: 0 0 8px !important;
 }
 
@@ -419,7 +371,7 @@ p.shd-card-icon,
 }
 
 /* ════════════════════════════════
-   FORM BOX
+   FORM CARD
 ════════════════════════════════ */
 
 .shd-form {
@@ -427,14 +379,22 @@ p.shd-card-icon,
   padding: 30px !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .shd-wrap .shd-form-title,
 .entry-content .shd-wrap h2.shd-form-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 20px !important;
+  border-left: 4px solid #FF6000 !important;
+  padding-left: 12px !important;
 }
 
 .shd-form-note {
@@ -445,27 +405,134 @@ p.shd-card-icon,
 }
 
 /* ════════════════════════════════
-   RESPONSIVE — TABLET (max 1024px)
+   WPFORMS STYLING
 ════════════════════════════════ */
 
-@media (max-width: 1024px) {
-  .shd-wrap {
-    padding: 0 30px;
-  }
+.shd-form .wpforms-container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field input[type="text"],
+.shd-form .wpforms-field input[type="email"],
+.shd-form .wpforms-field input[type="tel"],
+.shd-form .wpforms-field textarea,
+.shd-form .wpforms-field select {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid #dde3f0 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  color: #444 !important;
+  background: #f9faff !important;
+  transition: border-color 0.3s, box-shadow 0.3s !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+.shd-form .wpforms-field input:focus,
+.shd-form .wpforms-field textarea:focus,
+.shd-form .wpforms-field select:focus {
+  border-color: #253b80 !important;
+  box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1) !important;
+  background: #fff !important;
+}
+
+.shd-form .wpforms-field textarea {
+  min-height: 120px !important;
+  resize: vertical !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #253b80 !important;
+  margin-bottom: 6px !important;
+  display: block !important;
+}
+
+.shd-form .wpforms-required-label {
+  color: #FF6000 !important;
+}
+
+.shd-form .wpforms-field {
+  margin-bottom: 12px !important;
+  padding: 0 !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0 !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  width: 50% !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
+  padding-right: 8px !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
+  padding-left: 8px !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+.shd-form .wpforms-submit {
+  background: #253b80 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 14px 40px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background 0.3s, transform 0.2s !important;
+  display: block !important;
+  margin: 10px auto 0 !important;
+}
+
+.shd-form .wpforms-submit:hover {
+  background: #FF6000 !important;
+  transform: translateY(-2px) !important;
+}
+
+.shd-form .wpforms-error {
+  color: #c0392b !important;
+  font-size: 12px !important;
+  margin-top: 4px !important;
+}
+
+.shd-form .wpforms-confirmation-container-full {
+  background: #eef1fb !important;
+  border-left: 4px solid #253b80 !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  color: #253b80 !important;
+  font-weight: 600 !important;
 }
 
 /* ════════════════════════════════
-   RESPONSIVE — MOBILE (max 768px)
+   RESPONSIVE
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .shd-wrap {
-    padding: 0 16px !important;
-  }
-
-  .shd-hero {
-    padding-top: 24px;
-  }
+  .shd-wrap { padding: 0 16px !important; }
 
   .shd-intro .wp-block-column {
     flex-basis: 100% !important;
@@ -477,49 +544,38 @@ p.shd-card-icon,
     padding-top: 16px !important;
   }
 
-  .shd-cards {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
   .shd-cards .wp-block-column {
     flex-basis: 100% !important;
     min-width: 100% !important;
   }
 
-  .shd-wrap .shd-title {
-    font-size: 1.4rem !important;
+  .shd-wrap .shd-title       { font-size: 1.4rem !important; }
+  .shd-wrap .shd-intro-title { font-size: 1.4rem !important; }
+  .shd-contact               { padding: 20px !important; }
+  .shd-form                  { padding: 20px !important; }
+  .shd-wrap .shd-form-title  { font-size: 1.4rem !important; }
+
+  .shd-form .wpforms-field-name .wpforms-field-row {
+    flex-direction: column !important;
+    gap: 12px !important;
   }
 
-  .shd-wrap .shd-intro-title {
-    font-size: 1.4rem !important;
+  .shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
+    padding-right: 0 !important;
   }
 
-  .shd-contact {
-    padding: 20px !important;
+  .shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
+    padding-left: 0 !important;
   }
 
-  .shd-form {
-    padding: 20px !important;
-  }
-
-  .shd-wrap .shd-form-title {
-    font-size: 1.4rem !important;
+  .shd-form .wpforms-submit {
+    width: 100% !important;
+    padding: 14px !important;
   }
 }
 
-/* ════════════════════════════════
-   RESPONSIVE — SMALL MOBILE (max 480px)
-════════════════════════════════ */
-
 @media (max-width: 480px) {
-  .shd-wrap .shd-title {
-    font-size: 1.2rem !important;
-  }
-  .shd-wrap .shd-intro-title {
-    font-size: 1.2rem !important;
-  }
-  .shd-wrap .shd-form-title {
-    font-size: 1.2rem !important;
-  }
+  .shd-wrap .shd-title       { font-size: 1.2rem !important; }
+  .shd-wrap .shd-intro-title { font-size: 1.2rem !important; }
+  .shd-wrap .shd-form-title  { font-size: 1.2rem !important; }
 }

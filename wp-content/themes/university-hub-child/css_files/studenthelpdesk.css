@@ -1,19 +1,19 @@
 /* ═══════════════════════════════════════
    PMT STUDENT HELP DESK — STYLES
-   Matching Student Grievance format
+   Colors handled by global classes
 ═══════════════════════════════════════ */
 
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(23, 155, 215, 0.4); }
-  50% { box-shadow: 0 0 0 10px rgba(23, 155, 215, 0); }
+  50%       { box-shadow: 0 0 0 10px rgba(23, 155, 215, 0); }
 }
 
 @keyframes warningPulse {
   0%, 100% { background: #f0f7ff; }
-  50% { background: #dcefff; }
+  50%       { background: #dcefff; }
 }
 
-/* Wrapper */
+/* ── Wrapper ── */
 .shd-wrap {
   max-width: 1160px;
   margin: 0 auto;
@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-/* WordPress theme overrides */
+/* ── WordPress theme overrides ── */
 .entry-content .shd-wrap h1,
 .entry-content .shd-wrap h2,
 .entry-content .shd-wrap h3,
@@ -44,7 +44,10 @@
   padding: 0 !important;
 }
 
-/* Hero */
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+
 .shd-hero {
   text-align: center;
   padding-bottom: 10px;
@@ -55,7 +58,6 @@ p.shd-label.has-text-align-center,
 .entry-content p.shd-label,
 .wp-block-group p.shd-label,
 body p.shd-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -75,7 +77,7 @@ p.shd-label::after {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
@@ -84,7 +86,6 @@ p.shd-label::after {
 body h1.shd-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 10px 0 14px !important;
   line-height: 1.3 !important;
 }
@@ -97,7 +98,10 @@ body h1.shd-title {
   line-height: 1.8 !important;
 }
 
-/* Warning */
+/* ════════════════════════════════
+   WARNING BAR
+════════════════════════════════ */
+
 p.shd-warning,
 .entry-content p.shd-warning {
   background: #f0f7ff !important;
@@ -112,20 +116,18 @@ p.shd-warning,
   animation: warningPulse 2.5s ease infinite;
 }
 
-/* Intro */
+/* ════════════════════════════════
+   INTRO ROW
+════════════════════════════════ */
+
 .shd-intro {
   gap: 40px !important;
   align-items: flex-start !important;
   margin-bottom: 0 !important;
 }
 
-.shd-img-col {
-  padding: 0 !important;
-}
-
-.shd-img {
-  margin: 0 !important;
-}
+.shd-img-col { padding: 0 !important; }
+.shd-img     { margin: 0 !important; }
 
 .shd-img img {
   width: 100% !important;
@@ -140,7 +142,6 @@ p.shd-from-label,
 .entry-content p.shd-from-label,
 .wp-block-group p.shd-from-label,
 body p.shd-from-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -158,7 +159,7 @@ p.shd-from-label::before {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
@@ -166,17 +167,16 @@ p.shd-from-label::before {
 .entry-content .shd-wrap h2.shd-intro-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin-bottom: 16px !important;
   line-height: 1.3 !important;
 }
 
 .shd-wrap .shd-p {
-  font-size: 15px ;
-  color: #4b5563 ;
-  line-height: 1.9 ;
-  margin-bottom: 14px ;
-  text-align: justify ;
+  font-size: 15px !important;
+  color: #4b5563 !important;
+  line-height: 1.9 !important;
+  margin-bottom: 14px !important;
+  text-align: justify !important;
 }
 
 .shd-points {
@@ -206,7 +206,7 @@ p.shd-from-label::before {
   width: 24px !important;
   height: 24px !important;
   min-width: 24px !important;
-  background: #179bd7 !important;
+  background: #253b80 !important;
   color: #fff !important;
   border-radius: 50% !important;
   display: flex !important;
@@ -217,25 +217,14 @@ p.shd-from-label::before {
   flex-shrink: 0 !important;
 }
 
-p.shd-badge,
-.entry-content p.shd-badge {
-  display: inline-block !important;
-  background: #179bd7 !important;
-  color: #fff !important;
-  padding: 10px 24px !important;
-  border-radius: 25px !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  margin: 0 !important;
-  opacity: 1 !important;
-}
+/* ════════════════════════════════
+   SECTION LABEL
+════════════════════════════════ */
 
-/* Section label */
 p.shd-section-label,
 p.shd-section-label.has-text-align-center,
 .entry-content p.shd-section-label,
 body p.shd-section-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -254,11 +243,14 @@ p.shd-section-label::after {
   display: inline-block !important;
   width: 20px !important;
   height: 2px !important;
-  background: #FF6000 !important;
+  background: currentColor !important;
   flex-shrink: 0 !important;
 }
 
-/* Cards */
+/* ════════════════════════════════
+   CARDS
+════════════════════════════════ */
+
 .shd-cards {
   gap: 20px !important;
   margin-bottom: 24px !important;
@@ -282,7 +274,8 @@ p.shd-section-label::after {
 .shd-card-2 { border-top: 4px solid #179bd7 !important; }
 .shd-card-3 { border-top: 4px solid #FF6000 !important; }
 
-.shd-card-icon {
+p.shd-card-icon,
+.entry-content p.shd-card-icon {
   width: 56px !important;
   height: 56px !important;
   border-radius: 12px !important;
@@ -291,34 +284,56 @@ p.shd-section-label::after {
   justify-content: center !important;
   font-size: 26px !important;
   margin: 0 auto 16px !important;
+  line-height: 1 !important;
 }
 
-.shd-card-1 .shd-card-icon { background: #eef1fb !important; }
-.shd-card-2 .shd-card-icon { background: #e6f5fc !important; }
-.shd-card-3 .shd-card-icon { background: #fff3ee !important; }
+.shd-card-1 p.shd-card-icon { background: #eef1fb !important; }
+.shd-card-2 p.shd-card-icon { background: #e6f5fc !important; }
+.shd-card-3 p.shd-card-icon { background: #fff3ee !important; }
 
 .shd-wrap .shd-card-title,
 .entry-content .shd-wrap h3.shd-card-title {
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
-  margin: 0 0 10px !important;
+  margin: 0 0 12px !important;
 }
 
 .shd-card-list {
-  text-align: left !important;
-  padding-left: 18px !important;
+  list-style: none !important;
+  padding: 0 !important;
   margin: 0 !important;
+  text-align: left !important;
 }
 
 .shd-card-list li {
   font-size: 14px !important;
   color: #4b5563 !important;
   line-height: 1.8 !important;
-  margin-bottom: 4px !important;
+  padding: 5px 0 !important;
+  border-bottom: 1px solid #f4f4f4 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  list-style: none !important;
 }
 
-/* Contact */
+.shd-card-list li:last-child {
+  border-bottom: none !important;
+}
+
+.shd-card-list li::before {
+  content: '✓' !important;
+  color: #FF6000 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  flex-shrink: 0 !important;
+  margin-top: 3px !important;
+}
+
+/* ════════════════════════════════
+   CONTACT BOX
+════════════════════════════════ */
+
 .shd-contact {
   background: #f0f7ff !important;
   border-top: 4px solid #179bd7 !important;
@@ -339,7 +354,6 @@ p.shd-section-label::after {
 .entry-content .shd-wrap h3.shd-contact-title {
   font-size: 1.1rem !important;
   font-weight: 700 !important;
-  color: #179bd7 !important;
   margin: 0 0 8px !important;
 }
 
@@ -355,27 +369,162 @@ p.shd-section-label::after {
   margin-right: 6px !important;
 }
 
-/* Form */
+/* ════════════════════════════════
+   FORM CARD
+════════════════════════════════ */
+
 .shd-form {
   background: #fff !important;
   padding: 30px !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .shd-wrap .shd-form-title,
 .entry-content .shd-wrap h2.shd-form-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 20px !important;
+  border-left: 4px solid #FF6000 !important;
+  padding-left: 12px !important;
 }
 
-/* Responsive */
+/* ════════════════════════════════
+   WPFORMS STYLING
+════════════════════════════════ */
+
+.shd-form .wpforms-container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field input[type="text"],
+.shd-form .wpforms-field input[type="email"],
+.shd-form .wpforms-field input[type="tel"],
+.shd-form .wpforms-field textarea,
+.shd-form .wpforms-field select {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid #dde3f0 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  color: #444 !important;
+  background: #f9faff !important;
+  transition: border-color 0.3s, box-shadow 0.3s !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+.shd-form .wpforms-field input:focus,
+.shd-form .wpforms-field textarea:focus,
+.shd-form .wpforms-field select:focus {
+  border-color: #253b80 !important;
+  box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1) !important;
+  background: #fff !important;
+}
+
+.shd-form .wpforms-field textarea {
+  min-height: 120px !important;
+  resize: vertical !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #253b80 !important;
+  margin-bottom: 6px !important;
+  display: block !important;
+}
+
+.shd-form .wpforms-required-label {
+  color: #FF6000 !important;
+}
+
+.shd-form .wpforms-field {
+  margin-bottom: 12px !important;
+  padding: 0 !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0 !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  width: 50% !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
+  padding-right: 8px !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
+  padding-left: 8px !important;
+}
+
+.shd-form .wpforms-field-name .wpforms-field-row > span input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+.shd-form .wpforms-submit {
+  background: #253b80 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 14px 40px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background 0.3s, transform 0.2s !important;
+  display: block !important;
+  margin: 10px auto 0 !important;
+}
+
+.shd-form .wpforms-submit:hover {
+  background: #FF6000 !important;
+  transform: translateY(-2px) !important;
+}
+
+.shd-form .wpforms-error {
+  color: #c0392b !important;
+  font-size: 12px !important;
+  margin-top: 4px !important;
+}
+
+.shd-form .wpforms-confirmation-container-full {
+  background: #eef1fb !important;
+  border-left: 4px solid #253b80 !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  color: #253b80 !important;
+  font-weight: 600 !important;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
 @media (max-width: 768px) {
-  .shd-wrap {
-    padding: 0 16px !important;
-  }
+  .shd-wrap { padding: 0 16px !important; }
 
   .shd-intro .wp-block-column {
     flex-basis: 100% !important;
@@ -392,21 +541,33 @@ p.shd-section-label::after {
     min-width: 100% !important;
   }
 
-  .shd-wrap .shd-title {
-    font-size: 1.4rem !important;
+  .shd-wrap .shd-title       { font-size: 1.4rem !important; }
+  .shd-wrap .shd-intro-title { font-size: 1.4rem !important; }
+  .shd-contact               { padding: 20px !important; }
+  .shd-form                  { padding: 20px !important; }
+  .shd-wrap .shd-form-title  { font-size: 1.4rem !important; }
+
+  .shd-form .wpforms-field-name .wpforms-field-row {
+    flex-direction: column !important;
+    gap: 12px !important;
   }
 
-  .shd-contact {
-    padding: 20px !important;
+  .shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
+    padding-right: 0 !important;
   }
 
-  .shd-form {
-    padding: 20px !important;
+  .shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
+    padding-left: 0 !important;
+  }
+
+  .shd-form .wpforms-submit {
+    width: 100% !important;
+    padding: 14px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .shd-wrap .shd-title {
-    font-size: 1.2rem !important;
-  }
+  .shd-wrap .shd-title       { font-size: 1.2rem !important; }
+  .shd-wrap .shd-intro-title { font-size: 1.2rem !important; }
+  .shd-wrap .shd-form-title  { font-size: 1.2rem !important; }
 }
