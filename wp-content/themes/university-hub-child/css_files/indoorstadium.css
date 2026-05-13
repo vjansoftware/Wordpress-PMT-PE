@@ -211,77 +211,62 @@ h3.wp-block-heading::after {
   font-weight: 700;
 }
 
-/* CTA heading */
-/* .entry-content > h2.wp-block-heading.has-text-align-center:last-of-type {
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  color: #ff6000;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.3;
-  padding: 42px 20px 12px;
-  margin-bottom: 0;
-  border-radius: 18px 18px 0 0;
-} */
+/* ════════════════════════════════
+   CTA
+════════════════════════════════ */
 
-/* CTA text */
-/* .entry-content > p.has-text-align-center:last-of-type {
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  color: #f4f6fb;
-  max-width: 100%;
-  margin: 0;
-  padding: 0 20px 22px;
+.indoorstadium-cta {
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.indoorstadium-cta-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.indoorstadium-cta-text {
   font-size: 15px;
-  line-height: 1.8;
-} */
+  color: #f4f6fb;
+  margin-bottom: 20px;
+}
 
-/* CTA buttons row */
-/* .entry-content > .wp-block-columns:last-child {
+.indoorstadium-cta .wp-block-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 16px;
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  padding: 8px 20px 42px;
-  border-radius: 0 0 18px 18px;
-} */
-
-/* .entry-content > .wp-block-columns:last-child .wp-block-column {
-  flex: 0 0 auto;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.entry-content > .wp-block-columns:last-child h4 {
-  margin: 0;
-}
-
-.entry-content > .wp-block-columns:last-child a {
-  display: inline-block;
-  min-width: 170px;
-  text-align: center;
-  padding: 12px 24px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 14px;
+.indoorstadium-cta-btn .wp-block-button__link {
+  background: #FF6000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
   font-weight: 700;
-  transition: all 0.3s ease;
-} */
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
 
-/* Apply Now */
-/* .entry-content > .wp-block-columns:last-child .wp-block-column:first-child a {
-  background: #ff6000;
-  color: #fff;
-  border: 2px solid #ff6000;
-} */
+.indoorstadium-cta-btn .wp-block-button__link:hover {
+  background: #e05500;
+}
 
-/* Contact Us */
-/* .entry-content > .wp-block-columns:last-child .wp-block-column:last-child a {
+.indoorstadium-cta-btn-outline .wp-block-button__link {
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #f4f6fb;
+  border: 2px solid #f4f6fb;
+  box-shadow: none;
 }
 
-.entry-content > .wp-block-columns:last-child a:hover {
-  transform: translateY(-2px);
+.indoorstadium-cta-btn-outline .wp-block-button__link:hover {
+  background: rgba(37, 59, 128, 0.05);
 }
+
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -340,5 +325,9 @@ h3.wp-block-heading::after {
 
   .wp-block-media-text__content p:nth-child(1) {
     font-size: 1.4rem;
+  }
+
+  .indoorstadium-cta-title {
+    font-size: 1.2rem;
   }
 }
