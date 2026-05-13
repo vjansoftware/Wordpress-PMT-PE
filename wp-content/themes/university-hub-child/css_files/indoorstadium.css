@@ -222,28 +222,6 @@
   border-radius: 18px 18px 0 0 !important;
 }
 
-/* CTA text */
-.page-id-3386 .entry-content > p.has-text-align-center:last-of-type {
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  color: #f4f6fb !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 20px 22px !important;
-  font-size: 15px !important;
-  line-height: 1.8 !important;
-}
-
-/* CTA buttons row */
-.page-id-3386 .entry-content > .wp-block-columns:last-child {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 16px !important;
-  background: linear-gradient(135deg, #253b80, #179bd7);
-  padding: 8px 20px 42px !important;
-  border-radius: 0 0 18px 18px !important;
-}
-
 .page-id-3386 .entry-content > .wp-block-columns:last-child .wp-block-column {
   flex: 0 0 auto !important;
 }
