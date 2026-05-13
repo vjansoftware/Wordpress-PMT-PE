@@ -271,10 +271,10 @@
 }
 
 /* File Block */
+/* File Block */
 .wp-block-columns:not(.pmt-apply-columns) .wp-block-file {
-  display: flex !important;
-  flex-direction: column !important;
-  width: 100% !important;
+  display: block !important;
+  width: auto !important;
 }
 
 /* Hide filename link */
@@ -287,6 +287,8 @@
 .wp-block-columns:not(.pmt-apply-columns) .wp-block-file__button {
   display: inline-block !important;
   width: auto !important;
+  min-width: 200px !important;
+  max-width: 300px !important;
   color: #ffffff !important;
   text-decoration: none !important;
   border-radius: 8px !important;
