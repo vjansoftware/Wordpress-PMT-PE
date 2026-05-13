@@ -275,6 +275,7 @@
 .wp-block-columns:not(.pmt-apply-columns) .wp-block-file {
   display: block !important;
   width: auto !important;
+  text-align: center !important;
 }
 
 /* Hide filename link */
