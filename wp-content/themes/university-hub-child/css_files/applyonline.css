@@ -285,12 +285,12 @@
 
 /* Download button — full width */
 .wp-block-columns:not(.pmt-apply-columns) .wp-block-file__button {
-  display: block !important;
-  width: 100% !important;
+  display: inline-block !important;
+  width: auto !important;
   color: #ffffff !important;
   text-decoration: none !important;
   border-radius: 8px !important;
-  padding: 14px 28px !important;
+  padding: 12px 32px !important;
   font-size: 15px !important;
   font-style: normal !important;
   font-weight: 700 !important;
@@ -299,6 +299,7 @@
   background-color: #253b80 !important;
   box-sizing: border-box !important;
   transition: opacity 0.3s ease, transform 0.3s ease !important;
+  margin-top: 16px !important;
 }
 
 .wp-block-columns:not(.pmt-apply-columns) .wp-block-file__button:hover {
