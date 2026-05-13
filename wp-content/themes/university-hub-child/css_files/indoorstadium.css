@@ -270,8 +270,9 @@ h3.wp-block-heading::after {
 }
 
 .indoorstadium-cta-btn-outline .wp-block-button__link {
-  border: 2px solid #fff;
-  color: #fff;
+  background: transparent;
+  border: 2px solid #f4f6fb !important;
+  color: #f4f6fb;
 }
 
 .indoorstadium-cta-btn-outline .wp-block-button__link:hover {
