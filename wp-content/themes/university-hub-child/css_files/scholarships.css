@@ -275,6 +275,7 @@ body h1.sc-title {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .sc-process-list {
