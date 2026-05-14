@@ -42,7 +42,6 @@
 
 p.yoga-label,
 .entry-content p.yoga-label {
-  color: #FF6000;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -70,7 +69,6 @@ p.yoga-label::after {
 .entry-content .yoga-wrap h1.yoga-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #253b80;
   margin: 10px 0 14px;
   line-height: 1.3;
 }
@@ -113,7 +111,6 @@ p.yoga-label::after {
 .entry-content .yoga-wrap h2.yoga-split-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #253b80;
   margin: 0 0 14px;
   line-height: 1.3;
 }
@@ -257,7 +254,6 @@ p.yoga-label::after {
 ════════════════════════════════ */
 
 .yoga-cta {
-  background: linear-gradient(135deg, #253b80, #179bd7);
   border-radius: 10px;
   padding: 48px 40px;
   text-align: center;
@@ -278,7 +274,6 @@ p.yoga-label::after {
 .entry-content .yoga-wrap h2.yoga-cta-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #FF6000;
   margin-bottom: 12px;
   margin-top: 0;
   line-height: 1.3;
@@ -311,7 +306,7 @@ p.yoga-label::after {
 .yoga-cta-btn-outline .wp-block-button__link {
   background: transparent;
   color: #f4f6fb;
-  border: 2px solid rgba(37, 59, 128, 0.35);
+  border: 2px solid #f4f6fb !important;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
