@@ -43,7 +43,7 @@
 
 p.lab-label,
 .entry-content p.lab-label {
-  color: #FF6000 !important;
+  /* color → third-priority-page-color */
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -63,15 +63,15 @@ p.lab-label::after {
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: #FF6000;
+  background: currentColor;
   flex-shrink: 0;
 }
 
 .lab-wrap .lab-title,
 .entry-content .lab-wrap h1.lab-title {
+  /* color → primary-page-color */
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 10px 0 14px !important;
   line-height: 1.3 !important;
 }
@@ -122,9 +122,9 @@ p.lab-label::after {
 
 .lab-wrap .lab-card-title,
 .entry-content .lab-wrap h3.lab-card-title {
+  /* color → primary-page-color */
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 8px !important;
 }
 
@@ -147,7 +147,7 @@ p.lab-label::after {
   transform: translateY(0);
 }
 
-/* Stagger — only first 3 per row matter */
+/* Stagger — only first 3 per row */
 .lab-card:nth-child(2) { transition-delay: 0.08s; }
 .lab-card:nth-child(3) { transition-delay: 0.16s; }
 
@@ -156,7 +156,7 @@ p.lab-label::after {
 ════════════════════════════════ */
 
 .lab-highlight {
-  background: #f4f6fb !important;
+  /* background → bc-g-color */
   border-radius: 10px !important;
   padding: 20px 40px 10px !important;
   margin-top: 8px !important;
@@ -175,9 +175,9 @@ p.lab-label::after {
 
 .lab-wrap .lab-highlight-title,
 .entry-content .lab-wrap h2.lab-highlight-title {
+  /* color → primary-page-color */
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 20px !important;
   line-height: 1.3 !important;
 }
@@ -212,10 +212,10 @@ p.lab-label::after {
 }
 
 .lab-dot {
+  /* background → third-priority-page-color-b */
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #FF6000;
   flex-shrink: 0;
   display: inline-block;
 }
@@ -225,7 +225,7 @@ p.lab-label::after {
 ════════════════════════════════ */
 
 .lab-cta {
-  background: linear-gradient(135deg, #253b80, #179bd7) !important;
+  /* background → bc-card-grad-color */
   border-radius: 10px !important;
   padding: 48px 40px !important;
   text-align: center;
@@ -244,9 +244,9 @@ p.lab-label::after {
 
 .lab-wrap .lab-cta-title,
 .entry-content .lab-wrap h2.lab-cta-title {
+  /* color → third-priority-page-color */
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
   margin-bottom: 12px !important;
   margin-top: 0 !important;
   line-height: 1.3 !important;
@@ -254,7 +254,7 @@ p.lab-label::after {
 
 .lab-cta .lab-cta-text {
   font-size: 15px !important;
-  color: #f4f6fb !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   margin-bottom: 24px !important;
   line-height: 1.7 !important;
 }
@@ -316,7 +316,6 @@ p.lab-label::after {
     padding: 0 16px !important;
   }
 
-  /* Stack all columns */
   .lab-grid .wp-block-column,
   .lab-highlight-list .wp-block-column {
     flex-basis: 100% !important;
@@ -328,7 +327,7 @@ p.lab-label::after {
     margin-bottom: 14px !important;
   }
 
-  /* ── KILL ALL ANIMATIONS ON MOBILE ── */
+  /* Kill all animations on mobile */
   .lab-card,
   .lab-highlight,
   .lab-cta {
@@ -336,7 +335,6 @@ p.lab-label::after {
     will-change: auto !important;
   }
 
-  /* Show all cards immediately — no JS animation needed */
   .lab-card.pmt-animate,
   .lab-highlight.pmt-animate,
   .lab-cta.pmt-animate {
@@ -345,7 +343,6 @@ p.lab-label::after {
     transition: none !important;
   }
 
-  /* Keep hover on mobile subtle */
   .lab-card:hover {
     transform: none !important;
     box-shadow: 0 2px 12px rgba(37, 59, 128, 0.08) !important;
@@ -355,7 +352,6 @@ p.lab-label::after {
     transform: none !important;
   }
 
-  /* Sizes */
   .lab-wrap .lab-title {
     font-size: 1.4rem !important;
   }
@@ -377,7 +373,6 @@ p.lab-label::after {
     padding: 18px 18px 20px !important;
   }
 
-  /* Full width CTA buttons */
   .lab-cta-btn .wp-block-button__link,
   .lab-cta-btn-outline .wp-block-button__link {
     width: 100% !important;
