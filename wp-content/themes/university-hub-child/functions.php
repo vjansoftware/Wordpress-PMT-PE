@@ -301,24 +301,3 @@ function pmt_enqueue_careers_assets() {
 }
 
 add_action('wp_enqueue_scripts', 'pmt_enqueue_careers_assets');
-
-function pmt_lab_page_dequeue() {
-  if ( is_page( 3464 ) ) {
-    wp_dequeue_style( 'dashicons' );
-    wp_dequeue_style( 'tmm_style' );
-    wp_dequeue_style( 'tablepress-combined' );
-    wp_dequeue_script( 'owl-carousel' );
-    wp_dequeue_script( 'jquery-migrate' );
-  }
-}
-add_action( 'wp_enqueue_scripts', 'pmt_lab_page_dequeue', 100 );
-
-// =========================
-// GOOGLE FONTS — FAST LOAD
-// =========================
-function pmt_fix_google_fonts() {
-  echo '<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">';
-}
-add_action( 'wp_head', 'pmt_fix_google_fonts', 1 );
