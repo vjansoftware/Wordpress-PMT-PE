@@ -4,7 +4,7 @@
    Shares .shd-* classes with Student Help Desk
 ═══════════════════════════════════════ */
 
-@keyframes pulse {
+/* @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(23, 155, 215, 0.4); }
   50%       { box-shadow: 0 0 0 10px rgba(23, 155, 215, 0); }
 }
@@ -12,9 +12,12 @@
 @keyframes warningPulse {
   0%, 100% { background: #f0f7ff; }
   50%       { background: #dcefff; }
-}
+} */
 
-/* ── Wrapper ── */
+/* ─────────────────────────────
+   GLOBAL
+───────────────────────────── */
+
 .shd-wrap {
   max-width: 1160px;
   margin: 0 auto;
@@ -29,69 +32,72 @@
   box-sizing: border-box;
 }
 
-/* ── WordPress theme overrides ── */
-.entry-content .shd-wrap h1,
-.entry-content .shd-wrap h2,
-.entry-content .shd-wrap h3,
-.entry-content .shd-wrap h4 {
-  clear: none;
+.shd-wrap h1,
+.shd-wrap h2,
+.shd-wrap h3,
+.shd-wrap h4,
+.shd-wrap p {
   margin-top: 0;
-  padding-top: 0;
 }
 
-.entry-content .shd-wrap p:empty {
+.shd-wrap p:empty {
   display: none;
-  margin: 0;
-  padding: 0;
 }
 
-/* ════════════════════════════════
-   HERO
-════════════════════════════════ */
+/* ─────────────────────────────
+   COMMON LABEL STYLE
+───────────────────────────── */
 
-.shd-hero {
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-p.shd-label,
-p.shd-label.has-text-align-center,
-.entry-content p.shd-label,
-.wp-block-group p.shd-label,
-body p.shd-label {
+.shd-label,
+.shd-from-label,
+.shd-section-label {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 8px;
-  margin-top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  opacity: 1;
 }
 
-p.shd-label::before,
-p.shd-label::after {
-  content: '';
-  display: inline-block;
+.shd-label,
+.shd-section-label {
+  justify-content: center;
+}
+
+.shd-label::before,
+.shd-label::after,
+.shd-section-label::before,
+.shd-section-label::after,
+.shd-from-label::before {
+  content: "";
   width: 20px;
   height: 2px;
   background: currentColor;
   flex-shrink: 0;
 }
 
-.shd-wrap .shd-title,
-.entry-content .shd-wrap h1.shd-title,
-body h1.shd-title {
+/* ─────────────────────────────
+   HERO
+───────────────────────────── */
+
+.shd-hero {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.shd-label {
+  margin-bottom: 8px;
+}
+
+.shd-title {
   font-size: 2rem;
   font-weight: 700;
   margin: 10px 0 14px;
   line-height: 1.3;
 }
 
-.shd-wrap .shd-sub {
+.shd-sub {
   font-size: 15px;
   color: #4b5563;
   max-width: 700px;
@@ -99,12 +105,11 @@ body h1.shd-title {
   line-height: 1.8;
 }
 
-/* ════════════════════════════════
+/* ─────────────────────────────
    WARNING BAR
-════════════════════════════════ */
+───────────────────────────── */
 
-p.shd-warning,
-.entry-content p.shd-warning {
+.shd-warning {
   background: #f0f7ff;
   border-left: 5px solid #179bd7;
   color: #0d5e8a;
@@ -113,13 +118,11 @@ p.shd-warning,
   padding: 13px 24px;
   border-radius: 0 8px 8px 0;
   margin-bottom: 0;
-  opacity: 1;
-  animation: warningPulse 2.5s ease infinite;
 }
 
-/* ════════════════════════════════
-   INTRO ROW
-════════════════════════════════ */
+/* ─────────────────────────────
+   INTRO SECTION
+───────────────────────────── */
 
 .shd-intro {
   gap: 40px;
@@ -127,52 +130,32 @@ p.shd-warning,
   margin-bottom: 0;
 }
 
-.shd-img-col { padding: 0; }
-.shd-img     { margin: 0; }
+.shd-img-col,
+.shd-img {
+  padding: 0;
+  margin: 0;
+}
 
 .shd-img img {
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
-  display: block;
-  box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-p.shd-from-label,
-.entry-content p.shd-from-label,
-.wp-block-group p.shd-from-label,
-body p.shd-from-label {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+.shd-from-label {
   margin-bottom: 12px;
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 1;
 }
 
-p.shd-from-label::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  flex-shrink: 0;
-}
-
-.shd-wrap .shd-intro-title,
-.entry-content .shd-wrap h2.shd-intro-title {
+.shd-intro-title {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.3;
 }
 
-.shd-wrap .shd-p {
+.shd-p {
   font-size: 15px;
   color: #4b5563;
   line-height: 1.9;
@@ -180,77 +163,72 @@ p.shd-from-label::before {
   text-align: justify;
 }
 
-.shd-points {
+/* ─────────────────────────────
+   POINTS LIST
+───────────────────────────── */
+
+.shd-points,
+.shd-card-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 24px;
+  margin: 0;
 }
 
-.shd-points li {
+.shd-points {
+  margin-bottom: 24px;
+}
+
+.shd-points li,
+.shd-card-list li {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-  color: #444;
+  gap: 10px;
   font-size: 14px;
-  line-height: 1.6;
-  list-style: none;
+  line-height: 1.7;
+  color: #4b5563;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
 }
 
-.shd-points li:last-child {
+.shd-points li:last-child,
+.shd-card-list li:last-child {
   border-bottom: none;
 }
 
 .shd-points li::before {
-  content: '✓';
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
+  content: "✓";
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   background: #253b80;
   color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   margin-top: 2px;
-  flex-shrink: 0;
 }
 
-/* ════════════════════════════════
-   SECTION LABEL
-════════════════════════════════ */
-
-p.shd-section-label,
-p.shd-section-label.has-text-align-center,
-.entry-content p.shd-section-label,
-body p.shd-section-label {
-  font-size: 12px;
+.shd-card-list li::before {
+  content: "✓";
+  color: #ff6000;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* ─────────────────────────────
+   SECTION LABEL
+───────────────────────────── */
+
+.shd-section-label {
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  opacity: 1;
 }
 
-p.shd-section-label::before,
-p.shd-section-label::after {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  flex-shrink: 0;
-}
-
-/* ════════════════════════════════
+/* ─────────────────────────────
    CARDS
-════════════════════════════════ */
+───────────────────────────── */
 
 .shd-cards {
   gap: 20px;
@@ -261,22 +239,31 @@ p.shd-section-label::after {
   background: #fff;
   padding: 28px 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.shd-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(37, 59, 128, 0.15);
+.shd-card-1 {
+  border-top: 4px solid #253b80;
 }
 
-.shd-card-1 { border-top: 4px solid #253b80; }
-.shd-card-2 { border-top: 4px solid #179bd7; }
-.shd-card-3 { border-top: 4px solid #FF6000; }
+.shd-card-2 {
+  border-top: 4px solid #179bd7;
+}
 
-p.shd-card-icon,
-.entry-content p.shd-card-icon {
+.shd-card-3 {
+  border-top: 4px solid #ff6000;
+}
+
+@media (hover: hover) {
+  .shd-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.shd-card-icon {
   width: 56px;
   height: 56px;
   border-radius: 12px;
@@ -288,52 +275,31 @@ p.shd-card-icon,
   line-height: 1;
 }
 
-.shd-card-1 p.shd-card-icon { background: #eef1fb; }
-.shd-card-2 p.shd-card-icon { background: #e6f5fc; }
-.shd-card-3 p.shd-card-icon { background: #fff3ee; }
+.shd-card-1 .shd-card-icon {
+  background: #eef1fb;
+}
 
-.shd-wrap .shd-card-title,
-.entry-content .shd-wrap h3.shd-card-title {
+.shd-card-2 .shd-card-icon {
+  background: #e6f5fc;
+}
+
+.shd-card-3 .shd-card-icon {
+  background: #fff3ee;
+}
+
+.shd-card-title {
   font-size: 17px;
   font-weight: 700;
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 }
 
 .shd-card-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   text-align: left;
 }
 
-.shd-card-list li {
-  font-size: 14px;
-  color: #4b5563;
-  line-height: 1.8;
-  padding: 5px 0;
-  border-bottom: 1px solid #f4f4f4;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  list-style: none;
-}
-
-.shd-card-list li:last-child {
-  border-bottom: none;
-}
-
-.shd-card-list li::before {
-  content: '✓';
-  color: #FF6000;
-  font-weight: 700;
-  font-size: 12px;
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
-/* ════════════════════════════════
+/* ─────────────────────────────
    CONTACT BOX
-════════════════════════════════ */
+───────────────────────────── */
 
 .shd-contact {
   background: #f0f7ff;
@@ -341,8 +307,7 @@ p.shd-card-icon,
   border-radius: 12px;
   padding: 24px 30px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 20px rgba(23, 155, 215, 0.1);
-  animation: pulse 2s ease 1s infinite;
+  box-shadow: 0 4px 16px rgba(23, 155, 215, 0.08);
 }
 
 .shd-contact-icon {
@@ -351,49 +316,43 @@ p.shd-card-icon,
   line-height: 1;
 }
 
-.shd-wrap .shd-contact-title,
-.entry-content .shd-wrap h3.shd-contact-title {
+.shd-contact-title {
   font-size: 1.1rem;
   font-weight: 700;
-  margin: 0 0 8px;
+  margin-bottom: 8px;
 }
 
-.shd-wrap .shd-contact-text {
+.shd-contact-text {
   font-size: 14px;
   color: #555;
   margin: 4px 0;
   line-height: 1.6;
 }
 
-.shd-wrap .shd-contact-text strong {
+.shd-contact-text strong {
   color: #253b80;
   margin-right: 6px;
 }
 
-/* ════════════════════════════════
+/* ─────────────────────────────
    FORM CARD
-════════════════════════════════ */
+───────────────────────────── */
 
 .shd-form {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   width: 100%;
-  box-sizing: border-box;
 }
 
-.shd-wrap .shd-form-title,
-.entry-content .shd-wrap h2.shd-form-title {
+.shd-form-title {
   font-size: 1.8rem;
   font-weight: 700;
-  margin: 0 0 20px;
-  border-left: 4px solid #FF6000;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff6000;
   padding-left: 12px;
 }
 
@@ -404,21 +363,24 @@ p.shd-card-icon,
   line-height: 1.6;
 }
 
-/* ════════════════════════════════
-   WPFORMS STYLING
-════════════════════════════════ */
+/* ─────────────────────────────
+   WPFORMS
+───────────────────────────── */
 
 .shd-form .wpforms-container {
-  max-width: 100%;
-  margin: 0;
   width: 100%;
+  margin: 0;
 }
 
-.shd-form .wpforms-field input[type="text"],
-.shd-form .wpforms-field input[type="email"],
-.shd-form .wpforms-field input[type="tel"],
-.shd-form .wpforms-field textarea,
-.shd-form .wpforms-field select {
+.shd-form .wpforms-field {
+  margin-bottom: 12px;
+}
+
+.shd-form input[type="text"],
+.shd-form input[type="email"],
+.shd-form input[type="tel"],
+.shd-form textarea,
+.shd-form select {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid #dde3f0;
@@ -426,26 +388,24 @@ p.shd-card-icon,
   font-size: 14px;
   color: #444;
   background: #f9faff;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
   outline: none;
-  box-sizing: border-box;
 }
 
-.shd-form .wpforms-field input:focus,
-.shd-form .wpforms-field textarea:focus,
-.shd-form .wpforms-field select:focus {
+.shd-form input:focus,
+.shd-form textarea:focus,
+.shd-form select:focus {
   border-color: #253b80;
   box-shadow: 0 0 0 3px rgba(37, 59, 128, 0.1);
   background: #fff;
 }
 
-.shd-form .wpforms-field textarea {
+.shd-form textarea {
   min-height: 120px;
   resize: vertical;
-  width: 100%;
 }
 
-.shd-form .wpforms-field label {
+.shd-form label {
   font-size: 14px;
   font-weight: 600;
   color: #253b80;
@@ -454,44 +414,21 @@ p.shd-card-icon,
 }
 
 .shd-form .wpforms-required-label {
-  color: #FF6000;
+  color: #ff6000;
 }
 
-.shd-form .wpforms-field {
-  margin-bottom: 12px;
-  padding: 0;
-}
+/* Name Fields */
 
 .shd-form .wpforms-field-name .wpforms-field-row {
   display: flex;
-  flex-direction: row;
-  gap: 0;
-  flex-wrap: nowrap;
-  width: 100%;
+  gap: 16px;
 }
 
 .shd-form .wpforms-field-name .wpforms-field-row > span {
-  flex: 1 1 0;
-  min-width: 0;
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  flex: 1;
 }
 
-.shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
-  padding-right: 8px;
-}
-
-.shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
-  padding-left: 8px;
-}
-
-.shd-form .wpforms-field-name .wpforms-field-row > span input {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-}
+/* Submit Button */
 
 .shd-form .wpforms-submit {
   background: #253b80;
@@ -502,14 +439,13 @@ p.shd-card-icon,
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.25s ease, transform 0.2s ease;
   display: block;
   margin: 10px auto 0;
 }
 
 .shd-form .wpforms-submit:hover {
-  background: #FF6000;
-  transform: translateY(-2px);
+  background: #ff6000;
 }
 
 .shd-form .wpforms-error {
@@ -527,45 +463,41 @@ p.shd-card-icon,
   font-weight: 600;
 }
 
-/* ════════════════════════════════
+/* ─────────────────────────────
    RESPONSIVE
-════════════════════════════════ */
+───────────────────────────── */
 
 @media (max-width: 768px) {
-  .shd-wrap { padding: 0 16px; }
 
-  .shd-intro .wp-block-column {
-    flex-basis: 100%;
+  .shd-wrap {
+    padding: 0 16px;
+  }
+
+  .shd-intro .wp-block-column,
+  .shd-cards .wp-block-column {
+    flex-basis: 100% !important;
     min-width: 100%;
   }
 
   .shd-img img {
     height: 240px;
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
-  .shd-cards .wp-block-column {
-    flex-basis: 100%;
-    min-width: 100%;
+  .shd-title,
+  .shd-intro-title,
+  .shd-form-title {
+    font-size: 1.4rem;
   }
 
-  .shd-wrap .shd-title       { font-size: 1.4rem; }
-  .shd-wrap .shd-intro-title { font-size: 1.4rem; }
-  .shd-contact               { padding: 20px; }
-  .shd-form                  { padding: 20px; }
-  .shd-wrap .shd-form-title  { font-size: 1.4rem; }
+  .shd-contact,
+  .shd-form {
+    padding: 20px;
+  }
 
   .shd-form .wpforms-field-name .wpforms-field-row {
     flex-direction: column;
     gap: 12px;
-  }
-
-  .shd-form .wpforms-field-name .wpforms-field-row > span:first-child {
-    padding-right: 0;
-  }
-
-  .shd-form .wpforms-field-name .wpforms-field-row > span:last-child {
-    padding-left: 0;
   }
 
   .shd-form .wpforms-submit {
@@ -575,7 +507,17 @@ p.shd-card-icon,
 }
 
 @media (max-width: 480px) {
-  .shd-wrap .shd-title       { font-size: 1.2rem; }
-  .shd-wrap .shd-intro-title { font-size: 1.2rem; }
-  .shd-wrap .shd-form-title  { font-size: 1.2rem; }
+
+  .shd-title,
+  .shd-intro-title,
+  .shd-form-title {
+    font-size: 1.2rem;
+  }
+
+  .shd-sub,
+  .shd-p,
+  .shd-contact-text,
+  .shd-card-list li {
+    font-size: 14px;
+  }
 }
