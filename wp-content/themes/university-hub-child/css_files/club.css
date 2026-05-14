@@ -1,20 +1,34 @@
 /* ═══════════════════════════════════════
    PMT CLUBS 
 ═══════════════════════════════════════ */
+/* Font Awesome Solid */
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
-    font-display: swap;
+  font-family: "Font Awesome 6 Free";
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
+
+/* Font Awesome Brands */
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
-    font-display: swap;
+  font-family: "Font Awesome 6 Brands";
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-@font-face {
-    font-family: 'Roboto';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/fonts/roboto/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2') format('woff2');
-    font-display: swap;
+
+/* Remove external Roboto dependency */
+body,
+.shd-wrap,
+.shd-wrap * {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .entry-content {
@@ -32,7 +46,6 @@
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 /* — Entry content full width — */
