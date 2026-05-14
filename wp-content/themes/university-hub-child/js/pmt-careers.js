@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!salaryPdfContainer.innerHTML.trim()) {
                 salaryPdfContainer.innerHTML = `
                     <iframe 
-                        src="https://docs.google.com/viewer?url=https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/uploads/2026/04/PMTCPE-Salary-structure.pdf&embedded=true"
+                        src="https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/uploads/2026/04/PMTCPE-Salary-structure.pdf#toolbar=0&navpanes=0&pagemode=none&view=FitH&zoom=100"
                         width="100%"
                         height="100%"
                         style="border:none; width:100%; min-height:500px;">
