@@ -1,8 +1,8 @@
 /* ═══════════════════════════════════════
-   PMT LABORATORIES — STYLES
-   Colors & fonts matching Indoor Sports
+   PMT LABORATORIES — laboratory.css
 ═══════════════════════════════════════ */
 
+/* ── WRAP ── */
 .lab-wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -85,7 +85,7 @@ p.lab-label::after {
 }
 
 /* ════════════════════════════════
-   CARDS GRID — ROW OF 3
+   CARDS GRID
 ════════════════════════════════ */
 
 .lab-grid {
@@ -100,7 +100,8 @@ p.lab-label::after {
   border: 1px solid rgba(37, 59, 128, 0.08) !important;
   box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06) !important;
   padding: 0 !important;
-  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.25s;
+  will-change: transform;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .lab-card:hover {
@@ -134,10 +135,11 @@ p.lab-label::after {
   margin: 0 !important;
 }
 
-/* ── Scroll animations ── */
+/* ── Scroll animations (desktop only) ── */
 .lab-card.pmt-animate {
   opacity: 0;
   transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .lab-card.pmt-animate.pmt-visible {
@@ -145,15 +147,9 @@ p.lab-label::after {
   transform: translateY(0);
 }
 
-.lab-card:nth-child(2)  { transition-delay: 0.1s; }
-.lab-card:nth-child(3)  { transition-delay: 0.2s; }
-.lab-card:nth-child(4)  { transition-delay: 0.05s; }
-.lab-card:nth-child(5)  { transition-delay: 0.15s; }
-.lab-card:nth-child(6)  { transition-delay: 0.25s; }
-.lab-card:nth-child(7)  { transition-delay: 0.05s; }
-.lab-card:nth-child(8)  { transition-delay: 0.15s; }
-.lab-card:nth-child(9)  { transition-delay: 0.25s; }
-.lab-card:nth-child(10) { transition-delay: 0.1s; }
+/* Stagger — only first 3 per row matter */
+.lab-card:nth-child(2) { transition-delay: 0.08s; }
+.lab-card:nth-child(3) { transition-delay: 0.16s; }
 
 /* ════════════════════════════════
    HIGHLIGHT SECTION
@@ -164,7 +160,7 @@ p.lab-label::after {
   border-radius: 10px !important;
   padding: 20px 40px 10px !important;
   margin-top: 8px !important;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .lab-highlight.pmt-animate {
@@ -195,12 +191,14 @@ p.lab-label::after {
   align-items: center !important;
   padding: 14px 18px !important;
   border-radius: 8px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  transition: background 0.25s;
+  border: 1px solid rgba(37, 59, 128, 0.06) !important;
+  background: #fff !important;
+  transition: background 0.25s, transform 0.25s;
 }
 
 .lab-highlight-item:hover {
-  background: rgba(255, 255, 255, 0.14) !important;
+  background: #e8f0fe !important;
+  transform: translateX(4px);
 }
 
 .lab-highlight-item p {
@@ -229,9 +227,9 @@ p.lab-label::after {
 .lab-cta {
   background: linear-gradient(135deg, #253b80, #179bd7) !important;
   border-radius: 10px !important;
-  padding: 28px 40px !important;
+  padding: 48px 40px !important;
   text-align: center;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .lab-cta.pmt-animate {
@@ -261,6 +259,7 @@ p.lab-label::after {
   line-height: 1.7 !important;
 }
 
+/* CTA buttons */
 .lab-cta-btn .wp-block-button__link {
   background: #FF6000 !important;
   color: #fff !important;
@@ -281,7 +280,7 @@ p.lab-label::after {
 .lab-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
   color: #f4f6fb !important;
-  border: 2px solid #f4f6fb !important;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
   border-radius: 6px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -291,18 +290,33 @@ p.lab-label::after {
 }
 
 .lab-cta-btn-outline .wp-block-button__link:hover {
-  background: rgba(37, 59, 128, 0.06) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* ════════════════════════════════
-   RESPONSIVE
+   RESPONSIVE — TABLET (max 1024px)
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .lab-wrap {
+    padding: 0 28px;
+  }
+  .lab-highlight {
+    padding: 20px 28px 10px !important;
+  }
+}
+
+/* ════════════════════════════════
+   RESPONSIVE — MOBILE (max 768px)
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
+
   .lab-wrap {
     padding: 0 16px !important;
   }
 
+  /* Stack all columns */
   .lab-grid .wp-block-column,
   .lab-highlight-list .wp-block-column {
     flex-basis: 100% !important;
@@ -310,17 +324,38 @@ p.lab-label::after {
   }
 
   .lab-grid {
-    gap: 16px !important;
-  }
-  
-  .lab-highlight {
-    padding: 18px 20px !important;
+    gap: 14px !important;
+    margin-bottom: 14px !important;
   }
 
+  /* ── KILL ALL ANIMATIONS ON MOBILE ── */
+  .lab-card,
+  .lab-highlight,
   .lab-cta {
-    padding: 18px 16px !important;
+    transition: none !important;
+    will-change: auto !important;
   }
 
+  /* Show all cards immediately — no JS animation needed */
+  .lab-card.pmt-animate,
+  .lab-highlight.pmt-animate,
+  .lab-cta.pmt-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Keep hover on mobile subtle */
+  .lab-card:hover {
+    transform: none !important;
+    box-shadow: 0 2px 12px rgba(37, 59, 128, 0.08) !important;
+  }
+
+  .lab-highlight-item:hover {
+    transform: none !important;
+  }
+
+  /* Sizes */
   .lab-wrap .lab-title {
     font-size: 1.4rem !important;
   }
@@ -329,14 +364,61 @@ p.lab-label::after {
   .lab-wrap .lab-cta-title {
     font-size: 1.4rem !important;
   }
+
+  .lab-highlight {
+    padding: 18px 16px 10px !important;
+  }
+
+  .lab-cta {
+    padding: 28px 16px !important;
+  }
+
+  .lab-card-body {
+    padding: 18px 18px 20px !important;
+  }
+
+  /* Full width CTA buttons */
+  .lab-cta-btn .wp-block-button__link,
+  .lab-cta-btn-outline .wp-block-button__link {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    padding: 14px 20px !important;
+  }
 }
 
+/* ════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max 480px)
+════════════════════════════════ */
+
 @media (max-width: 480px) {
+
   .lab-wrap .lab-title {
     font-size: 1.2rem !important;
   }
 
+  .lab-wrap .lab-sub {
+    font-size: 13.5px !important;
+  }
+
   .lab-wrap .lab-cta-title {
     font-size: 1.2rem !important;
+  }
+
+  .lab-card-icon {
+    font-size: 24px !important;
+  }
+
+  .lab-wrap .lab-card-title {
+    font-size: 15px !important;
+  }
+
+  .lab-highlight-item {
+    padding: 12px 14px !important;
+  }
+
+  .lab-highlight-item p {
+    font-size: 13px !important;
   }
 }
