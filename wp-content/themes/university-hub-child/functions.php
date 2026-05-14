@@ -284,3 +284,20 @@ add_filter( 'wpforms_entry_email_atts', function( $atts, $fields, $entry, $form_
     return $atts;
 
 }, 10, 5 );
+
+function pmt_enqueue_careers_assets() {
+
+    if (is_page('careers')) {
+
+        wp_enqueue_script(
+            'pmt-careers-js',
+            get_stylesheet_directory_uri() . '/js/pmt-careers.js',
+            array(),
+            '1.0',
+            true
+        );
+
+    }
+}
+
+add_action('wp_enqueue_scripts', 'pmt_enqueue_careers_assets');
