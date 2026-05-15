@@ -16,8 +16,7 @@
 
 /* Remove external Roboto dependency */
 body,
-.pmt-careers-wrap,
-.pmt-careers-wrap * {
+.pmt-careers-wrap {
   font-family:
     system-ui,
     -apple-system,
