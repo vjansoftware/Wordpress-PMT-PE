@@ -1,59 +1,256 @@
-.entry-content,.entry-content *{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-sizing:border-box}
-
-body.page-id-3386 .entry-content{max-width:1200px!important;margin:0 auto!important;padding:0 24px!important;overflow-x:hidden!important}
-
-.entry-content>h2.wp-block-heading.has-text-align-center:first-child{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px}
-.entry-content>h2.wp-block-heading.has-text-align-center:first-child::before,
-.entry-content>h2.wp-block-heading.has-text-align-center:first-child::after{content:"";width:24px;height:2px;background:#ff6000;display:inline-block}
-
-.entry-content>h2.wp-block-heading.has-text-align-center:nth-child(2){font-size:2.6rem;font-weight:800;line-height:1.2;margin-bottom:14px}
-
-.entry-content>p.has-text-align-center{max-width:760px;margin:0 auto 40px;font-size:16px;line-height:1.8;color:#6b7280}
-
-h3.wp-block-heading{position:relative;display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-bottom:2px solid #e5e7eb;padding-bottom:12px;margin:36px 0 28px}
-h3.wp-block-heading::after{content:"";position:absolute;left:0;bottom:-2px;width:90px;height:2px;background:#ff6000}
-
-.pmt-badge{padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.5px}
-
-.wp-block-media-text{gap:40px;align-items:center;margin-bottom:50px}
-.wp-block-media-text__media video{width:100%;display:block;border-radius:18px;box-shadow:0 15px 36px rgba(0,0,0,.14)}
-.wp-block-media-text__content p:first-child{font-size:1.8rem;font-weight:800;margin-bottom:12px}
-.wp-block-media-text__content p:last-child{font-size:15px;line-height:1.8;color:#6b7280}
-
-.stadium-cards{gap:28px!important;margin-bottom:50px!important}
-.stadium-cards .wp-block-column{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(37,59,128,.06)}
-.stadium-cards .wp-block-column h4{font-size:18px;font-weight:700;margin-bottom:10px}
-.stadium-cards .wp-block-column p{font-size:13px;font-weight:700;margin-bottom:14px}
-
-.wp-block-list{list-style:none;padding-left:0;margin:0}
-.wp-block-list li{position:relative;padding-left:22px;margin-bottom:10px;color:#4b5563;line-height:1.7}
-.wp-block-list li::before{content:"✓";position:absolute;left:0;font-weight:700}
-
-.indoorstadium-cta{border-radius:18px;padding:42px;text-align:center;margin-top:20px}
-.indoorstadium-cta-title{font-size:1.8rem!important;font-weight:800!important;margin-bottom:14px!important}
-.indoorstadium-cta-text{max-width:760px;margin:0 auto 24px!important;font-size:15px!important;line-height:1.8!important;color:#f4f6fb!important}
-.indoorstadium-cta .wp-block-buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-.indoorstadium-cta-btn .wp-block-button__link{padding:13px 30px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
-.indoorstadium-cta-btn-outline .wp-block-button__link{background:transparent!important;border:2px solid #f4f6fb!important;color:#f4f6fb!important}
-
-@media(max-width:992px){.stadium-cards{flex-direction:column!important}}
-@media(max-width:768px){
-.entry-content{padding:18px 16px 40px}
-.entry-content>h2.wp-block-heading.has-text-align-center:nth-child(2){font-size:1.9rem}
-.wp-block-media-text{display:block!important;margin-bottom:36px}
-.wp-block-media-text__media{margin-bottom:22px}
-.wp-block-media-text__media video{border-radius:14px}
-.wp-block-media-text__content p:first-child{font-size:1.45rem}
-.indoorstadium-cta{padding:28px 20px;border-radius:14px}
-.indoorstadium-cta-title{font-size:1.35rem!important}
-.indoorstadium-cta .wp-block-buttons{flex-direction:column;align-items:center}
-.indoorstadium-cta-btn .wp-block-button__link,
-.indoorstadium-cta-btn-outline .wp-block-button__link{width:100%;max-width:260px;text-align:center}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
+    font-display: swap;
 }
-@media(max-width:480px){
-.entry-content{padding:16px 12px 32px}
-.entry-content>h2.wp-block-heading.has-text-align-center:nth-child(2){font-size:1.55rem}
-.wp-block-media-text__content p:first-child{font-size:1.25rem}
-.indoorstadium-cta-title{font-size:1.15rem!important}
-.stadium-cards .wp-block-column h4{font-size:15px}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Remove external Roboto dependency */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+body.page-id-3386 .entry-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  overflow-x: hidden !important;
+}
+
+.entry-content > h2.wp-block-heading.has-text-align-center:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.entry-content > h2.wp-block-heading.has-text-align-center:first-child::before,
+.entry-content > h2.wp-block-heading.has-text-align-center:first-child::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #ff6000;
+  display: inline-block;
+}
+
+.entry-content > h2.wp-block-heading.has-text-align-center:nth-child(2) {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.entry-content > p.has-text-align-center {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+h3.wp-block-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin: 36px 0 28px;
+}
+h3.wp-block-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 90px;
+  height: 2px;
+  background: #ff6000;
+}
+
+.pmt-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.wp-block-media-text {
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.wp-block-media-text__media video {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 15px 36px rgba(0, 0, 0, 0.14);
+}
+.wp-block-media-text__content p:first-child {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.wp-block-media-text__content p:last-child {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.stadium-cards {
+  gap: 28px !important;
+  margin-bottom: 50px !important;
+}
+.stadium-cards .wp-block-column {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.06);
+}
+.stadium-cards .wp-block-column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.stadium-cards .wp-block-column p {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.wp-block-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.wp-block-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+.wp-block-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.indoorstadium-cta {
+  border-radius: 18px;
+  padding: 42px;
+  text-align: center;
+  margin-top: 20px;
+}
+.indoorstadium-cta-title {
+  font-size: 1.8rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 14px !important;
+}
+.indoorstadium-cta-text {
+  max-width: 760px;
+  margin: 0 auto 24px !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: #f4f6fb !important;
+}
+.indoorstadium-cta .wp-block-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.indoorstadium-cta-btn .wp-block-button__link {
+  padding: 13px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.indoorstadium-cta-btn-outline .wp-block-button__link {
+  background: transparent !important;
+  border: 2px solid #f4f6fb !important;
+  color: #f4f6fb !important;
+}
+
+@media (max-width: 992px) {
+  .stadium-cards {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 768px) {
+  .entry-content {
+    padding: 18px 16px 40px;
+  }
+  .entry-content > h2.wp-block-heading.has-text-align-center:nth-child(2) {
+    font-size: 1.9rem;
+  }
+  .wp-block-media-text {
+    display: block !important;
+    margin-bottom: 36px;
+  }
+  .wp-block-media-text__media {
+    margin-bottom: 22px;
+  }
+  .wp-block-media-text__media video {
+    border-radius: 14px;
+  }
+  .wp-block-media-text__content p:first-child {
+    font-size: 1.45rem;
+  }
+  .indoorstadium-cta {
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+  .indoorstadium-cta-title {
+    font-size: 1.35rem !important;
+  }
+  .indoorstadium-cta .wp-block-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .indoorstadium-cta-btn .wp-block-button__link,
+  .indoorstadium-cta-btn-outline .wp-block-button__link {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .entry-content {
+    padding: 16px 12px 32px;
+  }
+  .entry-content > h2.wp-block-heading.has-text-align-center:nth-child(2) {
+    font-size: 1.55rem;
+  }
+  .wp-block-media-text__content p:first-child {
+    font-size: 1.25rem;
+  }
+  .indoorstadium-cta-title {
+    font-size: 1.15rem !important;
+  }
+  .stadium-cards .wp-block-column h4 {
+    font-size: 15px;
+  }
 }
