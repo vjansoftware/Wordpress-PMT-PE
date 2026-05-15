@@ -1,6 +1,18 @@
 /* ══════════════════════════════════════
    PMT EXAM CELL PAGE — ALL STYLES
 ══════════════════════════════════════ */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
+    font-display: swap;
+}
+
 .pmt-exam-wrap {
   max-width: 1100px;
   margin: 0 auto;
