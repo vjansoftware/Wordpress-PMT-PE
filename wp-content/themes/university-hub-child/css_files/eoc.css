@@ -426,22 +426,47 @@ p.gr-section-label::after {
   max-width: 100% !important;
 }
 
-/* ── Email + Phone: full width, stacked (same as Comment/Message) ── */
+/* ── Email + Phone: full width, same as Comment/Message ── */
 .gr-form .wpforms-form .wpforms-field-email,
-.gr-form .wpforms-form .wpforms-field-phone {
+.gr-form .wpforms-form .wpforms-field-phone,
+.gr-form .wpforms-form .wpforms-field-phone.wpforms-smartphone-field,
+.gr-form .wpforms-form li.wpforms-field-phone,
+.gr-form .wpforms-form li.wpforms-field-email {
   flex: 0 0 100% !important;
   width: 100% !important;
   max-width: 100% !important;
+  min-width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* Input inside fills full column */
+/* Target every possible phone input variation WPForms renders */
+.gr-form .wpforms-form .wpforms-field-phone input,
+.gr-form .wpforms-form .wpforms-field-phone input[type="tel"],
+.gr-form .wpforms-form .wpforms-field-phone input[type="text"],
+.gr-form .wpforms-form .wpforms-field-phone .wpforms-smartphone-field,
+.gr-form .wpforms-form .wpforms-field-phone .iti,
+.gr-form .wpforms-form .wpforms-field-phone .iti__flag-container ~ input,
 .gr-form .wpforms-form .wpforms-field-email input,
-.gr-form .wpforms-form .wpforms-field-phone input {
+.gr-form .wpforms-form .wpforms-field-email input[type="email"],
+.gr-form .wpforms-form .wpforms-field-email input[type="text"] {
   width: 100% !important;
   max-width: 100% !important;
+  min-width: 0 !important;
   box-sizing: border-box !important;
   display: block !important;
+  flex: 1 !important;
+}
+
+/* If WPForms wraps phone in an intl-tel-input (iti) container */
+.gr-form .wpforms-form .wpforms-field-phone .iti {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+.gr-form .wpforms-form .wpforms-field-phone .iti input {
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 /* ── Name field: full width, First + Last side by side ── */
