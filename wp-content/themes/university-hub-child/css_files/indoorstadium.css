@@ -182,6 +182,7 @@ h3.wp-block-heading::after {
   flex-wrap: wrap;
 }
 .indoorstadium-cta-btn .wp-block-button__link {
+  background: #FF6000 !important;
   padding: 13px 30px;
   border-radius: 8px;
   font-size: 14px;
