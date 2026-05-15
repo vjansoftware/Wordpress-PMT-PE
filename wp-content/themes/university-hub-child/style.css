@@ -954,12 +954,6 @@ article.hentry,
     flex: 1;
     min-width: 0;
 }
-
-@media (max-width: 768px) {
-    .pmt-home-layout {
-        flex-direction: column;
-    }
-}
 /* Remove right whitespace */
 html, body {
     overflow-x: hidden;
