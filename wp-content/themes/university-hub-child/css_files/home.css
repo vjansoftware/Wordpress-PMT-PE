@@ -975,7 +975,6 @@ p.pmt-contact-sub a {
 /* ════════════════════════════════
    RESPONSIVE — MOBILE (max 640px)
 ════════════════════════════════ */
-
 @media (max-width: 640px) {
   .pmt-about-cols.wp-block-columns,
   .pmt-courses-cols.wp-block-columns,
@@ -999,6 +998,8 @@ p.pmt-contact-sub a {
   .pmt-contact-section.wp-block-group {
     padding-top: 30px !important;
     padding-bottom: 20px !important;
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
   }
 
   /* Fix WordPress inner container double padding */
@@ -1012,17 +1013,23 @@ p.pmt-contact-sub a {
   .pmt-stats-band .wp-block-group__inner-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
   }
 
   /* Fix shortcode home layout container */
   .pmt-home-layout {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    flex-direction: column !important;
+    padding: 0 16px !important;
+    margin: 16px 0 !important;
     box-sizing: border-box !important;
+    overflow-x: hidden !important;
   }
 
   .pmt-latest-news-shortcut-container {
     margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .pmt-stats-inner.wp-block-columns { flex-wrap: wrap !important; display: flex !important; }
@@ -1061,7 +1068,12 @@ p.pmt-contact-sub a {
   .pmt-sport-card.wp-block-column { flex-basis: calc(50% - 5px) !important; min-width: calc(50% - 5px) !important; padding: 20px 12px !important; }
 
   .pmt-news-grid.wp-block-columns { gap: 16px !important; }
-  .pmt-news-card.wp-block-column { flex-basis: 100% !important; }
+  .pmt-news-card.wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
   .pmt-elig-grid.wp-block-columns { gap: 12px !important; }
   .pmt-elig-card.wp-block-column,
