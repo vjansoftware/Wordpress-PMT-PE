@@ -5,19 +5,18 @@
 @font-face {
     font-family: 'FontAwesome';
     src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'FontAwesome';
     src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
-    font-display: swap;
+    font-display: optional;
 }
 
 /* Remove external Roboto dependency */
 body,
-.yoga-wrap,
-.yoga-wrap * {
+.yoga-wrap {
   font-family:
     system-ui,
     -apple-system,
@@ -196,7 +195,7 @@ p.yoga-label::after {
 
 .yoga-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(37, 59, 128, 0.13);
+  box-shadow: 0 4px 12px rgba(37, 59, 128, 0.08);
 }
 
 .yoga-card-body {
@@ -340,34 +339,21 @@ p.yoga-label::after {
   background: rgba(37, 59, 128, 0.06);
 }
 
+@media (hover: none) {
+  .yoga-card:hover,
+  .yoga-cta-btn .wp-block-button__link:hover,
+  .yoga-cta-btn-outline .wp-block-button__link:hover {
+    transform: none;
+    box-shadow: none;
+    background: inherit;
+  }
+}
+
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
 
 @media (max-width: 768px) {
-  @font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
-    font-display: swap;
-}
-
-/* Remove external Roboto dependency */
-body,
-.yoga-wrap,
-.yoga-wrap * {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-}
 
   .yoga-wrap {
     padding: 0 16px;
