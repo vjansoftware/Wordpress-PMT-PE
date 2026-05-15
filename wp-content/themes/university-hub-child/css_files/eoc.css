@@ -355,21 +355,48 @@ p.gr-section-label::after {
 }
 
 /* ════════════════════════════════
-   FORM CARD
+   FORM ROW — Image left + Form right
 ════════════════════════════════ */
 
+.gr-form-row {
+  gap: 40px !important;
+  align-items: flex-start !important;
+  margin: 0 !important;
+}
+
+/* Left: image column */
+.gr-form-img-col {
+  padding: 0 !important;
+}
+
+.gr-form-img {
+  margin: 0 !important;
+}
+
+.gr-form-img img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 400px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+  box-shadow: 0 10px 35px rgba(37, 59, 128, 0.15) !important;
+}
+
+/* Right: form column */
 .gr-form {
   background: #fff !important;
   padding: 30px !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
   width: 100% !important;
-  margin: 0 !important;
   box-sizing: border-box !important;
+  margin: 0 !important;
 }
 
 .gr-wrap .gr-form-title,
-.entry-content .gr-wrap h2.gr-form-title {
+.entry-content .gr-wrap h2.gr-form-title,
+.gr-form h2.gr-form-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
   margin: 0 0 20px !important;
@@ -574,6 +601,17 @@ p.gr-section-label::after {
   .gr-cards .wp-block-column {
     flex-basis: 100% !important;
     min-width: 100% !important;
+  }
+
+  /* Form row: stack on mobile */
+  .gr-form-row .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-form-img img {
+    min-height: 220px !important;
+    height: 220px !important;
   }
 
   .gr-wrap .gr-title { font-size: 1.4rem !important; }
