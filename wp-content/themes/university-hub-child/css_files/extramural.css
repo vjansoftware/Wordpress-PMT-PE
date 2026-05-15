@@ -2,13 +2,35 @@
    PMT EXTRAMURAL — STYLES
    Colors via global classes (no hardcoded colors)
 ═══════════════════════════════════════ */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Remove external Roboto dependency */
+body,
+.extra-wrap,
+.extra-wrap * {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
 
 .extra-wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .extra-wrap *,
