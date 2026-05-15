@@ -3,20 +3,15 @@
 ═══════════════════════════════════════ */
 /* Font Awesome Solid */
 @font-face {
-  font-family: "Font Awesome 6 Free";
-  src: url("../webfonts/fa-solid-900.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
+    font-display: swap;
 }
 
-/* Font Awesome Brands */
 @font-face {
-  font-family: "Font Awesome 6 Brands";
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'FontAwesome';
+    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
+    font-display: swap;
 }
 
 /* Remove external Roboto dependency */
