@@ -396,7 +396,13 @@ p.gr-section-label::after {
 }
 
 /* Turn the fields list into a flex grid */
-.gr-form .wpforms-form .wpforms-field-container {
+/* Target every possible WPForms field wrapper element */
+.gr-form .wpforms-form .wpforms-field-container,
+.gr-form .wpforms-form ul.wpforms-field-container,
+.gr-form .wpforms-form div.wpforms-field-container,
+.gr-form .wpforms-form .wpforms-fields,
+.gr-form .wpforms-form ul.wpforms-fields,
+.gr-form .wpforms-form div.wpforms-fields {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 16px !important;
@@ -404,10 +410,13 @@ p.gr-section-label::after {
   margin: 0 !important;
   padding: 0 !important;
   list-style: none !important;
+  box-sizing: border-box !important;
 }
 
 /* ── Every field: reset to full width first ── */
-.gr-form .wpforms-form .wpforms-field {
+.gr-form .wpforms-form .wpforms-field,
+.gr-form .wpforms-form .wpforms-fields > li,
+.gr-form .wpforms-form .wpforms-field-container > li {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box !important;
@@ -417,18 +426,23 @@ p.gr-section-label::after {
   max-width: 100% !important;
 }
 
-/* ── Email → left 50% ── */
-.gr-form .wpforms-form .wpforms-field-email {
-  flex: 0 0 calc(50% - 8px) !important;
-  width: calc(50% - 8px) !important;
-  max-width: calc(50% - 8px) !important;
-}
-
-/* ── Phone → right 50% ── */
+/* ── Email + Phone: same width as Name First/Last boxes ── */
+/* Name uses gap:16px inside a 100% container → each box = calc(50% - 8px) of 100%  */
+/* Email/Phone sit in the outer flex with gap:16px → same calc applies               */
+.gr-form .wpforms-form .wpforms-field-email,
 .gr-form .wpforms-form .wpforms-field-phone {
   flex: 0 0 calc(50% - 8px) !important;
   width: calc(50% - 8px) !important;
   max-width: calc(50% - 8px) !important;
+  box-sizing: border-box !important;
+}
+
+/* Make the input inside fill its column fully */
+.gr-form .wpforms-form .wpforms-field-email input,
+.gr-form .wpforms-form .wpforms-field-phone input {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 /* ── Name field: full width, First + Last side by side ── */
@@ -610,6 +624,12 @@ p.gr-section-label::after {
   .gr-form .wpforms-form .wpforms-field-email,
   .gr-form .wpforms-form .wpforms-field-phone {
     flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .gr-form .wpforms-form .wpforms-field-email input,
+  .gr-form .wpforms-form .wpforms-field-phone input {
     width: 100% !important;
     max-width: 100% !important;
   }
