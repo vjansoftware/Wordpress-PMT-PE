@@ -364,10 +364,7 @@ p.gr-section-label::after {
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
   width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   box-sizing: border-box !important;
 }
 
@@ -390,48 +387,66 @@ p.gr-section-label::after {
   width: 100% !important;
 }
 
-/* Grid layout */
-.gr-form .wpforms-form .wpforms-fields {
+/* Force flex grid on ALL possible WPForms field wrappers */
+.gr-form .wpforms-form .wpforms-fields,
+.gr-form .wpforms-form ul.wpforms-fields,
+.gr-form .wpforms-form ol.wpforms-fields,
+.gr-form .wpforms-form div.wpforms-fields {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 16px 16px !important;
-}
-
-/* Row 1: Name — full width */
-.gr-form .wpforms-field-name {
+  gap: 16px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
   width: 100% !important;
-  flex: 0 0 100% !important;
 }
 
-/* Row 2: Email — left half */
-.gr-form .wpforms-field-email {
-  width: calc(50% - 8px) !important;
-  flex: 0 0 calc(50% - 8px) !important;
-}
-
-/* Row 2: Phone — right half */
-.gr-form .wpforms-field-phone {
-  width: calc(50% - 8px) !important;
-  flex: 0 0 calc(50% - 8px) !important;
-}
-
-/* Row 3: Comment — full width */
-.gr-form .wpforms-field-textarea {
-  width: 100% !important;
-  flex: 0 0 100% !important;
-}
-
-/* All fields base */
-.gr-form .wpforms-field {
+/* ── Base: all fields reset ── */
+.gr-form .wpforms-form .wpforms-fields > .wpforms-field,
+.gr-form .wpforms-form .wpforms-fields > li {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box !important;
+  float: none !important;
 }
 
-/* All inputs & textarea — full width of their column */
+/* ── Row 1: Name — full width ── */
+.gr-form .wpforms-form .wpforms-fields > .wpforms-field-name,
+.gr-form .wpforms-form .wpforms-fields > li.wpforms-field-name {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ── Row 2: Email — left 50% ── */
+.gr-form .wpforms-form .wpforms-fields > .wpforms-field-email,
+.gr-form .wpforms-form .wpforms-fields > li.wpforms-field-email {
+  flex: 0 0 calc(50% - 8px) !important;
+  width: calc(50% - 8px) !important;
+  max-width: calc(50% - 8px) !important;
+}
+
+/* ── Row 2: Phone — right 50% ── */
+.gr-form .wpforms-form .wpforms-fields > .wpforms-field-phone,
+.gr-form .wpforms-form .wpforms-fields > li.wpforms-field-phone {
+  flex: 0 0 calc(50% - 8px) !important;
+  width: calc(50% - 8px) !important;
+  max-width: calc(50% - 8px) !important;
+}
+
+/* ── Row 3: Textarea — full width ── */
+.gr-form .wpforms-form .wpforms-fields > .wpforms-field-textarea,
+.gr-form .wpforms-form .wpforms-fields > li.wpforms-field-textarea {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ── All inputs fill their column ── */
 .gr-form .wpforms-field input[type="text"],
 .gr-form .wpforms-field input[type="email"],
 .gr-form .wpforms-field input[type="tel"],
+.gr-form .wpforms-field input[type="number"],
 .gr-form .wpforms-field textarea,
 .gr-form .wpforms-field select {
   width: 100% !important;
@@ -457,6 +472,7 @@ p.gr-section-label::after {
 .gr-form .wpforms-field textarea {
   min-height: 120px !important;
   resize: vertical !important;
+  width: 100% !important;
 }
 
 .gr-form .wpforms-field label {
@@ -471,24 +487,37 @@ p.gr-section-label::after {
   color: #FF6000 !important;
 }
 
-/* Name: First / Last side by side */
+/* ── Name: First / Last side by side ── */
 .gr-form .wpforms-field-name .wpforms-field-row {
   display: flex !important;
   flex-direction: row !important;
   gap: 16px !important;
   flex-wrap: nowrap !important;
   width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span {
   flex: 1 1 0 !important;
   min-width: 0 !important;
+  width: 50% !important;
   box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .gr-form .wpforms-field-name .wpforms-field-row > span input {
   width: 100% !important;
   box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+/* ── Submit button ── */
+.gr-form .wpforms-submit-container {
+  width: 100% !important;
+  text-align: center !important;
+  margin-top: 8px !important;
 }
 
 .gr-form .wpforms-submit {
@@ -501,8 +530,8 @@ p.gr-section-label::after {
   font-weight: 600 !important;
   cursor: pointer !important;
   transition: background 0.3s, transform 0.2s !important;
-  display: block !important;
-  margin: 10px auto 0 !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
 }
 
 .gr-form .wpforms-submit:hover {
@@ -525,17 +554,52 @@ p.gr-section-label::after {
   font-weight: 600 !important;
 }
 
-/* ── Responsive ── */
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
 @media (max-width: 768px) {
-  .gr-form .wpforms-field-email,
-  .gr-form .wpforms-field-phone {
-    width: 100% !important;
+  .gr-wrap { padding: 0 16px !important; }
+
+  .gr-intro .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-img img {
+    height: 240px !important;
+    padding-top: 16px !important;
+  }
+
+  .gr-cards .wp-block-column {
+    flex-basis: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .gr-wrap .gr-title { font-size: 1.4rem !important; }
+  .gr-emergency { padding: 20px !important; }
+  .gr-form { padding: 20px !important; }
+  .gr-scst-title { font-size: 1.3rem !important; }
+  .gr-p { font-size: 14px !important; }
+  .gr-points li { font-size: 13px !important; }
+
+  /* Stack all form fields on mobile */
+  .gr-form .wpforms-form .wpforms-fields > .wpforms-field-email,
+  .gr-form .wpforms-form .wpforms-fields > .wpforms-field-phone,
+  .gr-form .wpforms-form .wpforms-fields > li.wpforms-field-email,
+  .gr-form .wpforms-form .wpforms-fields > li.wpforms-field-phone {
     flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .gr-form .wpforms-field-name .wpforms-field-row {
     flex-direction: column !important;
     gap: 12px !important;
+  }
+
+  .gr-form .wpforms-field-name .wpforms-field-row > span {
+    width: 100% !important;
   }
 
   .gr-form .wpforms-submit {
