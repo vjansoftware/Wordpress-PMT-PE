@@ -989,6 +989,7 @@ p.pmt-contact-sub a {
     padding-right: 16px !important;
   }
 
+  /* Override inline style="" padding on section blocks */
   .pmt-about-section.wp-block-group,
   .pmt-courses-section.wp-block-group,
   .pmt-sports-section.wp-block-group,
@@ -1000,6 +1001,25 @@ p.pmt-contact-sub a {
     padding-bottom: 20px !important;
   }
 
+  /* Fix WordPress inner container double padding */
+  .pmt-about-section .wp-block-group__inner-container,
+  .pmt-courses-section .wp-block-group__inner-container,
+  .pmt-sports-section .wp-block-group__inner-container,
+  .pmt-news-section .wp-block-group__inner-container,
+  .pmt-elig-section .wp-block-group__inner-container,
+  .pmt-docs-section .wp-block-group__inner-container,
+  .pmt-contact-section .wp-block-group__inner-container,
+  .pmt-stats-band .wp-block-group__inner-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Fix shortcode home layout container */
+  .pmt-home-layout {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
 
   .pmt-latest-news-shortcut-container {
     margin: 0 !important;
@@ -1022,15 +1042,12 @@ p.pmt-contact-sub a {
   .pmt-about-cols.wp-block-columns { gap: 20px !important; }
   .pmt-about-img-col { padding-bottom: 60px !important; padding-right: 0 !important; }
   .pmt-about-img-col .wp-block-image img { height: auto !important; min-height: 260px !important; }
-  p.pmt-body-text {
-    text-align: justify !important;
-  }
+  p.pmt-body-text { text-align: justify !important; }
   .pmt-year-badge { bottom: 0 !important; right: 0 !important; padding: 10px 14px !important; min-width: 90px !important; }
   .pmt-year-num { font-size: 1.4rem !important; }
   .pmt-year-lbl { font-size: 10px !important; }
 
   .pmt-feats-grid.wp-block-columns { display: block !important; gap: 0 !important; row-gap: 0 !important; margin: 0 !important; padding: 0 !important; }
-
   .pmt-feats-grid.wp-block-columns:last-of-type { padding-bottom: 20px !important; }
   .pmt-feats-grid .wp-block-column,
   .pmt-feat-item.wp-block-column { width: 100% !important; min-width: 100% !important; flex-basis: 100% !important; margin: 0 !important; padding: 4px 0 !important; }
