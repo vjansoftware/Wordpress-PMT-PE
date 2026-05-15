@@ -10,14 +10,14 @@
     font-display: swap;
 }
 
-/* Remove external Roboto dependency */
-body {
+.entry-content{
   font-family:
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  box-sizing: border-box;
 }
 
 body.page-id-3386 .entry-content {
