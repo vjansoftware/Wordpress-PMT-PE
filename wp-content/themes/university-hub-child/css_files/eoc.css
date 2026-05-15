@@ -426,23 +426,22 @@ p.gr-section-label::after {
   max-width: 100% !important;
 }
 
-/* ── Email + Phone: same width as Name First/Last boxes ── */
-/* Name uses gap:16px inside a 100% container → each box = calc(50% - 8px) of 100%  */
-/* Email/Phone sit in the outer flex with gap:16px → same calc applies               */
+/* ── Email + Phone: full width, stacked (same as Comment/Message) ── */
 .gr-form .wpforms-form .wpforms-field-email,
 .gr-form .wpforms-form .wpforms-field-phone {
-  flex: 0 0 calc(50% - 8px) !important;
-  width: calc(50% - 8px) !important;
-  max-width: calc(50% - 8px) !important;
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* Make the input inside fill its column fully */
+/* Input inside fills full column */
 .gr-form .wpforms-form .wpforms-field-email input,
 .gr-form .wpforms-form .wpforms-field-phone input {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+  display: block !important;
 }
 
 /* ── Name field: full width, First + Last side by side ── */
@@ -620,19 +619,7 @@ p.gr-section-label::after {
   .gr-p               { font-size: 14px !important; }
   .gr-points li       { font-size: 13px !important; }
 
-  /* Stack email + phone on mobile */
-  .gr-form .wpforms-form .wpforms-field-email,
-  .gr-form .wpforms-form .wpforms-field-phone {
-    flex: 0 0 100% !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .gr-form .wpforms-form .wpforms-field-email input,
-  .gr-form .wpforms-form .wpforms-field-phone input {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+  /* Email + Phone already full width on all screens — no override needed */
 
   /* Stack name first/last on mobile */
   .gr-form .wpforms-field-name .wpforms-field-row,
