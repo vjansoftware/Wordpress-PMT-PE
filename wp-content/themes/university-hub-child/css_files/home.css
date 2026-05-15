@@ -987,7 +987,15 @@ p.pmt-contact-sub a {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
-
+.pmt-about-section .pmt-about-cols.wp-block-columns,
+  .pmt-news-section .pmt-news-grid.wp-block-columns,
+  .pmt-elig-section .pmt-elig-grid.wp-block-columns {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
   /* Override inline style="" padding on section blocks */
   .pmt-about-section.wp-block-group,
   .pmt-courses-section.wp-block-group,
