@@ -41,7 +41,6 @@ p.pmt-affil-label,
 .entry-content p.pmt-affil-label,
 .wp-block-group p.pmt-affil-label,
 body p.pmt-affil-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -68,7 +67,6 @@ p.pmt-affil-label::before {
 .entry-content .pmt-affil-wrap h2.pmt-affil-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 18px !important;
   line-height: 1.3 !important;
 }
@@ -105,7 +103,6 @@ body p.pmt-affil-divider {
 ════════════════════════════════ */
 
 .pmt-affil-box {
-  background: #253b80 !important;
   border-radius: 10px !important;
   padding: 40px !important;
   display: flex !important;
@@ -131,7 +128,6 @@ body p.pmt-affil-divider {
 .entry-content .pmt-affil-wrap h3.pmt-affil-box-name {
   font-size: 1.4rem !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
   margin: 0 0 8px !important;
   line-height: 1.3 !important;
 }
@@ -195,7 +191,6 @@ body p.pmt-affil-divider {
 .entry-content .pmt-affil-wrap h4.pmt-affil-card-name {
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 6px !important;
 }
 
@@ -203,7 +198,6 @@ body p.pmt-affil-divider {
 p.pmt-affil-card-badge,
 .entry-content p.pmt-affil-card-badge {
   font-size: 12px !important;
-  color: #FF6000 !important;
   font-weight: 700 !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
@@ -254,7 +248,6 @@ p.pmt-affil-card-badge,
 .entry-content .pmt-affil-wrap h4.pmt-cert-name {
   font-size: 15px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 6px !important;
 }
 
@@ -273,7 +266,6 @@ p.pmt-cert-note,
   opacity: 1 !important;
 }
 .pmt-cert-btn .wp-block-button__link {
-    background: #253b80;
     color: #fff;
     font-size: 13px;
     padding: 8px 20px;
@@ -301,7 +293,6 @@ p.pmt-cert-note,
 /* View link */
 .pmt-cert-card .wp-block-file > a:not(.wp-block-file__button) {
   background: transparent !important;
-  color: #253b80 !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   text-decoration: underline !important;
@@ -315,7 +306,6 @@ p.pmt-cert-note,
 
 /* Download button */
 .pmt-cert-card .wp-block-file__button {
-  background: #253b80 !important;
   color: #fff !important;
   font-size: 13px !important;
   font-weight: 600 !important;
@@ -335,7 +325,6 @@ p.pmt-cert-note,
 ════════════════════════════════ */
 
 .pmt-affil-contact-box {
-  background: #253b80 !important;
   border-radius: 10px !important;
   padding: 40px !important;
 }
@@ -350,7 +339,6 @@ p.pmt-cert-note,
 .entry-content .pmt-affil-wrap h3.pmt-affil-contact-title {
   font-size: 1.3rem !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
   margin: 0 0 8px !important;
   line-height: 1.3 !important;
 }
@@ -366,7 +354,6 @@ p.pmt-cert-note,
 p.pmt-affil-contact-call-label,
 .entry-content p.pmt-affil-contact-call-label {
   font-size: 12px !important;
-  color: #FF6000 !important;
   font-weight: 700 !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
