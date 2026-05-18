@@ -3,8 +3,8 @@
 ═══════════════════════════════════════ */
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 96, 0, 0.4); }
-  50% { box-shadow: 0 0 0 10px rgba(255, 96, 0, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,0,0,0.2); }
+  50%       { box-shadow: 0 0 0 10px rgba(0,0,0,0); }
 }
 
 .sc-wrap {
@@ -13,13 +13,11 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
 .sc-wrap *,
 .sc-wrap *::before,
 .sc-wrap *::after {
   box-sizing: border-box;
 }
-
 .entry-content .sc-wrap h1,
 .entry-content .sc-wrap h2,
 .entry-content .sc-wrap h3,
@@ -28,44 +26,23 @@
   margin-top: 0;
   padding-top: 0;
 }
-
 .entry-content .sc-wrap p:empty {
   display: none;
   margin: 0;
   padding: 0;
 }
 
-/* HERO */
+/* ── HERO ── */
 .sc-hero {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 50px auto;
 }
 
-/* Scholarship */
-    /* .pmt-schol-top {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    .pmt-schol-card h4,
-    .pmt-schol-card p {
-        color: #fff;
-    }
-
-    .pmt-schol-card {
-  transition: background 0.3s, border-color 0.3s, transform 0.3s;
-}
-.pmt-schol-card:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 96, 0, 0.5);
-  transform: translateX(4px);
-}  */
-
 p.sc-tag,
 .entry-content p.sc-tag,
 .wp-block-group p.sc-tag,
 body p.sc-tag {
-  color: #FF6000;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -79,7 +56,6 @@ body p.sc-tag {
 .sc-wrap .sc-title,
 .entry-content .sc-wrap h1.sc-title,
 body h1.sc-title {
-  color: #253b80;
   margin: 10px 0 14px;
   font-size: 2rem;
   font-weight: 700;
@@ -87,14 +63,13 @@ body h1.sc-title {
 }
 
 .sc-wrap .sc-sub {
-  color: #555;
   font-size: 15px;
   line-height: 1.8;
   margin: 0 auto;
   max-width: 700px;
 }
 
-/* STORY */
+/* ── STORY ── */
 .sc-story {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -106,14 +81,12 @@ body h1.sc-title {
 
 .sc-heading,
 .entry-content .sc-wrap h2.sc-heading {
-  color: #253b80;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
 .sc-p {
-  color: #555;
   font-size: 15px;
   line-height: 1.85;
   margin-bottom: 12px;
@@ -121,15 +94,12 @@ body h1.sc-title {
 }
 
 .sc-highlight {
-  background: #0a1f5c;
-  color: #fff;
   padding: 25px;
   border-radius: 12px;
 }
 
 .sc-highlight-title,
 .entry-content .sc-wrap h3.sc-highlight-title {
-  color: #FF6000;
   margin-bottom: 14px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -140,22 +110,19 @@ body h1.sc-title {
   padding-left: 18px;
   margin: 0;
 }
-
 .sc-list li {
-  color: #d0daf5;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.6;
 }
 
-/* SECTION */
+/* ── SECTION ── */
 .sc-section {
   max-width: 1200px;
   margin: 0 auto 60px auto;
 }
 
 .sc-section-label {
-  color: #FF6000;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -165,7 +132,6 @@ body h1.sc-title {
 
 .sc-section-title,
 .entry-content .sc-wrap h2.sc-section-title {
-  color: #253b80;
   margin: 6px 0 10px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -173,39 +139,29 @@ body h1.sc-title {
 }
 
 .sc-section-sub {
-  color: #555;
   font-size: 14px;
   line-height: 1.7;
   max-width: 800px;
   margin: 0 auto 28px;
 }
 
-/* MANAGEMENT SECTION TINT */
-.sc-mgmt {
-  background: #f4f7ff;
-  padding: 36px;
-  border-radius: 12px;
-}
-
-/* GRID */
+/* ── GRID ── */
 .sc-grid {
   gap: 22px;
   margin-bottom: 22px;
 }
 
-/* CARD */
+/* ── CARD ── */
 .sc-card {
-  background: #fff;
   padding: 24px;
   border-radius: 12px;
-  border: 1px solid #e5e9f2;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   transition: transform 0.25s, box-shadow 0.25s;
 }
-
 .sc-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(37, 59, 128, 0.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .sc-card-icon {
@@ -216,7 +172,6 @@ body h1.sc-title {
 
 .sc-card-title,
 .entry-content .sc-wrap h3.sc-card-title {
-  color: #253b80;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.45;
@@ -224,36 +179,32 @@ body h1.sc-title {
 }
 
 .sc-card-text {
-  color: #666;
   font-size: 14px;
   line-height: 1.7;
   margin: 0 0 14px;
 }
 
 .sc-card-meta {
-  border-top: 1px solid #eef0f8;
+  border-top: 1px solid rgba(0,0,0,0.07);
   padding-top: 10px;
   margin-top: auto;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FF6000;
 }
 
-/* NOTE */
+/* ── NOTE ── */
 .sc-note {
   margin-top: 28px;
-  background: #fff8f0;
-  border-left: 4px solid #FF6000;
+  border-left: 4px solid currentColor;
   padding: 16px 20px;
   border-radius: 0 8px 8px 0;
   font-size: 13px;
-  color: #444;
   line-height: 1.7;
 }
 
-/* PROCESS */
+/* ── PROCESS ── */
 .sc-process {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -264,14 +215,12 @@ body h1.sc-title {
 
 .sc-process-title,
 .entry-content .sc-wrap h2.sc-process-title {
-  color: #253b80;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
 .sc-process-p {
-  color: #555;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 12px;
@@ -282,18 +231,15 @@ body h1.sc-title {
   padding-left: 20px;
   margin: 0;
 }
-
 .sc-process-list li {
-  color: #555;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 8px;
 }
 
-/* CTA */
+/* ── CTA ── */
 .sc-cta {
   text-align: center;
-  color: #fff;
   padding: 50px 40px;
   border-radius: 12px;
   max-width: 1000px;
@@ -302,14 +248,12 @@ body h1.sc-title {
 
 .sc-cta-title,
 .entry-content .sc-wrap h2.sc-cta-title {
-  color: #FF6000;
   margin-bottom: 12px;
   font-size: 1.7rem;
   font-weight: 700;
 }
 
 .sc-cta-p {
-  color: #c5ceeb;
   font-size: 14px;
   line-height: 1.7;
   max-width: 640px;
@@ -318,68 +262,54 @@ body h1.sc-title {
 
 .sc-btn .wp-block-button__link {
   display: inline-block;
-  background: #FF6000;
   color: #fff;
   padding: 12px 28px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
-  transition: background 0.2s ease;
+  transition: opacity 0.2s ease;
 }
-
 .sc-btn .wp-block-button__link:hover {
-  background: #e05500;
+  opacity: 0.88;
 }
 
 .sc-btn-outline .wp-block-button__link {
-  background: transparent;
+  background: transparent !important;
   border: 2px solid #fff;
   color: #fff;
 }
-
 .sc-btn-outline .wp-block-button__link:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.1) !important;
 }
 
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .sc-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .sc-wrap {
     padding: 0 16px;
   }
-
   .sc-story,
   .sc-process {
     grid-template-columns: 1fr;
   }
-
   .sc-grid {
     grid-template-columns: 1fr;
   }
-
   .sc-wrap .sc-title {
     font-size: 1.6rem;
   }
-
   .sc-section-title {
     font-size: 1.35rem;
   }
-
-  .sc-mgmt {
-    padding: 24px 16px;
-  }
-
   .sc-cta {
     padding: 36px 20px;
   }
 }
-
 @media (max-width: 480px) {
   .sc-wrap .sc-title {
     font-size: 1.3rem;
