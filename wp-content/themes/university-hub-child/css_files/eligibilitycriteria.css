@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   PMT ELIGIBILITY — UPDATED STYLES
+   PMT ELIGIBILITY — STYLES
 ═══════════════════════════════════════ */
 
 .pmtelig-wrap {
@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 
-/* ── Hero Section ── */
+/* ── Hero ── */
 .pmtelig-hero {
   text-align: center;
   max-width: 800px;
@@ -26,14 +26,13 @@
   margin-bottom: 50px;
 }
 
-/* Label — small orange uppercase tag (like "About Our College") */
+/* Label */
 .pmtelig-tag,
 .pmtadm-label,
 p.pmtadm-label,
 .pmtelig-hero p.pmtadm-label,
 .wp-block-group p.pmtadm-label,
 .entry-content p.pmtadm-label {
-  color: #FF6000 !important;
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 2px !important;
@@ -44,17 +43,16 @@ p.pmtadm-label,
   opacity: 1 !important;
 }
 
-/* Page main title — H1 (like "Shaping Champions") */
+/* H1 */
 .pmtelig-wrap h1,
 .pmtadm-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 14px !important;
   line-height: 1.3 !important;
 }
 
-/* Hero subtitle paragraph */
+/* Subtitle */
 .pmtelig-hero p,
 .pmtelig-sub,
 .pmtadm-subtitle {
@@ -63,26 +61,24 @@ p.pmtadm-label,
   line-height: 1.8 !important;
 }
 
-/* ── Section Headings — H2 (like "A Legacy Built on Sport") ── */
+/* H2 */
 .pmtelig-wrap h2,
 .pmtadm-section-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 18px !important;
   line-height: 1.3 !important;
 }
 
-/* ── Card / Box Headings — H3 ── */
+/* H3 */
 .pmtelig-wrap h3,
 .pmtadm-card-title {
   font-size: 1.2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 12px !important;
 }
 
-/* ── Body Text ── */
+/* Body Text */
 .pmtelig-wrap p,
 .pmtadm-text {
   color: #555;
@@ -105,9 +101,8 @@ p.pmtadm-label,
   min-width: 0;
 }
 
-/* ── Highlight Box (dark blue sidebar) ── */
+/* ── Highlight Box ── */
 .pmtelig-highlight {
-  background: #253b80;
   color: #fff;
   padding: 28px;
   border-radius: 10px;
@@ -115,7 +110,6 @@ p.pmtadm-label,
 
 .pmtelig-highlight h3,
 .pmtelig-highlight .pmtadm-card-title {
-  color: #FF6000 !important;
   font-size: 1.1rem !important;
   margin-top: 0 !important;
 }
@@ -148,7 +142,7 @@ p.pmtadm-label,
   margin-bottom: 30px;
 }
 
-/* ── Eligibility Grid Items ── */
+/* ── Eligibility Grid ── */
 .pmtelig-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -173,11 +167,10 @@ p.pmtadm-label,
   border-color: #FF6000;
 }
 
-/* Option labels (Option A, Option B…) */
+/* Option labels */
 .pmtelig-item strong,
 .pmtelig-item p strong:first-child {
   display: block;
-  color: #253b80 !important;
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -185,7 +178,7 @@ p.pmtadm-label,
   margin-bottom: 8px;
 }
 
-/* ── Important Notes Box ── */
+/* ── Notes Box ── */
 .pmtelig-notes {
   background: #fff;
   border: 1px solid #e7ebf3;
@@ -221,6 +214,7 @@ p.pmtadm-label,
   box-shadow: 0 10px 22px rgba(37, 59, 128, 0.08);
 }
 
+/* pseudo-element — keeping hardcoded (Option A) */
 .pmtelig-notes li::before {
   content: "!";
   position: absolute;
@@ -238,7 +232,7 @@ p.pmtadm-label,
   font-weight: 800;
 }
 
-/* ── Process / Documents Section ── */
+/* ── Process / Documents ── */
 .pmtelig-process {
   display: flex;
   gap: 30px;
@@ -285,7 +279,7 @@ p.pmtadm-label,
   font-size: 14px;
 }
 
-/* ── Card (if used) ── */
+/* ── Card ── */
 .pmtelig-card {
   background: #ffffff;
   padding: 25px;
@@ -303,17 +297,12 @@ p.pmtadm-label,
 }
 
 .pmtelig-card h3 {
-  color: #253b80 !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   margin-bottom: 10px !important;
 }
 
-.pmtelig-card ul li::before {
-  color: #253b80;
-}
-
-/* ── WordPress Theme Overrides ── */
+/* ── WordPress Overrides ── */
 .entry-content .pmtelig-wrap h1,
 .entry-content .pmtelig-wrap h2,
 .entry-content .pmtelig-wrap h3 {
