@@ -31,7 +31,6 @@
 
 /* ── SECTION LABEL ── */
 .about-label {
-    color: #FF6000;
     font-weight: 700;
     letter-spacing: 3px;
     font-size: 12px;
@@ -46,14 +45,12 @@
     display: inline-block;
     width: 20px;
     height: 2px;
-    background: #FF6000;
 }
 
 /* ── SECTION TITLE ── */
 .about-section-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #253b80;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -119,7 +116,6 @@
 }
 
 .about-stat {
-    background: #253b80;
     border-radius: 8px;
     padding: 32px 24px;
     text-align: center;
@@ -134,7 +130,6 @@
     display: block;
     font-size: 2.4rem;
     font-weight: 700;
-    color: #FF6000;
     line-height: 1;
 }
 
@@ -209,7 +204,6 @@
     margin-top: 24px;
 }
 .about-motto-card {
-    background: #253b80;
     border-radius: 10px;
     padding: 36px 28px;
     text-align: center;
@@ -238,7 +232,6 @@
 .about-motto-card h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #FF6000;
     margin: 0 0 10px;
 }
 .about-motto-card p {
@@ -302,8 +295,7 @@
 
 /* SECTION TITLE (Campus Safety & Wellness) */
 .campus-label {
-    font-size: 2.2rem;   /* increase size */
-    color: #253b80;      /* your required color */
+    font-size: 2.2rem;   /* increase size *//* your required color */
     font-weight: 700;
     margin-bottom: 10px;
 }
