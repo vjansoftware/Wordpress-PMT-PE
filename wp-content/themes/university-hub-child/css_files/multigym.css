@@ -1,28 +1,11 @@
 /* ═══════════════════════════════════════
    PMT MULTI GYM — STYLES
-   Colors & fonts matching Indoor Sports
+   Colors via global utility classes
 ═══════════════════════════════════════ */
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-solid-900.woff2') format('woff2');
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('https://staging-ad1a-pmtpe2026-zilbu.wpcomstaging.com/wp-content/themes/university-hub/third-party/font-awesome/webfonts/fa-brands-400.woff2') format('woff2');
-    font-display: swap;
-}
-
-/* Remove external Roboto dependency */
 body,
 .gym-wrap {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: inherit;
 }
 
 .gym-wrap {
@@ -64,7 +47,7 @@ body,
 
 p.gym-label,
 .entry-content p.gym-label {
-  color: #FF6000 !important;
+  /* color comes from .third-priority-page-color */
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 3px !important;
@@ -84,7 +67,9 @@ p.gym-label::after {
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: #FF6000;
+  /* background comes from .third-priority-page-color-b via a sibling element;
+     for pseudo-elements we still need a concrete value — inherit from color */
+  background: currentColor;
   flex-shrink: 0;
 }
 
@@ -92,7 +77,7 @@ p.gym-label::after {
 .entry-content .gym-wrap h1.gym-title {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
+  /* color comes from .primary-page-color */
   margin: 10px 0 14px !important;
   line-height: 1.3 !important;
 }
@@ -144,7 +129,7 @@ p.gym-label::after {
 .entry-content .gym-wrap h3.gym-card-title {
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
+  /* color comes from .primary-page-color */
   margin: 0 0 8px !important;
 }
 
@@ -177,6 +162,7 @@ p.gym-label::after {
 ════════════════════════════════ */
 
 .gym-highlight {
+  /* background comes from a wrapper with a light neutral — kept as-is (not a brand color) */
   background: #f4f6fb !important;
   border-radius: 10px !important;
   padding: 48px 40px !important;
@@ -198,7 +184,7 @@ p.gym-label::after {
 .entry-content .gym-wrap h2.gym-highlight-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
+  /* color comes from .primary-page-color */
   margin: 0 0 20px !important;
   line-height: 1.3 !important;
 }
@@ -210,7 +196,7 @@ p.gym-label::after {
 .gym-highlight-item {
   display: flex !important;
   align-items: center !important;
-  color: #253b80 !important;
+  /* color comes from .primary-page-color */
   padding: 14px 18px !important;
   border-radius: 8px !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
@@ -224,7 +210,7 @@ p.gym-label::after {
 .gym-highlight-item p {
   margin: 0 !important;
   font-size: 14px !important;
-  color: #253b80 !important;
+  /* color comes from .primary-page-color */
   font-weight: 500 !important;
   display: flex !important;
   align-items: center !important;
@@ -235,7 +221,7 @@ p.gym-label::after {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #FF6000;
+  /* background comes from .third-priority-page-color-b */
   flex-shrink: 0;
   display: inline-block;
 }
@@ -245,7 +231,7 @@ p.gym-label::after {
 ════════════════════════════════ */
 
 .gym-cta {
-  background: linear-gradient(135deg, #253b80, #179bd7) !important;
+  /* gradient uses primary + secondary — applied via inline style on the element */
   border-radius: 10px !important;
   padding: 48px 40px !important;
   text-align: center;
@@ -266,7 +252,7 @@ p.gym-label::after {
 .entry-content .gym-wrap h2.gym-cta-title {
   font-size: 1.8rem !important;
   font-weight: 700 !important;
-  color: #FF6000 !important;
+  /* color comes from .third-priority-page-color */
   margin-bottom: 12px !important;
   margin-top: 0 !important;
   line-height: 1.3 !important;
@@ -279,8 +265,9 @@ p.gym-label::after {
   line-height: 1.7 !important;
 }
 
+/* Primary (filled) button — background from .third-priority-page-color-b */
 .gym-cta-btn .wp-block-button__link {
-  background: #FF6000 !important;
+  /* background-color comes from .third-priority-page-color-b on the element */
   color: #fff !important;
   border-radius: 6px !important;
   font-size: 14px !important;
@@ -288,14 +275,15 @@ p.gym-label::after {
   padding: 12px 30px !important;
   text-decoration: none !important;
   border: none !important;
-  transition: background 0.25s, transform 0.25s;
+  transition: filter 0.25s, transform 0.25s;
 }
 
 .gym-cta-btn .wp-block-button__link:hover {
-  background: #e05500 !important;
+  filter: brightness(0.88);
   transform: translateY(-2px);
 }
 
+/* Outline button */
 .gym-cta-btn-outline .wp-block-button__link {
   background: transparent !important;
   color: #fff !important;
