@@ -12,7 +12,7 @@
 
 /* ══ HERO ══ */
 .vp-hero {
- padding: 0px 40px 40px;
+  padding: 0px 40px 40px;
   text-align: center;
   background: #fff;
 }
@@ -21,20 +21,17 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #FF6000;
   margin-bottom: 12px;
   margin-top: 0;
 }
 .vp-hero-title {
   font-size: 2.2rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin-bottom: 14px !important;
   margin-top: 0 !important;
 }
 .vp-hero-sub {
   font-size: 15px;
-  color: #6b7280;
   max-width: 560px;
   margin: 0 auto;
   line-height: 1.75;
@@ -55,14 +52,11 @@
   background: #fff;
   font-size: 13px;
   font-weight: 600;
-  color: #253b80;
   margin: 4px;
   cursor: default;
 }
 .vp-filter-btn.vp-active {
-  background: #253b80;
-  color: #fff;
-  border-color: #253b80;
+  border-color: currentColor;
 }
 
 /* ══ FEATURED SECTION ══ */
@@ -81,7 +75,6 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #FF6000;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -93,13 +86,12 @@
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: #FF6000;
+  background: currentColor;
   flex-shrink: 0;
 }
 .vp-section-h2 {
   font-size: 1.7rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin-bottom: 16px !important;
   margin-top: 0 !important;
 }
@@ -128,7 +120,6 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #FF6000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,13 +133,11 @@
 }
 .vp-featured-desc {
   font-size: 13px !important;
-  color: #6b7280 !important;
   margin-top: 14px !important;
   line-height: 1.65 !important;
 }
 .vp-featured-meta {
   font-size: 12px !important;
-  color: #9098a9 !important;
   margin-top: 10px !important;
 }
 .vp-featured-meta span {
@@ -159,7 +148,6 @@
 .vp-more-label {
   font-size: 13px;
   font-weight: 700;
-  color: #253b80;
   margin-bottom: 14px;
   margin-top: 0;
 }
@@ -197,7 +185,6 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(255,96,0,0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,19 +198,16 @@
 .vp-flist-h4 {
   font-size: 12px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   line-height: 1.4 !important;
   margin: 0 0 4px 0 !important;
 }
 .vp-flist-meta {
   font-size: 11px !important;
-  color: #9098a9 !important;
   margin: 0 !important;
 }
 
 /* ══ VIDEO GRID SECTION ══ */
 .vp-grid-section {
-  background: #f0f7fd;
   padding: 50px 40px !important;
 }
 .vp-section-label {
@@ -231,7 +215,6 @@
   font-weight: 700 !important;
   letter-spacing: 3px !important;
   text-transform: uppercase !important;
-  color: #FF6000 !important;
   margin-bottom: 8px !important;
   margin-top: 0 !important;
 }
@@ -281,15 +264,14 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: #FF6000;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
 }
 .vp-play:hover {
-  background: #e05500;
+  opacity: 0.85;
   transform: scale(1.1);
 }
 .vp-play svg {
@@ -321,10 +303,6 @@
   border-radius: 4px;
   color: #fff;
 }
-.vp-badge-sports   { background: #179bd7; }
-.vp-badge-academic { background: #FF6000; }
-.vp-badge-events   { background: #179bd7; }
-.vp-badge-campus   { background: #253b80; }
 
 .vp-body {
   padding: 16px 18px 20px !important;
@@ -332,19 +310,16 @@
 .vp-card-h3 {
   font-size: 14px !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   line-height: 1.4 !important;
   margin: 0 0 8px 0 !important;
 }
 .vp-card-p {
   font-size: 12px !important;
-  color: #6b7280 !important;
   line-height: 1.55 !important;
   margin: 0 !important;
 }
 .vp-meta {
   font-size: 11px !important;
-  color: #9098a9 !important;
   margin-top: 10px !important;
   padding-top: 10px !important;
   border-top: 1px solid rgba(37,59,128,0.07) !important;
@@ -352,30 +327,25 @@
 }
 .vp-dot {
   margin: 0 4px;
-  color: #ddd;
 }
 
 /* ══ SUBSCRIBE ══ */
 .vp-subscribe {
-  background: #f0f7fd !important;
   border-top: 1px solid rgba(37,59,128,0.08);
   text-align: center;
 }
 .vp-subscribe-title {
   font-size: 1.6rem !important;
   font-weight: 700 !important;
-  color: #253b80 !important;
   margin: 0 0 10px 0 !important;
 }
 .vp-subscribe-sub {
   font-size: 14px !important;
-  color: #6b7280 !important;
   max-width: 520px;
   margin: 0 auto 28px auto !important;
   line-height: 1.7 !important;
 }
 .vp-subscribe-btn {
-  background: #FF6000 !important;
   color: #fff !important;
   padding: 13px 32px !important;
   border-radius: 6px !important;
@@ -383,10 +353,10 @@
   font-size: 14px !important;
   text-decoration: none !important;
   display: inline-block !important;
-  transition: background 0.2s;
+  transition: opacity 0.2s;
 }
 .vp-subscribe-btn:hover {
-  background: #e05500 !important;
+  opacity: 0.88;
   color: #fff !important;
 }
 
