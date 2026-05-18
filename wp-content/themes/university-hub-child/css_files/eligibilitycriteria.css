@@ -60,7 +60,6 @@ p.pmtadm-label,
   font-size: 15px !important;
   line-height: 1.8 !important;
 }
-
 /* H2 */
 .pmtelig-wrap h2,
 .pmtadm-section-title {
@@ -81,7 +80,6 @@ p.pmtadm-label,
 /* Body Text */
 .pmtelig-wrap p,
 .pmtadm-text {
-  color: #555;
   font-size: 15px;
   line-height: 1.8;
   text-align: justify;
