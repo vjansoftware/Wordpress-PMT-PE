@@ -1,5 +1,6 @@
 /* ═══════════════════════════════════════
    PMT LIBRARY CSS
+   Colors via global utility classes
 ═══════════════════════════════════════ */
 
 .library-wrap {
@@ -9,7 +10,7 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: inherit;
 }
 
 .library-wrap *,
@@ -41,7 +42,7 @@
 }
 
 .library-label {
-  color: #FF6000;
+  /* color: third-priority-page-color */
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -58,14 +59,14 @@
   content: '';
   width: 20px;
   height: 2px;
-  background: #FF6000;
+  background: currentColor;
   display: inline-block;
 }
 
 .library-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #253b80;
+  /* color: primary-page-color */
   margin: 10px 0;
 }
 
@@ -109,7 +110,7 @@
 .library-split-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #253b80;
+  /* color: primary-page-color */
   margin-bottom: 12px;
 }
 
@@ -149,7 +150,7 @@
   width: 8px;
   height: 8px;
   min-width: 8px;
-  background: #FF6000;
+  /* background: third-priority-page-color-b */
   border-radius: 50%;
   display: inline-block;
 }
@@ -176,7 +177,8 @@
   border-radius: 10px;
   border: 1px solid rgba(37, 59, 128, 0.08);
   box-shadow: 0 2px 12px rgba(37, 59, 128, 0.06);
-  border-top: 3px solid #FF6000;
+  /* border-top color: third-priority-page-color-b */
+  border-top: 3px solid currentColor;
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
 }
@@ -193,7 +195,7 @@
 .library-card-title {
   font-size: 16px;
   font-weight: 700;
-  color: #253b80;
+  /* color: primary-page-color */
   margin-bottom: 8px;
 }
 
@@ -220,7 +222,7 @@
 .library-collab-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #253b80;
+  /* color: primary-page-color */
   margin-bottom: 12px;
 }
 
@@ -237,7 +239,7 @@
 ════════════════════════════════ */
 
 .library-cta {
-  background: linear-gradient(135deg, #253b80, #179bd7);
+  /* background gradient uses primary + secondary — kept as inline style on element */
   border-radius: 10px;
   padding: 40px;
   text-align: center;
@@ -247,7 +249,7 @@
 .library-cta-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #FF6000;
+  /* color: third-priority-page-color */
   margin-bottom: 10px;
 }
 
@@ -265,7 +267,7 @@
 }
 
 .library-cta-btn .wp-block-button__link {
-  background: #FF6000 !important;
+  /* background: third-priority-page-color-b */
   color: #fff !important;
   padding: 12px 28px !important;
   border-radius: 6px !important;
@@ -273,10 +275,11 @@
   text-decoration: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: filter 0.25s, transform 0.25s;
 }
 
 .library-cta-btn .wp-block-button__link:hover {
-  background: #e05500 !important;
+  filter: brightness(0.88);
 }
 
 .library-cta-btn-outline .wp-block-button__link {
