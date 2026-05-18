@@ -19,7 +19,6 @@
 
 /* Orange label — matches About College tag */
 .pmt-adm-tag {
-  color: #FF6000;
   font-size: 12px;
   letter-spacing: 3px;
   margin-bottom: 10px;
@@ -44,7 +43,6 @@
 /* Main title — matches About College H1 */
 .pmt-adm-title {
   font-size: 2rem;
-  color: #253b80;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.3;
@@ -91,7 +89,6 @@
 
 /* Card title — matches About College H3 */
 .pmt-adm-card-title {
-  color: #253b80;
   margin-bottom: 12px;
   font-size: 1.2rem;
   font-weight: 700;
@@ -127,7 +124,6 @@
 p.a.admission-apply-link {
   font-weight: bold;
   color: #eee !important;
-  background-color: #253b80;
 }
 
 /* ── Note Box ── */
@@ -141,7 +137,6 @@ p.a.admission-apply-link {
 /* Note title — matches About College H3 */
 .pmt-adm-note-title {
   margin: 0 0 12px;
-  color: #FF6000;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -179,7 +174,6 @@ p.a.admission-apply-link {
 }
 
 .adm-cta-btn .wp-block-button__link {
-  background: #FF6000 !important;
   color: #fff !important;
   padding: 12px 28px !important;
   border-radius: 6px !important;
