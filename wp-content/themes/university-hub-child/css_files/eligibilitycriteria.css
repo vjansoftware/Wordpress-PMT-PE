@@ -53,7 +53,7 @@ p.pmtadm-label,
 }
 
 /* Subtitle */
-.pmtelig-hero p,
+.pmtelig-hero p:not(.pmtadm-label),
 .pmtelig-sub,
 .pmtadm-subtitle {
   color: #555 !important;
